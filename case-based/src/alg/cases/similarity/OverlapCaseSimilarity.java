@@ -17,13 +17,21 @@ public class OverlapCaseSimilarity implements CaseSimilarity
 	final static double GENRE_WEIGHT = 1; // the weight for feature genres
 	final static double DIRECTOR_WEIGHT = 1; // the weight for feature directors
     final static double ACTOR_WEIGHT = 1; // the weight for feature actors
-    final static double POPULARITY_WEIGHT = 1; // the weight for feature actors
+    final static double POPULARITY_WEIGHT = 0; // the weight for feature popularity (count ratings)
+    final static double MEAN_RATING_WEIGHT = 1; // the weight for feature mean rating
+    private double popularityWeight;
+    private double meanRatingWeight;
 
-	/**
+    /**
 	 * constructor - creates a new OverlapCaseSimilarity object
 	 */
-	public OverlapCaseSimilarity()
-	{}
+    public OverlapCaseSimilarity() {
+    }
+
+	public OverlapCaseSimilarity(double popularityWeight,double meanRatingWeight) {
+        this.popularityWeight = popularityWeight;
+        this.meanRatingWeight = meanRatingWeight;
+    }
 
 	/**
 	 * computes the similarity between two cases
@@ -38,12 +46,11 @@ public class OverlapCaseSimilarity implements CaseSimilarity
 
 		double above = GENRE_WEIGHT * FeatureSimilarity.overlap(m1.getGenres(), m2.getGenres()) +
 				DIRECTOR_WEIGHT * FeatureSimilarity.overlap(m1.getDirectors(), m2.getDirectors()) +
-				ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors())
+                ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors()) +
+                meanRatingWeight * FeatureSimilarity.asymmetric(m1.getMeanRating(), m2.getMeanRating()) +
+                popularityWeight * FeatureSimilarity.symmetric(m1.getPopularity(), m2.getPopularity());
 
-
-                ;
-
-		double below = GENRE_WEIGHT + DIRECTOR_WEIGHT + ACTOR_WEIGHT;
+		double below = GENRE_WEIGHT + DIRECTOR_WEIGHT + ACTOR_WEIGHT + MEAN_RATING_WEIGHT + POPULARITY_WEIGHT;
 
 		return (below > 0) ? above / below : 0;
 	}

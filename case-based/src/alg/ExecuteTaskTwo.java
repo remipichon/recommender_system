@@ -30,17 +30,28 @@ public class ExecuteTaskTwo
 		String movieFile = "dataset" + File.separator + "movies.txt";
 		DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
 
-        displayMoviesRatings(reader);
+        //displayMoviesRatings(reader);
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
-//		CaseSimilarity overlapCaseSimilarity = new OverlapCaseSimilarity();
-//        JaccardCaseSimilarity jaccardCaseSimilarity = new JaccardCaseSimilarity();
-//
-//        Recommender recommender;
-//
-//
-//        recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-//        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender",reader, recommender);
+		CaseSimilarity overlapCaseSimilarity;
+        JaccardCaseSimilarity jaccardCaseSimilarity = new JaccardCaseSimilarity();
+
+        Recommender recommender;
+
+        overlapCaseSimilarity = new OverlapCaseSimilarity(1,0);//popularityWeight | meanRatingWeight
+        recommender = new MaxRecommender(overlapCaseSimilarity, reader);
+        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie popularity symmetric sim",reader, recommender);
+
+
+        overlapCaseSimilarity = new OverlapCaseSimilarity(0,1);//popularityWeight | meanRatingWeight
+        recommender = new MaxRecommender(overlapCaseSimilarity, reader);
+        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie mean rating asymmetric sim",reader, recommender);
+
+
+        overlapCaseSimilarity = new OverlapCaseSimilarity(1,1);//popularityWeight | meanRatingWeight
+        recommender = new MaxRecommender(overlapCaseSimilarity, reader);
+        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie popularity symmetric sim | movie mean rating asymmetric sim",reader, recommender);
+
 
 //        recommender = new MaxRecommender(jaccardCaseSimilarity, reader);
 //        evaluateAndPrintResult("jaccardCaseSimilarity | MaxRecommender",reader, recommender);

@@ -168,7 +168,8 @@ public class DatasetReader
 				ArrayList<String> directors = tokenizeString(st.nextToken());
 				ArrayList<String> actors = tokenizeString(st.nextToken());
 
-				MovieCase movie = new MovieCase(id, title, genres, directors, actors);
+                MovieRating movieRating = moviesRatings.get(id);
+                MovieCase movie = new MovieCase(id, title, genres, directors, actors,movieRating.getMeanRating(),movieRating.getPopularity());
 				cb.addCase(id, movie);
 			}
 
