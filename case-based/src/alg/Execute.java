@@ -28,14 +28,15 @@ public class Execute
 		DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
 		
 		// configure the case-based recommendation algorithm - set the case similarity and recommender
-		CaseSimilarity caseSimilarity = new OverlapCaseSimilarity();
-		Recommender recommender = new MeanRecommender(caseSimilarity, reader);
+        CaseSimilarity caseSimilarity = new OverlapCaseSimilarity();
+        JaccardCaseSimilarity jaccardCaseSimilarity = new JaccardCaseSimilarity();
+        Recommender recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
 		
 		// evaluate the case-based recommender
 		Evaluator eval = new Evaluator(recommender, reader);
 
-		System.out.println("topN Recall Precision");
-		for(int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
-			System.out.println(topN + " " + eval.getRecall(topN) + " " + eval.getPrecision(topN));
+        System.out.println("topN\tRecall\tPrecision");
+        for(int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
+            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
 	}
 }
