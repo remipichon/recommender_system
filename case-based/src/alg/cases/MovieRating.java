@@ -10,6 +10,7 @@ public class MovieRating {
 
     /**
      * constructor Create a new Movie Rating
+     *
      * @param movieId
      */
     public MovieRating(Integer movieId) {
@@ -20,6 +21,7 @@ public class MovieRating {
 
     /**
      * Add a new rating to the movie rating
+     *
      * @param addedRating value of the new rating
      */
     public void addRating(Double addedRating) {
@@ -29,6 +31,7 @@ public class MovieRating {
 
     /**
      * Perform mean rating calculation
+     *
      * @return mean rating
      */
     public Double getMeanRating() {
@@ -43,7 +46,7 @@ public class MovieRating {
     public String toString() {
         return
                 "id " + id +
-                " popularity " + popularity +
-                " meanRating " + this.getMeanRating();
+                        " popularity " + popularity +
+                        " meanRating " + this.getMeanRating();
     }
 }

@@ -1,7 +1,7 @@
 /**
  * A class to define a case-based recommender.
  * The scoring function used to rank recommendation candidates is the mean similarity to the target user's profile cases.
- * 
+ *
  * Michael O'Mahony
  * 10/01/2013
  */
@@ -14,24 +14,24 @@ import util.reader.DatasetReader;
 
 import java.util.*;
 
-public class MaxRecommender extends Recommender
-{
-	/**
-	 * constructor - creates a new MaxRecommender object
-	 * @param caseSimilarity - an object to compute case similarity
-	 * @param reader - an object to store user profile data and movie metadata
-	 */
-	public MaxRecommender(final CaseSimilarity caseSimilarity, final DatasetReader reader)
-	{
-		super(caseSimilarity, reader);
-	}
-	
-	/**
-	 * returns a ranked list of recommended case ids
-	 * @param userId - the id of the target user
-	 * @param reader - an object to store user profile data and movie metadata
-	 * @return the ranked list of recommended case ids
-	 */
+public class MaxRecommender extends Recommender {
+    /**
+     * constructor - creates a new MaxRecommender object
+     *
+     * @param caseSimilarity - an object to compute case similarity
+     * @param reader         - an object to store user profile data and movie metadata
+     */
+    public MaxRecommender(final CaseSimilarity caseSimilarity, final DatasetReader reader) {
+        super(caseSimilarity, reader);
+    }
+
+    /**
+     * returns a ranked list of recommended case ids
+     *
+     * @param userId - the id of the target user
+     * @param reader - an object to store user profile data and movie metadata
+     * @return the ranked list of recommended case ids
+     */
     public ArrayList<Integer> getRecommendations(final Integer userId, final DatasetReader reader) {
         SortedSet<ScoredThingDsc> ss = new TreeSet<ScoredThingDsc>();
 
@@ -50,7 +50,7 @@ public class MaxRecommender extends Recommender
                 // iterate over all the target user profile cases and compute a score for the current recommendation candidate case
                 for (Integer id : profile.keySet()) {
                     Double sim = super.getCaseSimilarity(candidateId, id);
-                    if(sim != null && sim > max)
+                    if (sim != null && sim > max)
                         max = sim;
 
                 }
