@@ -35,7 +35,7 @@ public class Matrix
 	}
 	
 	/**
-	 * @param rowId - the row id
+	 * @param rowId - the row id - candidate id
 	 * @param colId - the column id
 	 * @return the (Double) element corresponding to (rowId, colId) or null if the element is not present in the matrix
 	 */

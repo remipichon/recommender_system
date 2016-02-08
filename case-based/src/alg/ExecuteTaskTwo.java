@@ -10,6 +10,7 @@ package alg;
 import alg.cases.MovieRating;
 import alg.cases.similarity.CaseSimilarity;
 import alg.cases.similarity.JaccardCaseSimilarity;
+import alg.cases.similarity.OverlapCaseAndSymetricSimilarity;
 import alg.cases.similarity.OverlapCaseSimilarity;
 import alg.recommender.MaxRecommender;
 import alg.recommender.MeanRecommender;
@@ -34,31 +35,11 @@ public class ExecuteTaskTwo
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
 		CaseSimilarity overlapCaseSimilarity;
-        JaccardCaseSimilarity jaccardCaseSimilarity = new JaccardCaseSimilarity();
-
         Recommender recommender;
 
-        overlapCaseSimilarity = new OverlapCaseSimilarity(1,0);//popularityWeight | meanRatingWeight
+        overlapCaseSimilarity = new OverlapCaseAndSymetricSimilarity(1,1);//popularityWeight | meanRatingWeight
         recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie popularity symmetric sim",reader, recommender);
-
-
-        overlapCaseSimilarity = new OverlapCaseSimilarity(0,1);//popularityWeight | meanRatingWeight
-        recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie mean rating asymmetric sim",reader, recommender);
-
-
-        overlapCaseSimilarity = new OverlapCaseSimilarity(1,1);//popularityWeight | meanRatingWeight
-        recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie popularity symmetric sim | movie mean rating asymmetric sim",reader, recommender);
-
-
-//        recommender = new MaxRecommender(jaccardCaseSimilarity, reader);
-//        evaluateAndPrintResult("jaccardCaseSimilarity | MaxRecommender",reader, recommender);
-//
-//        recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
-//        evaluateAndPrintResult("jaccardCaseSimilarity | MeanRecommender",reader, recommender);
-
+        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie popularity symmetric | movie mean symmetric",reader, recommender);
 
     }
 

@@ -40,7 +40,7 @@ public abstract class Recommender
 	
 	/**
 	 * returns the case similarity between two cases
-	 * @param rowId - the id of the first case
+	 * @param rowId - the id of the first case, candidate Id
 	 * @param colId - the id of the second case
 	 * @return the case similarity or null if the Matrix object does not contain the case similarity
 	 */

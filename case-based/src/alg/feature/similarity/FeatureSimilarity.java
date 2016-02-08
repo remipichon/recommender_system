@@ -41,25 +41,39 @@ public class FeatureSimilarity
 		return (min > 0) ? intersection * 1.0 / min : 0;
 	}
 
-    public static double asymmetric(Double meanRating, Double meanRating1) {
-        //asymmetric with more value on grater mean rating
-        return asymmetricSimilarity(meanRating,meanRating1);
-    }
-
-    private static double asymmetricSimilarity(Double d1, Double d2){
+    /**
+     * Use if higher candidate feature value is desired
+     * @param candidate
+     * @param target
+     * @return
+     */
+    public static double asymmetricSimilarityHigherValue(Double candidate, Double target){
         double sim;
-        sim = 1 - Math.abs(d1 - d2) / Math.max(d1,d2);
+        sim = 1 - Math.abs(target - candidate) / Math.max(target,candidate);
         return sim;
     }
 
-    public static double symmetric(Integer popularity, Integer popularity1) {
-        //symmetric
-        return symmetricSimilarity(popularity,popularity1);
+    /**
+     * Use if lower candidate feature value is desired
+     * @param candidate
+     * @param target
+     * @return
+     */
+    public static double asymmetricSimilarityLowerValue(Double candidate, Double target){
+        double sim;
+        sim = 1 - Math.abs(target - candidate) / (target + Math.max(0, (target - candidate) ));
+        return sim;
     }
 
-    private static double symmetricSimilarity(Integer d1, Integer d2){
+    /**
+     * Use if for symmetric similarity
+     * @param candidate
+     * @param target
+     * @return
+     */
+    public static double symmetricSimilarity(Double candidate, Double target){
         double sim;
-        sim = 1 - Math.abs(d1 - d2) / d1;
+        sim = 1 - Math.abs(target - candidate) / target;
         return sim;
     }
 
