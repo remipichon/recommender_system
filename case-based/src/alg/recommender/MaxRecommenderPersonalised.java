@@ -71,6 +71,10 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
         double genresWeight = 1 - distinctGenresCount * 1.0 / userProfileReviewsCount;
         double directorsWeight = 1 - distinctDirectorsCount * 1.0 / userProfileReviewsCount;
 
+        if(genresWeight < 0) genresWeight = 0;
+        if(directorsWeight < 0) directorsWeight = 0;
+        
+
         FeaturesWeight featuresWeight = new FeaturesWeight(directorsWeight,genresWeight);
 
         // get the ids of all recommendation candidate cases
