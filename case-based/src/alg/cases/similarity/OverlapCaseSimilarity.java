@@ -64,10 +64,10 @@ public class OverlapCaseSimilarity implements CaseSimilarity {
 
         double above = featuresWeight.getGenresWeight() * FeatureSimilarity.overlap(m1.getGenres(), m2.getGenres()) +
                 featuresWeight.getDirectorsWeight() * FeatureSimilarity.overlap(m1.getDirectors(), m2.getDirectors())
-                + ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors())
+               // + ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors())
         ;
 
-        double below = featuresWeight.getGenresWeight() + featuresWeight.getDirectorsWeight() + ACTOR_WEIGHT;
+        double below = featuresWeight.getGenresWeight() + featuresWeight.getDirectorsWeight();// + ACTOR_WEIGHT;
 
         return (below > 0) ? above / below : 0;
     }

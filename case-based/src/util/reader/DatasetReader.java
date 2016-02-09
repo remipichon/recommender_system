@@ -24,7 +24,7 @@ import alg.cases.MovieRating;
 
 public class DatasetReader {
     private Casebase cb; // stores case objects
-    private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles
+    private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
     private Map<Integer, Map<Integer, Double>> testProfiles; // stores test user profiles
 

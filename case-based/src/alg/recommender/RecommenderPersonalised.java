@@ -76,6 +76,27 @@ public abstract class RecommenderPersonalised extends Recommender{
     }
 
     /**
+     * returns the case similarity between two cases
+     *
+     * @param featuresWeight - features weight
+     * @param rowId - the id of the first case, candidate Id
+     * @param colId - the id of the second case
+     * @return the case similarity or null if the case similarity is not relevant
+     */
+    public Double getCaseSimilarity(FeaturesWeight featuresWeight, final Integer rowId, final Integer colId) {
+
+        if (rowId.intValue() != colId.intValue()) {
+            Case c1 = reader.getCasebase().getCase(rowId);
+            Case c2 = reader.getCasebase().getCase(colId);
+
+            double sim = caseSimilarity.getSimilarity(featuresWeight, c1, c2);
+            if (sim > 0)
+                return sim;
+        }
+        return null;
+    }
+
+    /**
      * returns a ranked list of recommended case ids
      *
      * @param userId - the id of the target user

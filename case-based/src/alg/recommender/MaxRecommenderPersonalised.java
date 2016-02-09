@@ -8,7 +8,11 @@
 
 package alg.recommender;
 
+import alg.casebase.Casebase;
+import alg.cases.Case;
+import alg.cases.MovieCase;
 import alg.cases.similarity.CaseSimilarity;
+import alg.feature.similarity.FeatureSimilarity;
 import util.FeaturesWeight;
 import util.ScoredThingDsc;
 import util.reader.DatasetReader;
@@ -37,7 +41,37 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
         SortedSet<ScoredThingDsc> ss = new TreeSet<ScoredThingDsc>();
 
         // get the target user profile
-        Map<Integer, Double> profile = reader.getUserProfile(userId);
+        Map<Integer, Double> profile = reader.getUserProfile(userId); //<movieId, rating>
+
+        // #profilemovies
+        int userProfileReviewsCount = profile.size();
+
+        MovieCase movie;
+        Set<String> distinctUserGenres = new HashSet<String>();
+        Set<String> distinctUserDirectors = new HashSet<String>();
+
+//        List<String> allUserGenres = new ArrayList<String>();
+//        List<String> allUserDirectors = new ArrayList<String>();
+
+        for (Integer movieId : profile.keySet()) {
+            movie = (MovieCase) reader.getCasebase().getCase(movieId);
+            distinctUserGenres.addAll(movie.getGenres());
+            distinctUserDirectors.addAll(movie.getDirectors());
+
+//            allUserGenres.addAll(movie.getGenres());
+//            allUserDirectors.addAll(movie.getDirectors());
+        }
+
+        // #distinct genres
+        int distinctGenresCount = distinctUserGenres.size();
+        // #distinct directors
+        int distinctDirectorsCount = distinctUserDirectors.size();
+
+        // W = 1- #distinct /(#profilemovies)
+        double genresWeight = 1 - distinctGenresCount * 1.0 / userProfileReviewsCount;
+        double directorsWeight = 1 - distinctDirectorsCount * 1.0 / userProfileReviewsCount;
+
+        FeaturesWeight featuresWeight = new FeaturesWeight(directorsWeight,genresWeight);
 
         // get the ids of all recommendation candidate cases
         Set<Integer> candidateIds = reader.getCasebase().getIds();
@@ -50,8 +84,10 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
 
                 // iterate over all the target user profile cases and compute a score for the current recommendation candidate case
                 for (Integer id : profile.keySet()) {
-                    
-                    Double sim = super.getCaseSimilarity(profile,candidateId, id);
+
+                    //Double sim = super.getCaseSimilarity(profile,candidateId, id);
+                    Double sim = super.getCaseSimilarity(featuresWeight,candidateId, id);
+
                     if (sim != null && sim > max)
                         max = sim;
 
