@@ -8,7 +8,9 @@
 package alg;
 
 import java.io.File;
+import java.util.Map;
 
+import alg.cases.MovieRating;
 import alg.cases.similarity.CaseSimilarity;
 import alg.cases.similarity.JaccardCaseSimilarity;
 import alg.cases.similarity.OverlapCaseSimilarity;
@@ -34,6 +36,29 @@ public class Execute {
         Evaluator eval = new Evaluator(recommender, reader);
 
         System.out.println("topN\tRecall\tPrecision");
+        for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
+            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
+    }
+
+    /**
+     * Display movies ratings already computed in the dataset reader
+     *
+     * @param reader
+     */
+    static void displayMoviesRatings(DatasetReader reader) {
+        System.out.println("**** Movies ratings ***");
+        Map<Integer, MovieRating> moviesRatings = reader.getMoviesRatings();
+        for (MovieRating movieRating : moviesRatings.values()) {
+            System.out.println(movieRating);
+        }
+    }
+
+    static void evaluateAndPrintResult(String type, DatasetReader reader, Recommender recommender) {
+        // evaluate the case-based recommender
+        Evaluator eval = new Evaluator(recommender, reader);
+
+        System.out.println(type);
+        System.out.println("topN\tRecall\tPrecision for " + type);
         for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
             System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
     }

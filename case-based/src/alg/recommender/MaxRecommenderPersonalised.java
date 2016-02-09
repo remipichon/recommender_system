@@ -9,19 +9,20 @@
 package alg.recommender;
 
 import alg.cases.similarity.CaseSimilarity;
+import util.FeaturesWeight;
 import util.ScoredThingDsc;
 import util.reader.DatasetReader;
 
 import java.util.*;
 
-public class MaxRecommender extends RecommenderNonPersonalised {
+public class MaxRecommenderPersonalised extends RecommenderPersonalised {
     /**
      * constructor - creates a new MaxRecommender object
      *
      * @param caseSimilarity - an object to compute case similarity
      * @param reader         - an object to store user profile data and movie metadata
      */
-    public MaxRecommender(final CaseSimilarity caseSimilarity, final DatasetReader reader) {
+    public MaxRecommenderPersonalised(final CaseSimilarity caseSimilarity, final DatasetReader reader) {
         super(caseSimilarity, reader);
     }
 
@@ -37,6 +38,14 @@ public class MaxRecommender extends RecommenderNonPersonalised {
 
         // get the target user profile
         Map<Integer, Double> profile = reader.getUserProfile(userId);
+        //TODO task3 calculer les poids ici
+
+        //task 3: W = 1- #distinct genres /(#profilemovies)
+
+        double genresWeight = 0;
+        double directorsWeight = 0;
+
+        FeaturesWeight featuresWeight = new FeaturesWeight(directorsWeight,genresWeight);
 
         // get the ids of all recommendation candidate cases
         Set<Integer> candidateIds = reader.getCasebase().getIds();
@@ -49,7 +58,7 @@ public class MaxRecommender extends RecommenderNonPersonalised {
 
                 // iterate over all the target user profile cases and compute a score for the current recommendation candidate case
                 for (Integer id : profile.keySet()) {
-                    Double sim = super.getCaseSimilarity(candidateId, id);
+                    Double sim = super.getCaseSimilarity(featuresWeight,candidateId, id);
                     if (sim != null && sim > max)
                         max = sim;
 

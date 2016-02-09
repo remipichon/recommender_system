@@ -11,6 +11,10 @@ package alg.cases.similarity;
 import alg.cases.Case;
 import alg.cases.MovieCase;
 import alg.feature.similarity.FeatureSimilarity;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import util.FeaturesWeight;
+
+import java.util.Map;
 
 public class OverlapCaseAndSymetricSimilarity implements CaseSimilarity {
     final static double GENRE_WEIGHT = 1; // the weight for feature genres
@@ -59,5 +63,10 @@ public class OverlapCaseAndSymetricSimilarity implements CaseSimilarity {
         double below = GENRE_WEIGHT + DIRECTOR_WEIGHT + ACTOR_WEIGHT + MEAN_RATING_WEIGHT + POPULARITY_WEIGHT;
 
         return (below > 0) ? above / below : 0;
+    }
+
+    @Override
+    public double getSimilarity(FeaturesWeight featuresWeight, Case c1, Case c2) {
+        throw new NotImplementedException();
     }
 }
