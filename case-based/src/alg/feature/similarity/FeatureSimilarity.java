@@ -40,6 +40,24 @@ public class FeatureSimilarity {
         return (min > 0) ? intersection * 1.0 / min : 0;
     }
 
+
+    /**
+     * computes distinct similarity between set feature values
+     *
+     * @param s1 - the first feature value
+     * @param s2 - the second feature value
+     * @return the distinct between set feature values
+     */
+    public static int distinct(final Set<String> s1, final Set<String> s2) {
+        int distinct = 0;
+
+        for (String str : s1)
+            if (!s2.contains(str))
+                distinct++;
+
+       return distinct;
+    }
+
     /**
      * Use if higher candidate feature value is desired
      *

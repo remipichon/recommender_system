@@ -49,6 +49,9 @@ public class OverlapCaseSimilarity implements CaseSimilarity {
 
     /**
      * computes the similarity between two cases using non static features weight
+     *
+     * task 3: W = 1- #distinct genres /(#profilemovies)
+     *
      * @param featuresWeight - features weight to tweak features importance
      * @param c1 - the first case
      * @param c2 - the second case
@@ -60,8 +63,9 @@ public class OverlapCaseSimilarity implements CaseSimilarity {
         MovieCase m2 = (MovieCase) c2;
 
         double above = featuresWeight.getGenresWeight() * FeatureSimilarity.overlap(m1.getGenres(), m2.getGenres()) +
-                featuresWeight.getDirectorsWeight() * FeatureSimilarity.overlap(m1.getDirectors(), m2.getDirectors()) +
-                ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors());
+                featuresWeight.getDirectorsWeight() * FeatureSimilarity.overlap(m1.getDirectors(), m2.getDirectors())
+                + ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors())
+        ;
 
         double below = featuresWeight.getGenresWeight() + featuresWeight.getDirectorsWeight() + ACTOR_WEIGHT;
 

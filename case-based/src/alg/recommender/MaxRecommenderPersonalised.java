@@ -27,7 +27,7 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
     }
 
     /**
-     * returns a ranked list of recommended case ids
+     * returns a ranked list of recommended case ids with dynamic weight according to user profiles
      *
      * @param userId - the id of the target user
      * @param reader - an object to store user profile data and movie metadata
@@ -38,14 +38,6 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
 
         // get the target user profile
         Map<Integer, Double> profile = reader.getUserProfile(userId);
-        //TODO task3 calculer les poids ici
-
-        //task 3: W = 1- #distinct genres /(#profilemovies)
-
-        double genresWeight = 0;
-        double directorsWeight = 0;
-
-        FeaturesWeight featuresWeight = new FeaturesWeight(directorsWeight,genresWeight);
 
         // get the ids of all recommendation candidate cases
         Set<Integer> candidateIds = reader.getCasebase().getIds();
@@ -58,7 +50,8 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
 
                 // iterate over all the target user profile cases and compute a score for the current recommendation candidate case
                 for (Integer id : profile.keySet()) {
-                    Double sim = super.getCaseSimilarity(featuresWeight,candidateId, id);
+                    
+                    Double sim = super.getCaseSimilarity(profile,candidateId, id);
                     if (sim != null && sim > max)
                         max = sim;
 
