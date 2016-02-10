@@ -34,16 +34,16 @@ public class ExecuteTaskOne extends Execute{
 
 
         recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResult(overlapCaseSimilarity, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
 
         recommender = new MaxRecommender(jaccardCaseSimilarity, reader);
-        evaluateAndPrintResult("jaccardCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResult(jaccardCaseSimilarity, "jaccardCaseSimilarity | MaxRecommender", reader, recommender);
 
         recommender = new MeanRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MeanRecommender", reader, recommender);
+        evaluateAndPrintResult(overlapCaseSimilarity, "overlapCaseSimilarity | MeanRecommender", reader, recommender);
 
         recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
-        evaluateAndPrintResult("jaccardCaseSimilarity | MeanRecommender", reader, recommender);
+        evaluateAndPrintResult(jaccardCaseSimilarity, "jaccardCaseSimilarity | MeanRecommender", reader, recommender);
 
 
     }

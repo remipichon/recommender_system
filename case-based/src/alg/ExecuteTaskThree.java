@@ -33,6 +33,6 @@ public class ExecuteTaskThree extends Execute{
 
 
         recommender = new MaxRecommenderPersonalised(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | dynamic directors & dynamic genres only", reader, recommender);
+        evaluateAndPrintResult(overlapCaseSimilarity,"overlapCaseSimilarity | MaxRecommender | dynamic directors & dynamic genres only", reader, recommender);
     }
 }

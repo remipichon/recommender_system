@@ -11,23 +11,29 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import alg.cases.Case;
+import alg.cases.similarity.CaseSimilarity;
+import alg.cases.similarity.OverlapCaseSimilarity;
 import util.reader.DatasetReader;
 import alg.recommender.Recommender;
 
 public class Evaluator 
 {
-	private Map<Integer,ArrayList<Integer>> recommendations; // stores the ranked list of recommended case ids for each test user
+    private final CaseSimilarity caseSimilarity;
+    private Map<Integer,ArrayList<Integer>> recommendations; // stores the ranked list of recommended case ids for each test user
 	private DatasetReader reader; // stores user profile data and movie metadata
 	
 	/**
 	 * constructor - creates a new Evaluator object
-	 * @param recommender - an object to define a case-based recommender
-	 * @param reader - an object to store user profile data and movie metadata
-	 */
-	public Evaluator(final Recommender recommender, final DatasetReader reader)
+     * @param recommender - an object to define a case-based recommender
+     * @param reader - an object to store user profile data and movie metadata
+     * @param overlapCaseSimilarity
+     */
+	public Evaluator(final Recommender recommender, final DatasetReader reader, CaseSimilarity caseSimilarity)
 	{
 		recommendations = new HashMap<Integer,ArrayList<Integer>>();
 		this.reader = reader;
+        this.caseSimilarity = caseSimilarity;
 		
 		int counter = 0;
 		for(Integer userId: reader.getTestIds())
@@ -37,6 +43,34 @@ public class Evaluator
 		}
 		System.out.println();
 	}
+
+    public double getDiversity(int topN){
+        double sumDiversity = 0;
+        Case c1;
+        Case c2;
+        int N;
+        double down, upper, userDiversity;
+
+        for(Integer userId: recommendations.keySet()) {
+            ArrayList<Integer> intersection = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN); //is integer a list of id ?
+
+            N = intersection.size();
+            down = N * (N - 1);
+
+            for (Integer movieId : intersection) {
+                c1 = reader.getCasebase().getCase(movieId);
+                for (Integer movieId2 : intersection) {
+                    if (movieId.equals(movieId2)) continue;
+                    c2 = reader.getCasebase().getCase(movieId2);
+
+                    upper = 1 - caseSimilarity.getSimilarity(c1, c2);
+                    userDiversity = upper / down;
+                    sumDiversity += userDiversity;
+                }
+            }
+        }
+        return sumDiversity / recommendations.keySet().size();
+    }
 	
 	/**
 	 * computes the mean precision (over all test users) for a given recommendation list size provided by the case-based recommender

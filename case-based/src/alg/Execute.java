@@ -33,7 +33,7 @@ public class Execute {
         Recommender recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
 
         // evaluate the case-based recommender
-        Evaluator eval = new Evaluator(recommender, reader);
+        Evaluator eval = new Evaluator(recommender, reader, jaccardCaseSimilarity);
 
         System.out.println("topN\tRecall\tPrecision");
         for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
@@ -53,13 +53,22 @@ public class Execute {
         }
     }
 
-    static void evaluateAndPrintResult(String type, DatasetReader reader, Recommender recommender) {
+    static void evaluateAndPrintResult(CaseSimilarity caseSimilarity,String type, DatasetReader reader, Recommender recommender) {
         // evaluate the case-based recommender
-        Evaluator eval = new Evaluator(recommender, reader);
+        Evaluator eval = new Evaluator(recommender, reader, caseSimilarity);
 
         System.out.println(type);
         System.out.println("topN\tRecall\tPrecision for " + type);
         for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
             System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
+    }
+
+    static void evaluateAndPrintResultForDiversity(CaseSimilarity caseSimilarity,Evaluator eval, String type, DatasetReader reader, Recommender recommender) {
+
+        System.out.println("** diversity **");
+        System.out.println("topN\tDiversity for " + type);
+        for (int topN = 5; topN <= 50; topN += 5) {//the size of the recommendation list
+            System.out.println(topN + "\t" + eval.getDiversity(topN));
+        }
     }
 }

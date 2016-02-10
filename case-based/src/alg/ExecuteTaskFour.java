@@ -32,27 +32,12 @@ public class ExecuteTaskFour extends Execute{
         recommender = new MaxRecommenderPersonalised(overlapCaseSimilarity, reader);
 
         // evaluate the case-based recommender
-        Evaluator eval = new Evaluator(recommender, reader);
+        Evaluator eval = new Evaluator(recommender, reader, overlapCaseSimilarity);
 
-        evaluateAndPrintResult(eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        //evaluateAndPrintResult(eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
 
-
-        evaluateAndPrintResultForDiversity(eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResultForDiversity(overlapCaseSimilarity, eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
     }
 
-    static void evaluateAndPrintResult(Evaluator eval, String type, DatasetReader reader, Recommender recommender) {
 
-        System.out.println(type);
-        System.out.println("topN\tRecall\tPrecision for " + type);
-        for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
-            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
-    }
-
-    static void evaluateAndPrintResultForDiversity(Evaluator eval, String type, DatasetReader reader, Recommender recommender) {
-
-        System.out.println(type);
-        System.out.println("topN\tRecall\tPrecision for " + type);
-        for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
-            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
-    }
 }

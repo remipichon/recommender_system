@@ -35,7 +35,7 @@ public class ExecuteTaskTwo extends Execute{
 
         overlapCaseSimilarity = new OverlapCaseAndSymetricSimilarity(1, 1);//popularityWeight | meanRatingWeight
         recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender | movie popularity symmetric | movie mean symmetric", reader, recommender);
+        evaluateAndPrintResult(overlapCaseSimilarity, "overlapCaseSimilarity | MaxRecommender | movie popularity symmetric | movie mean symmetric", reader, recommender);
 
     }
 
