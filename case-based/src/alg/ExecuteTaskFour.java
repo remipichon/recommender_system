@@ -30,12 +30,25 @@ public class ExecuteTaskFour extends Execute{
 
 
         recommender = new MaxRecommenderPersonalised(overlapCaseSimilarity, reader);
-        evaluateAndPrintResultForDiversity("overlapCaseSimilarity | MaxRecommender", reader, recommender);
-    }
 
-    static void evaluateAndPrintResultForDiversity(String type, DatasetReader reader, Recommender recommender) {
         // evaluate the case-based recommender
         Evaluator eval = new Evaluator(recommender, reader);
+
+        evaluateAndPrintResult(eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
+
+
+        evaluateAndPrintResultForDiversity(eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
+    }
+
+    static void evaluateAndPrintResult(Evaluator eval, String type, DatasetReader reader, Recommender recommender) {
+
+        System.out.println(type);
+        System.out.println("topN\tRecall\tPrecision for " + type);
+        for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
+            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
+    }
+
+    static void evaluateAndPrintResultForDiversity(Evaluator eval, String type, DatasetReader reader, Recommender recommender) {
 
         System.out.println(type);
         System.out.println("topN\tRecall\tPrecision for " + type);
