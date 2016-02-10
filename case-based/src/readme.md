@@ -36,4 +36,19 @@ For one user, if the movie has a lots of genres,  '#distinct genres /(#profilemo
 Which means that the more a movie has genres, the less its genre is usefull. Easily understandable
 
 
+# Task 4
+
+how to evaluate diversity
+=> CaseSimiliraty between recommendation dans l'ordre de la liste triée de sortie
+graph : similarity to user = f ( diversity with all others element )
+
+
+http://hci.epfl.ch/teaching/advanced-hci/slides/Diversity%20vs%20Accuracy.pdf
+similarity = f ( size )
+
+
+java impl
+https://github.com/ykaragol/checkersmaster/blob/master/CheckersMaster/src/checkers/algorithm/GreedyAlgorithm.java
+
+
   
