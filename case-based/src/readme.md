@@ -40,13 +40,6 @@ Which means that the more a movie has genres, the less its genre is usefull. Eas
 
 new recommeder class : instead of pick 10, we pick 100 (*10) and pick the 10 most diverstity
 
-how to evaluate diversity
-=> CaseSimiliraty between recommendation dans l'ordre de la liste triée de sortie
-graph : similarity to user = f ( diversity with all others element )
-
-
-http://hci.epfl.ch/teaching/advanced-hci/slides/Diversity%20vs%20Accuracy.pdf
-similarity = f ( size )
 
 
 distribution of diversity
@@ -59,6 +52,9 @@ https://github.com/ykaragol/checkersmaster/blob/master/CheckersMaster/src/checke
 C is our set
 k 10
 b 100
+
+distribution :
+#user = f ( F1metric ) ou plutot l'inverse ?
 
 
 

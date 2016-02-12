@@ -63,6 +63,14 @@ public class Execute {
             System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
     }
 
+    static void evaluateAndPrintResult(Evaluator eval, CaseSimilarity caseSimilarity,String type, DatasetReader reader, Recommender recommender) {
+        // evaluate the case-based recommender
+        System.out.println(type);
+        System.out.println("topN\tRecall\tPrecision for " + type);
+        for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
+            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
+    }
+
     static void evaluateAndPrintResultForDiversity(CaseSimilarity caseSimilarity,Evaluator eval, String type, DatasetReader reader, Recommender recommender) {
 
         System.out.println("** diversity **");

@@ -9,6 +9,7 @@ package alg;
 
 import alg.cases.similarity.CaseSimilarity;
 import alg.cases.similarity.OverlapCaseSimilarity;
+import alg.recommender.MaxRecommenderDiversity;
 import alg.recommender.MaxRecommenderPersonalised;
 import alg.recommender.Recommender;
 import util.evaluator.Evaluator;
@@ -29,14 +30,14 @@ public class ExecuteTaskFour extends Execute{
         Recommender recommender;
 
 
-        recommender = new MaxRecommenderPersonalised(overlapCaseSimilarity, reader);
+        recommender = new MaxRecommenderDiversity(overlapCaseSimilarity, reader);
 
         // evaluate the case-based recommender
         Evaluator eval = new Evaluator(recommender, reader, overlapCaseSimilarity);
 
-        //evaluateAndPrintResult(eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResult(eval, overlapCaseSimilarity, "overlapCaseSimilarity | MaxRecommender | diversity random recommendations", reader, recommender);
 
-        evaluateAndPrintResultForDiversity(overlapCaseSimilarity, eval, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResultForDiversity(overlapCaseSimilarity, eval, "overlapCaseSimilarity | MaxRecommender | diversity random recommendations", reader, recommender);
     }
 
 
