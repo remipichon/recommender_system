@@ -50,16 +50,10 @@ public class MaxRecommenderPersonalised extends RecommenderPersonalised {
         Set<String> distinctUserGenres = new HashSet<String>();
         Set<String> distinctUserDirectors = new HashSet<String>();
 
-//        List<String> allUserGenres = new ArrayList<String>();
-//        List<String> allUserDirectors = new ArrayList<String>();
-
         for (Integer movieId : profile.keySet()) {
             movie = (MovieCase) reader.getCasebase().getCase(movieId);
             distinctUserGenres.addAll(movie.getGenres());
             distinctUserDirectors.addAll(movie.getDirectors());
-
-//            allUserGenres.addAll(movie.getGenres());
-//            allUserDirectors.addAll(movie.getDirectors());
         }
 
         // #distinct genres

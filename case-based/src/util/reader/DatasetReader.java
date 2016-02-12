@@ -11,14 +11,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.StringTokenizer;
+import java.util.*;
 
 
 import alg.casebase.Casebase;
+import alg.cases.Case;
 import alg.cases.MovieCase;
 import alg.cases.MovieRating;
 
@@ -27,6 +24,7 @@ public class DatasetReader {
     private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
     private Map<Integer, Map<Integer, Double>> testProfiles; // stores test user profiles
+    private HashMap<String,Integer> coOccuringGenre; // store co-occuring genres frequency <two genre sort alphabetically then concatened, frequency>
 
     /**
      * constructor - creates a new DatasetReader object
@@ -40,6 +38,28 @@ public class DatasetReader {
         moviesRatings = computeMovieRating(userProfiles);
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
+        coOccuringGenre = computeCoOccuringGenre();
+    }
+
+    private HashMap<String, Integer> computeCoOccuringGenre() {
+        coOccuringGenre = new HashMap<String, Integer>();
+        for (Case movieCase : cb.getCb().values()) {
+            List<String> genres = new ArrayList<String>(((MovieCase)movieCase).getGenres());
+            Collections.sort(genres);
+
+            for (int i = 0; i < genres.size(); i++) {
+                String genre1 = genres.get(i);
+                for (int j = i + 1; j < genres.size(); j++) {
+                    String genre2 = genres.get(j);
+                    String occurrence = genre1 + "-" + genre2;
+                    if(!coOccuringGenre.containsKey(occurrence)) coOccuringGenre.put(occurrence,0);
+                    coOccuringGenre.put(occurrence,coOccuringGenre.get(occurrence) + 1);
+                }
+            }
+        }
+
+
+        return coOccuringGenre;
     }
 
     /**
@@ -198,5 +218,9 @@ public class DatasetReader {
         }
 
         return ratingPerMovies;
+    }
+
+    public HashMap<String, Integer> getCoOccuringGenre() {
+        return coOccuringGenre;
     }
 }

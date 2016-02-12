@@ -7,7 +7,9 @@
 
 package util.evaluator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import alg.cases.Case;
 import alg.cases.similarity.CaseSimilarity;
@@ -17,23 +19,18 @@ import alg.recommender.Recommender;
 
 public class Evaluator 
 {
-    private final CaseSimilarity caseSimilarity;
-    private Map<Integer,ArrayList<Integer>> recommendations; // stores the ranked list of recommended case ids for each test user
+	private Map<Integer,ArrayList<Integer>> recommendations; // stores the ranked list of recommended case ids for each test user
 	private DatasetReader reader; // stores user profile data and movie metadata
-    private Map<String, ArrayList<Integer>> intersectionPerTopN;
-
-    /**
+	
+	/**
 	 * constructor - creates a new Evaluator object
-     * @param recommender - an object to define a case-based recommender
-     * @param reader - an object to store user profile data and movie metadata
-     * @param overlapCaseSimilarity
-     */
-	public Evaluator(final Recommender recommender, final DatasetReader reader, CaseSimilarity caseSimilarity)
+	 * @param recommender - an object to define a case-based recommender
+	 * @param reader - an object to store user profile data and movie metadata
+	 */
+	public Evaluator(final Recommender recommender, final DatasetReader reader)
 	{
 		recommendations = new HashMap<Integer,ArrayList<Integer>>();
-        intersectionPerTopN = new HashMap<String, ArrayList<Integer>>();
 		this.reader = reader;
-        this.caseSimilarity = caseSimilarity;
 		
 		int counter = 0;
 		for(Integer userId: reader.getTestIds())
@@ -43,7 +40,7 @@ public class Evaluator
 		}
 		System.out.println();
 	}
-
+	
     public double getDiversity(int topN){
         double sumDiversity = 0;
         Case c1;
@@ -51,9 +48,11 @@ public class Evaluator
         int N;
         double down, upper, userDiversity;
 
+        CaseSimilarity caseSimilarity = new OverlapCaseSimilarity();
+
         System.out.println("user diversity");
         for(Integer userId: recommendations.keySet()) {
-            ArrayList<Integer> intersection = getIntersection(userId,recommendations.get(userId), reader.getTestProfile(userId), topN); //is integer a list of id ?
+            ArrayList<Integer> intersection = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN); //is integer a list of id ?
 
             N = intersection.size();
             if(N == 0){
@@ -84,7 +83,7 @@ public class Evaluator
 
         return sumDiversity / recommendations.keySet().size();
     }
-	
+
 	/**
 	 * computes the mean precision (over all test users) for a given recommendation list size provided by the case-based recommender
 	 * @param topN - the size of the recommendation list
@@ -96,7 +95,7 @@ public class Evaluator
 		
 		for(Integer userId: recommendations.keySet())
 		{	
-			int size = getIntersection(userId,recommendations.get(userId), reader.getTestProfile(userId), topN).size();
+			int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
 			sum += (topN > 0) ? size * 1.0 / topN : 0;
 		}
 		
@@ -114,7 +113,7 @@ public class Evaluator
 		
 		for(Integer userId: recommendations.keySet())
 		{	
-			int size = getIntersection(userId,recommendations.get(userId), reader.getTestProfile(userId), topN).size();
+			int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
 			sum += (reader.getTestProfile(userId).size() > 0) ? size * 1.0 / reader.getTestProfile(userId).size() : 0;
 		}
 		
@@ -123,54 +122,23 @@ public class Evaluator
 	
 	/**
 	 * gets the intersection between two sets
-	 * @param recommendations - the ranked list of recommended case ids
+	 * @param recs - the ranked list of recommended case ids
 	 * @param testProfile - the user test profile
 	 * @param topN - the size of the recommendation list
 	 * @return the intersection between two sets
 	 */
-	private ArrayList<Integer> getIntersection(Integer userId, final ArrayList<Integer> recommendations, final Map<Integer,Double> testProfile, final int topN)
+	private ArrayList<Integer> getIntersection(final ArrayList<Integer> recs, final Map<Integer,Double> testProfile, final int topN)
 	{
-
-        if(intersectionPerTopN.containsKey(topN+userId))
-            return intersectionPerTopN.get(topN+userId);
-
-        //filter to get only the most recommendable
-
-
-        int threshold = 10;
-        //we take threshold times more recommendations
-        ArrayList<Integer> recommendationsBigSet = new ArrayList<Integer>(recommendations.subList(0,Math.min(recommendations.size() ,topN) * threshold));
-
-        //we filter to get 10 recommendations which maximise diversity
-
-        //les topN derniers
-        //recommendationsFiltered = new ArrayList<Integer>(recommendationsBigSet.subList(recommendationsBigSet.size()-topN,recommendationsBigSet.size()));
-
-        //topN random
-        Random randomGenerator = new Random();
-        int randomIndex;
-//        Integer randomRecommendation;
-        List<Integer> recommendationsFiltered = new ArrayList<Integer>();
-
-        for (int i = 0; i < topN; i++) {
-            randomIndex = randomGenerator.nextInt(recommendationsBigSet.size());
-            Integer randomRecommendation = recommendationsBigSet.get(randomIndex);
-            recommendationsFiltered.add(randomRecommendation);
-            recommendationsBigSet.remove(randomIndex);
-        }
-
-
-        ArrayList<Integer> intersection = new ArrayList<Integer>();
-        for(int i = 0; i < recommendationsFiltered.size() && i < topN * 10; i++) //ten times more recommendation
+		ArrayList<Integer> intersection = new ArrayList<Integer>();
+		for(int i = 0; i < recs.size() && i < topN; i++)
 		{
-			Integer id = recommendationsFiltered.get(i);
+			Integer id = recs.get(i);
 			if(testProfile.containsKey(id))
 				intersection.add(id);
 		}
 
-
-        intersectionPerTopN.put(""+topN+userId,intersection);
-
 		return intersection;
-	}	
+	}
+
+
 }

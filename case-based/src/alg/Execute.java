@@ -8,6 +8,7 @@
 package alg;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.Map;
 
 import alg.cases.MovieRating;
@@ -33,7 +34,7 @@ public class Execute {
         Recommender recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
 
         // evaluate the case-based recommender
-        Evaluator eval = new Evaluator(recommender, reader, jaccardCaseSimilarity);
+        Evaluator eval = new Evaluator(recommender, reader);
 
         System.out.println("topN\tRecall\tPrecision");
         for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
@@ -53,9 +54,22 @@ public class Execute {
         }
     }
 
+    /**
+     * Display co-occurring genres frequency computed in the dataset reader
+     *
+     * @param reader
+     */
+    static void displayCoOccurringGenre(DatasetReader reader){
+        System.out.println("**** Co-occurring genres frequency ***");
+        HashMap<String, Integer> coOccuringGenre = reader.getCoOccuringGenre();
+        for (Map.Entry<String, Integer> frequencyByGenre : coOccuringGenre.entrySet()) {
+            System.out.println(frequencyByGenre.getKey()+"\t"+frequencyByGenre.getValue());
+        }
+    }
+
     static void evaluateAndPrintResult(CaseSimilarity caseSimilarity,String type, DatasetReader reader, Recommender recommender) {
         // evaluate the case-based recommender
-        Evaluator eval = new Evaluator(recommender, reader, caseSimilarity);
+        Evaluator eval = new Evaluator(recommender, reader);
 
         System.out.println(type);
         System.out.println("topN\tRecall\tPrecision for " + type);
