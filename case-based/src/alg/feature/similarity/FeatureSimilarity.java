@@ -7,7 +7,9 @@
 
 package alg.feature.similarity;
 
-import java.util.Set;
+import util.reader.DatasetReader;
+
+import java.util.*;
 
 public class FeatureSimilarity {
     /**
@@ -37,6 +39,45 @@ public class FeatureSimilarity {
                 intersection++;
 
         int min = (s1.size() < s2.size()) ? s1.size() : s2.size();
+        return (min > 0) ? intersection * 1.0 / min : 0;
+    }
+
+    /**
+     * computes overlap similarity between set feature values and check if genres likes each other
+     *
+     * @param genres1 - the first feature value
+     * @param genres2 - the second feature value
+     * @return the similarity between set feature values
+     */
+    public static double overlapImproved(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
+        int intersection = 0;
+
+        for (String genre1 : genres1) {
+
+            if (genres2.contains(genre1))
+                intersection++;
+            else {
+                //perhaps genres are related
+                for (String genre : genres2) {
+                    //first, sort genres
+                    List<String> sorted = new ArrayList<String>(Arrays.asList(genre1,genre));
+                    Collections.sort(sorted);
+
+                    //then get confidence if exist
+                    Double confidence = reader.getConfidenceXY().get(sorted.get(0) + "_" + sorted.get(1));
+                    if(confidence == null) continue;
+
+                    //if the two genres are confident, it equal to a match
+                    if(confidence > 0.9) {
+                        intersection++;
+                        break;
+                    }
+
+                }
+            }
+        }
+
+        int min = (genres1.size() < genres2.size()) ? genres1.size() : genres2.size();
         return (min > 0) ? intersection * 1.0 / min : 0;
     }
 

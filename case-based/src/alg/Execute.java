@@ -54,17 +54,35 @@ public class Execute {
         }
     }
 
+
+
     /**
-     * Display co-occurring genres frequency computed in the dataset reader
+     * Display confidence and frequency between co-occurring genres frequency computed in the dataset reader
      *
      * @param reader
      */
-    static void displayCoOccurringGenre(DatasetReader reader){
-        System.out.println("**** Co-occurring genres frequency ***");
-        HashMap<String, Integer> coOccuringGenre = reader.getCoOccuringGenre();
-        for (Map.Entry<String, Integer> frequencyByGenre : coOccuringGenre.entrySet()) {
-            System.out.println(frequencyByGenre.getKey()+"\t"+frequencyByGenre.getValue());
+    static void displayCoOccurringGenreFrequencyAndConfidence(DatasetReader reader){
+        System.out.println("**** Confidence and frequency between co-occurring genres frequency ***");
+        HashMap<String, Double> coOccuringGenre = reader.getCoOccuringGenre();
+        for (Map.Entry<String, Double> frequencyByGenre : coOccuringGenre.entrySet()) {
+            System.out.println(frequencyByGenre.getKey()+"\t"+frequencyByGenre.getValue()+"\t"+
+                    reader.getConfidenceXY().get(
+                            frequencyByGenre.getKey()));
         }
+    }
+
+    /**
+     * Display genres frequency
+     *
+     * @param reader
+     */
+    static void displayGenrePercentageOfTransaction(DatasetReader reader){
+        System.out.println("**** genres percentage of transaction ***");
+        HashMap<String, Double> supportX = reader.getSupportX();
+        for (Map.Entry<String, Double> stringDoubleEntry : supportX.entrySet()) {
+            System.out.println(stringDoubleEntry.getKey()+"\t"+stringDoubleEntry.getValue());
+        }
+
     }
 
     static void evaluateAndPrintResult(CaseSimilarity caseSimilarity,String type, DatasetReader reader, Recommender recommender) {

@@ -8,6 +8,7 @@
 package alg;
 
 import alg.cases.similarity.CaseSimilarity;
+import alg.cases.similarity.OverlapCaseGenreCoOccurringSimilarity;
 import alg.cases.similarity.OverlapCaseSimilarity;
 import alg.recommender.MaxRecommender;
 import alg.recommender.MaxRecommenderPersonalised;
@@ -24,10 +25,11 @@ public class ExecuteTaskFive extends Execute{
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
 
-        //displayCoOccurringGenre(reader);
+//        displayCoOccurringGenreFrequencyAndConfidence(reader);
+        displayGenrePercentageOfTransaction(reader);
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
-        CaseSimilarity overlapCaseSimilarity = new OverlapCaseSimilarity();
+        CaseSimilarity overlapCaseSimilarity = new OverlapCaseGenreCoOccurringSimilarity(reader);
         Recommender recommender;
 
 
