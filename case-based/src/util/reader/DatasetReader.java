@@ -18,11 +18,13 @@ import alg.casebase.Casebase;
 import alg.cases.Case;
 import alg.cases.MovieCase;
 import alg.cases.MovieRating;
+import util.Stopwords;
 
 public class DatasetReader {
     private Casebase cb; // stores case objects
     private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
+    private Map<Integer, String> moviesReviews; // stores training movies reviews <movieId, concatenatedReviews>
     private Map<Integer, Map<Integer, Double>> testProfiles; // stores test user profiles
     private HashMap<String, Double> coOccuringGenre; // store co-occuring genres frequency <two genre sort alphabetically then concatened, frequency>
     private HashMap<String, Double> genreFrequencies; // store  genres frequency <genre name, frequency>
@@ -42,6 +44,7 @@ public class DatasetReader {
      */
     public DatasetReader(final String trainFile, final String testFile, final String movieFile) {
         userProfiles = readUserProfiles(trainFile);
+        moviesReviews = concatMovieReview(trainFile);
         moviesRatings = computeMovieRating(userProfiles);
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
@@ -175,6 +178,49 @@ public class DatasetReader {
 
         return map;
     }
+
+
+    /**
+     *
+     * @param filename - the path and filename of the file containing the user profiles
+     * @return for each movie, concat all review, remove punctuation and convert all to lower case
+     */
+    private Map<Integer, String> concatMovieReview(final String filename) {
+        Map<Integer, String> result = new HashMap<Integer, String>();
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
+            String line;
+            br.readLine(); // read in header line
+
+            while ((line = br.readLine()) != null) {
+                StringTokenizer st = new StringTokenizer(line, "\t");
+                if (st.countTokens() != 4) {
+                    System.out.println("Error reading from file \"" + filename + "\"");
+                    System.exit(1);
+                }
+
+                Integer userId = new Integer(st.nextToken());
+                Integer movieId = new Integer(st.nextToken());
+                Double rating = new Double(st.nextToken());
+                String review = st.nextToken();
+
+                if(!result.containsKey(movieId)) result.put(movieId,"");
+                String lowerCaseWithoutPunctuation = review.replaceAll("[^a-zA-Z ]", "").toLowerCase();
+                String stopAndStemWords = Stopwords.removeStemmedStopWords(lowerCaseWithoutPunctuation);
+                result.put(movieId, result.get(movieId).concat(" ").concat(stopAndStemWords));
+
+            }
+
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(0);
+        }
+
+        return result;
+    }
+
 
     /**
      * creates the casebase
