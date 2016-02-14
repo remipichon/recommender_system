@@ -205,10 +205,16 @@ public class DatasetReader {
                 Double rating = new Double(st.nextToken());
                 String review = st.nextToken();
 
+                //System.out.println("******");
                 if(!result.containsKey(movieId)) result.put(movieId,"");
+//                System.out.println(review);
                 String lowerCaseWithoutPunctuation = review.replaceAll("[^a-zA-Z ]", "").toLowerCase();
-                String stopAndStemWords = Stopwords.removeStemmedStopWords(lowerCaseWithoutPunctuation);
-                result.put(movieId, result.get(movieId).concat(" ").concat(stopAndStemWords));
+//                System.out.println(lowerCaseWithoutPunctuation);
+                String stopWords = Stopwords.removeStopWords(lowerCaseWithoutPunctuation);
+//                System.out.println(stopWords);
+                String stemWords = Stopwords.stemString(stopWords);
+//                System.out.println(stopWords);
+                result.put(movieId, result.get(movieId).concat(" ").concat(stemWords));
 
             }
 
