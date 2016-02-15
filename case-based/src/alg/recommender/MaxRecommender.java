@@ -45,10 +45,12 @@ public class MaxRecommender extends RecommenderNonPersonalised {
         for (Integer candidateId : candidateIds) {
             if (!profile.containsKey(candidateId)) // check that the candidate case is not already contained in the user profile
             {
+                System.out.print("_");
                 double max = 0;
 
                 // iterate over all the target user profile cases and compute a score for the current recommendation candidate case
                 for (Integer id : profile.keySet()) {
+                    System.out.print("*");
                     Double sim = super.getCaseSimilarity(candidateId, id);
                     if (sim != null && sim > max)
                         max = sim;

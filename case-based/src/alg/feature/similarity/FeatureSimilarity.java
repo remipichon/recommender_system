@@ -152,7 +152,7 @@ public class FeatureSimilarity {
         HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
         HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
 
-        //List<List<String>> documents = Arrays.asList(candidateWords, targetWords);
+        List<List<String>> documents = Arrays.asList(candidateWords, targetWords);
 
         TFIDFCalculator calculator = new TFIDFCalculator();
 
@@ -161,14 +161,14 @@ public class FeatureSimilarity {
         double denominatorCandidate = 0;
         double denominatorTarget = 0;
 
-//
-//        for (String word : candidateWords) {
-//            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, documents, word));
-//        }
-//
-//        for (String word : targetWords) {
-//            targetFIDF.put(word, calculator.tfIdf(targetWords, documents, word));
-//        }
+
+        for (String word : candidateWords) {
+            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, documents, word));
+        }
+
+        for (String word : targetWords) {
+            targetFIDF.put(word, calculator.tfIdf(targetWords, documents, word));
+        }
 
         //compute numerator
         for (String candidateWord : candidateWords) { //we could have took targetWords

@@ -51,43 +51,43 @@ public class DatasetReader {
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
         computeCoOccuringGenre();
-        computeTFIDF();
+        //computeTFIDF();
     }
 
-    private void computeTFIDF() {
-
-        List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
-        List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
-        List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
-       // List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
-
-        TFIDFCalculator calculator = new TFIDFCalculator();
-        double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
-
-
-        List<String> candidateWords = Arrays.asList(candidate.split(" "));//get every words from candidate
-        List<String> targetWords = Arrays.asList(candidate.split(" "));//get every words from target
-
-        HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
-        HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
-
-        List<List<String>> allReview = Arrays.asList(candidateWords, targetWords);
-
-        TFIDFCalculator calculator = new TFIDFCalculator();
-
-        double numerator = 0;
-        double denominator = 0;
-        double denominatorCandidate = 0;
-        double denominatorTarget = 0;
-
-
-        for (String word : candidateWords) {
-            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, allReviewWord, word));
-        }
-
-
-
-    }
+//    private void computeTFIDF() {
+//
+//        List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
+//        List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
+//        List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
+//       // List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
+//
+//        TFIDFCalculator calculator = new TFIDFCalculator();
+//        double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
+//
+//
+//        List<String> candidateWords = Arrays.asList(candidate.split(" "));//get every words from candidate
+//        List<String> targetWords = Arrays.asList(candidate.split(" "));//get every words from target
+//
+//        HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
+//        HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
+//
+//        List<List<String>> allReview = Arrays.asList(candidateWords, targetWords);
+//
+//        TFIDFCalculator calculator = new TFIDFCalculator();
+//
+//        double numerator = 0;
+//        double denominator = 0;
+//        double denominatorCandidate = 0;
+//        double denominatorTarget = 0;
+//
+//
+//        for (String word : candidateWords) {
+//            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, allReviewWord, word));
+//        }
+//
+//
+//
+//    }
 
     private void computeCoOccuringGenre() {
         coOccuringGenre = new HashMap<String, Double>();

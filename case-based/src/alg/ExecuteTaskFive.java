@@ -26,7 +26,7 @@ public class ExecuteTaskFive extends Execute{
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
 
 //        displayCoOccurringGenreFrequencyAndConfidence(reader);
-        displayGenrePercentageOfTransaction(reader);
+        //displayGenrePercentageOfTransaction(reader);
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
         CaseSimilarity overlapCaseSimilarity = new OverlapCaseGenreCoOccurringSimilarity(reader);
