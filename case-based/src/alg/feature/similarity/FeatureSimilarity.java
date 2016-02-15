@@ -51,7 +51,7 @@ public class FeatureSimilarity {
      * @return the similarity between set feature values
      */
     public static double overlapImproved(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
-        int intersection = 0;
+        double intersection = 0;
 
         for (String genre1 : genres1) {
 
@@ -70,7 +70,7 @@ public class FeatureSimilarity {
 
                     //if the two genres are confident, it equal to a match
                     if(confidence > 0.9) {
-                        intersection++;
+                        intersection = intersection + confidence;
                         break;
                     }
 

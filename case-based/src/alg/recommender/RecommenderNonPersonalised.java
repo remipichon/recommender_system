@@ -37,7 +37,7 @@ public abstract class RecommenderNonPersonalised extends Recommender{
                         matrix.addElement(rowId, colId, sim);
                 }
             }
-            System.out.print("{");
+            //System.out.print("{");
         }
 
         System.out.println("Recommender constructor ok");
