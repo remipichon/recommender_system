@@ -35,7 +35,8 @@ public class Evaluator
 		int counter = 0;
 		for(Integer userId: reader.getTestIds())
 		{
-			if(++counter %100 == 0) System.out.print(".");
+            if(++counter %100 == 0) System.out.print(".");
+            System.out.print("+");
 			recommendations.put(userId, recommender.getRecommendations(userId, reader));
 		}
 		System.out.println();

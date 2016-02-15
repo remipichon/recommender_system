@@ -19,6 +19,8 @@ public class MovieCase implements Case {
     private Set<String> actors; // the lead actors
     private Integer popularity; //the popularity (rating count over all users rating)
     private Double meanRating; //the mean rating over all users rating
+    private String reviews; //all concatenated reviews (stop word, stem words, lower case, without punctuation)
+
 
     /**
      * constructor - creates a new MovieCase object
@@ -46,11 +48,12 @@ public class MovieCase implements Case {
      * @param meanRating - the mean rating over all users rating
      * @param popularity - the popularity (rating count over all users rating)
      */
-    public MovieCase(final Integer id, final String title, final ArrayList<String> genres, final ArrayList<String> directors, final ArrayList<String> actors, final Double meanRating, final Integer popularity) {
+    public MovieCase(final Integer id, final String title, final ArrayList<String> genres, final ArrayList<String> directors, final ArrayList<String> actors, final Double meanRating, final Integer popularity, final String reviews) {
         this(id);
         this.title = title;
         this.popularity = popularity;
         this.meanRating = meanRating;
+        this.reviews = reviews;
 
         for (String genre : genres)
             this.genres.add(genre);
@@ -61,6 +64,7 @@ public class MovieCase implements Case {
         for (String actor : actors)
             this.actors.add(actor);
     }
+
 
     /**
      * @returns the case id
@@ -109,6 +113,13 @@ public class MovieCase implements Case {
      */
     public Double getMeanRating() {
         return meanRating;
+    }
+
+    /**
+     * @return all concatenated reviews
+     */
+    public String getReviews() {
+        return reviews;
     }
 
     /**

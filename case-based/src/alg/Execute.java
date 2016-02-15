@@ -111,4 +111,15 @@ public class Execute {
             System.out.println(topN + "\t" + eval.getDiversity(topN));
         }
     }
+
+
+    static void displayMovieReview(DatasetReader reader){
+        Map<Integer, String> moviesReviews = reader.getMoviesReviews();
+
+        for (String s : moviesReviews.values()) {
+            System.out.println("******");
+            System.out.println(s);
+        }
+
+    }
 }

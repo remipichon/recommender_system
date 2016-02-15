@@ -19,6 +19,7 @@ import alg.cases.Case;
 import alg.cases.MovieCase;
 import alg.cases.MovieRating;
 import util.Stopwords;
+import util.TFIDFCalculator;
 
 public class DatasetReader {
     private Casebase cb; // stores case objects
@@ -33,6 +34,7 @@ public class DatasetReader {
     private HashMap<String, Double> supportXY; // percentage of movies which contain X and Y
     private HashMap<String, Double> supportNotXY; // percentage of movies which contain not X but Y
     private HashMap<String, Double> confidenceXY;
+    private List<String> allReviewWord;
 
 
     /**
@@ -49,6 +51,42 @@ public class DatasetReader {
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
         computeCoOccuringGenre();
+        computeTFIDF();
+    }
+
+    private void computeTFIDF() {
+
+        List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
+        List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
+        List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
+       // List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
+
+        TFIDFCalculator calculator = new TFIDFCalculator();
+        double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
+
+
+        List<String> candidateWords = Arrays.asList(candidate.split(" "));//get every words from candidate
+        List<String> targetWords = Arrays.asList(candidate.split(" "));//get every words from target
+
+        HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
+        HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
+
+        List<List<String>> allReview = Arrays.asList(candidateWords, targetWords);
+
+        TFIDFCalculator calculator = new TFIDFCalculator();
+
+        double numerator = 0;
+        double denominator = 0;
+        double denominatorCandidate = 0;
+        double denominatorTarget = 0;
+
+
+        for (String word : candidateWords) {
+            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, allReviewWord, word));
+        }
+
+
+
     }
 
     private void computeCoOccuringGenre() {
@@ -187,6 +225,7 @@ public class DatasetReader {
      */
     private Map<Integer, String> concatMovieReview(final String filename) {
         Map<Integer, String> result = new HashMap<Integer, String>();
+        allReviewWord = new ArrayList<String>();
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
@@ -212,9 +251,11 @@ public class DatasetReader {
 //                System.out.println(lowerCaseWithoutPunctuation);
                 String stopWords = Stopwords.removeStopWords(lowerCaseWithoutPunctuation);
 //                System.out.println(stopWords);
-                String stemWords = Stopwords.stemString(stopWords);
+                String stemWords = Stopwords.stemString(stopWords).trim().replaceAll(" +", " ");
 //                System.out.println(stopWords);
-                result.put(movieId, result.get(movieId).concat(" ").concat(stemWords));
+                result.put(movieId, result.get(movieId).concat(" ").concat(stemWords)); //concat review and remove unnecessary white space
+
+                allReviewWord.addAll(Arrays.asList(stemWords.split(" ")));
 
             }
 
@@ -256,7 +297,7 @@ public class DatasetReader {
                 ArrayList<String> actors = tokenizeString(st.nextToken());
 
                 MovieRating movieRating = moviesRatings.get(id);
-                MovieCase movie = new MovieCase(id, title, genres, directors, actors, movieRating.getMeanRating(), movieRating.getPopularity());
+                MovieCase movie = new MovieCase(id, title, genres, directors, actors, movieRating.getMeanRating(), movieRating.getPopularity(),moviesReviews.get(id));
                 cb.addCase(id, movie);
             }
 
@@ -318,5 +359,9 @@ public class DatasetReader {
 
     public HashMap<String, Double> getSupportXY() {
         return supportXY;
+    }
+
+    public Map<Integer, String> getMoviesReviews() {
+        return moviesReviews;
     }
 }

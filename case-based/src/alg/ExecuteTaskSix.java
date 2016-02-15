@@ -8,6 +8,7 @@
 package alg;
 
 import alg.cases.similarity.CaseSimilarity;
+import alg.cases.similarity.OverlapCaseCosineReviewSimilarity;
 import alg.cases.similarity.OverlapCaseGenreCoOccurringSimilarity;
 import alg.cases.similarity.OverlapCaseSimilarity;
 import alg.recommender.MaxRecommender;
@@ -24,12 +25,17 @@ public class ExecuteTaskSix extends Execute{
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
 
+        System.out.println("reader ok");
+
+       // displayMovieReview(reader);
+
         // configure the case-based recommendation algorithm - set the case similarity and recommender
-        CaseSimilarity overlapCaseSimilarity = new OverlapCaseSimilarity();
+        CaseSimilarity overlapCaseSimilarity = new OverlapCaseCosineReviewSimilarity();
+//        CaseSimilarity overlapCaseSimilarity = new OverlapCaseSimilarity();
         Recommender recommender;
 
 
         recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult(overlapCaseSimilarity,"overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResult(overlapCaseSimilarity,"overlapCaseSimilarity | MaxRecommender | cosine similarity for reviews", reader, recommender);
     }
 }

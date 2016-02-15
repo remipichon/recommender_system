@@ -7,6 +7,7 @@
 
 package alg.feature.similarity;
 
+import util.TFIDFCalculator;
 import util.reader.DatasetReader;
 
 import java.util.*;
@@ -136,6 +137,57 @@ public class FeatureSimilarity {
         double sim;
         sim = 1 - Math.abs(target - candidate) / target;
         return sim;
+    }
+
+    /**
+     * perform cosine similarity between two reviews
+     * @param candidate
+     * @param target
+     * @return
+     */
+    public static double cosine(String candidate, String target) {
+        List<String> candidateWords = Arrays.asList(candidate.split(" "));//get every words from candidate
+        List<String> targetWords = Arrays.asList(candidate.split(" "));//get every words from target
+
+        HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
+        HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
+
+        //List<List<String>> documents = Arrays.asList(candidateWords, targetWords);
+
+        TFIDFCalculator calculator = new TFIDFCalculator();
+
+        double numerator = 0;
+        double denominator = 0;
+        double denominatorCandidate = 0;
+        double denominatorTarget = 0;
+
+//
+//        for (String word : candidateWords) {
+//            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, documents, word));
+//        }
+//
+//        for (String word : targetWords) {
+//            targetFIDF.put(word, calculator.tfIdf(targetWords, documents, word));
+//        }
+
+        //compute numerator
+        for (String candidateWord : candidateWords) { //we could have took targetWords
+            if(!targetFIDF.containsKey(candidateWord)) continue; // it would be something * 0 = 0
+            numerator += candidateTFIDF.get(candidateWord) * targetFIDF.get(candidateWord);
+        }
+
+        //compute denominator
+        for (Double aDouble : candidateTFIDF.values()) {
+            denominatorCandidate += Math.pow(aDouble,2);
+        }
+        denominatorCandidate = Math.sqrt(denominatorCandidate);
+        for (Double aDouble : targetFIDF.values()) {
+            denominatorTarget += Math.pow(aDouble,2);
+        }
+        denominatorTarget = Math.sqrt(denominatorTarget);
+        denominator = denominatorCandidate * denominatorTarget;
+
+        return numerator / denominator;
     }
 
     /**

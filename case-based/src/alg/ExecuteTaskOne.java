@@ -26,6 +26,8 @@ public class ExecuteTaskOne extends Execute{
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
 
+        System.out.println("Reader ok");
+
         // configure the case-based recommendation algorithm - set the case similarity and recommender
         CaseSimilarity overlapCaseSimilarity = new OverlapCaseSimilarity();
         JaccardCaseSimilarity jaccardCaseSimilarity = new JaccardCaseSimilarity();
