@@ -9,7 +9,9 @@ package alg;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import alg.cases.MovieRating;
 import alg.cases.similarity.CaseSimilarity;
@@ -82,6 +84,35 @@ public class Execute {
         for (Map.Entry<String, Double> stringDoubleEntry : supportX.entrySet()) {
             System.out.println(stringDoubleEntry.getKey()+"\t"+stringDoubleEntry.getValue());
         }
+
+    }
+
+//    static void displayAllReviewsWords(DatasetReader reader){
+//        System.out.println("*** all review word ***");
+//        List<String> allReviewWords = reader.getAllReviewWords();
+//        for (String word : allReviewWords) {
+//            System.out.println(word);
+//        }
+//
+//    }
+
+    static void displayAllMovieTfidf(DatasetReader reader){
+        System.out.println("*** all tfidf word per movie ***");
+
+        Map<Integer, Map<String, Double>> tfidfSparseMatrix = reader.getTfidfSparseMatrix(); // <movieId, <word, TFIDvalue>>
+        Set<String> allReviewWords = reader.getAllReviewWords();
+        for (String word : allReviewWords) {
+            String str = "";
+            str += String.format("%-20s",word);
+
+            for (Map.Entry<Integer, Map<String, Double>> integerMapEntry : tfidfSparseMatrix.entrySet()) {
+                Integer movieID = integerMapEntry.getKey();
+                str += String.format("%-10s",integerMapEntry.getValue().get(word));
+            }
+
+            System.out.println(str);
+        }
+
 
     }
 

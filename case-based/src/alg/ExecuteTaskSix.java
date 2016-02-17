@@ -28,6 +28,7 @@ public class ExecuteTaskSix extends Execute{
         System.out.println("reader ok");
 
        // displayMovieReview(reader);
+        displayAllMovieTfidf(reader);
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
         CaseSimilarity overlapCaseSimilarity = new OverlapCaseCosineReviewSimilarity();

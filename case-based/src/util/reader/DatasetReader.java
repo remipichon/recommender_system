@@ -22,6 +22,7 @@ import util.Stopwords;
 import util.TFIDFCalculator;
 
 public class DatasetReader {
+    private final Map<Integer, Map<String, Double>> tfidfSparseMatrix; //<movieId, <word, TFIDvalue>>    to store every non zero tfidf value for each word for each movie
     private Casebase cb; // stores case objects
     private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
@@ -34,7 +35,9 @@ public class DatasetReader {
     private HashMap<String, Double> supportXY; // percentage of movies which contain X and Y
     private HashMap<String, Double> supportNotXY; // percentage of movies which contain not X but Y
     private HashMap<String, Double> confidenceXY;
-    private List<String> allReviewWord;
+    private Set<String> allReviewWords;
+
+    private int uniqueWordId;
 
 
     /**
@@ -50,44 +53,51 @@ public class DatasetReader {
         moviesRatings = computeMovieRating(userProfiles);
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
-        computeCoOccuringGenre();
-        //computeTFIDF();
+        //computeCoOccuringGenre();
+        tfidfSparseMatrix = computeTFIDF();
     }
 
-//    private void computeTFIDF() {
-//
-//        List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
-//        List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
-//        List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
-//       // List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
-//
-//        TFIDFCalculator calculator = new TFIDFCalculator();
-//        double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
-//
-//
-//        List<String> candidateWords = Arrays.asList(candidate.split(" "));//get every words from candidate
-//        List<String> targetWords = Arrays.asList(candidate.split(" "));//get every words from target
-//
-//        HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
-//        HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
-//
-//        List<List<String>> allReview = Arrays.asList(candidateWords, targetWords);
-//
-//        TFIDFCalculator calculator = new TFIDFCalculator();
-//
-//        double numerator = 0;
-//        double denominator = 0;
-//        double denominatorCandidate = 0;
-//        double denominatorTarget = 0;
-//
-//
-//        for (String word : candidateWords) {
-//            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, allReviewWord, word));
-//        }
-//
-//
-//
-//    }
+    private Map<Integer, Map<String, Double>> computeTFIDF() {
+        System.out.println("now computing computeTFIDF");
+
+        TFIDFCalculator calculator = new TFIDFCalculator();
+
+        //try to not store 0 value
+        Map<Integer,Map<String,Double>> allTFID = new HashMap<Integer, Map<String, Double>>(); //<movieId, <word, TFIDvalue>>
+
+        Map<Integer, Case> allMovies = cb.getCb();
+
+
+        List<List<String>> allReviewPerMovie = new ArrayList<List<String>>();
+        for (Case movie : allMovies.values()) {
+            allReviewPerMovie.add(Arrays.asList(((MovieCase) movie).getReviews().split(" ")));
+        }
+
+        System.out.println("now computing computeTFIDF : computing for every movie case (one point per 100 movie case)");
+        int counter = 0;
+        for (Map.Entry<Integer, Case> integerCaseEntry : allMovies.entrySet()) {
+            Integer id = integerCaseEntry.getKey();
+            MovieCase movie = (MovieCase) integerCaseEntry.getValue();
+            List<String> allWordForMovie = new ArrayList<String>(Arrays.asList(movie.getReviews().split(" ")));
+
+            if(++counter %100 == 0)
+                System.out.println(counter + " / " + allMovies.size());
+            System.out.print(".");
+
+            Map<String, Double> column = new HashMap<String, Double>();
+            for (String word : allWordForMovie) {
+                double tfid = calculator.tfIdf(allWordForMovie, allReviewPerMovie, word);
+                if(tfid != 0){
+                    column.put(word,tfid);
+                }
+            }
+
+            allTFID.put(id,column);
+
+        }
+
+        return allTFID;
+    }
 
     private void computeCoOccuringGenre() {
         coOccuringGenre = new HashMap<String, Double>();
@@ -225,7 +235,7 @@ public class DatasetReader {
      */
     private Map<Integer, String> concatMovieReview(final String filename) {
         Map<Integer, String> result = new HashMap<Integer, String>();
-        allReviewWord = new ArrayList<String>();
+        allReviewWords = new HashSet<String>();
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(new File(filename)));
@@ -251,11 +261,11 @@ public class DatasetReader {
 //                System.out.println(lowerCaseWithoutPunctuation);
                 String stopWords = Stopwords.removeStopWords(lowerCaseWithoutPunctuation);
 //                System.out.println(stopWords);
-                String stemWords = Stopwords.stemString(stopWords).trim().replaceAll(" +", " ");
+                String stemWords = stopWords;// TODO il faut iter over every word in stopWords   Stopwords.stemString(stopWords).trim().replaceAll(" +", " ");
 //                System.out.println(stopWords);
                 result.put(movieId, result.get(movieId).concat(" ").concat(stemWords)); //concat review and remove unnecessary white space
 
-                allReviewWord.addAll(Arrays.asList(stemWords.split(" ")));
+                allReviewWords.addAll(Arrays.asList(stemWords.split(" ")));
 
             }
 
@@ -363,5 +373,14 @@ public class DatasetReader {
 
     public Map<Integer, String> getMoviesReviews() {
         return moviesReviews;
+    }
+
+
+    public Map<Integer, Map<String, Double>> getTfidfSparseMatrix() {
+        return tfidfSparseMatrix;
+    }
+
+    public Set<String> getAllReviewWords() {
+        return allReviewWords;
     }
 }
