@@ -12,17 +12,22 @@ import alg.cases.Case;
 import alg.cases.MovieCase;
 import alg.feature.similarity.FeatureSimilarity;
 import util.FeaturesWeight;
+import util.reader.DatasetReader;
+
+import java.io.Reader;
 
 public class OverlapCaseCosineReviewSimilarity implements CaseSimilarity {
     final static double GENRE_WEIGHT = 1; // the weight for feature genres
     final static double DIRECTOR_WEIGHT = 1; // the weight for feature directors
     final static double ACTOR_WEIGHT = 1; // the weight for feature actors
     final static double REVIEW_WEIGHT = 1; // the weight for feature actors
+    private final DatasetReader reader;
 
     /**
      * constructor - creates a new OverlapCaseSimilarity object
      */
-    public OverlapCaseCosineReviewSimilarity() {
+    public OverlapCaseCosineReviewSimilarity(DatasetReader reader) {
+        this.reader = reader;
     }
 
     /**
@@ -39,7 +44,7 @@ public class OverlapCaseCosineReviewSimilarity implements CaseSimilarity {
         double above = GENRE_WEIGHT * FeatureSimilarity.overlap(m1.getGenres(), m2.getGenres()) +
                 DIRECTOR_WEIGHT * FeatureSimilarity.overlap(m1.getDirectors(), m2.getDirectors()) +
                 ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors()) +
-                REVIEW_WEIGHT * FeatureSimilarity.cosine(m1.getReviews(), m2.getReviews());
+                REVIEW_WEIGHT * FeatureSimilarity.cosine(reader, m1, m2);
 
         double below = GENRE_WEIGHT + DIRECTOR_WEIGHT + ACTOR_WEIGHT + REVIEW_WEIGHT;
 

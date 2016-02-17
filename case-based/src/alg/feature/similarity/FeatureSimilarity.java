@@ -7,6 +7,7 @@
 
 package alg.feature.similarity;
 
+import alg.cases.MovieCase;
 import util.TFIDFCalculator;
 import util.reader.DatasetReader;
 
@@ -141,34 +142,23 @@ public class FeatureSimilarity {
 
     /**
      * perform cosine similarity between two reviews
+     *
+     * @param reader
      * @param candidate
      * @param target
      * @return
      */
-    public static double cosine(String candidate, String target) {
-        List<String> candidateWords = Arrays.asList(candidate.split(" "));//get every words from candidate
-        List<String> targetWords = Arrays.asList(candidate.split(" "));//get every words from target
+    public static double cosine(DatasetReader reader, MovieCase candidate, MovieCase target) {
+        List<String> candidateWords = Arrays.asList(candidate.getReviews().split(" "));//get every words from candidate
+        //List<String> targetWords = Arrays.asList(target.getReviews().split(" "));//get every words from target
 
-        HashMap<String,Double> candidateTFIDF = new HashMap<String, Double>();
-        HashMap<String,Double> targetFIDF = new HashMap<String, Double>();
-
-        List<List<String>> documents = Arrays.asList(candidateWords, targetWords);
-
-        TFIDFCalculator calculator = new TFIDFCalculator();
+        Map<String, Double> candidateTFIDF = reader.getTfidfSparseMatrix().get(candidate.getId());
+        Map<String,Double> targetFIDF = reader.getTfidfSparseMatrix().get(target.getId());
 
         double numerator = 0;
         double denominator = 0;
         double denominatorCandidate = 0;
         double denominatorTarget = 0;
-
-
-        for (String word : candidateWords) {
-            candidateTFIDF.put(word, calculator.tfIdf(candidateWords, documents, word));
-        }
-
-        for (String word : targetWords) {
-            targetFIDF.put(word, calculator.tfIdf(targetWords, documents, word));
-        }
 
         //compute numerator
         for (String candidateWord : candidateWords) { //we could have took targetWords
