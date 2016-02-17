@@ -24,8 +24,10 @@ public class DatasetReader {
     private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
     private Map<Integer, Map<Integer, Double>> testProfiles; // stores test user profiles
-    private HashMap<String, Double> coOccuringGenre; // store co-occuring genres frequency <two genre sort alphabetically then concatened, frequency>
+    private HashMap<String, Double> coOccurringGenres; // store co-occuring genres frequency <two genre sort alphabetically then concatened, frequency> => uses for supp(X and Y)
+    private HashMap<String, Double> notCoOccuringGenre; // store not co-occuring genres frequency <two concatened, frequency> => uses for supp(!X and Y)
     private HashMap<String, Double> genreFrequencies; // store  genres frequency <genre name, frequency>
+    private HashMap<String, Double> liking; // store liking between X and Y <genre name as "X_Y", amount of like> give the increase in liking Y if X is liked
 
     private HashMap<String, Double> supportX; // percentage of movies which contain the given genre
     private HashMap<String, Double> supportXY; // percentage of movies which contain X and Y
@@ -49,13 +51,16 @@ public class DatasetReader {
     }
 
     private void computeCoOccuringGenre() {
-        coOccuringGenre = new HashMap<String, Double>();
+        coOccurringGenres = new HashMap<String, Double>();
+        notCoOccuringGenre = new HashMap<String, Double>();
         genreFrequencies = new HashMap<String, Double>();
         supportX = new HashMap<String, Double>();
         supportXY = new HashMap<String, Double>();
         supportNotXY = new HashMap<String, Double>();
         confidenceXY = new HashMap<String, Double>();
+        liking = new HashMap<String, Double>();
 
+        //preparing [1] (supp(X) supp(X and Y)
         for (Case movieCase : cb.getCb().values()) {
             List<String> genres = new ArrayList<String>(((MovieCase) movieCase).getGenres());
             Collections.sort(genres);
@@ -69,11 +74,43 @@ public class DatasetReader {
                 for (int j = i + 1; j < genres.size(); j++) {
                     String genre2 = genres.get(j);
                     String occurrence = genre1 + "_" + genre2;
-                    if (!coOccuringGenre.containsKey(occurrence)) coOccuringGenre.put(occurrence, new Double(0));
-                    coOccuringGenre.put(occurrence, coOccuringGenre.get(occurrence) + 1);
+                    if (!coOccurringGenres.containsKey(occurrence)) coOccurringGenres.put(occurrence, new Double(0));
+                    coOccurringGenres.put(occurrence, coOccurringGenres.get(occurrence) + 1);
                 }
             }
         }
+
+
+        //preparing [2] (supp(!X and Y) only for supp(X and Y) found (not relevant for co-occurring movies that don't co-occurs)
+        for (String coOccurringGenre : coOccurringGenres.keySet()) {
+            String[] concat = coOccurringGenre.split("_");
+            String X = concat[0];
+            String Y = concat[1];
+
+            for (Case movieCase : cb.getCb().values()) {
+                List<String> genres = new ArrayList<String>(((MovieCase) movieCase).getGenres());
+                Collections.sort(genres);
+
+                //first !X and Y
+                if (!genres.contains(X) && genres.contains(Y)) {
+                    String occurrence = "NOT_" + X + "_" + Y;
+                    if (!notCoOccuringGenre.containsKey(occurrence)) notCoOccuringGenre.put(occurrence, new Double(0));
+                    notCoOccuringGenre.put(occurrence, notCoOccuringGenre.get(occurrence) + 1);
+                }
+
+
+                //then !Y and X
+                if (!genres.contains(Y) && genres.contains(X)) {
+                    String occurrence2 = "NOT_" + Y + "_" + X;
+                    if (!notCoOccuringGenre.containsKey(occurrence2))
+                        notCoOccuringGenre.put(occurrence2, new Double(0));
+                    notCoOccuringGenre.put(occurrence2, notCoOccuringGenre.get(occurrence2) + 1);
+                }
+            }
+        }
+
+
+        //compute [1]  : conf(X=>Y) = supp(X and Y) / supp (X)
 
         //supp(X)
         for (Map.Entry<String, Double> genreFrequency : genreFrequencies.entrySet()) {
@@ -81,7 +118,7 @@ public class DatasetReader {
         }
 
         //supp(X and Y)
-        for (Map.Entry<String, Double> genreFrequency : coOccuringGenre.entrySet()) {
+        for (Map.Entry<String, Double> genreFrequency : coOccurringGenres.entrySet()) {
             supportXY.put(genreFrequency.getKey(), genreFrequency.getValue() / cb.getCb().size());
         }
 
@@ -92,6 +129,38 @@ public class DatasetReader {
             Double result = supp.getValue() / supportX.get(X);
             confidenceXY.put(supp.getKey(), result);
         }
+
+
+        //compute [2] : supp(!X and Y) / supp(!X)
+
+        //supp(!X) = 1 - supp(X)
+
+        //supp(!X and Y)
+        for (Map.Entry<String, Double> genreFrequency : notCoOccuringGenre.entrySet()) {
+            supportNotXY.put(genreFrequency.getKey(), genreFrequency.getValue() / cb.getCb().size());
+        }
+
+
+        //compute [1] / [2]         // the increase in liking Y if X is liked
+        for (Map.Entry<String, Double> entry : confidenceXY.entrySet()) {
+            String X_Y = entry.getKey();
+            Double confidenceX_Y = entry.getValue();
+
+            String[] concat = X_Y.split("_");
+            String X = concat[0];
+            String Y = concat[1];
+
+            //compute [2] TODO can probably be done elsewhere
+            Double suppNotX_Y = supportNotXY.get("NOT_" + X + "_" + Y);
+            if(suppNotX_Y == null) continue;
+            Double divider = suppNotX_Y / (1 - supportX.get(X) );
+
+            Double value = confidenceX_Y / divider;
+
+            liking.put(X + "_" + Y,value);
+        }
+
+
     }
 
     /**
@@ -252,8 +321,8 @@ public class DatasetReader {
         return ratingPerMovies;
     }
 
-    public HashMap<String, Double> getCoOccuringGenre() {
-        return coOccuringGenre;
+    public HashMap<String, Double> getCoOccurringGenres() {
+        return coOccurringGenres;
     }
 
     public HashMap<String, Double> getConfidenceXY() {
@@ -266,5 +335,9 @@ public class DatasetReader {
 
     public HashMap<String, Double> getSupportXY() {
         return supportXY;
+    }
+
+    public HashMap<String, Double> getLiking() {
+        return liking;
     }
 }

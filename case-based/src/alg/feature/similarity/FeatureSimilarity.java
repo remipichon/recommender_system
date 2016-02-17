@@ -50,7 +50,7 @@ public class FeatureSimilarity {
      * @return the similarity between set feature values
      */
     public static double overlapImproved(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
-        int intersection = 0;
+        double intersection = 0;
 
         for (String genre1 : genres1) {
 
@@ -61,17 +61,32 @@ public class FeatureSimilarity {
                 for (String genre : genres2) {
                     //first, sort genres
                     List<String> sorted = new ArrayList<String>(Arrays.asList(genre1,genre));
-                    Collections.sort(sorted);
+                    //Collections.sort(sorted);
 
                     //then get confidence if exist
                     Double confidence = reader.getConfidenceXY().get(sorted.get(0) + "_" + sorted.get(1));
                     if(confidence == null) continue;
 
+                    //then get liking if exist
+                    Double liking = reader.getLiking().get(sorted.get(0) + "_" + sorted.get(1));
+                    if(liking == null) continue;
+
+
                     //if the two genres are confident, it equal to a match
-                    if(confidence > 0.9) {
-                        intersection++;
-                        break;
-                    }
+//                    if(confidence > 0.9) {
+//                        intersection++;
+//                        break;
+//                    }
+
+
+
+//                    //if the two genres are liking, it equal to a match
+//                    if(liking > 0.9) {
+//                        intersection++;
+//                        break;
+//                    }
+
+                    intersection = intersection + confidence;
 
                 }
             }
