@@ -37,8 +37,6 @@ public class DatasetReader {
     private HashMap<String, Double> confidenceXY;
     private Set<String> allReviewWords;
 
-    private int uniqueWordId;
-
 
     /**
      * constructor - creates a new DatasetReader object
@@ -62,11 +60,9 @@ public class DatasetReader {
 
         TFIDFCalculator calculator = new TFIDFCalculator();
 
-        //try to not store 0 value
         Map<Integer,Map<String,Double>> allTFID = new HashMap<Integer, Map<String, Double>>(); //<movieId, <word, TFIDvalue>>
 
         Map<Integer, Case> allMovies = cb.getCb();
-
 
         List<List<String>> allReviewPerMovie = new ArrayList<List<String>>();
         for (Case movie : allMovies.values()) {
@@ -87,15 +83,12 @@ public class DatasetReader {
             Map<String, Double> column = new HashMap<String, Double>();
             for (String word : allWordForMovie) {
                 double tfid = calculator.tfIdf(allWordForMovie, allReviewPerMovie, word);
-                if(tfid != 0){
+                if(tfid != 0){ //we do not store 0 value to spare a bit of memory
                     column.put(word,tfid);
                 }
             }
-
             allTFID.put(id,column);
-
         }
-
         return allTFID;
     }
 
@@ -254,15 +247,15 @@ public class DatasetReader {
                 Double rating = new Double(st.nextToken());
                 String review = st.nextToken();
 
-                //System.out.println("******");
                 if(!result.containsKey(movieId)) result.put(movieId,"");
-//                System.out.println(review);
                 String lowerCaseWithoutPunctuation = review.replaceAll("[^a-zA-Z ]", "").toLowerCase();
-//                System.out.println(lowerCaseWithoutPunctuation);
                 String stopWords = Stopwords.removeStopWords(lowerCaseWithoutPunctuation);
-//                System.out.println(stopWords);
-                String stemWords = stopWords;// TODO il faut iter over every word in stopWords   Stopwords.stemString(stopWords).trim().replaceAll(" +", " ");
-//                System.out.println(stopWords);
+                stopWords.trim().replaceAll(" +", " ");
+                List<String> stopWordsList = new ArrayList<String>(Arrays.asList(stopWords.split(" ")));
+                String stemWords = "";
+                for (String word : stopWordsList) {
+                    stemWords += " " + Stopwords.stemString(word);
+                }
                 result.put(movieId, result.get(movieId).concat(" ").concat(stemWords)); //concat review and remove unnecessary white space
 
                 allReviewWords.addAll(Arrays.asList(stemWords.split(" ")));
