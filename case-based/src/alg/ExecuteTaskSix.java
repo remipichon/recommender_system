@@ -24,6 +24,8 @@ public class ExecuteTaskSix extends Execute{
         String testFile = "dataset" + File.separator + "testData.txt";
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
+        reader.computeTFIDF();
+//        reader.computeBinary();
 
         System.out.println("reader ok");
 

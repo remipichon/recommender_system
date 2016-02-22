@@ -27,20 +27,21 @@ public abstract class RecommenderNonPersonalised extends Recommender{
         // compute all case similarities and store in a Matrix object
         this.matrix = new Matrix();
         Set<Integer> ids = reader.getCasebase().getIds();
+        System.out.println("Now computing similarity ('.' for every 100 movie row) with " + ids.size() + " movies");
+        int counter = 0;
         for (Integer rowId : ids) {
-            //System.out.print("{");
             for (Integer colId : ids) {
-                //System.out.print("[");
                 if (rowId.intValue() != colId.intValue()) {
                     double sim = caseSimilarity.getSimilarity(reader.getCasebase().getCase(rowId), reader.getCasebase().getCase(colId));
                     if (sim > 0)
                         matrix.addElement(rowId, colId, sim);
                 }
             }
-            //System.out.print("{");
+            if (++counter % 100 == 0)
+                System.out.print(". ");
         }
 
-        System.out.println("Recommender constructor ok");
+        System.out.println("\nRecommender constructor ok");
     }
 
     /**

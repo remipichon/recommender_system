@@ -22,7 +22,7 @@ import util.Stopwords;
 import util.TFIDFCalculator;
 
 public class DatasetReader {
-    private final Map<Integer, Map<String, Double>> tfidfSparseMatrix; //<movieId, <word, TFIDvalue>>    to store every non zero tfidf value for each word for each movie
+    private Map<Integer, Map<String, Double>> tfidfSparseMatrix; //<movieId, <word, TFIDvalue>>    to store every non zero tfidf value for each word for each movie
     private Casebase cb; // stores case objects
     private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
@@ -52,10 +52,52 @@ public class DatasetReader {
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
         //computeCoOccuringGenre();
-        tfidfSparseMatrix = computeTFIDF();
     }
 
-    private Map<Integer, Map<String, Double>> computeTFIDF() {
+    public void computeTFIDF(){
+        this.tfidfSparseMatrix = computeTfidfIntoSparseMatrix();
+    }
+
+    public void computeBinary(){
+        this.tfidfSparseMatrix = computeBinaryIntoSparseMatrix();
+    }
+
+    private Map<Integer, Map<String, Double>> computeBinaryIntoSparseMatrix() {
+        System.out.println("now computing computeBinary");
+
+
+        Map<Integer,Map<String,Double>> allBinary = new HashMap<Integer, Map<String, Double>>(); //<movieId, <word, binaryValue>>
+
+        Map<Integer, Case> allMovies = cb.getCb();
+
+        List<List<String>> allReviewPerMovie = new ArrayList<List<String>>();
+        for (Case movie : allMovies.values()) {
+            allReviewPerMovie.add(Arrays.asList(((MovieCase) movie).getReviews().split(" ")));
+        }
+
+        System.out.println("now computing computeBinary : computing for every movie case (one point per movie case)");
+        int counter = 0;
+        for (Map.Entry<Integer, Case> integerCaseEntry : allMovies.entrySet()) {
+            Integer id = integerCaseEntry.getKey();
+            MovieCase movie = (MovieCase) integerCaseEntry.getValue();
+            List<String> allWordForMovie = new ArrayList<String>(Arrays.asList(movie.getReviews().split(" ")));
+
+            if(++counter %100 == 0)
+                System.out.println(counter + " / " + allMovies.size());
+            System.out.print(".");
+
+            Map<String, Double> column = new HashMap<String, Double>();
+            for (String word : allWordForMovie) {
+                column.put(word,1.0);
+            }
+            allBinary.put(id,column);
+        }
+        System.out.println("");
+        return allBinary;
+    }
+
+
+    private Map<Integer, Map<String, Double>> computeTfidfIntoSparseMatrix() {
         System.out.println("now computing computeTFIDF");
 
         TFIDFCalculator calculator = new TFIDFCalculator();
@@ -69,7 +111,7 @@ public class DatasetReader {
             allReviewPerMovie.add(Arrays.asList(((MovieCase) movie).getReviews().split(" ")));
         }
 
-        System.out.println("now computing computeTFIDF : computing for every movie case (one point per 100 movie case)");
+        System.out.println("now computing computeTFIDF : computing for every movie case (one point per movie case)");
         int counter = 0;
         for (Map.Entry<Integer, Case> integerCaseEntry : allMovies.entrySet()) {
             Integer id = integerCaseEntry.getKey();
@@ -83,12 +125,14 @@ public class DatasetReader {
             Map<String, Double> column = new HashMap<String, Double>();
             for (String word : allWordForMovie) {
                 double tfid = calculator.tfIdf(allWordForMovie, allReviewPerMovie, word);
+                System.out.println(tfid);
                 if(tfid != 0){ //we do not store 0 value to spare a bit of memory
                     column.put(word,tfid);
                 }
             }
             allTFID.put(id,column);
         }
+        System.out.println("");
         return allTFID;
     }
 
