@@ -125,7 +125,7 @@ public class DatasetReader {
             Map<String, Double> column = new HashMap<String, Double>();
             for (String word : allWordForMovie) {
                 double tfid = calculator.tfIdf(allWordForMovie, allReviewPerMovie, word);
-                System.out.println(tfid);
+                //System.out.println(tfid);
                 if(tfid != 0){ //we do not store 0 value to spare a bit of memory
                     column.put(word,tfid);
                 }
@@ -419,5 +419,9 @@ public class DatasetReader {
 
     public Set<String> getAllReviewWords() {
         return allReviewWords;
+    }
+
+    public void setTfidfSparseMatrix(Map<Integer, Map<String, Double>> tfidfSparseMatrix) {
+        this.tfidfSparseMatrix = tfidfSparseMatrix;
     }
 }
