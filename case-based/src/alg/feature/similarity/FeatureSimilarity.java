@@ -52,6 +52,8 @@ public class FeatureSimilarity {
     public static double overlapImproved(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
         double intersection = 0;
 
+        ArrayList<Double> likings = new ArrayList<Double>();
+
         for (String genre1 : genres1) {
 
             if (genres2.contains(genre1))
@@ -86,11 +88,25 @@ public class FeatureSimilarity {
 //                        break;
 //                    }
 
-                    intersection = intersection + confidence;
+                    likings.add(confidence);
+//                    intersection = intersection + confidence;
 
                 }
             }
         }
+
+
+//        Collections.sort(likings); // Sort the arraylist
+//        likings.get(likings.size() - 1); //gets the last item, largest for an ascending sort
+
+        if(! likings.isEmpty()) {
+
+            Double max = Collections.max(likings);
+            for (Double liking : likings) {
+                intersection += liking / max;
+            }
+        }
+
 
         int min = (genres1.size() < genres2.size()) ? genres1.size() : genres2.size();
         return (min > 0) ? intersection * 1.0 / min : 0;
