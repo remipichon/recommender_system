@@ -53,6 +53,7 @@ public class FeatureSimilarity {
      */
     public static double overlapImproved(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
         double intersection = 0;
+        ArrayList<Double> likings = new ArrayList<Double>(); //will store all the likings in order to normalize them before adding
 
         for (String genre1 : genres1) {
 
@@ -63,21 +64,43 @@ public class FeatureSimilarity {
                 for (String genre : genres2) {
                     //first, sort genres
                     List<String> sorted = new ArrayList<String>(Arrays.asList(genre1,genre));
-                    Collections.sort(sorted);
+                    //Collections.sort(sorted);
 
                     //then get confidence if exist
                     Double confidence = reader.getConfidenceXY().get(sorted.get(0) + "_" + sorted.get(1));
                     if(confidence == null) continue;
 
+                    //then get liking if exist
+                    Double liking = reader.getLiking().get(sorted.get(0) + "_" + sorted.get(1));
+                    if(liking == null) continue;
+
+
                     //if the two genres are confident, it equal to a match
-                    if(confidence > 0.9) {
-                        intersection = intersection + confidence;
-                        break;
-                    }
+//                    if(confidence > 0.9) {
+//                        intersection = intersection + confidence;
+//                        break;
+
+//                    //if the two genres are liking, it equal to a match
+//                    if(liking > 0.9) {
+//                        intersection++;
+//                        break;
+//                    }
+
+                    likings.add(confidence);
 
                 }
             }
         }
+
+
+        //normalize the likings before adding
+        if(! likings.isEmpty()) {
+            Double max = Collections.max(likings);
+            for (Double liking : likings) {
+                intersection += liking / max;
+            }
+        }
+
 
         int min = (genres1.size() < genres2.size()) ? genres1.size() : genres2.size();
         return (min > 0) ? intersection * 1.0 / min : 0;

@@ -65,7 +65,7 @@ public class Execute {
      */
     static void displayCoOccurringGenreFrequencyAndConfidence(DatasetReader reader){
         System.out.println("**** Confidence and frequency between co-occurring genres frequency ***");
-        HashMap<String, Double> coOccuringGenre = reader.getCoOccuringGenre();
+        HashMap<String, Double> coOccuringGenre = reader.getCoOccurringGenres();
         for (Map.Entry<String, Double> frequencyByGenre : coOccuringGenre.entrySet()) {
             System.out.println(frequencyByGenre.getKey()+"\t"+frequencyByGenre.getValue()+"\t"+
                     reader.getConfidenceXY().get(
@@ -82,6 +82,24 @@ public class Execute {
         System.out.println("**** genres percentage of transaction ***");
         HashMap<String, Double> supportX = reader.getSupportX();
         for (Map.Entry<String, Double> stringDoubleEntry : supportX.entrySet()) {
+            System.out.println(stringDoubleEntry.getKey()+"\t"+stringDoubleEntry.getValue());
+        }
+
+        System.out.println("**** coOccurringGenres ***");
+        HashMap<String, Double> coOccurringGenres = reader.getCoOccurringGenres();
+        for (Map.Entry<String, Double> stringDoubleEntry : coOccurringGenres.entrySet()) {
+            System.out.println(stringDoubleEntry.getKey()+"\t"+stringDoubleEntry.getValue());
+        }
+//
+//        System.out.println("**** not coOccurringGenres ***");
+//        HashMap<String, Double> coOccurringGenres = reader.g();
+//        for (Map.Entry<String, Double> stringDoubleEntry : coOccurringGenres.entrySet()) {
+//            System.out.println(stringDoubleEntry.getKey()+"\t"+stringDoubleEntry.getValue());
+//        }
+
+        System.out.println("**** genres likings X_Y (the increase in liking Y if X is liked) ***");
+        HashMap<String, Double> liking = reader.getLiking();
+        for (Map.Entry<String, Double> stringDoubleEntry : liking.entrySet()) {
             System.out.println(stringDoubleEntry.getKey()+"\t"+stringDoubleEntry.getValue());
         }
 
