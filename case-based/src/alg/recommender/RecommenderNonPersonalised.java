@@ -41,7 +41,7 @@ public abstract class RecommenderNonPersonalised extends Recommender{
                 System.out.print(". ");
         }
 
-        System.out.println("\nRecommender constructor ok");
+        System.out.println("\nRecommender constructor finished");
     }
 
     /**

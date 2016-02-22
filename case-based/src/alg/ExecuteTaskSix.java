@@ -9,8 +9,6 @@ package alg;
 
 import alg.cases.similarity.CaseSimilarity;
 import alg.cases.similarity.OverlapCaseCosineReviewSimilarity;
-import alg.cases.similarity.OverlapCaseGenreCoOccurringSimilarity;
-import alg.cases.similarity.OverlapCaseSimilarity;
 import alg.recommender.MaxRecommender;
 import alg.recommender.Recommender;
 import util.reader.DatasetReader;
@@ -28,11 +26,6 @@ public class ExecuteTaskSix extends Execute {
         String testFile = "dataset" + File.separator + "testData.txt";
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
-
-
-
-
-
         System.out.println("reader finished");
 
         // displayMovieReview(reader);
@@ -76,7 +69,7 @@ public class ExecuteTaskSix extends Execute {
         }
 
         try {
-            reader.setTfidfSparseMatrix((Map<Integer, Map<String, Double>>) ois.readObject());
+            reader.setContentBaseSpareMatrix((Map<Integer, Map<String, Double>>) ois.readObject());
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -98,7 +91,7 @@ public class ExecuteTaskSix extends Execute {
             e.printStackTrace();
         }
         try {
-            oos.writeObject(reader.getTfidfSparseMatrix());
+            oos.writeObject(reader.getMatrix());
         } catch (IOException e) {
             e.printStackTrace();
         }

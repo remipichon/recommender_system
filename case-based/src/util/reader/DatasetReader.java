@@ -22,7 +22,7 @@ import util.Stopwords;
 import util.TFIDFCalculator;
 
 public class DatasetReader {
-    private Map<Integer, Map<String, Double>> tfidfSparseMatrix; //<movieId, <word, TFIDvalue>>    to store every non zero tfidf value for each word for each movie
+    private Map<Integer, Map<String, Double>> contentBaseSpareMatrix; //<movieId, <word, TFIDvalue>>    to store every non zero tfidf value for each word for each movie
     private Casebase cb; // stores case objects
     private Map<Integer, Map<Integer, Double>> userProfiles; // stores training user profiles <userId, <movieId, rating>>
     private Map<Integer, MovieRating> moviesRatings; // stores training movies mean rating and popularity (count rating)
@@ -53,17 +53,23 @@ public class DatasetReader {
         moviesRatings = computeMovieRating(userProfiles);
         testProfiles = readUserProfiles(testFile);
         readCasebase(movieFile);
-        //computeCoOccuringGenre();
     }
 
     public void computeTFIDF(){
-        this.tfidfSparseMatrix = computeTfidfIntoSparseMatrix();
+        this.contentBaseSpareMatrix = computeTfidfIntoSparseMatrix();
     }
 
     public void computeBinary(){
-        this.tfidfSparseMatrix = computeBinaryIntoSparseMatrix();
+        this.contentBaseSpareMatrix = computeBinaryIntoSparseMatrix();
     }
 
+    /**
+     * For each word of each review of one movie, compute the binary weighting among all reviews of all movies.
+     *
+     * (the use of a map is a bit overhead but it allow the code to be more straightforward as cosine feature similarity don't have to be specific for TF-IFD and binary)
+     *
+     * @return <movieId, <word, 1.0>>  to store every non zero TF-IDF value for each word for each movie
+     */
     private Map<Integer, Map<String, Double>> computeBinaryIntoSparseMatrix() {
         System.out.println("now computing computeBinary");
 
@@ -99,6 +105,10 @@ public class DatasetReader {
     }
 
 
+    /**
+     * For each word of each review of one movie, compute the TFIDF among all reviews of all movies.
+     * @return <movieId, <word, 1.0>>  to store every non zero TF-IDF value for each word for each movie
+     */
     private Map<Integer, Map<String, Double>> computeTfidfIntoSparseMatrix() {
         System.out.println("now computing computeTFIDF");
 
@@ -138,7 +148,21 @@ public class DatasetReader {
         return allTFID;
     }
 
-    private void computeCoOccuringGenre() {
+    /**
+     * Find every existing co-occurring genres and successively perform every metrics to be able to explain
+     * how much a movie with a genre Y will be liked if the user likes movies with genre X.
+     *
+     * supp(X) and supp(X and Y)
+     *
+     * supp(!X and Y)
+     *
+     * [1] : conf(X=>Y) = supp(X and Y) / supp (X)
+     *
+     * [2]  : supp(!X and Y) / supp(!X)
+     *
+     * [1] / [2]
+     */
+    public void computeCoOccuringGenre() {
         coOccurringGenres = new HashMap<String, Double>();
         notCoOccuringGenre = new HashMap<String, Double>();
         genreFrequencies = new HashMap<String, Double>();
@@ -482,16 +506,16 @@ public class DatasetReader {
     }
 
 
-    public Map<Integer, Map<String, Double>> getTfidfSparseMatrix() {
-        return tfidfSparseMatrix;
+    public Map<Integer, Map<String, Double>> getMatrix() {
+        return contentBaseSpareMatrix;
     }
 
     public Set<String> getAllReviewWords() {
         return allReviewWords;
     }
 
-    public void setTfidfSparseMatrix(Map<Integer, Map<String, Double>> tfidfSparseMatrix) {
-        this.tfidfSparseMatrix = tfidfSparseMatrix;
+    public void setContentBaseSpareMatrix(Map<Integer, Map<String, Double>> contentBaseSpareMatrix) {
+        this.contentBaseSpareMatrix = contentBaseSpareMatrix;
     }
 
     public HashMap<String, Double> getLiking() {

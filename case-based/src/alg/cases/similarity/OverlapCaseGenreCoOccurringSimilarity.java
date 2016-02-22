@@ -40,10 +40,7 @@ public class OverlapCaseGenreCoOccurringSimilarity implements CaseSimilarity {
         MovieCase m1 = (MovieCase) c1;
         MovieCase m2 = (MovieCase) c2;
 
-        double genreSimilarity = GENRE_WEIGHT * FeatureSimilarity.overlapImproved(reader,m1.getGenres(), m2.getGenres());
-
-        //System.out.println(genreSimilarity);
-        double above = genreSimilarity +
+        double above = GENRE_WEIGHT * FeatureSimilarity.likingSimilarity(reader, m1.getGenres(), m2.getGenres()) +
                 DIRECTOR_WEIGHT * FeatureSimilarity.overlap(m1.getDirectors(), m2.getDirectors()) +
                 ACTOR_WEIGHT * FeatureSimilarity.overlap(m1.getActors(), m2.getActors());
 

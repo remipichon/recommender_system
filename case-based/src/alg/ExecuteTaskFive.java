@@ -24,9 +24,11 @@ public class ExecuteTaskFive extends Execute{
         String testFile = "dataset" + File.separator + "testData.txt";
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
+        reader.computeCoOccuringGenre();
 
-//        displayCoOccurringGenreFrequencyAndConfidence(reader);
-        //displayGenrePercentageOfTransaction(reader);
+
+        displayCoOccurringGenreFrequencyAndConfidence(reader);
+        displayGenrePercentageOfTransaction(reader);
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
         CaseSimilarity overlapCaseSimilarity = new OverlapCaseGenreCoOccurringSimilarity(reader);

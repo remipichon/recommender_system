@@ -9,7 +9,6 @@ package alg;
 
 import java.io.File;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -117,7 +116,7 @@ public class Execute {
     static void displayAllMovieTfidf(DatasetReader reader){
         System.out.println("*** all tfidf word per movie ***");
 
-        Map<Integer, Map<String, Double>> tfidfSparseMatrix = reader.getTfidfSparseMatrix(); // <movieId, <word, TFIDvalue>>
+        Map<Integer, Map<String, Double>> tfidfSparseMatrix = reader.getMatrix(); // <movieId, <word, TFIDvalue>>
         Set<String> allReviewWords = reader.getAllReviewWords();
         for (String word : allReviewWords) {
             String str = "";

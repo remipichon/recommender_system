@@ -8,7 +8,6 @@
 package alg.feature.similarity;
 
 import alg.cases.MovieCase;
-import util.TFIDFCalculator;
 import util.reader.DatasetReader;
 
 import java.util.*;
@@ -51,7 +50,7 @@ public class FeatureSimilarity {
      * @param genres2 - the second feature value
      * @return the similarity between set feature values
      */
-    public static double overlapImproved(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
+    public static double likingSimilarity(DatasetReader reader, final Set<String> genres1, final Set<String> genres2) {
         double intersection = 0;
         ArrayList<Double> likings = new ArrayList<Double>(); //will store all the likings in order to normalize them before adding
 
@@ -173,10 +172,9 @@ public class FeatureSimilarity {
      */
     public static double cosine(DatasetReader reader, MovieCase candidate, MovieCase target) {
         List<String> candidateWords = Arrays.asList(candidate.getReviews().split(" "));//get every words from candidate
-        //List<String> targetWords = Arrays.asList(target.getReviews().split(" "));//get every words from target
 
-        Map<String, Double> candidateTFIDF = reader.getTfidfSparseMatrix().get(candidate.getId());
-        Map<String,Double> targetFIDF = reader.getTfidfSparseMatrix().get(target.getId());
+        Map<String, Double> candidateMatrix = reader.getMatrix().get(candidate.getId());
+        Map<String,Double> targetMatrix = reader.getMatrix().get(target.getId());
 
         double numerator = 0;
         double denominator = 0;
@@ -185,16 +183,16 @@ public class FeatureSimilarity {
 
         //compute numerator
         for (String candidateWord : candidateWords) { //we could have took targetWords
-            if(!targetFIDF.containsKey(candidateWord)) continue; // it would be something * 0 = 0
-            numerator += candidateTFIDF.get(candidateWord) * targetFIDF.get(candidateWord);
+            if(!targetMatrix.containsKey(candidateWord)) continue; // it would be something * 0 = 0
+            numerator += candidateMatrix.get(candidateWord) * targetMatrix.get(candidateWord);
         }
 
         //compute denominator
-        for (Double aDouble : candidateTFIDF.values()) {
+        for (Double aDouble : candidateMatrix.values()) {
             denominatorCandidate += Math.pow(aDouble,2);
         }
         denominatorCandidate = Math.sqrt(denominatorCandidate);
-        for (Double aDouble : targetFIDF.values()) {
+        for (Double aDouble : targetMatrix.values()) {
             denominatorTarget += Math.pow(aDouble,2);
         }
         denominatorTarget = Math.sqrt(denominatorTarget);
