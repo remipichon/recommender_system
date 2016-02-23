@@ -70,6 +70,12 @@ public class Execute {
                     reader.getConfidenceXY().get(
                             frequencyByGenre.getKey()));
         }
+
+        System.out.println("****  supp(!X and Y) / supp(!X)  ***");
+        HashMap<String, Double> noCoOccuringGenre = reader.getNotCoOccuringGenre();
+        for (Map.Entry<String, Double> frequencyByGenre : noCoOccuringGenre.entrySet()) {
+            System.out.println(frequencyByGenre.getKey()+"\t"+frequencyByGenre.getValue());
+        }
     }
 
     /**

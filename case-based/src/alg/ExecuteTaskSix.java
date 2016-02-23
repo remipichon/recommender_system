@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class ExecuteTaskSix extends Execute {
     public static void main(String[] args) {
-        boolean restoreMatrixFromFile = true; //if true, read TFIDF and binary from pre-computed file, if false, compute it and store it in a file (15 minutes long)
+        boolean restoreMatrixFromFile = false; //if true, read TFIDF and binary from pre-computed file, if false, compute it and store it in a file (15 minutes long)
 
 
         // set the paths and filenames of the training, test and movie metadata files and read in the data

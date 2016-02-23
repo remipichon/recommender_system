@@ -71,7 +71,10 @@ public class FeatureSimilarity {
 
                     //then get liking if exist
                     Double liking = reader.getLiking().get(sorted.get(0) + "_" + sorted.get(1));
-                    if(liking == null) continue;
+                    if(liking == null) {
+                        //likings.add(confidence);
+                        continue;
+                    }
 
 
                     //if the two genres are confident, it equal to a match
@@ -79,13 +82,13 @@ public class FeatureSimilarity {
 //                        intersection = intersection + confidence;
 //                        break;
 
-//                    //if the two genres are liking, it equal to a match
-//                    if(liking > 0.9) {
-//                        intersection++;
-//                        break;
-//                    }
+                    //if the two genres are liking, it equal to a match
+                    if(confidence > 0.6) {
+                        intersection++;
+                        break;
+                    }
 
-                    likings.add(confidence);
+                    //likings.add(confidence);
 
                 }
             }

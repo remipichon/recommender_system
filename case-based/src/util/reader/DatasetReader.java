@@ -11,8 +11,17 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
 
+
+import java.util.*;
+import java.util.Map.Entry;
+
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Optional;
 
 import alg.casebase.Casebase;
 import alg.cases.Case;
@@ -142,7 +151,26 @@ public class DatasetReader {
                     column.put(word,tfid);
                 }
             }
-            allTFID.put(id,column);
+
+            //normalize value per column
+            Map<String, Double> result = new HashMap<>();
+            if(!column.isEmpty()) {
+                Comparator<? super Map.Entry<String, Double>> maxValueComparator = (
+                        entry1, entry2) -> entry1.getValue().compareTo(
+                        entry2.getValue());
+                Optional<Map.Entry<String, Double>> maxValue = column.entrySet()
+                        .stream().max(maxValueComparator);
+
+                Double maxColumn = maxValue.get().getValue();
+
+                for (Entry<String, Double> stringDoubleEntry : column.entrySet()) {
+                    result.put(stringDoubleEntry.getKey(),stringDoubleEntry.getValue() / maxColumn);
+                }
+
+            }
+
+
+            allTFID.put(id, result);
         }
         System.out.println("");
         return allTFID;
@@ -253,6 +281,7 @@ public class DatasetReader {
         }
 
 
+        HashMap<String, Double> temp = new HashMap<>();
         //compute [1] / [2]         // the increase in liking Y if X is liked
         for (Map.Entry<String, Double> entry : confidenceXY.entrySet()) {
             String X_Y = entry.getKey();
@@ -269,7 +298,18 @@ public class DatasetReader {
 
             Double value = confidenceX_Y / divider;
 
-            liking.put(X + "_" + Y,value);
+            temp.put(X + "_" + Y, value);
+        }
+
+        //normalize liking
+        Comparator<? super Entry<String, Double>> maxValueComparator = (
+                entry1, entry2) -> entry1.getValue().compareTo(
+                entry2.getValue());
+
+        Optional<Entry<String, Double>> maxValue = temp.entrySet()
+                .stream().max(maxValueComparator);
+        for (Entry<String, Double> stringDoubleEntry : temp.entrySet()) {
+            liking.put(stringDoubleEntry.getKey(),stringDoubleEntry.getValue() / maxValue.get().getValue());
         }
 
 
@@ -520,5 +560,9 @@ public class DatasetReader {
 
     public HashMap<String, Double> getLiking() {
         return liking;
+    }
+
+    public HashMap<String, Double> getNotCoOccuringGenre() {
+        return notCoOccuringGenre;
     }
 }
