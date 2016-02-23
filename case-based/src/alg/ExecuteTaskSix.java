@@ -75,6 +75,7 @@ public class ExecuteTaskSix extends Execute {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+        System.out.println("successfully restore " + fileName +" matrix datam from file");
     }
 
     private static void storeMatrix(DatasetReader reader, String fileName) {

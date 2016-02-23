@@ -89,17 +89,25 @@ public class Evaluator
 	 * @param topN - the size of the recommendation list
 	 * @return the precision @ topN
 	 */
+
+    int profileSizeLimit = 15;
+
 	public double getPrecision(final int topN)
 	{
 		double sum = 0;
-		
-		for(Integer userId: recommendations.keySet())
-		{	
+
+        int recommendationsUsedSize = 0;
+        for(Integer userId: recommendations.keySet())
+		{
+            Map<Integer, Double> userProfile = reader.getUserProfile(userId);
+            if(userProfile.size() > profileSizeLimit) continue;
+            recommendationsUsedSize++;
+
 			int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
 			sum += (topN > 0) ? size * 1.0 / topN : 0;
 		}
 		
-		return (recommendations.keySet().size() > 0) ? sum / recommendations.keySet().size() : 0;
+		return (recommendationsUsedSize > 0) ? sum / recommendationsUsedSize : 0;
 	}
 
 	/**
@@ -110,14 +118,19 @@ public class Evaluator
 	public double getRecall(final int topN)
 	{
 		double sum = 0;
-		
+
+        int recommendationsUsedSize = 0;
 		for(Integer userId: recommendations.keySet())
-		{	
-			int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
+		{
+            Map<Integer, Double> userProfile = reader.getUserProfile(userId);
+            if(userProfile.size() > profileSizeLimit) continue;
+            recommendationsUsedSize++;
+
+            int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
 			sum += (reader.getTestProfile(userId).size() > 0) ? size * 1.0 / reader.getTestProfile(userId).size() : 0;
 		}
 		
-		return (recommendations.keySet().size() > 0) ? sum / recommendations.keySet().size() : 0;
+		return (recommendationsUsedSize > 0) ? sum / recommendationsUsedSize : 0;
 	}
 	
 	/**
