@@ -18,13 +18,15 @@ import util.reader.DatasetReader;
 
 import java.io.File;
 
-public class ExecuteTaskOne {
+public class ExecuteTaskOne extends Execute{
     public static void main(String[] args) {
         // set the paths and filenames of the training, test and movie metadata files and read in the data
         String trainFile = "dataset" + File.separator + "trainData.txt";
         String testFile = "dataset" + File.separator + "testData.txt";
         String movieFile = "dataset" + File.separator + "movies.txt";
         DatasetReader reader = new DatasetReader(trainFile, testFile, movieFile);
+
+        System.out.println("Reader ok");
 
         // configure the case-based recommendation algorithm - set the case similarity and recommender
         CaseSimilarity overlapCaseSimilarity = new OverlapCaseSimilarity();
@@ -34,27 +36,17 @@ public class ExecuteTaskOne {
 
 
         recommender = new MaxRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MaxRecommender", reader, recommender);
+        evaluateAndPrintResult(overlapCaseSimilarity, "overlapCaseSimilarity | MaxRecommender", reader, recommender);
 
-        recommender = new MaxRecommender(jaccardCaseSimilarity, reader);
-        evaluateAndPrintResult("jaccardCaseSimilarity | MaxRecommender", reader, recommender);
+//        recommender = new MaxRecommender(jaccardCaseSimilarity, reader);
+//        evaluateAndPrintResult(jaccardCaseSimilarity, "jaccardCaseSimilarity | MaxRecommender", reader, recommender);
 
-        recommender = new MeanRecommender(overlapCaseSimilarity, reader);
-        evaluateAndPrintResult("overlapCaseSimilarity | MeanRecommender", reader, recommender);
+//        recommender = new MeanRecommender(overlapCaseSimilarity, reader);
+//        evaluateAndPrintResult(overlapCaseSimilarity, "overlapCaseSimilarity | MeanRecommender", reader, recommender);
 
-        recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
-        evaluateAndPrintResult("jaccardCaseSimilarity | MeanRecommender", reader, recommender);
+//        recommender = new MeanRecommender(jaccardCaseSimilarity, reader);
+//        evaluateAndPrintResult(jaccardCaseSimilarity, "jaccardCaseSimilarity | MeanRecommender", reader, recommender);
 
 
-    }
-
-    private static void evaluateAndPrintResult(String type, DatasetReader reader, Recommender recommender) {
-        // evaluate the case-based recommender
-        Evaluator eval = new Evaluator(recommender, reader);
-
-        System.out.println(type);
-        System.out.println("topN\tRecall\tPrecision for " + type);
-        for (int topN = 5; topN <= 50; topN += 5) //the size of the recommendation list
-            System.out.println(topN + "\t" + eval.getRecall(topN) + "\t" + eval.getPrecision(topN));
     }
 }

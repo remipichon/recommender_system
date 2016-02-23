@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import alg.cases.Case;
+import alg.cases.similarity.CaseSimilarity;
+import alg.cases.similarity.OverlapCaseSimilarity;
 import util.reader.DatasetReader;
 import alg.recommender.Recommender;
 
@@ -32,28 +35,79 @@ public class Evaluator
 		int counter = 0;
 		for(Integer userId: reader.getTestIds())
 		{
-			if(++counter %100 == 0) System.out.print(".");
+            if(++counter %100 == 0) System.out.print(".");
 			recommendations.put(userId, recommender.getRecommendations(userId, reader));
 		}
 		System.out.println();
 	}
 	
+    public double getDiversity(int topN){
+        double sumDiversity = 0;
+        Case c1;
+        Case c2;
+        int N;
+        double down, upper, userDiversity;
+
+        CaseSimilarity caseSimilarity = new OverlapCaseSimilarity();
+
+        System.out.println("user diversity");
+        for(Integer userId: recommendations.keySet()) {
+            ArrayList<Integer> intersection = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN); //is integer a list of id ?
+
+            N = intersection.size();
+            if(N == 0){
+                continue;
+            }
+            if(N == 1){
+                continue;
+            }
+            down = N * (N - 1);
+
+
+            for (Integer ri : intersection) {
+                c1 = reader.getCasebase().getCase(ri);
+                for (Integer rj : intersection) {
+                    if (ri.equals(rj)) continue;
+                    c2 = reader.getCasebase().getCase(rj);
+
+                    upper = 1 - caseSimilarity.getSimilarity(c1, c2);
+                    sumDiversity += upper;
+                }
+            }
+
+            userDiversity = sumDiversity / down;
+            System.out.println(userDiversity);
+
+            sumDiversity += userDiversity;
+        }
+
+        return sumDiversity / recommendations.keySet().size();
+    }
+
 	/**
 	 * computes the mean precision (over all test users) for a given recommendation list size provided by the case-based recommender
 	 * @param topN - the size of the recommendation list
 	 * @return the precision @ topN
 	 */
+
+    int profileSizeLimit = 15;
+
 	public double getPrecision(final int topN)
 	{
 		double sum = 0;
-		
-		for(Integer userId: recommendations.keySet())
-		{	
+
+        int recommendationsUsedSize = 0;
+        for(Integer userId: recommendations.keySet())
+		{
+            Map<Integer, Double> userProfile = reader.getUserProfile(userId);
+            if(userProfile.size() > profileSizeLimit) continue;
+            recommendationsUsedSize++;
+
 			int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
 			sum += (topN > 0) ? size * 1.0 / topN : 0;
 		}
 		
-		return (recommendations.keySet().size() > 0) ? sum / recommendations.keySet().size() : 0;
+		return (recommendationsUsedSize > 0) ? sum / recommendationsUsedSize : 0;
 	}
 
 	/**
@@ -64,14 +118,19 @@ public class Evaluator
 	public double getRecall(final int topN)
 	{
 		double sum = 0;
-		
+
+        int recommendationsUsedSize = 0;
 		for(Integer userId: recommendations.keySet())
-		{	
-			int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
+		{
+            Map<Integer, Double> userProfile = reader.getUserProfile(userId);
+            if(userProfile.size() > profileSizeLimit) continue;
+            recommendationsUsedSize++;
+
+            int size = getIntersection(recommendations.get(userId), reader.getTestProfile(userId), topN).size();
 			sum += (reader.getTestProfile(userId).size() > 0) ? size * 1.0 / reader.getTestProfile(userId).size() : 0;
 		}
 		
-		return (recommendations.keySet().size() > 0) ? sum / recommendations.keySet().size() : 0;
+		return (recommendationsUsedSize > 0) ? sum / recommendationsUsedSize : 0;
 	}
 	
 	/**
@@ -92,5 +151,7 @@ public class Evaluator
 		}
 
 		return intersection;
-	}	
+	}
+
+
 }

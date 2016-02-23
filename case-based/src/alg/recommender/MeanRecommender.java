@@ -19,7 +19,7 @@ import util.ScoredThingDsc;
 import util.reader.DatasetReader;
 import alg.cases.similarity.CaseSimilarity;
 
-public class MeanRecommender extends Recommender {
+public class MeanRecommender extends RecommenderNonPersonalised {
     /**
      * constructor - creates a new MeanRecommender object
      *

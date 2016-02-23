@@ -54,4 +54,8 @@ public class Casebase {
     public int size() {
         return cb.size();
     }
+
+    public Map<Integer, Case> getCb() {
+        return cb;
+    }
 }
