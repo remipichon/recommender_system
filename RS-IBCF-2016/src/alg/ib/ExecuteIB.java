@@ -21,9 +21,15 @@ import java.io.File;
 public class ExecuteIB {
     public static void main(String[] args) {
         // configure the item-based CF algorithm - set the predictor, neighbourhood and similarity metric ...
-        Predictor predictor = new SimpleAveragePredictor();
+        ExecuteParams executeParams = new ExecuteParams();
+
+        //*** PARAMS
+        executeParams.SimpleAveragePredictor_PearsonMetric();
+        //***
+
+        Predictor predictor = executeParams.predictor;
         Neighbourhood neighbourhood = new NearestNeighbourhood(100);
-        SimilarityMetric metric = new PearsonMetric();
+        SimilarityMetric metric = executeParams.metric;
 
         // set the paths and filenames of the item file, train file and test file ...
         String itemFile = "ML dataset" + File.separator + "u.item";

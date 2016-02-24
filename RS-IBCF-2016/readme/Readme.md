@@ -1,8 +1,8 @@
 experiment 1
 
 
-cosine
+cosine  OK
 
-similarity thresholding
+weighted average OK
 
-weighted average
+deviation	from	itemmean

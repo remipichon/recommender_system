@@ -15,7 +15,7 @@ import java.util.*;
 
 public class Profile {
     private Integer id; // the numeric ID of the profile
-    private Map<Integer, Double> dataMap; // stores either (a), (b), (c) or (d) above
+    private Map<Integer, Double> dataMap; // <movieId, rating>
 
     /**
      * constructor - creates a new Profile object
