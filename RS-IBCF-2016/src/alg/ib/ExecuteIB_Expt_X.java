@@ -22,7 +22,7 @@ import java.io.File;
 
 public class ExecuteIB_Expt_X {
     public static void main(String[] args) {
-        System.out.println("neighbourhoodSize,rmse,coverage");
+        System.out.println("neighbourhoodSize\trmse\tcoverage");
 
         for (int neighbourhoodSize = 5; neighbourhoodSize <= 100; neighbourhoodSize += 5) {
             // configure the item-based CF algorithm - set the predictor, neighbourhood and similarity metric ...
@@ -51,7 +51,7 @@ public class ExecuteIB_Expt_X {
             Double RMSE = eval.getRMSE();
             double rmse = (RMSE != null) ? RMSE.doubleValue() : -1;
             double coverage = eval.getCoverage();
-            System.out.println(neighbourhoodSize + "," + rmse + "," + coverage);
+            System.out.println(neighbourhoodSize + "\t" + rmse + "\t" + coverage);
         }
     }
 }
