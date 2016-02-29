@@ -100,6 +100,19 @@ public class Profile {
     }
 
     /**
+     * @returns a set of IDs that at least one of the  two profiles have
+     */
+    public Set<Integer> getUnionIds(final Profile other) {
+        Set<Integer> common = new HashSet<Integer>();
+
+        common.addAll(other.getIds());
+        common.addAll(getIds());
+
+        return common;
+    }
+
+
+    /**
      * @param the ID to be added to the profile
      * @param the corresponding value
      */

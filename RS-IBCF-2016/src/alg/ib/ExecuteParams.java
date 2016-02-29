@@ -4,9 +4,7 @@ import alg.ib.predictor.DeviationPredictor;
 import alg.ib.predictor.Predictor;
 import alg.ib.predictor.SimpleAveragePredictor;
 import alg.ib.predictor.WeightedAveragePredictor;
-import similarity.metric.CosineMetric;
-import similarity.metric.PearsonMetric;
-import similarity.metric.SimilarityMetric;
+import similarity.metric.*;
 
 /**
  * Created by remi on 24/02/16.
@@ -39,4 +37,19 @@ public class ExecuteParams {
     }
 
 
+    public void DeviationPredictor_PearsonMetric() {
+        predictor = new DeviationPredictor();
+        metric = new PearsonMetric();
+    }
+
+    public void DeviationPredictor_PearsonSignifianceWeightMetric() {
+        predictor = new DeviationPredictor();
+        metric = new PearsonSignifianceWeightMetric();
+    }
+
+    public void DeviationPredictor_JaccardMetric() {
+        predictor = new DeviationPredictor();
+        metric = new JaccardMetric();
+
+    }
 }
