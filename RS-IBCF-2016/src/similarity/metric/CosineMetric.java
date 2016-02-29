@@ -25,19 +25,26 @@ public class CosineMetric implements SimilarityMetric {
      * @param profile 2
      */
     public double getSimilarity(final Profile p1, final Profile p2) {
-        double sum_r1 = 0;
         double sum_r1_sq = 0;
-        double sum_r2 = 0;
         double sum_r2_sq = 0;
         double sum_r1_r2 = 0;
+
+
+        Set<Integer> p1Ids = p1.getIds();
+        for (Integer id : p1Ids) {
+            sum_r1_sq += Math.pow(p1.getValue(id).doubleValue(),2);
+        }
+        Set<Integer> p2Ids = p1.getIds();
+        for (Integer id : p2Ids) {
+            sum_r2_sq += Math.pow(p2.getValue(id).doubleValue(),2);
+        }
+
 
         Set<Integer> common = p1.getCommonIds(p2);
         for (Integer id : common) { //all common rated movies
             double r1 = p1.getValue(id).doubleValue();
             double r2 = p2.getValue(id).doubleValue();
 
-            sum_r1_sq += r1 * r1;
-            sum_r2_sq += r2 * r2;
             sum_r1_r2 += r1 * r2;
         }
 
