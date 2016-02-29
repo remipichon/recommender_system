@@ -10,6 +10,9 @@ deviation from itemmean (6) OK
 
 experiment 2
 
+
+cosine (1) + deviation from itemmean (6)
+
 similarity	thresholding (4)
 
 

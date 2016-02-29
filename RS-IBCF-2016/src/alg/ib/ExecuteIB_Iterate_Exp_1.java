@@ -20,12 +20,12 @@ import util.reader.DatasetReader;
 
 import java.io.File;
 
-public class ExecuteIB_Expt_X {
+public class ExecuteIB_Iterate_Exp_1 {
     public static void main(String[] args) {
         ExecuteParams executeParams = new ExecuteParams();
 
         //*** PARAMS
-        executeParams.DeviationPredictor_CosineMetric();
+        executeParams.SimpleAveragePredictor_CosineMetric();
         //***
         String params = " | "+executeParams.predictor.getName()+ " | "+executeParams.metric.getName();
         System.out.println("neighbourhoodSize\trmse"+params+"\tcoverage"+params);
