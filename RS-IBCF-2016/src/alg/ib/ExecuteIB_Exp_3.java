@@ -60,11 +60,11 @@ public class ExecuteIB_Exp_3 {
         Evaluator eval = new Evaluator(ibcf, reader.getTestData());
         eval.writeResults(outputFile);
 
-        String params = " | "+executeParams.predictor.getName()+ " | "+executeParams.metric.getName();
+        String params = executeParams.metric.getName();
         System.out.println(params);
 
         Double RMSE = eval.getRMSE();
-        if (RMSE != null) System.out.printf("RMSE: %.6f\n", RMSE);
+        if (RMSE != null) System.out.printf("RMSE: \t%.6f\n", RMSE);
 
         for (int i = 1; i <= 5; i++) {
             RMSE = eval.getRMSE(i);
