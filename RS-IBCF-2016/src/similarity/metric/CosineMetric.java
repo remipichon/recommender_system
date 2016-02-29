@@ -34,7 +34,7 @@ public class CosineMetric implements SimilarityMetric {
         for (Integer id : p1Ids) {
             sum_r1_sq += Math.pow(p1.getValue(id).doubleValue(),2);
         }
-        Set<Integer> p2Ids = p1.getIds();
+        Set<Integer> p2Ids = p2.getIds();
         for (Integer id : p2Ids) {
             sum_r2_sq += Math.pow(p2.getValue(id).doubleValue(),2);
         }
