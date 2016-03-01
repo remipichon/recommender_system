@@ -33,30 +33,31 @@ public class ExecuteIB_Exp_3 {
         //*** PARAMS
         executeParams1.DeviationPredictor_CosineMetric();
         executeParams2.DeviationPredictor_PearsonMetric();
-        executeParams30.DeviationPredictor_PearsonSignifianceWeightMetric(40);
-        executeParams31.DeviationPredictor_PearsonSignifianceWeightMetric(45);
+        executeParams30.DeviationPredictor_PearsonSignifianceWeightMetric(1);
+        executeParams31.DeviationPredictor_PearsonSignifianceWeightMetric(5);
         executeParams32.DeviationPredictor_PearsonSignifianceWeightMetric(50);
-        executeParams33.DeviationPredictor_PearsonSignifianceWeightMetric(55);
-        executeParams34.DeviationPredictor_PearsonSignifianceWeightMetric(60);
+        executeParams33.DeviationPredictor_PearsonSignifianceWeightMetric(80);
+        executeParams34.DeviationPredictor_PearsonSignifianceWeightMetric(100);
         executeParams41.DeviationPredictor_JaccardMetric(50);
-        executeParams42.DeviationPredictor_JaccardMetric(45);
-        executeParams43.DeviationPredictor_JaccardMetric(55);
+        executeParams42.DeviationPredictor_JaccardMetric(70);
+        executeParams43.DeviationPredictor_JaccardMetric(100);
         //***
 
-//       computeOne(executeParams1);
-//        computeOne(executeParams2);
-//        computeOne(executeParams30,"N = 40");
-//        computeOne(executeParams31,"N = 45");
-//        computeOne(executeParams32,"N = 50");
-//        computeOne(executeParams33,"N = 55");
-//        computeOne(executeParams34,"N = 60");
-        computeOne(executeParams41,"T = 50");
-        computeOne(executeParams42,"T = 45");
-        computeOne(executeParams43,"T = 55");
+       computeOne(executeParams1);
+        computeOne(executeParams2);
+        computeOne(executeParams30,"N = 1");
+        computeOne(executeParams31,"N = 5");
+        computeOne(executeParams32,"N = 50");
+//        computeOne(executeParams33,"N = 80");
+        computeOne(executeParams34,"N = 100");
+        computeOne(executeParams41, "T = 50");
+        computeOne(executeParams42, "T = 70");
+        computeOne(executeParams43, "T = 100");
     }
 
     /**
      * Just a wrapper for computeOne(ExecuteParams executeParams, String extraComment)
+     *
      * @param executeParams
      */
     private static void computeOne(ExecuteParams executeParams) {
@@ -65,7 +66,7 @@ public class ExecuteIB_Exp_3 {
 
     /**
      * @param executeParams
-     * @param extraComment to be displayed in the ouput
+     * @param extraComment  to be displayed in the ouput
      */
     private static void computeOne(ExecuteParams executeParams, String extraComment) {
         Predictor predictor = executeParams.predictor;
@@ -91,7 +92,7 @@ public class ExecuteIB_Exp_3 {
         eval.writeResults(outputFile);
 
         String params = executeParams.metric.getName();
-        System.out.println(params);
+        System.out.println(params + ((extraComment.equals("")) ? "" : " | " + extraComment));
 
         Double RMSE = eval.getRMSE();
         if (RMSE != null) System.out.println("RMSE: \t" + RMSE);
@@ -102,6 +103,6 @@ public class ExecuteIB_Exp_3 {
         }
 
         double coverage = eval.getCoverage();
-        System.out.println("coverage: \t"+coverage);
+        System.out.println("coverage: \t" + coverage);
     }
 }
