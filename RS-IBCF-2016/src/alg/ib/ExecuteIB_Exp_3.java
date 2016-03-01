@@ -21,23 +21,53 @@ public class ExecuteIB_Exp_3 {
         // configure the item-based CF algorithm - set the predictor, neighbourhood and similarity metric ...
         ExecuteParams executeParams1 = new ExecuteParams();
         ExecuteParams executeParams2 = new ExecuteParams();
-        ExecuteParams executeParams3 = new ExecuteParams();
-        ExecuteParams executeParams4 = new ExecuteParams();
+        ExecuteParams executeParams30 = new ExecuteParams();
+        ExecuteParams executeParams31 = new ExecuteParams();
+        ExecuteParams executeParams32 = new ExecuteParams();
+        ExecuteParams executeParams33 = new ExecuteParams();
+        ExecuteParams executeParams34 = new ExecuteParams();
+        ExecuteParams executeParams41 = new ExecuteParams();
+        ExecuteParams executeParams42 = new ExecuteParams();
+        ExecuteParams executeParams43 = new ExecuteParams();
 
         //*** PARAMS
         executeParams1.DeviationPredictor_CosineMetric();
         executeParams2.DeviationPredictor_PearsonMetric();
-        executeParams3.DeviationPredictor_PearsonSignifianceWeightMetric();
-        executeParams4.DeviationPredictor_JaccardMetric();
+        executeParams30.DeviationPredictor_PearsonSignifianceWeightMetric(40);
+        executeParams31.DeviationPredictor_PearsonSignifianceWeightMetric(45);
+        executeParams32.DeviationPredictor_PearsonSignifianceWeightMetric(50);
+        executeParams33.DeviationPredictor_PearsonSignifianceWeightMetric(55);
+        executeParams34.DeviationPredictor_PearsonSignifianceWeightMetric(60);
+        executeParams41.DeviationPredictor_JaccardMetric(50);
+        executeParams42.DeviationPredictor_JaccardMetric(45);
+        executeParams43.DeviationPredictor_JaccardMetric(55);
         //***
 
-        computeOne(executeParams1);
-        computeOne(executeParams2);
-        computeOne(executeParams3);
-        computeOne(executeParams4);
+//       computeOne(executeParams1);
+//        computeOne(executeParams2);
+//        computeOne(executeParams30,"N = 40");
+//        computeOne(executeParams31,"N = 45");
+//        computeOne(executeParams32,"N = 50");
+//        computeOne(executeParams33,"N = 55");
+//        computeOne(executeParams34,"N = 60");
+        computeOne(executeParams41,"T = 50");
+        computeOne(executeParams42,"T = 45");
+        computeOne(executeParams43,"T = 55");
     }
 
+    /**
+     * Just a wrapper for computeOne(ExecuteParams executeParams, String extraComment)
+     * @param executeParams
+     */
     private static void computeOne(ExecuteParams executeParams) {
+        computeOne(executeParams, "");
+    }
+
+    /**
+     * @param executeParams
+     * @param extraComment to be displayed in the ouput
+     */
+    private static void computeOne(ExecuteParams executeParams, String extraComment) {
         Predictor predictor = executeParams.predictor;
         Neighbourhood neighbourhood = new NearestNeighbourhood(70);
         SimilarityMetric metric = executeParams.metric;
@@ -64,7 +94,7 @@ public class ExecuteIB_Exp_3 {
         System.out.println(params);
 
         Double RMSE = eval.getRMSE();
-        if (RMSE != null) System.out.printf("RMSE: \t%.6f\n", RMSE);
+        if (RMSE != null) System.out.println("RMSE: \t" + RMSE);
 
         for (int i = 1; i <= 5; i++) {
             RMSE = eval.getRMSE(i);
@@ -72,6 +102,6 @@ public class ExecuteIB_Exp_3 {
         }
 
         double coverage = eval.getCoverage();
-        System.out.printf("coverage: %.2f%s\n", coverage, "%");
+        System.out.println("coverage: \t"+coverage);
     }
 }

@@ -42,14 +42,14 @@ public class ExecuteParams {
         metric = new PearsonMetric();
     }
 
-    public void DeviationPredictor_PearsonSignifianceWeightMetric() {
+    public void DeviationPredictor_PearsonSignifianceWeightMetric(int N) {
         predictor = new DeviationPredictor();
-        metric = new PearsonSignifianceWeightMetric();
+        metric = new PearsonSignifianceWeightMetric(N);
     }
 
-    public void DeviationPredictor_JaccardMetric() {
+    public void DeviationPredictor_JaccardMetric(int T) {
         predictor = new DeviationPredictor();
-        metric = new JaccardMetric();
+        metric = new JaccardMetric(T);
 
     }
 }

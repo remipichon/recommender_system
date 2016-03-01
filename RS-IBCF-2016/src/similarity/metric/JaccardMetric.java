@@ -12,10 +12,13 @@ import profile.Profile;
 import java.util.Set;
 
 public class JaccardMetric implements SimilarityMetric {
+    private final int T; //Jaccard threshold
+
     /**
      * constructor - creates a new JaccardMetric object
      */
-    public JaccardMetric() {
+    public JaccardMetric(final int T) {
+        this.T = T;
     }
 
     /**
@@ -51,10 +54,8 @@ public class JaccardMetric implements SimilarityMetric {
 
         Set<Integer> union = p1.getUnionIds(p2);
 
-
-        int T = 50; //threshold //TODO parametrize
         boolean condition = (common.size() < T);
-        int jaccardIndex = common.size() / union.size();
+        double jaccardIndex = new Double(common.size()) / union.size();
 
         return (condition)? weigh * jaccardIndex  : weigh;
     }
