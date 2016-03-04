@@ -33,18 +33,18 @@ public class DeviationPredictor implements Predictor {
         double above = 0;
         double below = 0;
 
-        double averageTargetUserRating = userProfileMap.get(userId).getMeanValue(); //for user userId
+        double averageTargetItemRating = (itemProfileMap.get(itemId) != null) ? itemProfileMap.get(itemId).getMeanValue() : 0;
 
-        for (Integer id : userProfileMap.get(userId).getIds()) // iterate over the target user's items
+        for (Integer targetItemId : userProfileMap.get(userId).getIds()) // iterate over the target user's items
         {
-            if (neighbourhood.isNeighbour(itemId, id)) // the current item is in the neighbourhood
+            if (neighbourhood.isNeighbour(itemId, targetItemId)) // the current item is in the neighbourhood
             {
-                Double rating = userProfileMap.get(userId).getValue(id);
-                Double weight = simMap.getSimilarity(userId,id);
+                Double rating = userProfileMap.get(userId).getValue(targetItemId);
+                Double weight = simMap.getSimilarity(itemId,targetItemId);
 
-                Double averageNeighbourhoodUserRating = itemProfileMap.get(id).getMeanValue();
+                Double averageNeighbourhoodItemRating = itemProfileMap.get(targetItemId).getMeanValue();
 
-                Double sumItem = rating - averageNeighbourhoodUserRating;
+                Double sumItem = rating - averageNeighbourhoodItemRating;
 
                 above += sumItem.doubleValue() * weight;
                 below += Math.abs(weight.doubleValue());
@@ -52,9 +52,10 @@ public class DeviationPredictor implements Predictor {
         }
 
         if (below > 0)
-            return averageTargetUserRating + new Double((below > 0) ? above / below : 0);
+            return averageTargetItemRating + new Double((below > 0) ? above / below : 0);
         else
             return null;
+
     }
 
     @Override

@@ -14,6 +14,11 @@ import similarity.SimilarityMap;
 import similarity.metric.SimilarityMetric;
 import util.reader.DatasetReader;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 public class ItemBasedCF implements CFAlgorithm {
     private Predictor predictor; // the predictor technique
     private Neighbourhood neighbourhood; // the neighbourhood technique
@@ -43,5 +48,15 @@ public class ItemBasedCF implements CFAlgorithm {
      */
     public Double getPrediction(final Integer userId, final Integer itemId) {
         return predictor.getPrediction(userId, itemId, reader.getUserProfiles(), reader.getItemProfiles(), neighbourhood, simMap);
+    }
+
+    public double averageNeighbourhoodSize() {
+        Map<Integer, Set<Integer>> neighbourhoodMap = this.neighbourhood.neighbourhoodMap;
+        int sum = 0;
+        for (Set<Integer> integers : neighbourhoodMap.values()) {
+            sum +=integers.size();
+        }
+
+        return sum / neighbourhoodMap.values().size();
     }
 }

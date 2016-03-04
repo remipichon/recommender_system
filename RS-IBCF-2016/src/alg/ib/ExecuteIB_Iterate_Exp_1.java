@@ -25,7 +25,7 @@ public class ExecuteIB_Iterate_Exp_1 {
         ExecuteParams executeParams = new ExecuteParams();
 
         //*** PARAMS
-        executeParams.SimpleAveragePredictor_CosineMetric();
+        executeParams.WeightedAveragePredictor_CosineMetric();
         //***
         String params = " | "+executeParams.predictor.getName()+ " | "+executeParams.metric.getName();
         System.out.println("neighbourhoodSize\trmse"+params+"\tcoverage"+params);
@@ -51,6 +51,7 @@ public class ExecuteIB_Iterate_Exp_1 {
             // - output file is created
             DatasetReader reader = new DatasetReader(itemFile, trainFile, testFile);
             ItemBasedCF ibcf = new ItemBasedCF(predictor, neighbourhood, metric, reader);
+
 
             Evaluator eval = new Evaluator(ibcf, reader.getTestData());
             eval.writeResults(outputFile);

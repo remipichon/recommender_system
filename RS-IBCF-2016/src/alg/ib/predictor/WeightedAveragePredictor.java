@@ -10,7 +10,10 @@ package alg.ib.predictor;
 import alg.ib.neighbourhood.Neighbourhood;
 import profile.Profile;
 import similarity.SimilarityMap;
+import similarity.metric.Statistics;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class WeightedAveragePredictor implements Predictor {
@@ -32,17 +35,25 @@ public class WeightedAveragePredictor implements Predictor {
     public Double getPrediction(final Integer userId, final Integer itemId, final Map<Integer, Profile> userProfileMap, final Map<Integer, Profile> itemProfileMap, final Neighbourhood neighbourhood, final SimilarityMap simMap) {
         double above = 0;
         double below = 0;
+        List<Double> weights = new ArrayList<Double>();
 
-        for (Integer id : userProfileMap.get(userId).getIds()) // iterate over the target user's items
+        for (Integer targetItemId : userProfileMap.get(userId).getIds()) // iterate over the target user's items
         {
-            if (neighbourhood.isNeighbour(itemId, id)) // the current item is in the neighbourhood
+            if (neighbourhood.isNeighbour(itemId, targetItemId)) // the current item is in the neighbourhood
             {
-                Double rating = userProfileMap.get(userId).getValue(id);
-                Double weight = simMap.getSimilarity(userId,id);
+                Double rating = userProfileMap.get(userId).getValue(targetItemId);
+                Double weight = simMap.getSimilarity(itemId,targetItemId);
+                weights.add(weight);
 
                 above += rating.doubleValue() * weight;
                 below += Math.abs(weight.doubleValue());
             }
+        }
+
+        Statistics statistics = new Statistics(weights);
+        double stdDev = statistics.getStdDev();
+        if(!Double.isNaN(stdDev)) {
+            //System.out.println(stdDev);
         }
 
         if (below > 0)

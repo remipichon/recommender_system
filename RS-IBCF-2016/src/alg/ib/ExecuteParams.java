@@ -26,6 +26,11 @@ public class ExecuteParams {
         metric = new CosineMetric();
     }
 
+    public void WeightedAveragePredictor_PearsonSignifianceWeightMetric(){
+        predictor = new WeightedAveragePredictor();
+        metric = new PearsonSignifianceWeightMetric(50);
+    }
+
     public void SimpleAveragePredictor_CosineMetric(){
         predictor = new SimpleAveragePredictor();
         metric = new CosineMetric();
@@ -47,9 +52,9 @@ public class ExecuteParams {
         metric = new PearsonSignifianceWeightMetric(N);
     }
 
-    public void DeviationPredictor_JaccardMetric(int T) {
+    public void DeviationPredictor_JaccardMetric() {
         predictor = new DeviationPredictor();
-        metric = new JaccardMetric(T);
+        metric = new JaccardMetric();
 
     }
 }

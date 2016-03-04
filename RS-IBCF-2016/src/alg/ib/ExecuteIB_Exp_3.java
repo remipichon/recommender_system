@@ -27,8 +27,6 @@ public class ExecuteIB_Exp_3 {
         ExecuteParams executeParams33 = new ExecuteParams();
         ExecuteParams executeParams34 = new ExecuteParams();
         ExecuteParams executeParams41 = new ExecuteParams();
-        ExecuteParams executeParams42 = new ExecuteParams();
-        ExecuteParams executeParams43 = new ExecuteParams();
 
         //*** PARAMS
         executeParams1.DeviationPredictor_CosineMetric();
@@ -36,11 +34,9 @@ public class ExecuteIB_Exp_3 {
         executeParams30.DeviationPredictor_PearsonSignifianceWeightMetric(1);
         executeParams31.DeviationPredictor_PearsonSignifianceWeightMetric(5);
         executeParams32.DeviationPredictor_PearsonSignifianceWeightMetric(50);
-        executeParams33.DeviationPredictor_PearsonSignifianceWeightMetric(80);
-        executeParams34.DeviationPredictor_PearsonSignifianceWeightMetric(100);
-        executeParams41.DeviationPredictor_JaccardMetric(50);
-        executeParams42.DeviationPredictor_JaccardMetric(70);
-        executeParams43.DeviationPredictor_JaccardMetric(100);
+        executeParams33.DeviationPredictor_PearsonSignifianceWeightMetric(100);
+        executeParams34.DeviationPredictor_PearsonSignifianceWeightMetric(200);
+        executeParams41.DeviationPredictor_JaccardMetric();
         //***
 
        computeOne(executeParams1);
@@ -48,11 +44,9 @@ public class ExecuteIB_Exp_3 {
         computeOne(executeParams30,"N = 1");
         computeOne(executeParams31,"N = 5");
         computeOne(executeParams32,"N = 50");
-//        computeOne(executeParams33,"N = 80");
-        computeOne(executeParams34,"N = 100");
-        computeOne(executeParams41, "T = 50");
-        computeOne(executeParams42, "T = 70");
-        computeOne(executeParams43, "T = 100");
+        computeOne(executeParams33,"N = 100");
+        computeOne(executeParams34,"N = 200");
+        computeOne(executeParams41);
     }
 
     /**

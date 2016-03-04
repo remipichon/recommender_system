@@ -24,10 +24,10 @@ public class ExecuteIB_Iterate_Exp_2 {
         ExecuteParams executeParams = new ExecuteParams();
 
         //*** PARAMS
-        executeParams.DeviationPredictor_CosineMetric();
+        executeParams.DeviationPredictor_JaccardMetric();
         //***
         String params = " | "+executeParams.predictor.getName()+ " | "+executeParams.metric.getName();
-        System.out.println("SimilarityThresholdingNeighbourhood\trmse"+params+"\tcoverage"+params);
+        System.out.println("  SimilarityThresholdingNeighbourhood\trmse"+params+"\t  coverage"+params+"\t  neighbourhood size");
 
 
         for (double threshold = 0; threshold <= 1.05; threshold += 0.05) {
@@ -54,10 +54,12 @@ public class ExecuteIB_Iterate_Exp_2 {
             Evaluator eval = new Evaluator(ibcf, reader.getTestData());
             eval.writeResults(outputFile);
 
+            System.out.println(threshold + "\t"+ibcf.averageNeighbourhoodSize());
+
             Double RMSE = eval.getRMSE();
             double rmse = (RMSE != null) ? RMSE.doubleValue() : -1;
             double coverage = eval.getCoverage();
-            System.out.println(threshold + "\t" + rmse + "\t" + coverage);
+            //System.out.println(threshold + "\t" + rmse + "\t" + coverage + "\t"+ ibcf.averageNeighbourhoodSize());
         }
     }
 }

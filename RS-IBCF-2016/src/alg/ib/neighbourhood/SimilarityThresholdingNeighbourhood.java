@@ -36,33 +36,15 @@ public class SimilarityThresholdingNeighbourhood extends Neighbourhood {
     public void computeNeighbourhoods(final SimilarityMap simMap) {
         for (Integer itemId : simMap.getIds()) // iterate over each item
         {
-            //SortedSet<ScoredThingDsc> ss = new TreeSet<ScoredThingDsc>(); // for the current item, store all similarities in order of descending similarity in a sorted set
-
             Profile profile = simMap.getSimilarities(itemId); // get the item similarity profile
             if (profile != null) {
                 for (Integer id : profile.getIds()) // iterate over each item in the profile
                 {
                     double sim = profile.getValue(id);
-                    if(Math.abs(sim) > L)  //Select all u s.t. abs(wa,i) > L
-//                    if (Math.abs(sim) > 0)
-//                        ss.add(new ScoredThingDsc(sim, id));
+                    if(Math.abs(sim) > L)
                         this.add(itemId, id);
                 }
             }
-
-            // get all neighbours who similarity is <= L
-
-
-
-
-//            // get the k most similar items (neighbours)
-//            int counter = 0;
-//            for (Iterator<ScoredThingDsc> iter = ss.iterator(); iter.hasNext() && counter < k; ) {
-//                ScoredThingDsc st = iter.next();
-//                Integer id = (Integer) st.thing;
-//                this.add(itemId, id);
-//                counter++;
-//            }
         }
     }
 }

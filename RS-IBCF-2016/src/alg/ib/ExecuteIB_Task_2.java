@@ -27,7 +27,7 @@ public class ExecuteIB_Task_2 {
         //***
 
         Predictor predictor = executeParams.predictor;
-        Neighbourhood neighbourhood = new SimilarityThresholdingNeighbourhood(0.80);
+        Neighbourhood neighbourhood = new SimilarityThresholdingNeighbourhood(0.20);
         SimilarityMetric metric = executeParams.metric;
 
         // set the paths and filenames of the item file, train file and test file ...
