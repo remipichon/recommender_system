@@ -25,8 +25,11 @@ public class ExecuteIB_Iterate_Exp_1 {
         ExecuteParams executeParams = new ExecuteParams();
 
         //*** PARAMS
-        executeParams.WeightedAveragePredictor_CosineMetric();
+//        executeParams.SimpleAveragePredictor_CosineMetric();
+//        executeParams.WeightedAveragePredictor_CosineMetric();
+        executeParams.DeviationPredictor_CosineMetric();
         //***
+
         String params = " | "+executeParams.predictor.getName()+ " | "+executeParams.metric.getName();
         System.out.println("neighbourhoodSize\trmse"+params+"\tcoverage"+params);
 

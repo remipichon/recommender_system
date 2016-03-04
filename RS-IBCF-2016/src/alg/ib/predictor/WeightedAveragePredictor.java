@@ -35,7 +35,7 @@ public class WeightedAveragePredictor implements Predictor {
     public Double getPrediction(final Integer userId, final Integer itemId, final Map<Integer, Profile> userProfileMap, final Map<Integer, Profile> itemProfileMap, final Neighbourhood neighbourhood, final SimilarityMap simMap) {
         double above = 0;
         double below = 0;
-        List<Double> weights = new ArrayList<Double>();
+//        List<Double> weights = new ArrayList<Double>(); //used for experiment 1 to compute the standard deviation for every item similarity weight (see report)
 
         for (Integer targetItemId : userProfileMap.get(userId).getIds()) // iterate over the target user's items
         {
@@ -43,18 +43,18 @@ public class WeightedAveragePredictor implements Predictor {
             {
                 Double rating = userProfileMap.get(userId).getValue(targetItemId);
                 Double weight = simMap.getSimilarity(itemId,targetItemId);
-                weights.add(weight);
+//                weights.add(weight); //used for experiment 1 to compute the standard deviation for every item similarity weight (see report)
 
                 above += rating.doubleValue() * weight;
                 below += Math.abs(weight.doubleValue());
             }
         }
 
-        Statistics statistics = new Statistics(weights);
-        double stdDev = statistics.getStdDev();
-        if(!Double.isNaN(stdDev)) {
-            //System.out.println(stdDev);
-        }
+//        Statistics statistics = new Statistics(weights);
+//        double stdDev = statistics.getStdDev();
+//        if(!Double.isNaN(stdDev)) { //used for experiment 1 to compute the standard deviation for every item similarity weight (see report)
+//            System.out.println(stdDev);
+//        }
 
         if (below > 0)
             return new Double((below > 0) ? above / below : 0);
