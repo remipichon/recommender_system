@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 
 public abstract class Neighbourhood {
-    private Map<Integer, Set<Integer>> neighbourhoodMap; // stores the neighbourhood items for each item in a set
+    public Map<Integer, Set<Integer>> neighbourhoodMap; // stores the neighbourhood items for each item in a set
 
     /**
      * constructor - creates a new Neighbourhood object

@@ -15,7 +15,7 @@ import java.util.*;
 
 public class Profile {
     private Integer id; // the numeric ID of the profile
-    private Map<Integer, Double> dataMap; // stores either (a), (b), (c) or (d) above
+    private Map<Integer, Double> dataMap; // <movieId, rating>
 
     /**
      * constructor - creates a new Profile object
@@ -98,6 +98,19 @@ public class Profile {
 
         return common;
     }
+
+    /**
+     * @returns a set of IDs that at least one of the  two profiles have
+     */
+    public Set<Integer> getUnionIds(final Profile other) {
+        Set<Integer> common = new HashSet<Integer>();
+
+        common.addAll(other.getIds());
+        common.addAll(getIds());
+
+        return common;
+    }
+
 
     /**
      * @param the ID to be added to the profile

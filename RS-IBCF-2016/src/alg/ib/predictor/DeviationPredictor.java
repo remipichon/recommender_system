@@ -13,11 +13,11 @@ import similarity.SimilarityMap;
 
 import java.util.Map;
 
-public class SimpleAveragePredictor implements Predictor {
+public class DeviationPredictor implements Predictor {
     /**
-     * constructor - creates a new SimpleAveragePredictor object
+     * constructor - creates a new WeightedAveragePredictor object
      */
-    public SimpleAveragePredictor() {
+    public DeviationPredictor() {
     }
 
     /**
@@ -31,22 +31,31 @@ public class SimpleAveragePredictor implements Predictor {
      */
     public Double getPrediction(final Integer userId, final Integer itemId, final Map<Integer, Profile> userProfileMap, final Map<Integer, Profile> itemProfileMap, final Neighbourhood neighbourhood, final SimilarityMap simMap) {
         double above = 0;
-        int counter = 0;
+        double below = 0;
 
-        for (Integer id : userProfileMap.get(userId).getIds()) // iterate over the target user's items
+        double averageTargetItemRating = (itemProfileMap.get(itemId) != null) ? itemProfileMap.get(itemId).getMeanValue() : 0;
+
+        for (Integer targetItemId : userProfileMap.get(userId).getIds()) // iterate over the target user's items
         {
-            if (neighbourhood.isNeighbour(itemId, id)) // the current item is in the neighbourhood
+            if (neighbourhood.isNeighbour(itemId, targetItemId)) // the current item is in the neighbourhood
             {
-                Double rating = userProfileMap.get(userId).getValue(id);
-                above += rating.doubleValue();
-                counter++;
+                Double rating = userProfileMap.get(userId).getValue(targetItemId);
+                Double weight = simMap.getSimilarity(itemId,targetItemId);
+
+                Double averageNeighbourhoodItemRating = itemProfileMap.get(targetItemId).getMeanValue();
+
+                Double sumItem = rating - averageNeighbourhoodItemRating;
+
+                above += sumItem.doubleValue() * weight;
+                below += Math.abs(weight.doubleValue());
             }
         }
 
-        if (counter > 0)
-            return new Double((counter > 0) ? above / counter : 0);
+        if (below > 0)
+            return averageTargetItemRating + new Double((below > 0) ? above / below : 0);
         else
             return null;
+
     }
 
     @Override

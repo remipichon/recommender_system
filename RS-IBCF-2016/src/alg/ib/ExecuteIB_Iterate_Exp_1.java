@@ -20,15 +20,25 @@ import util.reader.DatasetReader;
 
 import java.io.File;
 
-public class ExecuteIB_Expt_X {
+public class ExecuteIB_Iterate_Exp_1 {
     public static void main(String[] args) {
-        System.out.println("neighbourhoodSize\trmse\tcoverage");
+        ExecuteParams executeParams = new ExecuteParams();
+
+        //*** PARAMS
+//        executeParams.SimpleAveragePredictor_CosineMetric();
+//        executeParams.WeightedAveragePredictor_CosineMetric();
+        executeParams.DeviationPredictor_CosineMetric();
+        //***
+
+        String params = " | "+executeParams.predictor.getName()+ " | "+executeParams.metric.getName();
+        System.out.println("neighbourhoodSize\trmse"+params+"\tcoverage"+params);
+
 
         for (int neighbourhoodSize = 5; neighbourhoodSize <= 100; neighbourhoodSize += 5) {
             // configure the item-based CF algorithm - set the predictor, neighbourhood and similarity metric ...
-            Predictor predictor = new SimpleAveragePredictor();
+            Predictor predictor = executeParams.predictor;
             Neighbourhood neighbourhood = new NearestNeighbourhood(neighbourhoodSize);
-            SimilarityMetric metric = new PearsonMetric();
+            SimilarityMetric metric = executeParams.metric;
 
             // set the paths and filenames of the item file, train file and test file ...
             String itemFile = "ML dataset" + File.separator + "u.item";
@@ -44,6 +54,7 @@ public class ExecuteIB_Expt_X {
             // - output file is created
             DatasetReader reader = new DatasetReader(itemFile, trainFile, testFile);
             ItemBasedCF ibcf = new ItemBasedCF(predictor, neighbourhood, metric, reader);
+
 
             Evaluator eval = new Evaluator(ibcf, reader.getTestData());
             eval.writeResults(outputFile);

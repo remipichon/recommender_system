@@ -16,4 +16,6 @@ public interface SimilarityMetric {
      * @returns the similarity between two profiles
      */
     public double getSimilarity(final Profile p1, final Profile p2);
+
+    String getName();
 }

@@ -24,4 +24,6 @@ public interface Predictor {
      * @returns the target user's predicted rating for the target item or null if a prediction cannot be computed
      */
     public Double getPrediction(final Integer userId, final Integer itemId, final Map<Integer, Profile> userProfileMap, final Map<Integer, Profile> itemProfileMap, final Neighbourhood neighbourhood, final SimilarityMap simMap);
+
+    String getName();
 }

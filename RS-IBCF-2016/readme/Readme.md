@@ -1,8 +1,25 @@
 experiment 1
 
+cosine (1)  OK
 
-cosine
+weighted average (5) OK
 
-similarity thresholding
+deviation from itemmean (6) OK
 
-weighted average
+
+
+experiment 2
+
+
+cosine (1) + deviation from itemmean (6)
+
+similarity	thresholding (4)
+
+
+
+experiment 3
+
+jaccard (2)
+
+Pearson	correlation	with significance weighting (3)
+

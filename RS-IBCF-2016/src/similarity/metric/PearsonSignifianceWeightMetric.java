@@ -11,11 +11,15 @@ import profile.Profile;
 
 import java.util.Set;
 
-public class PearsonMetric implements SimilarityMetric {
+public class PearsonSignifianceWeightMetric implements SimilarityMetric {
+    private final int N;
+
     /**
-     * constructor - creates a new PearsonMetric object
+     * constructor - creates a new PearsonSignifianceWeightMetric object
+     * @param N significant weight threshold
      */
-    public PearsonMetric() {
+    public PearsonSignifianceWeightMetric(final int N) {
+        this.N = N;
     }
 
     /**
@@ -45,7 +49,12 @@ public class PearsonMetric implements SimilarityMetric {
 
         double above = (common.size() > 0) ? sum_r1_r2 - (sum_r1 * sum_r2) / common.size() : 0;
         double below = (common.size() > 0) ? Math.sqrt((sum_r1_sq - (sum_r1 * sum_r1) / common.size()) * (sum_r2_sq - (sum_r2 * sum_r2) / common.size())) : 0;
-        return (below > 0) ? above / below : 0;
+        double weigh =  (below > 0) ? above / below : 0;
+
+        double n = common.size(); //to force implicit n / N to be a double
+
+        return (n < N )? weigh * n / N  : weigh;
+
     }
 
     @Override

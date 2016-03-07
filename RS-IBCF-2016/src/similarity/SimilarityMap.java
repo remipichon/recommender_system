@@ -38,7 +38,7 @@ public class SimilarityMap {
             for (Integer id2 : profileMap.keySet())
                 if (id2 < id1) {
                     double sim = metric.getSimilarity(profileMap.get(id1), profileMap.get(id2));
-                    if (Math.abs(sim) > 0) {
+                    if (Math.abs(sim) > 0) { //sim != 0
                         setSimilarity(id1, id2, sim);
                         setSimilarity(id2, id1, sim);
                     }

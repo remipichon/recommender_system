@@ -9,26 +9,25 @@ package alg.ib;
 
 import alg.ib.neighbourhood.NearestNeighbourhood;
 import alg.ib.neighbourhood.Neighbourhood;
+import alg.ib.neighbourhood.SimilarityThresholdingNeighbourhood;
 import alg.ib.predictor.Predictor;
-import alg.ib.predictor.SimpleAveragePredictor;
-import similarity.metric.PearsonMetric;
 import similarity.metric.SimilarityMetric;
 import util.evaluator.Evaluator;
 import util.reader.DatasetReader;
 
 import java.io.File;
 
-public class ExecuteIB {
+public class ExecuteIB_Task_2 {
     public static void main(String[] args) {
         // configure the item-based CF algorithm - set the predictor, neighbourhood and similarity metric ...
         ExecuteParams executeParams = new ExecuteParams();
 
         //*** PARAMS
-        executeParams.SimpleAveragePredictor_PearsonMetric();
+        executeParams.DeviationPredictor_CosineMetric();
         //***
 
         Predictor predictor = executeParams.predictor;
-        Neighbourhood neighbourhood = new NearestNeighbourhood(100);
+        Neighbourhood neighbourhood = new SimilarityThresholdingNeighbourhood(0.20);
         SimilarityMetric metric = executeParams.metric;
 
         // set the paths and filenames of the item file, train file and test file ...
