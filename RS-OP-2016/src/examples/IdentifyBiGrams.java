@@ -19,8 +19,8 @@ public class IdentifyBiGrams
 		// Important - in these cases, "battery" should not also be considered as a single-noun feature 
 		// (duplication) - check for occurrence of bigram features in sentences first, and then for 
 		// single-noun features.
-		String reviewStr = "The Battery life is truly outstanding. The battery power is good. " +
-							"The recording button is positioned poorly.";
+		String reviewStr = "The Battery life is truly outstanding. The battery power is good and the battery is rapid to charge. " +
+							"The recording button is positioned poorly. The recording take time to run. The macro mode is a rare high-quality but the macro shots are poor.";
 		
 		Parser parser = new Parser(); // create an instance of the Parser class
 		String[] sentences = parser.getSentences(reviewStr); // get the sentences
@@ -66,7 +66,14 @@ public class IdentifyBiGrams
 		Set<String> set2 = new HashSet<String>();
 		set2.add("button");
 		map.put("recording", set2);
-		
-		return map;
+
+        //one more - "macro lens"
+        Set<String> set3 = new HashSet<String>();
+        set3.add("shots");
+        set3.add("mode");
+        map.put("macro",set3);
+
+
+        return map;
 	}
 }

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-import util.Review;
+import model.Review;
 
 public class DatasetReader 
 {

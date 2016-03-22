@@ -10,7 +10,7 @@ package examples;
 import java.util.ArrayList;
 import java.util.Set;
 
-import util.Review;
+import model.Review;
 import util.reader.DatasetReader;
 
 public class ReviewExample 

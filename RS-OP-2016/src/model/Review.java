@@ -5,7 +5,7 @@
  * 20/02/2013
  */
 
-package util;
+package model;
 
 public class Review {
 	private String reviewId;

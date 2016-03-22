@@ -42,7 +42,7 @@ public class Parser
 		
 		Parser parser = new Parser(); // create an instance of the Parser class
 		String[] sentences = parser.getSentences(str); // get the sentences
-		System.out.println("Token\t\tChunk Tag\tPOS Tag");
+		System.out.println("Token\t\t\tChunk Tag\t\t\tPOS Tag");
 		for(String sentence: sentences) // iterate over each sentence
 		{
 			String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
@@ -50,7 +50,7 @@ public class Parser
 			String chunks[] = parser.getChunkTags(tokens, pos); // get the chunk tags for the sentence
 			
 			for(int i = 0; i < tokens.length; i++) // print the sentence tokens and corresponding chunk and POS tags
-				System.out.println(tokens[i] + "\t\t" + chunks[i] + "\t\t" + pos[i]);
+				System.out.println(tokens[i] + "\t\t\t" + chunks[i] + "\t\t\t" + pos[i]);
 			System.out.println("\n+++++\n");			
 		}
 	}
@@ -65,6 +65,14 @@ public class Parser
 		getPOSTagger();
 		getChunker();
 	}
+
+    private static Parser instance;
+    public static Parser getInstance(){
+        if(instance == null)
+            instance = new Parser();
+        return instance;
+    }
+
 
 	/**
 	 * returns the sentences in a text
