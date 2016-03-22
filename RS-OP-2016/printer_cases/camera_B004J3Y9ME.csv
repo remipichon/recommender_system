@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+AUTO mode,1,0,0
+color,0,0,1
+Auto mode,1,0,0
+focus,0,1,0
+video quality,1,0,0
+video,0,1,0
+lens,1,0,0
+photos,3,1,1
+pictures,2,2,0
+mode,1,1,0
+features,1,0,0
+light,4,1,0
+function,2,0,1
+shots,1,0,0
+pics,1,0,0
+Lens Error,0,1,0
+flash,1,0,0

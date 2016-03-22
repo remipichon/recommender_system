@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+image,1,0,1
+quick shots,1,0,0
+auto,1,0,0
+Battery life,1,0,0
+shutter,1,0,0
+screen,1,0,0
+video,2,0,0
+battery,0,1,1
+battery compartment,0,1,0
+photos,2,1,2
+pictures,3,1,0
+features,1,0,0
+size,0,0,1
+light,2,0,0
+price,1,0,0
+function,1,0,0
+sensor,0,1,0
+Build quality,0,1,0
+SD card,1,0,0
+light photos,0,1,0
+flash,0,1,0

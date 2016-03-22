@@ -1,0 +1,52 @@
+feature,pos,neg,neutral
+manual focus,2,0,0
+movie,5,2,2
+focus,2,3,1
+screen,2,1,1
+LCD screen,0,1,1
+body,4,1,1
+photos,4,0,1
+mode,2,0,1
+HD video,1,0,0
+features,2,2,1
+view,1,0,0
+spare battery,1,0,0
+price,2,0,0
+pics,2,1,0
+build quality,1,0,0
+case,0,1,0
+image,1,0,0
+settings,0,2,0
+lenses,0,1,0
+LCD,3,1,0
+image quality,4,0,1
+size,6,1,0
+quality photos,1,1,0
+exposure,0,0,1
+light,5,2,1
+Video,1,0,1
+Focus,0,1,0
+sensor,0,2,1
+shots,6,1,0
+flash,10,2,1
+color,0,1,0
+video,3,4,4
+lens,7,2,0
+battery,0,1,0
+pictures,4,1,0
+button,0,2,0
+editing software,1,0,0
+noise,7,5,2
+viewfinder,4,0,0
+SD card,1,0,2
+video recording,1,1,0
+ISO,2,0,2
+shutter,0,2,1
+zoom,0,1,0
+movie mode,0,1,0
+menu,0,0,5
+user interface,0,1,0
+money,0,1,0
+DSLR,7,0,3
+light weight,1,0,0
+auto mode,1,1,0

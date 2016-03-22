@@ -68,7 +68,7 @@ public class SentimentService {
     }
 
 
-    public List<Feature> findClosestSentiment(String sentence, List<Feature> features) {
+    public void findClosestSentiment(String sentence, List<Feature> features) {
         String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
 
 
@@ -125,12 +125,10 @@ public class SentimentService {
 
 
         }
-
-        return features;
     }
 
 
-    public Feature extractPosPattern(String sentence, Feature feature) {
+    public void extractPosPattern(String sentence, Feature feature) {
 
         String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
         String pos[] = parser.getPOSTags(tokens); // get the POS tag for each sentence token
@@ -155,10 +153,9 @@ public class SentimentService {
 
 
         feature.setPosPattern(posPattern);
-
-
-        return null;
     }
+
+
 
 
 }

@@ -1,0 +1,41 @@
+feature,pos,neg,neutral
+second battery,0,1,0
+movie,1,0,0
+HD movie,1,0,0
+screen,1,1,0
+focus,1,0,0
+video,1,0,2
+lens,1,0,2
+LCD screen,1,0,0
+battery,1,0,1
+battery pack,1,0,0
+resolution,2,0,0
+photos,2,1,0
+pictures,2,2,2
+Case,0,0,1
+battery life,0,1,0
+mode,1,2,0
+features,2,1,0
+view,1,0,0
+price,2,1,0
+Battery,0,0,1
+Zoom,0,0,1
+light conditions,1,0,0
+case,1,1,2
+memory card,0,1,0
+aspect ratio,0,0,1
+settings,1,0,0
+Video quality,1,0,0
+underwater pictures,1,0,0
+video quality,1,0,0
+LCD,1,0,0
+user interface,0,1,0
+image quality,1,0,0
+money,0,1,0
+DSLR,0,0,2
+Lens,0,0,1
+sensor,1,0,1
+shots,1,0,0
+optical zoom,1,0,0
+BATTERY life,0,0,1
+flash,0,1,0

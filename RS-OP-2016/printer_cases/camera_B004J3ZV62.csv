@@ -1,0 +1,89 @@
+feature,pos,neg,neutral
+macro shots,3,1,0
+auto,2,0,0
+software,1,1,0
+movie,1,0,1
+screen,5,4,3
+focus,4,2,3
+LCD screen,0,0,1
+photos,15,5,4
+resolution,0,1,0
+video clips,1,1,0
+HD video,3,0,0
+mode,1,1,1
+battery life,1,0,0
+features,1,0,0
+price,5,0,1
+function,0,1,1
+Battery,0,1,1
+options,2,1,0
+Image Quality,1,0,0
+focal length,2,0,0
+shutter priority,1,0,0
+case,1,2,3
+user manual,2,0,0
+settings,5,0,3
+image,0,1,0
+higher resolution,0,1,0
+Memory Card,0,1,0
+professional photographer,0,0,1
+image sensor,0,1,0
+Auto mode,1,2,0
+LCD,1,0,0
+image quality,2,1,0
+HD Video,1,0,0
+size,4,1,1
+exposure,1,0,0
+Price,0,1,0
+light,6,2,1
+Video,2,0,1
+Lens,1,0,0
+sensor,1,2,3
+touch screen,0,0,2
+wrist strap,0,0,1
+shots,5,5,3
+video mode,1,0,0
+manual mode,1,1,0
+card,1,1,1
+flash,8,5,5
+light photos,1,0,0
+Battery life,0,0,1
+color,2,1,4
+HD movie,1,0,0
+Optical zoom,0,0,1
+video,7,7,9
+battery,0,2,0
+lens,3,2,2
+pictures,9,6,3
+button,4,1,0
+Auto,0,1,0
+outdoor shots,0,1,0
+noise,3,0,1
+Zoom,1,0,1
+burst mode,1,0,0
+battery door,0,0,1
+memory card,0,0,3
+wide angle,3,0,0
+video recording,0,1,0
+ISO,3,0,1
+shutter,0,1,0
+indoor photos,0,0,1
+zoom,5,5,2
+Program mode,0,0,1
+price range,1,0,0
+image stabilization,1,0,1
+menu,2,1,1
+OPTICAL zoom,1,0,0
+user interface,1,0,0
+amateur photographer,0,0,1
+angle lens,3,0,0
+white balance,1,1,1
+money,4,0,0
+DSLR,2,0,1
+focus point,1,0,0
+ISO settings,1,0,1
+Optical Zoom,1,0,0
+manual control,1,0,0
+auto mode,1,2,0
+Lens Error,0,1,0
+optical zoom,0,0,1

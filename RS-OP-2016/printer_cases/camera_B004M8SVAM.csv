@@ -1,0 +1,37 @@
+feature,pos,neg,neutral
+macro shots,0,0,1
+Pictures,0,1,0
+auto,1,0,0
+shutter speed,0,0,1
+color,1,0,0
+indoor pictures,1,0,0
+battery,0,3,0
+lens,1,0,0
+photos,1,4,0
+resolution,1,0,0
+pictures,10,4,2
+USB cable,0,0,1
+mode,0,0,1
+features,0,0,1
+view,2,0,0
+price,1,0,0
+function,0,1,0
+options,1,0,0
+manual settings,0,1,0
+pics,2,1,0
+battery door,1,9,2
+memory card,0,0,1
+case,0,3,0
+SD card,1,1,1
+settings,5,1,3
+card slot,0,1,0
+zoom,1,0,0
+battery compartment,0,2,0
+menu,1,0,1
+LCD,1,0,1
+white balance,1,0,0
+exposure,0,0,1
+shots,2,0,0
+card,1,3,1
+lens cover,1,0,0
+flash,2,1,0

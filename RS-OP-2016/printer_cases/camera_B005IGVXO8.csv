@@ -1,0 +1,38 @@
+feature,pos,neg,neutral
+Pictures,1,0,0
+shutter speed,1,0,0
+software,1,0,0
+HD movie,1,0,0
+screen,5,0,0
+focus,0,1,0
+battery,0,2,0
+lens,1,1,0
+LCD screen,1,0,0
+photos,4,1,0
+pictures,4,0,0
+battery life,1,0,0
+button,0,1,0
+mode,0,0,2
+HD video,1,0,0
+features,1,1,0
+view,1,1,0
+price,2,0,0
+noise,1,0,0
+image,0,2,1
+settings,0,1,0
+AF,2,2,0
+light settings,1,0,0
+zoom,3,3,1
+menu,1,1,0
+image quality,1,0,0
+exposure,0,1,0
+money,0,1,0
+light,6,2,0
+Video,1,0,0
+Optical Zoom,1,0,0
+Lens,1,0,0
+shutter lag,1,0,0
+shots,0,1,0
+optical zoom,1,0,0
+flash,10,5,4
+light photos,2,0,0

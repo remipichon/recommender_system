@@ -1,0 +1,97 @@
+feature,pos,neg,neutral
+manual focus,0,1,0
+auto,6,0,1
+shutter speed,2,3,0
+software,4,1,3
+movie,1,2,0
+action shots,0,2,0
+view finder,0,0,1
+customer service,1,1,0
+focus,6,3,0
+screen,3,2,3
+body,2,1,1
+LCD screen,2,0,2
+resolution,1,0,0
+photos,10,3,2
+battery life,2,1,1
+HD video,2,1,0
+mode,8,1,6
+features,7,3,1
+spare battery,1,0,0
+card reader,0,0,2
+price,8,3,0
+function,2,1,0
+Battery,0,1,0
+options,2,1,0
+neck strap,1,0,1
+pics,6,7,0
+case,1,2,2
+menu system,1,0,0
+settings,5,0,3
+shutter button,2,1,1
+image,2,1,2
+lenses,0,0,2
+SDHC card,0,1,0
+Memory Card,0,0,1
+view screen,1,0,0
+Auto mode,1,0,1
+underwater pictures,0,1,1
+LCD,2,1,1
+image quality,7,1,1
+size,1,2,0
+exposure,4,1,3
+light,4,4,0
+wrist strap,1,0,4
+sensor,1,2,0
+Lens,0,1,0
+shots,18,8,10
+card,0,0,3
+video mode,2,0,2
+flash,1,2,2
+scene mode,1,0,0
+color,11,2,0
+auto focus,2,1,0
+Battery life,0,1,0
+Underwater pictures,0,1,0
+video,8,5,5
+lens,14,14,10
+battery,9,10,8
+pictures,45,16,15
+button,3,1,4
+zoom range,0,2,0
+noise,1,1,3
+viewfinder,2,2,0
+LCD display,1,0,0
+Menu,1,0,0
+Flash,0,1,1
+lens cap,1,3,2
+Lens error,0,2,0
+LENS,0,0,1
+memory card,1,2,1
+SD card,2,0,1
+Image stabilization,1,0,0
+Movie,1,0,1
+video recording,1,0,0
+Panorama mode,0,0,1
+ISO,3,2,1
+shutter,2,0,1
+Video quality,1,0,0
+video quality,1,1,0
+zoom,6,1,1
+Program mode,1,0,0
+image stabilization,2,1,0
+menu,3,0,1
+autofocus,1,0,0
+battery compartment,0,1,1
+Pics,1,0,0
+lens error,0,1,0
+amateur photographer,0,0,1
+white balance,1,0,4
+White balance,1,0,0
+money,2,1,3
+DSLR,4,0,1
+manual control,1,1,0
+optical zoom,4,1,0
+lens cover,3,1,0
+auto mode,5,2,1
+Lens Error,0,1,0

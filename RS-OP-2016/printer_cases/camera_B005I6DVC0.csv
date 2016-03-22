@@ -1,0 +1,51 @@
+feature,pos,neg,neutral
+Pictures,1,0,0
+light situations,2,0,0
+movie,4,0,0
+screen,1,0,0
+focus,1,0,0
+LCD screen,0,1,0
+photos,4,0,0
+mode,3,0,2
+battery life,3,3,1
+HD video,4,0,0
+features,2,0,2
+price,3,0,0
+function,2,0,1
+options,3,0,0
+pics,2,0,1
+case,0,1,1
+menu system,1,0,0
+settings,2,0,1
+image,0,1,0
+zoom lens,1,0,0
+Color,1,0,0
+Auto mode,1,0,0
+Video Mode,0,0,1
+rechargeable battery,0,0,1
+quality photos,1,0,1
+size,2,0,2
+Video,1,0,0
+shots,1,1,0
+flash,1,3,7
+Shutter Priority,0,0,2
+color,2,1,0
+video,3,2,1
+battery,3,2,0
+lens,1,0,3
+pictures,5,2,3
+Auto,0,0,1
+button,0,0,2
+memory card,0,1,0
+SD card,1,0,0
+video recording,0,0,1
+ISO,1,0,0
+video quality,0,1,0
+zoom,3,0,1
+image stabilization,1,0,0
+menu,2,0,0
+white balance,1,0,0
+Manual mode,1,0,0
+money,1,0,0
+auto mode,1,0,1
+optical zoom,2,0,0

@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+light,1,0,0
+price,0,1,3
+price range,0,0,1
+LCD screen,1,0,0
+sd card,1,0,0
+pictures,1,1,0

@@ -9,15 +9,8 @@ public class Feature {
     private String sentence;    //sentence in which the feature is
     private int featurePosition;       //position of the feature in the sentence
     private int sentimentPosition;       //position of the sentiment feature in the sentence
-
-    public Feature(String posPattern, String name, Sentiment sentiment, String sentence, int featurePosition, int sentimentPosition) {
-        this.posPattern = posPattern;
-        this.name = name;
-        this.sentiment = sentiment;
-        this.sentence = sentence;
-        this.featurePosition = featurePosition;
-        this.sentimentPosition = sentimentPosition;
-    }
+    private int biGramOffset; // = 1 if biGram, 0 else
+    private String productId;
 
     public Feature() {
 
@@ -71,9 +64,39 @@ public class Feature {
         return sentimentPosition;
     }
 
+    public int getBiGramOffset() {
+        return biGramOffset;
+    }
+
+    public void setBiGramOffset(int biGramOffset) {
+        this.biGramOffset = biGramOffset;
+    }
+
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
+    }
 
     @Override
     public String toString() {
         return "'"+ name + "' at position " + featurePosition + " get a sentiment '" + sentiment + "' at position " + sentimentPosition + " with a POS pattern "+posPattern;
+    }
+
+    public String toStringLight(){
+        return "'"+ name + " : " + sentiment;
+    }
+
+    public void reverseSentiment() {
+        switch (sentiment) {
+            case POSITIVE:
+                sentiment = Sentiment.NEGATIVE;
+                break;
+            case NEGATIVE:
+                sentiment = Sentiment.POSITIVE;
+                break;
+        }
     }
 }

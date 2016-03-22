@@ -1,0 +1,103 @@
+feature,pos,neg,neutral
+shutter speed,3,0,1
+movie,0,1,0
+software,1,0,0
+focus,13,4,10
+Macro shots,1,0,0
+Image,0,0,1
+LCD screen,0,1,0
+Exposure Compensation,0,0,1
+resolution,2,0,0
+IMAGE,0,1,0
+price,3,2,3
+noise reduction,1,1,0
+options,3,1,1
+neck strap,1,0,0
+case,2,2,1
+shutter button,1,1,1
+lenses,9,2,5
+zoom lens,0,0,1
+AF,2,1,0
+Image quality,0,0,1
+size,1,2,0
+exposure,3,0,0
+light,4,2,1
+battery grip,1,0,3
+Lens,1,0,0
+shutter lag,1,0,0
+shots,2,1,2
+video mode,0,1,0
+card,0,3,3
+flash,6,3,4
+auto focus,1,0,0
+HD movie,1,0,0
+Zoom Lens,0,0,1
+pictures,4,6,3
+firmware update,0,0,1
+editing software,0,0,1
+noise,2,4,3
+macro mode,0,0,1
+LCD display,1,0,0
+automatic mode,1,0,0
+AF system,1,0,0
+lens cap,1,0,0
+Build quality,1,0,0
+video recording,2,0,0
+wide angle,0,1,1
+Wireless flash,0,0,1
+ISO,8,6,4
+shutter,0,1,0
+Kit lens,1,0,0
+price range,0,0,1
+image stabilization,3,1,0
+menu,3,0,1
+DSLR,4,0,3
+kit lens,7,1,0
+macro shots,1,1,0
+auto,0,1,1
+action shots,0,1,0
+VIDEO,1,0,0
+customer service,1,0,1
+screen,4,1,2
+body,4,3,2
+photos,13,3,2
+battery pack,1,0,0
+mode,6,3,3
+HD video,3,0,3
+features,5,0,4
+view,3,1,4
+function,1,0,0
+manual settings,0,1,0
+focus mode,0,1,0
+build quality,1,0,0
+settings,4,0,2
+image,3,3,1
+view screen,1,0,0
+LCD,5,0,2
+image quality,1,0,2
+Focus,1,0,0
+sensor,4,1,4
+Autofocus,0,1,0
+color,3,0,3
+external flash,0,0,1
+wireless flash,0,0,2
+video,20,6,10
+lens,13,6,11
+Auto,0,1,0
+button,2,2,3
+frame rate,1,0,0
+Zoom,0,1,2
+viewfinder,7,3,3
+auto ISO,1,0,0
+memory card,0,1,1
+aspect ratio,1,0,0
+movie mode,2,0,0
+zoom,3,6,0
+autofocus,3,2,2
+View,0,1,0
+amateur photographer,1,0,1
+white balance,1,0,1
+money,6,2,4
+focus point,1,0,1
+ISO settings,0,1,1
+VIDEO RECORDING,1,0,0

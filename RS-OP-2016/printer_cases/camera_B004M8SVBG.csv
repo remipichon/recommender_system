@@ -1,0 +1,41 @@
+feature,pos,neg,neutral
+shutter speed,0,1,0
+Battery life,1,0,0
+color,1,2,1
+focus,0,4,2
+screen,0,0,2
+lower light,0,1,0
+video,2,0,0
+body,1,0,0
+battery,1,0,0
+lens,1,4,0
+photos,3,1,1
+resolution,2,0,0
+pictures,11,4,4
+CARD,0,0,1
+button,0,1,0
+features,1,0,0
+view,0,0,1
+Zoom,1,0,0
+pics,1,0,0
+case,0,0,1
+Image stabilization,0,0,1
+settings,1,2,1
+SDHC card,1,0,0
+exposure compensation,0,1,0
+ISO,1,0,0
+light settings,0,1,0
+shutter,1,1,0
+MEMORY CARD,0,0,5
+zoom,2,0,0
+price range,1,0,0
+size,3,0,0
+exposure,1,1,0
+DSLR,1,0,1
+light,1,1,0
+Focus,0,1,0
+Video,0,0,1
+ISO settings,1,0,0
+sensor,0,1,0
+shots,1,1,0
+flash,3,1,0

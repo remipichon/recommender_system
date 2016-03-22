@@ -1,0 +1,29 @@
+feature,pos,neg,neutral
+second battery,0,0,1
+auto,1,0,0
+color,2,0,0
+focus,0,1,0
+video,0,0,2
+battery,0,1,0
+resolution,0,1,1
+pictures,3,0,1
+button,0,0,1
+features,1,0,0
+view,1,0,0
+Battery Life,0,1,0
+Button,1,0,0
+noise,2,0,0
+dSLR,0,1,0
+Flash,1,0,0
+SD card,0,0,1
+image,1,0,0
+ISO,1,0,0
+LCD,1,1,0
+menu,0,1,0
+autofocus,1,0,0
+light,1,0,0
+Video,0,0,1
+sensor,0,1,0
+shots,0,3,2
+card,1,0,0
+flash,1,0,0

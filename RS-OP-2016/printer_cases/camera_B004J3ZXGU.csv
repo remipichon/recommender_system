@@ -1,0 +1,45 @@
+feature,pos,neg,neutral
+software,0,1,0
+color,0,0,2
+screen,0,1,1
+focus,0,0,1
+Optical zoom,0,0,1
+video,1,2,3
+lens,0,2,1
+photos,6,0,0
+pictures,4,0,2
+button,2,0,0
+mode,1,0,0
+features,3,0,0
+price,1,0,0
+Battery,0,1,1
+noise,0,1,1
+Zoom,1,0,0
+Image Quality,1,0,0
+shutter priority,1,1,0
+memory card,1,0,2
+case,1,1,1
+settings,0,0,1
+image,0,1,0
+Memory Card,0,1,0
+ISO,0,0,1
+shutter,2,1,2
+image sensor,0,1,0
+zoom,0,1,0
+LCD,1,0,0
+OPTICAL zoom,1,0,0
+image quality,1,0,0
+HD Video,2,0,0
+money,0,0,1
+size,0,0,1
+light,2,0,0
+Video,0,0,1
+battery grip,1,0,0
+Optical Zoom,1,0,0
+touch screen,0,0,1
+wrist strap,0,0,1
+shots,0,0,2
+lens cover,0,2,0
+card,1,1,0
+manual mode,1,0,0
+flash,1,0,0

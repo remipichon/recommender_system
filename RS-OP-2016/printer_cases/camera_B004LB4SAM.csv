@@ -1,0 +1,71 @@
+feature,pos,neg,neutral
+auto,2,0,1
+movie,1,0,0
+indoor pictures,0,1,0
+view finder,1,0,0
+focus,2,2,1
+screen,4,3,0
+lcd screen,0,1,0
+SETTINGS,0,0,1
+LCD screen,2,2,1
+Image,0,0,1
+photos,8,7,1
+resolution,1,1,0
+battery life,1,1,0
+mode,7,0,2
+features,7,1,1
+price,4,0,2
+light conditions,0,2,0
+focal length,1,0,0
+shutter priority,1,0,0
+pics,0,1,1
+case,0,0,2
+Exposure compensation,1,0,0
+settings,7,4,1
+image,0,1,1
+lenses,1,0,0
+zoom lens,2,0,0
+professional photographer,0,0,1
+LCD,0,0,1
+image quality,0,1,1
+exposure,1,1,2
+light,6,0,2
+sdhc card,0,0,1
+sensor,1,0,0
+shots,6,2,3
+video mode,0,1,0
+card,0,1,1
+flash,2,1,8
+scene mode,4,0,1
+color,2,0,1
+auto focus,1,0,0
+battery,0,2,1
+lens,3,1,2
+pictures,9,3,4
+price point,0,1,0
+button,1,1,0
+outdoor shots,0,1,1
+program mode,1,0,1
+noise,2,1,1
+electronic viewfinder,1,0,0
+Zoom,0,0,1
+viewfinder,2,0,1
+automatic mode,1,0,1
+lens cap,1,1,1
+exposure compensation,1,0,0
+shutter,2,1,0
+indoor photos,1,0,0
+video quality,1,0,0
+zoom,10,3,6
+image stabilization,1,0,0
+indoor shots,1,0,0
+price range,2,0,2
+battery compartment,0,0,1
+menu,1,0,0
+white balance,2,0,0
+Automatic mode,0,0,1
+money,1,0,0
+DSLR,3,0,0
+entry level,1,0,1
+Optical Zoom,0,0,1
+optical zoom,0,0,2

@@ -1,0 +1,25 @@
+feature,pos,neg,neutral
+Pictures,1,0,0
+color,3,0,0
+software,1,0,0
+Underwater pictures,1,0,0
+Auto mode,1,0,0
+video quality,0,1,0
+screen,1,0,0
+zoom,2,0,0
+video,1,0,0
+menu,1,0,0
+photos,5,2,0
+pictures,4,1,1
+Photos,1,0,0
+button,1,0,0
+features,1,0,0
+Memory card,0,1,0
+size,0,0,1
+light,0,1,0
+noise,0,1,0
+options,1,0,0
+shots,1,0,0
+Flash,1,0,0
+flash,0,1,0
+scene mode,1,0,0

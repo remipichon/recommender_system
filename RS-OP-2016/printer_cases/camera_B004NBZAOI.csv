@@ -1,0 +1,48 @@
+feature,pos,neg,neutral
+manual focus,1,1,0
+auto,1,0,0
+color,1,2,1
+Battery life,1,0,0
+Battery door,0,1,0
+screen,2,1,1
+focus,0,0,1
+video,2,2,1
+Image,1,0,0
+battery,2,1,0
+lens,1,1,0
+photos,4,1,2
+resolution,1,0,0
+pictures,6,3,4
+quality pictures,1,0,0
+button,0,0,2
+mode,1,0,3
+Photos,1,0,0
+Auto,1,0,0
+battery life,0,0,1
+features,2,2,3
+view,1,0,0
+price,2,1,0
+Zoom,1,0,0
+viewfinder,0,1,0
+battery door,0,1,1
+pics,3,1,0
+build quality,0,1,0
+case,1,0,1
+memory card,0,0,1
+Image stabilization,1,0,0
+settings,1,1,0
+image,0,1,0
+zoom,3,2,1
+price range,1,0,0
+LCD,1,0,0
+menu,1,0,0
+white balance,0,0,1
+Wide Angle,1,0,0
+money,3,0,0
+size,0,1,2
+quality photos,1,0,0
+light,2,0,2
+shots,0,0,1
+auto mode,0,0,1
+optical zoom,1,0,0
+flash,1,1,0

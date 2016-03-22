@@ -61,7 +61,7 @@ public class FeatureService {
     }
 
 
-    public List<Feature> extractBiGramAndFeature(String sentence) {
+    public List<Feature> extractBiGramAndFeature(String productId, String sentence) {
         List<Feature> result = new ArrayList<>();
 
        // System.out.println("\nSENTENCE: " + sentence);
@@ -94,6 +94,8 @@ public class FeatureService {
                 feature.setName(tokens[i] + " " + tokens[i + 1]);
                 feature.setFeaturePosition(i);
                 feature.setSentence(sentence);
+                feature.setBiGramOffset(1);
+                feature.setProductId(productId);
 
                 result.add(feature);
             }
@@ -109,6 +111,8 @@ public class FeatureService {
                 feature.setName(tokens[i]);
                 feature.setFeaturePosition(i);
                 feature.setSentence(sentence);
+                feature.setBiGramOffset(0);
+                feature.setProductId(productId);
 
                 result.add(feature);
             }

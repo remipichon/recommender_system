@@ -1,0 +1,94 @@
+feature,pos,neg,neutral
+light situations,1,0,0
+auto,0,2,1
+shutter speed,1,2,1
+software,1,0,2
+movie,0,1,0
+screen,3,1,1
+focus,0,5,1
+Image,0,0,1
+photos,10,10,4
+resolution,1,1,2
+battery life,5,0,3
+HD video,2,0,0
+mode,13,4,4
+features,5,1,1
+price,9,0,2
+options,0,0,1
+Auto Mode,2,0,0
+pics,2,6,2
+build quality,1,0,0
+case,2,0,1
+Image Stabilization,0,0,1
+Video mode,0,0,1
+settings,7,5,2
+image,2,2,2
+shutter button,1,0,1
+lenses,1,0,0
+professional photographer,0,1,1
+Color,0,0,1
+Shutter Speed,0,0,1
+Auto mode,2,1,0
+SHOTS,1,0,1
+LCD,0,1,1
+shoot mode,1,0,0
+Image quality,1,0,0
+image quality,2,0,1
+exposure,0,1,1
+size,5,1,2
+light,2,1,0
+Price,0,0,1
+Image Sensor,1,0,0
+sensor,0,0,1
+Lens,0,0,1
+shutter lag,0,0,1
+shots,12,7,6
+card,1,2,4
+manual mode,0,1,0
+flash,13,6,9
+scene mode,0,0,1
+MONEY,0,1,0
+color,2,1,1
+Battery life,1,0,0
+video,11,4,5
+lens,8,2,6
+battery,0,1,2
+pictures,24,7,6
+price point,1,0,1
+button,2,3,2
+Auto,1,0,1
+Sensor Size,0,0,1
+zoom range,0,1,0
+firmware update,0,0,1
+macro mode,1,0,0
+Zoom,1,0,0
+viewfinder,1,0,0
+Flash,1,0,1
+lens cap,0,1,1
+battery door,0,1,0
+burst mode,1,0,0
+memory card,0,0,2
+SD card,0,2,0
+panorama mode,0,1,0
+exposure compensation,0,0,1
+hd video,1,0,0
+ISO,1,0,4
+shutter,1,0,1
+Mode,0,0,2
+Video quality,1,0,0
+video quality,1,1,1
+zoom,16,6,5
+price range,0,0,1
+image stabilization,0,0,1
+menu,3,1,2
+View,0,1,0
+amateur photographer,0,0,1
+white balance,1,0,1
+money,2,2,1
+DSLR,3,0,2
+entry level,0,0,1
+dslr,2,0,0
+manual control,1,1,0
+optical zoom,1,0,2
+auto mode,1,0,0
+lens cover,0,1,0
