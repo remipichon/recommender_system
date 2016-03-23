@@ -1,4 +1,4 @@
-package examples;
+package runner;
 
 import model.Feature;
 import model.FeatureSummary;
@@ -8,7 +8,7 @@ import util.reader.DatasetReader;
 import java.util.List;
 import java.util.Map;
 
-public class TestExtractSentimentForADataSetOfReviewSameProduct {
+public class OneProduct {
 
     public static void main(String[] args) {
 

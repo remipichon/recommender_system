@@ -1,4 +1,4 @@
-package examples;
+package runner;
 
 import model.Feature;
 import model.Review;
@@ -9,7 +9,7 @@ import service.SentimentService;
 
 import java.util.List;
 
-public class TestSentimentForOneFullReviewWithNegationTerm {
+public class OneFullReviewWithNegationTerm {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package examples;
+package runner;
 
 import model.Feature;
 import model.Review;
@@ -8,7 +8,7 @@ import service.SentimentService;
 
 import java.util.List;
 
-public class TestSentimentForOneFullReview {
+public class OneFullReview {
 
     public static void main(String[] args) {
 

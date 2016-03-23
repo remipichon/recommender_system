@@ -1,4 +1,4 @@
-package examples;
+package runner;
 
 
 import model.Feature;
@@ -9,7 +9,7 @@ import util.nlp.Parser;
 
 import java.util.List;
 
-public class TestExtractSentimentForOneSentence {
+public class OneSentence {
 
     public static void main(String[] args) {
 
