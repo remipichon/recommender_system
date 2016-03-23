@@ -1,103 +1,87 @@
 feature,pos,neg,neutral
+macro shots,2,1,0
+auto,0,0,3
 shutter speed,0,0,4
-movie,0,0,1
-software,0,0,1
-focus,0,0,27
-Macro shots,0,0,1
-Image,0,0,1
-LCD screen,0,0,1
-Exposure Compensation,0,0,1
-resolution,0,0,2
-IMAGE,0,0,1
-price,0,0,8
-noise reduction,0,0,2
-options,0,0,5
-neck strap,0,0,1
-case,0,0,5
-shutter button,0,0,3
-lenses,0,0,16
-zoom lens,0,0,1
-AF,0,0,3
-Image quality,0,0,1
-size,0,0,3
-exposure,0,0,3
-light,0,0,7
-battery grip,0,0,4
-Lens,0,0,1
-shutter lag,0,0,1
-shots,0,0,5
-video mode,0,0,1
-card,0,0,6
-flash,0,0,13
-auto focus,0,0,1
-HD movie,0,0,1
-Zoom Lens,0,0,1
-pictures,0,0,13
-firmware update,0,0,1
-editing software,0,0,1
-noise,0,0,9
-macro mode,0,0,1
-LCD display,0,0,1
-automatic mode,0,0,1
-AF system,0,0,1
-lens cap,0,0,1
-Build quality,0,0,1
-video recording,0,0,2
-wide angle,0,0,2
-Wireless flash,0,0,1
-ISO,0,0,18
-shutter,0,0,1
-Kit lens,0,0,1
-price range,0,0,1
-image stabilization,0,0,4
-menu,0,0,4
-DSLR,0,0,7
-kit lens,0,0,8
-macro shots,0,0,2
-auto,0,0,2
+af system,1,0,0
+iso,1,2,15
+movie,0,1,0
+software,1,0,0
 action shots,0,0,1
-VIDEO,0,0,1
-customer service,0,0,2
-screen,0,0,7
-body,0,0,9
-photos,0,0,18
-battery pack,0,0,1
-mode,0,0,12
-HD video,0,0,6
-features,0,0,9
-view,0,0,8
-function,0,0,1
-manual settings,0,0,1
+customer service,1,0,1
+lcd display,1,0,0
+focus,5,0,23
+screen,2,0,5
+lcd screen,0,0,1
+body,2,0,7
+photos,5,1,12
+resolution,2,0,0
+battery pack,1,0,0
+mode,4,0,8
+features,3,0,6
+view,0,1,8
+price,2,1,5
+function,1,0,0
+noise reduction,1,0,1
+options,2,1,2
+manual settings,0,1,0
 focus mode,0,0,1
-build quality,0,0,1
-settings,0,0,6
-image,0,0,7
+neck strap,0,0,1
+case,1,1,3
+build quality,2,0,0
+settings,1,0,5
+shutter button,1,1,1
+image,1,1,7
+lenses,5,1,10
+zoom lens,0,0,2
+af,0,1,2
 view screen,0,0,1
-LCD,0,0,7
-image quality,0,0,3
-Focus,0,0,1
-sensor,0,0,9
-Autofocus,0,0,1
-color,0,0,6
+image quality,1,0,3
+size,0,1,2
+exposure,1,0,2
+hd movie,1,0,0
+light,1,1,5
+battery grip,0,0,4
+sensor,4,0,5
+shutter lag,0,0,1
+shots,2,0,3
+auto iso,0,0,1
+video mode,0,0,1
+card,0,1,5
+flash,2,0,11
+color,2,0,4
 external flash,0,0,1
-wireless flash,0,0,2
-video,0,0,36
-lens,0,0,30
-Auto,0,0,1
+auto focus,0,0,1
+wireless flash,0,0,3
+video,9,1,27
+lcd,4,0,3
+lens,4,3,24
+pictures,2,1,10
 button,0,0,7
 frame rate,0,0,1
-Zoom,0,0,3
-viewfinder,0,0,13
-auto ISO,0,0,1
+firmware update,0,0,1
+editing software,0,0,1
+noise,0,2,7
+macro mode,0,0,1
+viewfinder,3,1,9
+automatic mode,0,0,1
+lens cap,0,0,1
 memory card,0,0,2
+iso settings,0,0,2
 aspect ratio,0,0,1
-movie mode,0,0,2
-zoom,0,0,9
-autofocus,0,0,7
-View,0,0,1
+exposure compensation,0,0,1
+video recording,3,0,0
+wide angle,0,1,1
+hd video,1,0,5
+shutter,0,1,0
+movie mode,2,0,0
+zoom,1,2,9
+price range,0,0,1
+image stabilization,3,0,1
+autofocus,0,2,6
+menu,0,0,4
 amateur photographer,0,0,2
 white balance,0,0,2
-money,0,0,12
+money,3,0,9
 focus point,0,0,2
-ISO settings,0,0,2
-VIDEO RECORDING,0,0,1
+dslr,1,0,6
+kit lens,7,1,1

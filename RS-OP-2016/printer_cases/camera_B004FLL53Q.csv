@@ -1,69 +1,64 @@
 feature,pos,neg,neutral
-light situations,0,0,1
-macro shots,0,0,1
+light situations,1,0,0
+macro shots,1,0,0
 auto,0,0,4
-shutter speed,0,0,3
+shutter speed,2,0,1
+iso,0,1,0
 software,0,0,1
-action shots,0,0,2
+action shots,1,0,1
+lcd display,1,0,0
 view finder,0,0,2
-screen,0,0,6
-focus,0,0,5
-lcd screen,0,0,1
-Image,0,0,1
-LCD screen,0,0,1
-photos,0,0,10
-resolution,0,0,2
+screen,1,1,4
+focus,1,1,6
+lcd screen,0,1,1
+photos,1,0,9
+resolution,1,0,1
 video clips,0,0,2
-CARD,0,0,1
-mode,0,0,22
-features,0,0,7
-price,0,0,4
-function,0,0,3
-manual settings,0,0,2
-SHUTTER,0,0,1
-pics,0,0,3
-build quality,0,0,1
+mode,5,3,14
+battery life,1,1,0
+features,2,1,4
+price,4,0,0
+function,1,1,1
+manual settings,1,0,1
+pics,1,0,2
+build quality,1,0,0
 menu system,0,0,1
 user manual,0,0,2
-image,0,0,4
-settings,0,0,10
-shutter button,0,0,3
-lenses,0,0,1
+image,1,0,4
+settings,1,0,9
+shutter button,1,1,1
+lenses,0,1,0
 image sensor,0,0,1
-image quality,0,0,3
-exposure,0,0,7
-light,0,0,13
-sensor,0,0,2
-shots,0,0,25
-flash,0,0,8
-color,0,0,12
-Battery life,0,0,2
+image quality,3,0,0
+exposure,3,0,4
+light,5,0,8
+sensor,1,0,1
+shots,5,4,16
+card,0,0,1
+flash,3,2,3
+color,5,1,6
 auto focus,0,0,1
-FOCUS,0,0,3
-video,0,0,13
-lens,0,0,10
-lcd,0,0,5
+video,2,0,11
+lens,4,1,5
+lcd,2,0,3
 battery,0,0,1
 price point,0,0,1
-pictures,0,0,20
-button,0,0,7
-firmware update,0,0,3
+pictures,7,2,11
+button,1,0,6
+firmware update,1,0,2
 zoom range,0,0,1
-noise,0,0,2
-LCD display,0,0,1
+noise,0,1,1
 viewfinder,0,0,2
 memory card,0,0,6
-wide angle,0,0,1
-ISO,0,0,1
-shutter,0,0,2
-video quality,0,0,1
-zoom,0,0,17
-image stabilization,0,0,3
-indoor shots,0,0,1
-menu,0,0,5
-white balance,0,0,3
-money,0,0,4
-DSLR,0,0,4
-telephoto lens,0,0,1
-ZOOM,0,0,1
+wide angle,1,0,0
+shutter,0,0,3
+video quality,1,0,0
+zoom,7,0,11
+image stabilization,3,0,0
+indoor shots,0,1,0
+menu,1,1,3
+white balance,2,0,1
+money,1,0,3
+telephoto lens,1,0,0
+dslr,2,0,2
 auto mode,0,0,2

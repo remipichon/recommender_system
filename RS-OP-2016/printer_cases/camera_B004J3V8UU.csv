@@ -1,36 +1,35 @@
 feature,pos,neg,neutral
-Pictures,0,0,1
+movie,0,0,1
+iso,1,0,0
 screen,0,0,1
-focus,0,0,4
-video,0,0,10
-lens,0,0,2
+focus,1,1,2
+video,2,2,6
+lcd,1,0,0
+lens,2,0,0
 body,0,0,1
-photos,0,0,2
-pictures,0,0,16
-button,0,0,5
-features,0,0,4
-outdoor shots,0,0,1
-price,0,0,3
+photos,1,0,1
+pictures,8,3,6
+button,1,0,4
+features,1,0,3
+outdoor shots,0,1,0
+price,1,0,2
 noise,0,0,1
-macro mode,0,0,1
+macro mode,0,1,0
 pics,0,0,1
-Movie,0,0,1
 shutter button,0,0,1
 settings,0,0,1
-ISO,0,0,1
-shutter,0,0,1
+shutter,1,0,0
 movie mode,0,0,1
-zoom,0,0,1
-price range,0,0,1
-LCD,0,0,1
+zoom,0,1,0
+price range,1,0,0
 menu,0,0,1
-autofocus,0,0,2
+autofocus,0,1,1
 image quality,0,0,1
-light,0,0,2
-DSLR,0,0,1
+light,1,0,1
+dslr,0,0,1
 quality video,0,0,1
 wrist strap,0,0,1
 video mode,0,0,1
 light pictures,0,0,1
 auto mode,0,0,1
-flash,0,0,4
+flash,1,1,2

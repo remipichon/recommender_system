@@ -1,0 +1,35 @@
+feature,pos,neg,neutral
+auto,0,0,4
+color,0,0,1
+iso,0,0,3
+focus,0,0,1
+lcd screen,0,0,2
+battery,0,0,4
+lens,0,0,4
+photos,1,1,2
+resolution,0,0,2
+pictures,1,0,7
+mode,3,0,7
+battery life,0,0,1
+features,1,0,2
+view,0,0,1
+price,0,1,1
+program mode,0,0,1
+options,0,0,2
+noise,0,0,2
+viewfinder,0,0,1
+image,0,0,3
+settings,0,0,1
+zoom,0,0,3
+image stabilization,0,0,1
+indoor shots,0,1,0
+white balance,0,0,1
+image quality,1,0,0
+size,0,0,1
+money,0,0,2
+light,2,0,4
+dslr,0,0,1
+shots,1,0,5
+optical zoom,0,0,1
+scene mode,0,0,2
+flash,0,0,3

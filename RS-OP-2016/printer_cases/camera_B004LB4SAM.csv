@@ -1,71 +1,64 @@
 feature,pos,neg,neutral
-auto,0,0,3
-movie,0,0,1
-indoor pictures,0,0,1
+auto,1,0,2
+movie,1,0,0
+indoor pictures,0,1,0
 view finder,0,0,1
-focus,0,0,5
-screen,0,0,7
-lcd screen,0,0,1
-SETTINGS,0,0,1
-LCD screen,0,0,5
-Image,0,0,1
-photos,0,0,16
-resolution,0,0,2
-battery life,0,0,2
-mode,0,0,9
-features,0,0,9
-price,0,0,6
+focus,1,0,4
+screen,2,1,4
+lcd screen,2,2,2
+photos,5,4,7
+resolution,1,0,1
+battery life,1,1,0
+mode,6,0,3
+features,4,0,5
+price,2,0,4
 light conditions,0,0,2
-focal length,0,0,1
+focal length,1,0,0
 shutter priority,0,0,1
-pics,0,0,2
+pics,0,1,1
 case,0,0,2
-Exposure compensation,0,0,1
-settings,0,0,12
-image,0,0,2
-lenses,0,0,1
-zoom lens,0,0,2
+settings,2,1,10
+image,0,1,2
+lenses,1,0,0
+zoom lens,1,0,1
 professional photographer,0,0,1
-LCD,0,0,1
 image quality,0,0,2
 exposure,0,0,4
-light,0,0,8
+light,4,0,4
 sdhc card,0,0,1
-sensor,0,0,1
-shots,0,0,11
-video mode,0,0,1
-card,0,0,2
-flash,0,0,11
+sensor,1,0,0
+shots,5,0,6
+video mode,0,1,0
+card,0,1,1
+flash,1,0,10
 scene mode,0,0,5
-color,0,0,3
+color,1,0,2
 auto focus,0,0,1
 battery,0,0,3
-lens,0,0,6
-pictures,0,0,16
+lens,2,0,4
+lcd,0,0,1
+pictures,7,1,8
 price point,0,0,1
-button,0,0,2
-outdoor shots,0,0,2
-program mode,0,0,2
-noise,0,0,4
+button,1,0,1
+outdoor shots,0,1,1
+program mode,1,0,1
+noise,1,1,2
 electronic viewfinder,0,0,1
-Zoom,0,0,1
 viewfinder,0,0,3
-automatic mode,0,0,2
-lens cap,0,0,3
-exposure compensation,0,0,1
-shutter,0,0,3
-indoor photos,0,0,1
-video quality,0,0,1
-zoom,0,0,19
-image stabilization,0,0,1
-indoor shots,0,0,1
+automatic mode,1,0,2
+lens cap,1,1,1
+exposure compensation,0,0,2
+shutter,1,1,1
+indoor photos,1,0,0
+video quality,1,0,0
+zoom,4,2,14
+image stabilization,1,0,0
+indoor shots,1,0,0
 price range,0,0,4
 battery compartment,0,0,1
 menu,0,0,1
-white balance,0,0,2
-Automatic mode,0,0,1
-money,0,0,1
-DSLR,0,0,3
+white balance,1,0,1
+money,1,0,0
 entry level,0,0,2
-Optical Zoom,0,0,1
-optical zoom,0,0,2
+dslr,1,0,2
+optical zoom,0,0,3

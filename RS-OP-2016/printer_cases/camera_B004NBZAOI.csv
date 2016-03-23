@@ -1,48 +1,42 @@
 feature,pos,neg,neutral
-manual focus,0,0,2
-auto,0,0,1
-color,0,0,4
-Battery life,0,0,1
-Battery door,0,0,1
-screen,0,0,4
+manual focus,1,0,1
+auto,2,0,0
+color,0,2,2
+screen,2,1,1
 focus,0,0,1
-video,0,0,5
-Image,0,0,1
-battery,0,0,3
-lens,0,0,2
-photos,0,0,7
-resolution,0,0,1
-pictures,0,0,13
-quality pictures,0,0,1
+video,1,1,3
+lcd,0,0,1
+battery,2,0,1
+lens,0,1,1
+photos,5,1,2
+resolution,1,0,0
+pictures,2,2,9
+quality pictures,1,0,0
 button,0,0,2
+battery life,1,0,1
 mode,0,0,4
-Photos,0,0,1
-Auto,0,0,1
-battery life,0,0,1
-features,0,0,7
+features,2,1,4
 view,0,0,1
-price,0,0,3
-Zoom,0,0,1
-viewfinder,0,0,1
-battery door,0,0,2
-pics,0,0,4
+price,2,1,0
+viewfinder,0,1,0
+battery door,0,2,1
+pics,3,0,1
 build quality,0,0,1
 case,0,0,2
 memory card,0,0,1
-Image stabilization,0,0,1
+image,0,1,1
 settings,0,0,2
-image,0,0,1
-zoom,0,0,6
-price range,0,0,1
-LCD,0,0,1
+wide angle,0,0,1
+zoom,2,0,5
+price range,1,0,0
+image stabilization,1,0,0
 menu,0,0,1
 white balance,0,0,1
-Wide Angle,0,0,1
-money,0,0,3
+money,2,0,1
 size,0,0,3
-quality photos,0,0,1
-light,0,0,4
+quality photos,1,0,0
+light,2,0,2
 shots,0,0,1
 auto mode,0,0,1
 optical zoom,0,0,1
-flash,0,0,2
+flash,1,1,0

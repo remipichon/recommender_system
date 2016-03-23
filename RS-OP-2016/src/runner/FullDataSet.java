@@ -18,8 +18,11 @@ public class FullDataSet {
         OpinionService opinionService = OpinionService.getInstance();
         OutputService outputService = OutputService.getInstance();
 
-        //String filename = "Digital Camera small real.txt"; // set the dataset filename
-        //String distFolder  = "printer_test_cases";
+//        String filename = "Digital Camera one review.txt"; // set the dataset filename
+//        String distFolder  = "printer_one_review_test_cases";
+
+//        String filename = "Digital Camera small real.txt"; // set the dataset filename
+//        String distFolder  = "printer_test_cases";
 
         String filename = "Digital Camera.txt";
         String distFolder  = "printer_cases";
@@ -29,8 +32,6 @@ public class FullDataSet {
 
         List<Feature> features = reviewService.extractFeatures(reader.getReviews());
 
-
-        //TODO set everything to neutral
         opinionService.validPattern(features);
 
         opinionService.negationTerm(features);

@@ -1,62 +1,49 @@
 feature,pos,neg,neutral
-Pictures,0,0,1
 auto,0,0,1
+iso,1,0,2
 software,0,0,2
-Size,0,0,1
 view finder,0,0,1
-lcd display,0,0,1
-focus,0,0,8
-screen,0,0,6
+lcd display,1,1,0
+focus,2,1,5
+screen,0,2,4
 lower light,0,0,1
-Image,0,0,1
-LCD screen,0,0,3
-photos,0,0,15
-mode,0,0,3
-HD video,0,0,2
-features,0,0,4
-view,0,0,1
-price,0,0,4
+lcd screen,1,0,2
+video,4,0,7
+battery,0,1,6
+lens,0,1,1
+lcd,0,2,2
+photos,6,0,10
+pictures,10,4,9
+mode,0,1,2
+button,0,1,1
+features,1,0,4
+view,0,1,0
+price,1,0,3
 function,0,0,1
-light conditions,0,0,1
-pics,0,0,2
-case,0,0,3
-user manual,0,0,1
-settings,0,0,5
-image,0,0,5
-lenses,0,0,1
-AF,0,0,2
-LCD,0,0,3
-CASE,0,0,1
-Image quality,0,0,1
-VIEWFINDER,0,0,2
-image quality,0,0,2
-size,0,0,6
-quality photos,0,0,2
-light,0,0,6
-Video,0,0,1
-sensor,0,0,1
-shots,0,0,3
-card,0,0,1
-flash,0,0,2
-video,0,0,10
-battery,0,0,7
-lens,0,0,2
-lcd,0,0,1
-pictures,0,0,22
-Photos,0,0,1
-button,0,0,2
 noise,0,0,1
-Zoom,0,0,1
-viewfinder,0,0,14
-LCD display,0,0,1
-optical viewfinder,0,0,4
-video recording,0,0,1
-ISO,0,0,3
-zoom,0,0,2
-Pics,0,0,2
+viewfinder,2,3,11
+light conditions,0,1,0
+pics,1,0,3
+optical viewfinder,2,0,2
+case,1,0,3
+user manual,0,0,1
+settings,2,0,3
+image,1,2,3
+lenses,0,0,1
+video recording,1,0,0
+hd video,0,0,2
+af,0,0,2
+zoom,0,1,2
 menu,0,0,1
 user interface,0,0,1
-FEATURES,0,0,1
-money,0,0,1
+image quality,2,1,0
+size,0,0,7
+quality photos,0,1,1
+money,1,0,0
+light,1,0,5
+sensor,0,0,1
+shots,2,0,1
 optical zoom,0,0,1
-auto mode,0,0,1
+auto mode,0,1,0
+card,0,0,1
+flash,0,1,1

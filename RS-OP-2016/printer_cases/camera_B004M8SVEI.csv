@@ -1,42 +1,42 @@
 feature,pos,neg,neutral
-color,0,0,2
-software,0,0,1
+auto,0,0,1
+color,1,0,1
+software,1,0,0
 view finder,0,0,1
-screen,0,0,7
-focus,0,0,3
+screen,0,1,6
+focus,1,1,1
 video,0,0,1
 battery,0,0,4
+lcd,1,1,0
 body,0,0,1
-photos,0,0,12
-pictures,0,0,4
-HD video,0,0,1
+photos,4,0,8
+pictures,3,0,1
 button,0,0,1
-features,0,0,3
+features,2,1,0
 view,0,0,1
 card reader,0,0,1
 spare battery,0,0,1
-options,0,0,2
+price,1,0,0
+options,1,0,1
 viewfinder,0,0,1
 pics,0,0,1
-SD card,0,0,1
 user manual,0,0,1
-image,0,0,2
+image,0,1,1
 settings,0,0,1
 lenses,0,0,1
-Light weight,0,0,1
-video quality,0,0,1
-zoom,0,0,3
-LCD,0,0,2
-white balance,0,0,1
-AUTO,0,0,1
+hd video,1,0,0
+video quality,1,0,0
+zoom,2,0,1
+white balance,1,0,0
 image quality,0,0,1
 quality photos,0,0,1
 money,0,0,2
-light,0,0,4
-Price,0,0,1
+light,1,1,2
 touch screen,0,0,4
-wrist strap,0,0,1
-shutter lag,0,0,1
-optical zoom,0,0,2
-card,0,0,3
-flash,0,0,2
+wrist strap,1,0,0
+shutter lag,1,0,0
+light weight,0,0,1
+sd card,0,0,1
+optical zoom,2,0,0
+card,1,0,2
+flash,2,0,0

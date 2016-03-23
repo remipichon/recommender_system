@@ -7,6 +7,7 @@ import util.nlp.Parser;
 import java.util.*;
 
 public class OpinionService {
+    private static final Integer VALIDPATTERNTHRESHOLD = 2;
     private static OpinionService instance;
 
     public static OpinionService getInstance() {
@@ -29,26 +30,33 @@ public class OpinionService {
         for (Feature feature : features) {
             if (feature.getSentiment().equals(Sentiment.NEUTRAL)) continue; //no sentiment word were found, there is no pattern available
 
-            if (!posPatternOccurrence.contains(feature.getPosPattern())) {
+            if (!posPatternOccurrence.containsKey(feature.getPosPattern())) {
                 posPatternOccurrence.put(feature.getPosPattern(), 0);
             }
             posPatternOccurrence.put(feature.getPosPattern(), posPatternOccurrence.get(feature.getPosPattern()) + 1);
         }
 
 
-        int validPatternCount = 0;
         for (Feature feature : features) {
             if (feature.getSentiment().equals(Sentiment.NEUTRAL)) continue; //no sentiment word were found
 
-            if (posPatternOccurrence.get(feature.getPosPattern()) == 1) {
+            if (posPatternOccurrence.get(feature.getPosPattern()) < VALIDPATTERNTHRESHOLD) {
                 //non valid pattern
                 feature.setSentiment(Sentiment.NEUTRAL);
-            } else {
+            }
+        }
+
+        int validPatternCount = 0;
+        for (Integer integer : posPatternOccurrence.values()) {
+            if(integer >= VALIDPATTERNTHRESHOLD){
                 validPatternCount++;
             }
         }
 
         System.out.println("Valid pattern count "+validPatternCount);
+        for (Map.Entry<String, Integer> stringIntegerEntry : posPatternOccurrence.entrySet()) {
+            System.out.println(stringIntegerEntry.getKey()+"\t"+stringIntegerEntry.getValue());
+        }
 
     }
 
@@ -57,7 +65,7 @@ public class OpinionService {
         for (Feature feature : features) {
             if (feature.getSentiment().equals(Sentiment.NEUTRAL)) continue;
 
-            String[] sentenceTokens = parser.getSentenceTokens(feature.getSentence());
+            String[] sentenceTokens = feature.getSentence().getTokens();
 
             //search for "not" and "n't" which is a RB with 4 words before or after sentiment word
             int from = feature.getSentimentPosition() - 4;

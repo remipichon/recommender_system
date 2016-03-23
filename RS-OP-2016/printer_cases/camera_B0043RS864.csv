@@ -1,140 +1,104 @@
 feature,pos,neg,neutral
-Pictures,0,0,6
-light situations,0,0,1
-manual focus,0,0,29
-shutter speed,0,0,18
+light situations,1,0,0
+manual focus,5,6,23
+shutter speed,2,4,12
 movie,0,0,3
-software,0,0,10
-Electronic Viewfinder,0,0,1
-view finder,0,0,4
-focus,0,0,102
-lower light,0,0,2
-focus ring,0,0,23
-Image,0,0,3
-resolution,0,0,2
-Button,0,0,2
-price,0,0,15
-Auto ISO,0,0,3
-options,0,0,4
-focal length,0,0,6
-dSLR,0,0,2
+software,1,2,7
+view finder,2,0,5
+focus,15,11,78
+lower light,1,1,0
+focus ring,3,5,15
+resolution,1,1,0
+price,2,0,14
+options,1,0,3
+focal length,3,0,3
 neck strap,0,0,1
-pics,0,0,4
-case,0,0,5
+pics,1,1,2
+case,1,1,4
 shutter button,0,0,4
-lenses,0,0,16
+lenses,3,1,12
 zoom lens,0,0,1
 professional photographer,0,0,4
-AF,0,0,10
-lens hood,0,0,1
-Exposure,0,0,1
-Image quality,0,0,1
-exposure,0,0,16
-size,0,0,12
-light,0,0,32
-Lens,0,0,5
-wrist strap,0,0,1
+af,2,1,7
+lens hood,0,1,0
+exposure,3,2,12
+size,6,1,5
+light,9,2,22
+wrist strap,0,1,0
 shutter lag,0,0,1
-shots,0,0,33
-card,0,0,6
-light shots,0,0,1
-sensor size,0,0,2
-flash,0,0,21
-auto focus,0,0,13
-White Balance,0,0,1
-battery,0,0,13
-pictures,0,0,26
-price point,0,0,1
-Case,0,0,1
-firmware update,0,0,10
-noise,0,0,13
-electronic viewfinder,0,0,5
-macro mode,0,0,3
-Menu,0,0,1
-lens cap,0,0,2
+shots,10,2,21
+auto iso,1,0,3
+card,2,0,4
+light shots,0,1,0
+sensor size,0,1,1
+flash,5,1,16
+auto focus,2,4,8
+battery,1,3,9
+pictures,10,2,20
+price point,1,0,0
+firmware update,1,0,9
+noise,2,2,10
+electronic viewfinder,1,0,5
+macro mode,0,1,3
+lens cap,0,1,1
 burst mode,0,0,1
-optical viewfinder,0,0,10
+optical viewfinder,4,0,7
 wide angle,0,0,3
-Optical viewfinder,0,0,1
-ISO,0,0,35
-shutter,0,0,34
-Macro mode,0,0,1
-video quality,0,0,1
-night shots,0,0,1
-image stabilization,0,0,3
-menu,0,0,13
-user interface,0,0,2
+shutter,11,6,17
+video quality,1,0,0
+night shots,0,1,0
+image stabilization,0,1,2
+menu,1,2,11
+user interface,1,1,0
 angle lens,0,0,4
-Auto focus,0,0,1
-DSLR,0,0,19
-dslr,0,0,1
-manual control,0,0,2
-lens cover,0,0,2
-macro shots,0,0,2
-auto,0,0,5
-iso,0,0,3
-action shots,0,0,2
-Noise,0,0,1
-MOVIE mode,0,0,1
-Viewfinder,0,0,2
-screen,0,0,6
-body,0,0,7
-photos,0,0,16
-View finder,0,0,1
-mode,0,0,24
-battery life,0,0,3
-features,0,0,3
-shutter release,0,0,7
+dslr,4,3,15
+manual control,1,0,1
+sd card,0,0,3
+lens cover,1,1,0
+macro shots,1,1,0
+auto,1,2,7
+iso,7,3,28
+action shots,2,0,0
+screen,0,1,5
+body,4,0,3
+photos,9,1,7
+mode,7,2,17
+battery life,2,2,1
+features,1,0,2
+shutter release,1,3,3
 view,0,0,4
 spare battery,0,0,2
-Light,0,0,1
 function,0,0,4
 manual settings,0,0,1
 focus mode,0,0,3
 shutter priority,0,0,2
-build quality,0,0,6
-menu system,0,0,3
+build quality,2,0,5
+menu system,1,1,1
 user manual,0,0,1
-image,0,0,25
+image,3,2,23
 settings,0,0,11
-SDHC card,0,0,1
-Build Quality,0,0,1
-LCD,0,0,8
-image quality,0,0,23
-AUTO,0,0,1
+image quality,15,1,8
 prime lens,0,0,1
-Price,0,0,1
-Focus,0,0,2
-sensor,0,0,16
-manual mode,0,0,2
-Autofocus,0,0,1
+sdhc card,0,0,1
+sensor,3,0,13
+manual mode,0,1,2
 external flash,0,0,1
-color,0,0,9
-Battery life,0,0,2
-video,0,0,4
-lens,0,0,42
-AF point,0,0,1
-button,0,0,40
-Photos,0,0,1
-Auto,0,0,4
-Manual focus,0,0,3
-View Finder,0,0,2
+color,5,2,2
+video,0,1,3
+lens,13,2,32
+lcd,1,1,6
+button,6,2,34
+af point,0,0,1
 program mode,0,0,1
-viewfinder,0,0,24
-Flash,0,0,1
-auto ISO,0,0,1
-memory card,0,0,2
-focus system,0,0,2
-SD card,0,0,3
-exposure compensation,0,0,5
-Mode,0,0,2
-zoom,0,0,14
-autofocus,0,0,3
-white balance,0,0,5
-Manual mode,0,0,1
-money,0,0,6
-focus point,0,0,11
-ISO settings,0,0,2
-Manual Focus,0,0,2
-ZOOM,0,0,1
+viewfinder,11,3,12
+memory card,1,0,1
+focus system,0,2,0
+iso settings,0,0,2
+exposure compensation,1,0,4
+zoom,3,1,11
+movie mode,0,0,1
+autofocus,1,1,2
+white balance,3,0,3
+money,1,0,5
+focus point,1,1,9
 light pictures,0,0,1

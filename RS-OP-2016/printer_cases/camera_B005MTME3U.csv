@@ -1,113 +1,91 @@
 feature,pos,neg,neutral
-AUTO mode,0,0,1
 light situations,0,0,1
-Pictures,0,0,1
-shutter speed,0,0,5
-software,0,0,6
-movie,0,0,2
-focus,0,0,17
-lcd screen,0,0,1
-Image,0,0,1
-resolution,0,0,3
-quality pictures,0,0,1
-Battery Life,0,0,1
-recording button,0,0,1
-price,0,0,12
-Auto ISO,0,0,2
-noise reduction,0,0,1
-options,0,0,1
-focal length,0,0,1
-pics,0,0,4
-case,0,0,4
-shutter button,0,0,7
-lenses,0,0,4
-zoom lens,0,0,1
-AF,0,0,3
-HD Video,0,0,1
-size,0,0,13
-quality photos,0,0,1
-light,0,0,18
-shots,0,0,24
-card,0,0,1
-light shots,0,0,3
-video mode,0,0,2
-flash,0,0,11
-White Balance,0,0,1
-battery,0,0,7
-pictures,0,0,11
-noise,0,0,6
-macro mode,0,0,2
-Shots,0,0,1
-burst mode,0,0,2
-panorama mode,0,0,1
-LCD Display,0,0,1
-Movie,0,0,1
-ISO range,0,0,1
-wide angle,0,0,7
-video recording,0,0,1
-ISO,0,0,19
-shutter,0,0,3
-video quality,0,0,1
-night shots,0,0,2
-image stabilization,0,0,1
-price range,0,0,1
-menu,0,0,3
-user interface,0,0,5
-angle lens,0,0,2
-DSLR,0,0,20
-kit lens,0,0,1
-light weight,0,0,1
-manual control,0,0,2
-sd card,0,0,2
 second battery,0,0,1
-auto,0,0,5
-screen,0,0,9
-body,0,0,5
-photos,0,0,12
-mode,0,0,15
-battery life,0,0,4
-HD video,0,0,6
-features,0,0,15
+auto,1,3,3
+shutter speed,3,1,1
+software,1,1,4
+iso,5,5,9
+movie,1,0,2
+lcd display,0,0,1
+screen,6,1,3
+focus,2,5,10
+lcd screen,0,1,0
+body,1,1,3
+photos,2,1,9
+resolution,2,0,1
+quality pictures,1,0,0
+mode,3,2,11
+battery life,0,3,4
+features,6,0,10
 view,0,0,6
-shutter release,0,0,4
-function,0,0,3
-Image Quality,0,0,1
+shutter release,0,1,3
+recording button,1,0,0
+price,5,0,9
+function,1,0,2
+noise reduction,0,0,1
+options,1,0,0
 light conditions,0,0,1
 manual settings,0,0,1
-Image Stabilization,0,0,1
-build quality,0,0,3
-image,0,0,15
-settings,0,0,5
-Auto mode,0,0,2
-LCD,0,0,1
-image quality,0,0,18
-AUTO,0,0,1
-prime lens,0,0,1
-Price,0,0,2
-Video,0,0,1
-sensor,0,0,13
-HD camcorder,0,0,2
-color,0,0,6
-Battery life,0,0,2
-Screen,0,0,1
-video,0,0,22
-lens,0,0,24
-button,0,0,15
-Auto,0,0,1
-Control Ring,0,0,1
+focal length,0,0,1
+pics,0,0,4
+case,1,0,3
+build quality,3,0,0
+image,10,2,4
+settings,1,1,3
+shutter button,2,1,4
+lenses,1,0,3
+zoom lens,1,0,0
+af,0,0,3
+image quality,9,1,9
+prime lens,0,1,0
+size,5,0,8
+quality photos,0,0,1
+light,7,2,9
+sensor,2,0,11
+shots,5,3,17
+auto iso,1,3,0
+card,0,0,1
+light shots,1,0,2
+video mode,0,1,1
+flash,2,3,6
+color,1,0,5
+video,6,1,16
+lens,9,4,11
+battery,1,0,6
+lcd,0,1,0
+pictures,5,0,7
+button,3,1,11
 frame rate,0,0,1
-zoom range,0,0,4
-Night shots,0,0,1
-Features,0,0,1
-auto ISO,0,0,2
-exposure compensation,0,0,1
-Mode,0,0,1
-zoom,0,0,13
-movie mode,0,0,1
+zoom range,3,0,1
+noise,0,0,6
+macro mode,1,0,1
+control ring,0,0,1
+burst mode,1,0,1
+iso settings,0,0,1
+panorama mode,1,0,0
+exposure compensation,1,0,0
+wide angle,1,0,6
+hd video,3,0,4
+video recording,0,0,1
+shutter,0,0,3
+video quality,1,0,0
+movie mode,0,0,2
+zoom,3,1,9
+night shots,1,0,2
+image stabilization,0,1,1
+price range,0,0,1
+menu,1,0,2
 autofocus,0,0,1
-Movie Mode,0,0,1
-white balance,0,0,9
-money,0,0,4
-ISO settings,0,0,1
-optical zoom,0,0,1
-auto mode,0,0,1
+user interface,1,0,4
+angle lens,1,0,1
+white balance,2,2,6
+money,1,0,3
+hd camcorder,0,1,1
+iso range,0,1,0
+dslr,1,1,18
+kit lens,0,0,1
+light weight,0,0,1
+manual control,1,0,1
+sd card,0,0,2
+optical zoom,1,0,0
+auto mode,2,1,1

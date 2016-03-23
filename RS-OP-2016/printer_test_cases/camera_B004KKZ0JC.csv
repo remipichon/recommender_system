@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+customer service,0,0,1
+screen,0,0,1
+lcd screen,0,0,1
+video,0,0,3
+battery,0,0,4
+lens,0,0,3
+lcd,0,0,3
+body,0,0,1
+photos,0,0,1
+pictures,0,0,6
+mode,0,0,4
+button,0,0,1
+view,0,0,1
+photos quality,0,0,1
+function,0,0,1
+macro mode,0,0,1
+settings,0,0,1
+image,0,0,1
+wide angle,0,0,2
+screen protector,0,0,1
+zoom,0,0,2
+light,0,0,1
+sensor,0,0,3
+touch screen,0,0,1
+dslr,0,0,1
+shots,0,0,1
+optical zoom,0,0,1

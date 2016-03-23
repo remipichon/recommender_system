@@ -1,107 +1,91 @@
 feature,pos,neg,neutral
-light situations,0,0,1
-AUTO mode,0,0,2
+light situations,0,1,0
 manual focus,0,0,1
+auto,0,0,5
 shutter speed,0,0,2
-movie,0,0,5
-software,0,0,1
+movie,1,0,4
+software,1,0,0
+iso,2,1,2
+action shots,0,0,1
+lcd display,0,0,1
 view finder,0,0,1
-focus,0,0,8
+customer service,0,0,1
+focus,1,0,7
+screen,7,0,2
 lower light,0,0,1
-LCD screen,0,0,2
-Image,0,0,2
-resolution,0,0,3
+lcd screen,1,0,1
+body,0,0,2
+photos,6,1,9
+resolution,2,0,1
 video clips,0,0,1
-price,0,0,7
+mode,3,1,10
+battery life,2,0,2
+features,2,0,6
+view,0,1,7
+price,4,0,4
+function,1,1,1
 options,0,0,2
-noise reduction,0,0,1
+noise reduction,1,0,0
+manual settings,1,0,1
 case,0,0,1
-lenses,0,0,12
-zoom lens,0,0,1
-autofocus system,0,0,2
-AF,0,0,1
+settings,3,0,12
+image,5,2,8
+higher resolution,0,0,1
+lenses,3,1,9
+zoom lens,0,0,3
+autofocus system,1,0,1
+af,0,0,1
 image sensor,0,0,1
-auto settings,0,0,1
-Card,0,0,1
+auto settings,1,0,0
+image quality,1,1,3
+prime lens,1,0,1
 priority mode,0,0,1
 size,0,0,1
-exposure,0,0,1
-light,0,0,2
-battery grip,0,0,3
-Lens,0,0,3
-shots,0,0,13
-card,0,0,6
-video mode,0,0,1
-Lenses,0,0,1
-flash,0,0,3
-auto focus,0,0,1
-Zoom Lens,0,0,2
-battery,0,0,1
-pictures,0,0,26
-noise,0,0,4
-LCD display,0,0,1
-burst mode,0,0,1
-video recording,0,0,3
-wide angle,0,0,2
-ISO,0,0,4
-shutter,0,0,2
-video quality,0,0,1
-price range,0,0,2
-image stabilization,0,0,3
-indoor shots,0,0,1
-menu,0,0,5
-angle lens,0,0,1
-White balance,0,0,1
-DSLR,0,0,17
-kit lens,0,0,14
-auto,0,0,2
-iso,0,0,1
-action shots,0,0,1
-customer service,0,0,1
-screen,0,0,9
-body,0,0,2
-photos,0,0,16
-VIEW,0,0,1
-mode,0,0,14
-HD video,0,0,5
-battery life,0,0,4
-features,0,0,7
-view,0,0,6
-function,0,0,3
-manual settings,0,0,2
-settings,0,0,15
-image,0,0,13
-higher resolution,0,0,1
-SDHC card,0,0,3
-Color,0,0,1
-LCD,0,0,8
-image quality,0,0,5
-AUTO,0,0,1
-prime lens,0,0,2
-Price,0,0,1
-sensor,0,0,4
+exposure,1,0,0
+light,1,0,1
+sdhc card,0,0,3
+battery grip,1,2,0
+sensor,0,1,3
+shots,7,2,4
+card,0,0,7
 manual mode,0,0,2
-color,0,0,1
-LCD monitor,0,0,2
+video mode,0,0,1
+flash,1,1,2
+color,1,0,1
+auto focus,1,0,0
 wireless flash,0,0,3
-video,0,0,33
-lens,0,0,32
-Auto,0,0,2
+video,6,1,26
+lens,8,2,25
+lcd,2,0,6
+battery,0,0,1
+pictures,14,3,9
 outdoor shots,0,0,1
 frame rate,0,0,2
-Zoom,0,0,1
-viewfinder,0,0,7
-Features,0,0,1
-Flash,0,0,1
-memory card,0,0,5
-SD card,0,0,2
-zoom,0,0,11
-movie mode,0,0,1
-autofocus,0,0,6
-View,0,0,1
+noise,0,1,3
+viewfinder,1,1,5
+burst mode,0,0,1
+memory card,1,0,4
+hd video,2,0,3
+video recording,2,0,1
+wide angle,1,0,1
+shutter,0,0,2
+video quality,0,0,1
+zoom,5,0,7
+movie mode,0,0,2
+price range,1,0,1
+image stabilization,2,0,1
+indoor shots,1,0,0
+menu,1,2,2
+autofocus,0,1,5
 amateur photographer,0,0,2
+angle lens,1,0,0
+white balance,0,0,1
 video capture,0,0,1
-money,0,0,6
-entry level,0,0,1
-Movie mode,0,0,1
+money,3,1,2
+lcd monitor,0,0,2
+entry level,1,0,0
+dslr,2,1,14
+kit lens,7,1,6
+sd card,0,0,2
 light pictures,0,0,1
+auto mode,0,0,2

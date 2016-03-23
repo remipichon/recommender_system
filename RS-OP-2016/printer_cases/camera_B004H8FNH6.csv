@@ -1,48 +1,43 @@
 feature,pos,neg,neutral
-auto,0,0,1
-movie,0,0,3
-color,0,0,6
-HD movie,0,0,1
+auto,1,0,0
+movie,0,1,2
+color,1,1,4
 focus,0,0,3
 screen,0,0,1
 battery charger,0,0,1
-video,0,0,2
+video,1,0,1
 lens,0,0,1
-battery,0,0,3
-photos,0,0,10
+battery,0,0,5
+photos,2,4,4
 resolution,0,0,3
-pictures,0,0,10
-price point,0,0,3
-USB cable,0,0,1
+pictures,6,1,3
+price point,0,1,2
 button,0,0,1
-HD video,0,0,2
-Wide angle,0,0,1
-features,0,0,6
+features,1,1,4
 spare battery,0,0,1
 firmware update,0,0,1
-price,0,0,1
-Battery,0,0,2
+price,0,1,1
 function,0,0,1
-noise,0,0,1
+noise,0,1,0
 options,0,0,1
-pics,0,0,5
-Image stabilization,0,0,1
-settings,0,0,2
-PRICE,0,0,1
-SIZE,0,0,1
-indoor photos,0,0,3
-video quality,0,0,1
+pics,2,1,2
+settings,1,0,1
+wide angle,0,0,1
+hd video,0,0,3
+indoor photos,0,2,1
+video quality,1,0,0
 movie mode,0,0,2
-zoom,0,0,3
+zoom,2,0,1
+image stabilization,1,0,0
 price range,0,0,1
-menu,0,0,1
-Touch screen,0,0,1
-white balance,0,0,1
-HD Video,0,0,1
-size,0,0,2
-underwater photos,0,0,2
-touch screen,0,0,5
+menu,0,1,0
+usb cable,1,0,0
+white balance,1,0,0
+hd movie,0,0,1
+size,1,0,2
+underwater photos,1,1,0
+touch screen,2,1,3
 wrist strap,0,0,2
-shots,0,0,2
+shots,1,0,1
 lens cover,0,0,1
-scene mode,0,0,1
+scene mode,1,0,0

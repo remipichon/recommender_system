@@ -1,23 +1,20 @@
 feature,pos,neg,neutral
 lenses,0,0,1
-Customer Service,0,0,1
-color,0,0,1
+color,1,0,0
 professional photographer,0,0,1
-Mode,0,0,1
-zoom,0,0,3
-lens,0,0,3
+customer service,0,0,1
+zoom,2,0,3
+lens,1,2,0
 resolution,0,0,1
 photos,0,0,4
-pictures,0,0,8
-battery life,0,0,1
-features,0,0,6
-Function,0,0,1
+pictures,4,0,4
+mode,0,0,1
+battery life,1,0,0
+features,1,0,5
 money,0,0,1
-light,0,0,2
-price,0,0,5
-function,0,0,2
-Optical Zoom,0,0,1
-Zoom,0,0,2
-shots,0,0,2
-optical zoom,0,0,1
+light,1,0,1
+price,1,0,4
+function,1,0,2
+shots,1,0,1
+optical zoom,1,0,1
 flash,0,0,2

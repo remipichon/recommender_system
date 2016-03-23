@@ -1,29 +1,29 @@
 feature,pos,neg,neutral
-shutter speed,0,0,2
+shutter speed,1,0,1
+movie,0,0,1
 color,0,0,1
 view finder,0,0,1
-screen,0,0,7
-video,0,0,6
-lens,0,0,3
-battery,0,0,4
-photos,0,0,1
-pictures,0,0,11
-HD video,0,0,1
-button,0,0,1
-features,0,0,8
-price,0,0,4
+screen,1,0,6
+video,2,0,4
+lens,1,0,2
+battery,2,0,2
+photos,1,0,0
+pictures,5,1,5
+button,1,0,0
+features,2,1,5
+price,1,0,3
 pics,0,0,1
 case,0,0,2
 build quality,0,0,1
-SD card,0,0,2
-Movie,0,0,1
-settings,0,0,4
+settings,1,1,2
 image,0,0,1
-zoom,0,0,4
+hd video,0,0,1
+zoom,1,0,3
 price range,0,0,1
 menu,0,0,1
 size,0,0,1
 money,0,0,1
-light,0,0,1
+light,0,1,0
 shots,0,0,1
-flash,0,0,1
+sd card,0,0,2
+flash,1,0,0

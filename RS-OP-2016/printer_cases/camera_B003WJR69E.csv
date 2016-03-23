@@ -1,175 +1,128 @@
 feature,pos,neg,neutral
-Pictures,0,0,1
-light situations,0,0,3
-manual focus,0,0,4
-shutter speed,0,0,10
-movie,0,0,8
-software,0,0,31
-indoor pictures,0,0,3
-Size,0,0,3
+light situations,1,1,1
+manual focus,1,1,4
+shutter speed,4,0,6
+movie,1,0,7
+software,3,7,21
+indoor pictures,0,1,2
 view finder,0,0,3
-Menu system,0,0,2
-focus,0,0,19
+focus,3,2,14
 lower light,0,0,1
-Image,0,0,5
-LCD screen,0,0,1
-resolution,0,0,8
-quality pictures,0,0,3
-SD Card,0,0,1
+lcd screen,1,0,2
+resolution,3,1,4
+quality pictures,2,0,1
 card reader,0,0,2
-recording button,0,0,1
-Wrist Strap,0,0,1
-Button,0,0,1
-price,0,0,23
-Auto ISO,0,0,1
-options,0,0,21
-noise reduction,0,0,4
-Lens cap,0,0,5
-focal length,0,0,5
-dSLR,0,0,10
-neck strap,0,0,4
-pics,0,0,21
-case,0,0,27
-shutter button,0,0,2
-lenses,0,0,27
+recording button,1,0,0
+price,5,1,18
+options,7,2,12
+noise reduction,3,0,1
+focal length,1,1,3
+neck strap,0,1,3
+film slr,0,0,1
+pics,11,4,6
+case,4,4,20
+shutter button,1,0,1
+lenses,6,0,21
 zoom lens,0,0,4
-professional photographer,0,0,6
-AF,0,0,4
-screen protector,0,0,2
-Exposure,0,0,1
-Image quality,0,0,5
+professional photographer,1,0,5
+af,0,1,3
+screen protector,0,0,4
 priority mode,0,0,1
-size,0,0,43
-exposure,0,0,10
-quality photos,0,0,1
-light,0,0,72
-Lens,0,0,4
-wrist strap,0,0,3
+size,9,3,34
+exposure,1,0,10
+hd movie,1,0,0
+quality photos,1,0,0
+light,31,5,36
+wrist strap,1,0,3
 shutter lag,0,0,1
-shots,0,0,33
+shots,10,1,22
 light capability,0,0,1
-light shots,0,0,1
-card,0,0,6
-video mode,0,0,4
-flash,0,0,70
-light photos,0,0,2
-scene mode,0,0,1
-auto focus,0,0,4
-HD movie,0,0,1
-White Balance,0,0,1
+auto iso,0,0,2
+light shots,1,0,0
+card,0,1,5
+video mode,1,0,3
+sensor size,0,0,1
+flash,11,4,55
+light photos,1,0,1
+scene mode,1,0,0
+auto focus,2,0,4
 battery charger,0,0,2
-battery,0,0,20
-pictures,0,0,83
+battery,2,2,18
+pictures,43,7,34
 price point,0,0,1
-Case,0,0,1
-Sensor Size,0,0,1
-DSLr,0,0,1
-Auto Focus,0,0,2
 editing software,0,0,4
-swivel screen,0,0,1
-electronic viewfinder,0,0,3
-noise,0,0,19
+swivel screen,1,0,0
+electronic viewfinder,1,0,2
+noise,3,0,17
 macro mode,0,0,3
-Menu,0,0,2
-automatic mode,0,0,2
-lens cap,0,0,32
+automatic mode,1,0,1
+lens cap,4,9,27
 burst mode,0,0,2
-Angle lens,0,0,1
-Build quality,0,0,2
-wide angle,0,0,14
-ISO,0,0,37
+wide angle,6,0,14
 shutter,0,0,5
-video quality,0,0,5
-indoor shots,0,0,3
-image stabilization,0,0,8
-price range,0,0,3
-menu,0,0,23
-Screen Protector,0,0,2
-angle lens,0,0,5
-Wide Angle,0,0,3
-DSLR,0,0,30
-Lens Cap,0,0,3
-dslr,0,0,1
-kit lens,0,0,1
-light weight,0,0,2
-manual control,0,0,6
-lens cover,0,0,5
+video quality,3,0,3
+indoor shots,2,0,1
+image stabilization,4,0,5
+price range,2,1,0
+menu,6,1,18
+usb cable,0,0,1
+angle lens,2,0,4
+dslr,3,5,34
+kit lens,1,0,0
+light weight,1,0,1
+sd card,0,2,5
+manual control,2,0,5
+lens cover,0,1,4
 articulating screen,0,0,2
-auto,0,0,19
-Customer Service,0,0,1
-iso,0,0,7
-Noise,0,0,1
-customer service,0,0,2
-Viewfinder,0,0,1
-screen,0,0,17
-body,0,0,13
-photos,0,0,70
-battery life,0,0,13
-mode,0,0,53
-HD video,0,0,9
-features,0,0,35
-Wide angle,0,0,3
-view,0,0,10
-shutter release,0,0,3
+auto,6,2,15
+iso,11,5,28
+customer service,0,1,2
+screen,2,4,11
+body,3,0,11
+photos,17,2,51
+battery life,11,0,6
+mode,3,5,45
+features,9,3,25
+view,2,0,8
+shutter release,1,0,2
 spare battery,0,0,4
-Battery,0,0,2
-function,0,0,4
+function,0,1,4
 manual settings,0,0,2
-light conditions,0,0,3
-focus mode,0,0,2
-build quality,0,0,5
-Image Stabilization,0,0,1
-menu system,0,0,2
-image,0,0,20
-settings,0,0,26
-SDHC card,0,0,3
-Color,0,0,1
-Auto mode,0,0,1
-LCD,0,0,12
-image quality,0,0,23
+light conditions,1,0,2
+focus mode,1,0,1
+build quality,4,0,3
+menu system,2,0,2
+image,6,2,17
+settings,7,3,16
+image quality,8,0,20
 prime lens,0,0,2
-Price,0,0,1
-Video,0,0,1
-sensor,0,0,13
+sdhc card,0,0,3
+sensor,1,1,11
 touch screen,0,0,1
-manual mode,0,0,2
-HD camcorder,0,0,1
-external flash,0,0,5
-color,0,0,22
-Battery life,0,0,4
-LCD Screen,0,0,2
-video,0,0,61
-lens,0,0,138
-lcd,0,0,2
-button,0,0,24
-Auto,0,0,4
-USB cable,0,0,1
-Function,0,0,1
-zoom range,0,0,7
+manual mode,2,0,1
+external flash,3,0,2
+color,8,5,10
+video,24,2,36
+lens,45,15,82
+lcd,5,0,9
+button,4,0,21
+zoom range,2,1,4
 program mode,0,0,1
-Zoom,0,0,7
-viewfinder,0,0,16
-Features,0,0,2
-auto ISO,0,0,1
-Body,0,0,1
-memory card,0,0,4
-SD card,0,0,6
-aspect ratio,0,0,6
+viewfinder,1,2,14
+memory card,2,1,1
+aspect ratio,0,1,5
 exposure compensation,0,0,2
-Manual control,0,0,1
-Video quality,0,0,1
-zoom,0,0,53
-movie mode,0,0,2
-autofocus,0,0,5
+hd video,4,0,5
+zoom,8,7,45
+movie mode,2,0,1
+autofocus,2,1,2
 amateur photographer,0,0,1
-white balance,0,0,3
-Manual mode,0,0,1
-money,0,0,7
-Manual Focus,0,0,2
+white balance,1,0,3
+money,2,0,5
+hd camcorder,0,0,1
 telephoto lens,0,0,1
 entry level,0,0,1
-Movie mode,0,0,1
 quality video,0,0,3
-film SLR,0,0,1
-optical zoom,0,0,5
-light pictures,0,0,1
+optical zoom,1,0,4
+light pictures,1,0,0
+auto mode,0,0,1

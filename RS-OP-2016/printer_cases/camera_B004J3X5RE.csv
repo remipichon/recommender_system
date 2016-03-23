@@ -1,40 +1,35 @@
 feature,pos,neg,neutral
-Pictures,0,0,1
-manual focus,0,0,1
-Options,0,0,1
-color,0,0,5
+manual focus,1,0,0
+color,2,1,2
+software,0,0,1
+iso,1,0,0
 battery,0,0,4
-lens,0,0,1
-photos,0,0,4
-pictures,0,0,5
-SD Card,0,0,1
+lcd,1,1,1
+lens,1,0,1
+photos,2,0,3
+pictures,2,1,3
 battery life,0,0,1
-Photos,0,0,1
 button,0,0,6
-mode,0,0,1
+mode,1,0,0
 features,0,0,2
 function,0,0,2
-noise reduction,0,0,1
-focus mode,0,0,1
-Flash,0,0,1
+options,1,0,0
+noise reduction,1,0,0
+focus mode,1,0,0
 pics,0,0,2
-burst mode,0,0,1
-memory card,0,0,2
-case,0,0,1
+burst mode,1,0,0
+memory card,1,0,2
+case,1,0,0
 menu system,0,0,2
 aspect ratio,0,0,1
 image,0,0,1
-Memory Card,0,0,1
-ISO,0,0,1
-zoom,0,0,4
-movie mode,0,0,1
-LCD,0,0,3
-menu,0,0,1
-image quality,0,0,5
+zoom,3,1,0
+movie mode,1,0,0
+menu,0,1,0
+image quality,4,0,1
 money,0,0,1
-size,0,0,2
-Software,0,0,1
-Lens,0,0,1
-manual control,0,0,1
-card,0,0,2
-flash,0,0,4
+size,2,0,0
+manual control,1,0,0
+sd card,0,0,1
+card,1,0,1
+flash,2,0,3

@@ -1,28 +1,25 @@
 feature,pos,neg,neutral
-software,0,0,1
-Battery life,0,0,2
-color,0,0,1
-battery,0,0,1
-photos,0,0,6
-pictures,0,0,1
-Photos,0,0,2
-mode,0,0,1
-battery life,0,0,1
-features,0,0,6
-price,0,0,2
-options,0,0,3
-Features,0,0,1
-pics,0,0,1
-panorama mode,0,0,1
-image,0,0,5
+panorama mode,0,1,0
+image,1,4,0
 settings,0,0,1
-card slot,0,0,1
+card slot,1,0,0
+software,1,0,0
+color,1,0,0
 shutter,0,0,1
-zoom,0,0,1
-price range,0,0,1
-size,0,0,3
-light,0,0,3
-entry level,0,0,1
-shots,0,0,7
+zoom,1,0,0
+price range,1,0,0
+battery,1,0,0
+photos,7,1,0
+pictures,0,0,1
+mode,0,0,1
+battery life,0,2,1
+features,3,3,1
+size,2,0,1
+light,3,0,0
+entry level,1,0,0
+price,2,0,0
+options,1,2,0
+shots,3,4,0
+pics,1,0,0
 optical zoom,0,0,1
-card,0,0,1
+card,0,1,0

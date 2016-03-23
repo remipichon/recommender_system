@@ -6,7 +6,7 @@ public class Feature {
     private String posPattern;  //POS sequence between feature and wmin sentiment word
     private String name;        //feature name
     private Sentiment sentiment;//sentiment value
-    private String sentence;    //sentence in which the feature is
+    private Sentence sentence;    //sentence in which the feature is
     private int featurePosition;       //position of the feature in the sentence
     private int sentimentPosition;       //position of the sentiment feature in the sentence
     private int biGramOffset; // = 1 if biGram, 0 else
@@ -28,7 +28,7 @@ public class Feature {
         this.sentiment = sentiment;
     }
 
-    public void setSentence(String sentence) {
+    public void setSentence(Sentence sentence) {
         this.sentence = sentence;
     }
 
@@ -52,7 +52,7 @@ public class Feature {
         return sentiment;
     }
 
-    public String getSentence() {
+    public Sentence getSentence() {
         return sentence;
     }
 

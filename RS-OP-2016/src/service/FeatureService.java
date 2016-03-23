@@ -96,7 +96,7 @@ public class FeatureService {
                 Feature feature = new Feature();
                 feature.setName(tokens[i].toLowerCase() + " " + tokens[i + 1].toLowerCase());
                 feature.setFeaturePosition(i);
-                feature.setSentence(sentence.getContent());
+                feature.setSentence(sentence);
                 feature.setBiGramOffset(1);
                 feature.setProductId(productId);
 
@@ -113,7 +113,7 @@ public class FeatureService {
                 Feature feature = new Feature();
                 feature.setName(tokens[i].toLowerCase());
                 feature.setFeaturePosition(i);
-                feature.setSentence(sentence.getContent());
+                feature.setSentence(sentence);
                 feature.setBiGramOffset(0);
                 feature.setProductId(productId);
 

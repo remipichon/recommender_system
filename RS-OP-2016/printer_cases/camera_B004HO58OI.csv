@@ -1,184 +1,115 @@
 feature,pos,neg,neutral
-Pictures,0,0,1
 light situations,0,0,1
-manual focus,0,0,9
-shutter speed,0,0,8
-software,0,0,7
+manual focus,2,0,8
+shutter speed,1,1,7
+software,1,1,6
 movie,0,0,2
-indoor pictures,0,0,1
-view finder,0,0,2
-focus,0,0,56
-Shutter,0,0,1
-focus ring,0,0,3
-lcd screen,0,0,1
-SETTINGS,0,0,1
-LCD screen,0,0,4
-resolution,0,0,15
-AUTO MODE,0,0,1
-Video Quality,0,0,1
+indoor pictures,1,0,0
+view finder,1,0,1
+lcd display,0,1,0
+focus,7,9,45
+lcd screen,1,0,4
+focus ring,1,0,2
+resolution,5,0,13
 card reader,0,0,1
-IMAGE,0,0,1
-Battery Life,0,0,2
-PICTURES,0,0,1
-Button,0,0,1
-price,0,0,9
-options,0,0,15
+price,5,0,4
+options,6,0,9
 noise reduction,0,0,3
-focal length,0,0,6
+focal length,1,1,4
 neck strap,0,0,1
-pics,0,0,13
-case,0,0,5
-shutter button,0,0,6
-lenses,0,0,17
-zoom lens,0,0,6
+pics,8,1,4
+case,2,0,6
+shutter button,0,1,5
+lenses,2,2,13
+zoom lens,4,0,6
+aa battery,0,0,2
 professional photographer,0,0,1
-AF,0,0,8
-af,0,0,1
-SENSOR,0,0,2
+af,0,2,7
 lens hood,0,0,1
-SHOTS,0,0,1
-Exposure,0,0,1
-CASE,0,0,1
-Image quality,0,0,1
-HD Video,0,0,2
-priority mode,0,0,1
-quality photos,0,0,5
-exposure,0,0,11
-size,0,0,12
-light,0,0,37
-Lens,0,0,2
-shots,0,0,77
-card,0,0,9
-flash,0,0,22
-auto focus,0,0,9
-FOCUS,0,0,2
-HD movie,0,0,1
-Zoom Lens,0,0,2
-White Balance,0,0,3
-Focus mode,0,0,1
-battery,0,0,12
-pictures,0,0,68
-Case,0,0,2
-firmware update,0,0,10
-Dslr,0,0,1
-Auto Focus,0,0,1
-Electronic viewfinder,0,0,1
-noise,0,0,17
-electronic viewfinder,0,0,2
-macro mode,0,0,1
-LCD display,0,0,1
+priority mode,0,0,3
+quality photos,1,1,3
+exposure,4,1,8
+size,3,0,9
+hd movie,0,0,1
+light,13,3,22
+shutter lag,0,0,1
+shots,18,5,55
+light capability,1,0,0
+card,1,1,7
+flash,4,2,17
+auto focus,2,1,7
+battery,0,2,12
+pictures,21,10,39
+firmware update,1,2,8
+noise,2,4,13
+electronic viewfinder,1,1,1
+macro mode,1,0,0
 burst mode,0,0,3
-battery door,0,0,1
+battery door,0,1,0
 lens cap,0,0,2
-Build quality,0,0,1
-optical viewfinder,0,0,1
-panorama mode,0,0,2
-AA battery,0,0,2
-wide angle,0,0,1
-video recording,0,0,1
-ISO,0,0,24
-shutter,0,0,11
-Light weight,0,0,1
-video quality,0,0,2
-Indoor photos,0,0,1
-indoor shots,0,0,2
-image stabilization,0,0,3
-menu,0,0,24
-angle lens,0,0,2
-FEATURES,0,0,2
-Zoom lens,0,0,2
-Wide Angle,0,0,2
-DSLR,0,0,30
-dslr,0,0,3
-light weight,0,0,2
-MENU,0,0,1
-macro shots,0,0,1
-auto,0,0,6
-Firmware update,0,0,1
-Noise,0,0,1
-action shots,0,0,1
-Viewfinder,0,0,1
-screen,0,0,10
-NOISE,0,0,1
-body,0,0,4
-photos,0,0,46
-HD video,0,0,7
-mode,0,0,28
-battery life,0,0,6
-features,0,0,34
-view,0,0,5
-shutter release,0,0,2
-IMAGE QUALITY,0,0,3
-Light,0,0,1
-COLOR,0,0,3
-function,0,0,6
-Battery,0,0,2
-Image Quality,0,0,1
-light conditions,0,0,2
-SHUTTER,0,0,1
+optical viewfinder,0,1,0
+panorama mode,2,0,0
+wide angle,0,0,3
+video recording,0,1,1
+shutter,2,1,10
+video quality,0,2,1
+indoor shots,0,1,1
+image stabilization,1,0,2
+menu,5,0,20
+usb cable,0,0,1
+angle lens,1,0,1
+lcd monitor,0,1,0
+dslr,6,1,27
+light weight,0,0,3
+sd card,0,0,4
+macro shots,1,0,0
+auto,2,0,16
+iso,4,2,18
+action shots,1,0,0
+screen,4,2,7
+body,0,1,3
+photos,15,3,28
+mode,6,1,21
+battery life,2,1,6
+features,8,1,28
+view,0,1,4
+shutter release,0,1,1
+function,3,0,3
+light conditions,0,1,1
 manual settings,0,0,2
-focus mode,0,0,6
-LCD Monitor,0,0,1
-menu system,0,0,3
-build quality,0,0,5
-Light capability,0,0,1
-settings,0,0,41
-image,0,0,18
-SDHC card,0,0,2
-PRIORITY mode,0,0,1
-Priority Mode,0,0,1
-Memory Card,0,0,1
-Color,0,0,3
-Auto mode,0,0,2
-LCD,0,0,16
-image quality,0,0,22
-AUTO,0,0,6
-Focus,0,0,3
-Video,0,0,5
-sdhc card,0,0,1
-sensor,0,0,27
-BUILD QUALITY,0,0,1
-Software,0,0,1
-Resolution,0,0,3
-Sensor,0,0,2
-Shutter speed,0,0,1
+focus mode,1,0,6
+menu system,2,0,1
+build quality,1,1,5
+settings,4,1,37
+image,4,4,11
+image quality,10,4,13
+sdhc card,0,1,2
+sensor,3,4,24
 quick shots,0,0,1
-color,0,0,15
-Screen,0,0,3
-video,0,0,74
-lens,0,0,32
-lcd,0,0,2
-USB cable,0,0,1
-Auto,0,0,6
-button,0,0,4
+color,7,1,13
+video,17,7,55
+lens,5,6,23
+lcd,5,2,11
+button,1,0,4
 outdoor shots,0,0,2
-Shutter Lag,0,0,1
-frame rate,0,0,1
-zoom range,0,0,4
-Zoom,0,0,9
-Program Mode,0,0,1
-control ring,0,0,1
-viewfinder,0,0,6
-Features,0,0,1
-Flash,0,0,1
-EXPOSURE,0,0,1
-memory card,0,0,1
-SD card,0,0,4
+frame rate,1,0,0
+zoom range,2,0,2
+program mode,0,0,1
+control ring,1,0,0
+viewfinder,2,4,1
+memory card,0,0,2
+iso settings,0,1,1
 aspect ratio,0,0,2
-hd video,0,0,1
-zoom,0,0,83
+hd video,2,0,8
+indoor photos,0,1,0
+zoom,20,10,63
 movie mode,0,0,2
-autofocus,0,0,7
-battery compartment,0,0,2
-BATTERY LIFE,0,0,1
-amateur photographer,0,0,3
-white balance,0,0,4
-VIDEO recording,0,0,1
-money,0,0,3
-entry level,0,0,6
-Manual Focus,0,0,1
-ISO settings,0,0,2
-ZOOM,0,0,1
-Optical Zoom,0,0,2
-auto mode,0,0,3
+autofocus,0,5,2
+battery compartment,0,1,1
+amateur photographer,1,0,2
+white balance,1,0,6
+money,2,0,1
+entry level,3,0,3
+auto mode,1,1,4
 light pictures,0,0,1
+optical zoom,0,0,2

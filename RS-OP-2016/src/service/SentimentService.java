@@ -154,6 +154,7 @@ public class SentimentService {
             tokenPattern = String.join("-", Arrays.copyOfRange(tokens, sentimentPosition, featurePosition)) + "-FEATURE";
         }
 
+        posPattern.intern();
 
         feature.setPosPattern(posPattern);
     }

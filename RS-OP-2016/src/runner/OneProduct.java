@@ -27,7 +27,6 @@ public class OneProduct {
 
         System.out.println("Features extracted "+features.size());
 
-        //TODO set everything to neutral, to test with huuuge data
         opinionService.validPattern(features);
 
         opinionService.negationTerm(features);
@@ -35,14 +34,7 @@ public class OneProduct {
 
         Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.computeOutputPerProduct(features);
 
-        outputService.generativeCSVFiles(computeOutputPerProduct);
-
-
-        System.out.println(String.format("%-20s", "Feature") + "|" + String.format("%-8s", "Positive") + "|" + String.format("%-8s", "Negative") + "|" + String.format("%-4s", "Neutral"));
-        for (FeatureSummary featureSummary : computeOutputPerProduct.get("ONE")) {
-            System.out.println(featureSummary.toString());
-        }
-
+        outputService.generativeCSVFiles("printer_one_product_test_cases",computeOutputPerProduct);
 
 
     }

@@ -1,143 +1,113 @@
 feature,pos,neg,neutral
-light situations,0,0,2
-Pictures,0,0,1
-AUTO mode,0,0,1
-manual focus,0,0,2
+light situations,0,1,1
+manual focus,0,1,1
 shutter speed,0,0,1
-software,0,0,4
-movie,0,0,4
-Electronic Viewfinder,0,0,1
-view finder,0,0,4
-focus,0,0,9
-lower light,0,0,1
-lcd screen,0,0,1
-LCD screen,0,0,8
-resolution,0,0,8
-quality pictures,0,0,1
-PICTURES,0,0,1
-price,0,0,15
-options,0,0,12
+software,3,0,1
+movie,0,1,5
+indoor pictures,0,0,1
+lcd display,2,0,2
+view finder,1,0,4
+focus,1,3,7
+lower light,1,0,0
+lcd screen,1,1,7
+resolution,3,1,4
+quality pictures,1,0,0
+price,9,0,6
+options,4,1,7
 noise reduction,0,0,1
-dSLR,0,0,3
 focal length,0,0,1
+film slr,0,0,2
 neck strap,0,0,1
-pics,0,0,4
-case,0,0,8
-lenses,0,0,12
+pics,2,0,2
+case,1,0,7
+lenses,2,0,10
 zoom lens,0,0,2
-professional photographer,0,0,7
+professional photographer,1,0,6
 image sensor,0,0,1
-auto settings,0,0,2
-Image quality,0,0,2
-size,0,0,26
-exposure,0,0,9
+auto settings,1,0,2
+size,10,2,14
+exposure,1,0,8
 quality photos,0,0,2
-light,0,0,41
+light,15,7,20
 battery grip,0,0,1
-wrist strap,0,0,1
-shutter lag,0,0,1
-shots,0,0,43
+wrist strap,1,0,0
+shutter lag,1,0,1
+shots,12,3,28
+auto iso,0,0,1
 light shots,0,0,1
-card,0,0,3
-video mode,0,0,3
-flash,0,0,27
-light photos,0,0,1
-auto focus,0,0,1
-FOCUS,0,0,1
-battery,0,0,16
-pictures,0,0,83
-price point,0,0,2
-swivel screen,0,0,4
+card,1,0,2
+video mode,1,1,1
+flash,6,4,17
+light photos,0,1,0
+auto focus,1,0,0
+battery,2,2,14
+pictures,35,7,43
+price point,2,0,0
+swivel screen,2,0,2
 editing software,0,0,1
-noise,0,0,14
-LCD display,0,0,4
-optical viewfinder,0,0,10
-Build quality,0,0,1
-Movie,0,0,1
-ISO range,0,0,1
+noise,3,3,8
+electronic viewfinder,0,0,1
+optical viewfinder,2,1,8
 wide angle,0,0,3
-ISO,0,0,20
-shutter,0,0,7
-Light weight,0,0,1
-video quality,0,0,2
-price range,0,0,2
-image stabilization,0,0,2
-indoor shots,0,0,2
-menu,0,0,5
+shutter,1,2,4
+video quality,2,0,0
+price range,1,0,1
+image stabilization,1,0,1
+indoor shots,1,0,1
+night shots,1,0,0
+menu,0,1,4
+usb cable,1,0,0
 angle lens,0,0,3
-Optical Viewfinder,0,0,1
-MOVIE,0,0,1
-DSLR,0,0,30
-dslr,0,0,3
-light weight,0,0,2
-kit lens,0,0,1
-manual control,0,0,3
+lcd monitor,0,0,1
+dslr,8,2,26
+light weight,0,0,3
+kit lens,0,0,2
+manual control,2,0,1
 lens cover,0,0,2
-articulating screen,0,0,2
-auto,0,0,8
-iso,0,0,1
-customer service,0,0,1
-screen,0,0,31
-body,0,0,8
-photos,0,0,45
-View finder,0,0,1
-mode,0,0,28
-battery life,0,0,5
-HD video,0,0,6
-features,0,0,37
+articulating screen,1,1,0
+auto,1,2,9
+iso,4,4,13
+customer service,1,0,0
+screen,4,1,28
+body,5,0,3
+photos,14,3,28
+mode,5,1,22
+battery life,6,0,0
+features,14,0,23
 view,0,0,2
 shutter release,0,0,1
-Light,0,0,1
-function,0,0,7
-Battery,0,0,2
-manual settings,0,0,3
-light conditions,0,0,1
+function,2,0,5
+manual settings,3,0,0
+light conditions,1,0,0
 shutter priority,0,0,1
-user manual,0,0,1
-settings,0,0,32
-image,0,0,10
-Auto mode,0,0,3
-Auto settings,0,0,1
+build quality,0,0,1
+user manual,0,1,0
+settings,7,2,23
+image,3,1,6
 video capability,0,0,2
-LCD,0,0,10
-AUTO,0,0,2
-image quality,0,0,18
-Focus,0,0,1
-Video,0,0,1
-Indoor pictures,0,0,1
-sensor,0,0,19
-manual mode,0,0,4
-quick shots,0,0,1
-color,0,0,19
+image quality,13,1,6
+sensor,8,0,11
+manual mode,0,1,3
+quick shots,0,1,0
+color,7,2,10
 external flash,0,0,3
-Battery life,0,0,1
-LCD monitor,0,0,1
-Screen,0,0,2
 wireless flash,0,0,1
-video,0,0,38
-lens,0,0,43
-lcd,0,0,1
-button,0,0,12
-Auto,0,0,2
-USB cable,0,0,1
-Night shots,0,0,1
+video,13,4,22
+lens,11,10,23
+lcd,5,2,4
+button,1,2,9
 program mode,0,0,1
-viewfinder,0,0,21
-auto ISO,0,0,1
-LENS,0,0,1
-memory card,0,0,5
+viewfinder,3,3,15
+memory card,1,0,4
+iso settings,1,0,1
 aspect ratio,0,0,1
-exposure compensation,0,0,3
-zoom,0,0,35
-movie mode,0,0,2
+exposure compensation,1,0,2
+hd video,1,0,5
+zoom,6,4,27
+movie mode,1,0,1
 autofocus,0,0,1
-amateur photographer,0,0,4
-Shutter lag,0,0,1
-money,0,0,10
-KIT LENS,0,0,1
-ISO settings,0,0,2
-Optical Zoom,0,0,2
-ZOOM,0,0,2
-film SLR,0,0,2
-optical zoom,0,0,7
-auto mode,0,0,5
+amateur photographer,2,1,1
+money,1,1,8
+iso range,1,0,0
+optical zoom,2,0,7
+auto mode,3,0,6

@@ -1,94 +1,75 @@
 feature,pos,neg,neutral
 light situations,0,0,1
-auto,0,0,3
-shutter speed,0,0,4
+auto,0,0,5
+shutter speed,1,0,4
 software,0,0,3
+iso,1,0,4
 movie,0,0,1
-screen,0,0,5
-focus,0,0,6
-Image,0,0,1
-photos,0,0,24
-resolution,0,0,4
-battery life,0,0,8
-HD video,0,0,2
-mode,0,0,21
-features,0,0,7
-price,0,0,11
+screen,1,1,3
+focus,0,2,4
+photos,8,4,12
+resolution,0,1,3
+battery life,4,0,5
+mode,8,1,14
+features,2,0,5
+view,0,0,1
+price,4,0,8
 options,0,0,1
-Auto Mode,0,0,2
-pics,0,0,10
+pics,1,3,6
 build quality,0,0,1
-case,0,0,3
-Image Stabilization,0,0,1
-Video mode,0,0,1
-settings,0,0,14
-image,0,0,6
+case,1,0,2
+settings,3,3,8
+image,0,1,6
 shutter button,0,0,2
 lenses,0,0,1
 professional photographer,0,0,2
-Color,0,0,1
-Shutter Speed,0,0,1
-Auto mode,0,0,3
-SHOTS,0,0,2
-LCD,0,0,2
-shoot mode,0,0,1
-Image quality,0,0,1
-image quality,0,0,3
-exposure,0,0,2
-size,0,0,8
-light,0,0,3
-Price,0,0,1
-Image Sensor,0,0,1
+image sensor,0,0,1
+shoot mode,1,0,0
+image quality,3,0,1
+exposure,0,1,1
+size,1,0,7
+light,1,0,2
 sensor,0,0,1
-Lens,0,0,1
 shutter lag,0,0,1
-shots,0,0,25
+shots,8,2,17
+video mode,0,0,1
 card,0,0,7
 manual mode,0,0,1
-flash,0,0,28
+sensor size,0,0,1
+flash,6,2,22
 scene mode,0,0,1
-MONEY,0,0,1
-color,0,0,4
-Battery life,0,0,1
-video,0,0,20
-lens,0,0,16
-battery,0,0,3
-pictures,0,0,37
+color,2,0,3
+video,7,0,13
+lens,4,0,13
+lcd,0,0,2
+battery,0,1,2
+pictures,19,4,14
 price point,0,0,2
-button,0,0,7
-Auto,0,0,2
-Sensor Size,0,0,1
-zoom range,0,0,1
+button,1,0,6
+zoom range,0,1,0
 firmware update,0,0,1
 macro mode,0,0,1
-Zoom,0,0,1
 viewfinder,0,0,1
-Flash,0,0,2
 lens cap,0,0,2
-battery door,0,0,1
+battery door,0,1,0
 burst mode,0,0,1
 memory card,0,0,2
-SD card,0,0,2
-panorama mode,0,0,1
+panorama mode,0,1,0
 exposure compensation,0,0,1
-hd video,0,0,1
-ISO,0,0,5
+hd video,3,0,0
 shutter,0,0,2
-Mode,0,0,2
-Video quality,0,0,1
-video quality,0,0,3
-zoom,0,0,27
+video quality,2,1,1
+zoom,13,3,12
 price range,0,0,1
-image stabilization,0,0,1
-menu,0,0,6
-View,0,0,1
+image stabilization,0,0,2
+menu,3,1,2
 amateur photographer,0,0,1
-white balance,0,0,2
-money,0,0,5
-DSLR,0,0,5
+white balance,1,0,1
+money,1,0,5
 entry level,0,0,1
-dslr,0,0,2
+dslr,1,0,6
 manual control,0,0,2
-optical zoom,0,0,3
-auto mode,0,0,1
+sd card,0,1,1
+optical zoom,1,0,2
+auto mode,2,1,3
 lens cover,0,0,1

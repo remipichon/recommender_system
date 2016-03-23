@@ -1,115 +1,91 @@
 feature,pos,neg,neutral
-light situations,0,0,1
-Prime lens,0,0,1
-shutter speed,0,0,4
-software,0,0,6
-movie,0,0,1
-Menu system,0,0,1
-focus,0,0,11
-Shutter,0,0,1
-LCD screen,0,0,7
-resolution,0,0,7
-price,0,0,17
-Auto ISO,0,0,2
-options,0,0,8
-noise reduction,0,0,2
-pics,0,0,8
-shutter button,0,0,1
+light situations,0,0,2
+auto,0,1,12
+af system,0,0,2
+shutter speed,0,1,4
+software,2,2,2
+iso,2,6,18
+movie,1,0,0
+action shots,3,0,1
+customer service,0,1,0
+screen,2,2,11
+focus,0,1,10
+lcd screen,0,1,6
+body,2,1,9
+photos,8,3,11
+resolution,1,0,6
+mode,1,1,10
+features,8,2,6
+view,0,0,8
+shutter release,1,0,0
+price,4,1,12
+function,0,1,2
+options,3,1,4
+noise reduction,2,0,0
+pics,4,1,3
+shutter priority,0,0,1
+menu system,1,0,0
+image,1,0,7
+higher resolution,0,0,1
+settings,3,0,9
+shutter button,0,1,0
 lenses,0,0,8
-zoom lens,0,0,1
-professional photographer,0,0,3
-AF,0,0,2
+zoom lens,1,0,2
+professional photographer,1,0,2
+af,1,0,1
+view screen,0,1,0
 screen protector,0,0,1
-Shutter Speed,0,0,1
-image sensor,0,0,1
-Exposure,0,0,1
-size,0,0,3
-exposure,0,0,5
-light,0,0,20
-battery grip,0,0,2
-Lens,0,0,2
+image sensor,1,0,0
+guide mode,1,2,0
+video capability,0,0,1
+image quality,5,3,5
+prime lens,0,0,1
+size,1,0,2
+exposure,1,0,5
+light,11,2,7
+battery grip,1,0,1
+sensor,3,2,5
 shutter lag,0,0,3
-shots,0,0,21
+shots,5,1,15
 light capability,0,0,1
+memory stick,0,0,1
+auto iso,0,0,2
+manual mode,2,0,3
 video mode,0,0,3
 card,0,0,4
-flash,0,0,22
-auto focus,0,0,3
-Zoom Lens,0,0,2
-battery,0,0,6
-pictures,0,0,39
-Auto Focus,0,0,1
-noise,0,0,12
-AF system,0,0,2
-lens cap,0,0,1
-video recording,0,0,1
-Optical viewfinder,0,0,1
-ISO,0,0,26
-shutter,0,0,5
-indoor shots,0,0,3
-price range,0,0,1
-menu,0,0,4
-Auto focus,0,0,1
-DSLR,0,0,25
-dslr,0,0,3
-kit lens,0,0,3
-sd card,0,0,1
-auto,0,0,9
-action shots,0,0,4
-Noise,0,0,1
-customer service,0,0,1
-Viewfinder,0,0,1
-screen,0,0,15
-body,0,0,11
-photos,0,0,22
-mode,0,0,11
-features,0,0,16
-view,0,0,4
-shutter release,0,0,1
-Outdoor shots,0,0,1
-function,0,0,3
-Battery,0,0,1
-Image Quality,0,0,1
-shutter priority,0,0,1
-GUIDE Mode,0,0,1
-image,0,0,8
-higher resolution,0,0,1
-settings,0,0,12
-view screen,0,0,1
-Light Situations,0,0,1
-video capability,0,0,1
-LCD,0,0,8
-image quality,0,0,12
-AUTO,0,0,1
-Guide Mode,0,0,2
-sensor,0,0,10
-memory stick,0,0,1
-manual mode,0,0,5
-Autofocus,0,0,1
-HD camcorder,0,0,2
-color,0,0,6
-video,0,0,8
-lens,0,0,37
-button,0,0,6
-USB cable,0,0,1
-Auto,0,0,3
-outdoor shots,0,0,2
+flash,5,1,17
+color,2,0,4
+auto focus,1,1,3
+video,1,0,7
+lens,13,2,25
+battery,1,0,6
+lcd,0,1,7
+pictures,16,4,19
+button,1,0,5
+outdoor shots,2,1,0
 frame rate,0,0,1
-viewfinder,0,0,10
-Flash,0,0,1
-Body,0,0,1
-LENS,0,0,1
+program mode,0,0,3
+noise,1,2,10
+viewfinder,1,1,9
+lens cap,0,0,1
 focus system,0,0,1
-memory card,0,0,7
-SD card,0,0,2
+memory card,1,0,6
+optical viewfinder,0,0,1
 exposure compensation,0,0,1
-Mode,0,0,1
-zoom,0,0,6
-movie mode,0,0,3
-Program mode,0,0,3
-autofocus,0,0,4
-View,0,0,4
+video recording,0,0,1
+shutter,2,2,2
+zoom,3,0,3
+movie mode,1,0,2
+indoor shots,1,1,1
+price range,1,0,0
+menu,2,0,2
+autofocus,2,1,2
+usb cable,0,0,1
 white balance,0,0,1
-money,0,0,18
-entry level,0,0,6
+money,5,1,12
+entry level,2,0,4
+hd camcorder,1,0,1
+dslr,7,0,21
+kit lens,2,0,1
+sd card,2,0,1
 auto mode,0,0,4

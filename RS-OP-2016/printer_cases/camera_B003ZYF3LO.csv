@@ -1,167 +1,114 @@
 feature,pos,neg,neutral
-AUTO mode,0,0,5
-light situations,0,0,3
-manual focus,0,0,3
-Prime lens,0,0,1
-shutter speed,0,0,16
-software,0,0,6
-movie,0,0,3
+light situations,0,1,2
+manual focus,1,1,2
+shutter speed,1,2,15
+software,2,2,4
+movie,1,0,3
 indoor pictures,0,0,1
-view finder,0,0,2
-focus,0,0,26
+lcd display,1,0,0
+view finder,1,0,1
+focus,3,2,22
 lower light,0,0,3
-lcd screen,0,0,1
-Image,0,0,3
-LCD screen,0,0,11
+lcd screen,0,0,12
 resolution,0,0,10
-quality pictures,0,0,3
-card reader,0,0,2
-price,0,0,12
-Auto ISO,0,0,10
-kit lenses,0,0,1
+quality pictures,1,0,2
+card reader,0,1,1
+price,4,0,8
+kit lenses,1,0,0
 noise reduction,0,0,1
-options,0,0,8
-Lens cap,0,0,1
+options,3,1,4
 focal length,0,0,1
-neck strap,0,0,1
-pics,0,0,12
-case,0,0,3
-lenses,0,0,26
-zoom lens,0,0,4
-professional photographer,0,0,5
-Manual settings,0,0,1
-AF,0,0,4
-Shutter Speed,0,0,1
+neck strap,1,0,0
+pics,1,0,11
+case,1,0,2
+lenses,1,2,24
+zoom lens,3,0,9
+professional photographer,1,0,4
+af,1,0,3
 screen protector,0,0,1
-AUTO ISO,0,0,4
-guide mode,0,0,4
-FLASH,0,0,2
-Image quality,0,0,2
-HD Video,0,0,3
+guide mode,4,0,3
 priority mode,0,0,1
-exposure,0,0,12
+exposure,1,1,10
 size,0,0,4
 quality photos,0,0,1
-light,0,0,37
-Lens,0,0,4
-shots,0,0,28
-SDHC Card,0,0,2
-auto iso,0,0,1
-card,0,0,7
+light,11,5,23
+shots,4,0,24
+auto iso,1,5,18
+card,0,1,6
 light shots,0,0,2
 video mode,0,0,1
-flash,0,0,63
-Entry level,0,0,1
-Lenses,0,0,1
-Shutter Priority,0,0,1
-auto focus,0,0,12
-Zoom Lens,0,0,6
-White Balance,0,0,2
+flash,6,7,55
+auto focus,2,1,11
 battery charger,0,0,1
-battery,0,0,16
-pictures,0,0,60
+battery,1,2,15
+pictures,20,8,32
 price point,0,0,1
 firmware update,0,0,2
-noise,0,0,11
-Guide mode,0,0,2
-LCD display,0,0,1
-Build quality,0,0,1
-Movie,0,0,1
+noise,2,2,7
+lens cap,0,0,2
 wide angle,0,0,2
-video recording,0,0,4
-ISO,0,0,71
-shutter,0,0,4
-Light weight,0,0,3
-video quality,0,0,1
+video recording,0,0,5
+shutter,1,0,3
+video quality,0,1,0
 indoor shots,0,0,1
-price range,0,0,3
+price range,1,0,2
 night shots,0,0,1
-menu,0,0,10
-usb cable,0,0,1
-White balance,0,0,1
-Zoom lens,0,0,2
-Auto focus,0,0,1
-DSLR,0,0,49
-Lens Cap,0,0,1
-External Flash,0,0,1
-dslr,0,0,5
-kit lens,0,0,10
-light weight,0,0,5
+menu,1,2,7
+usb cable,0,0,9
+dslr,15,2,37
+kit lens,4,1,5
+light weight,3,0,5
+sd card,0,1,2
 manual control,0,0,3
 second battery,0,0,1
-auto,0,0,12
-iso,0,0,4
-screen,0,0,15
-body,0,0,16
-photos,0,0,32
-mode,0,0,36
-HD video,0,0,3
-battery life,0,0,6
-features,0,0,27
-view,0,0,5
-spare battery,0,0,2
-Light,0,0,2
-function,0,0,4
-Battery,0,0,2
-light conditions,0,0,2
-Auto Mode,0,0,1
-manual settings,0,0,1
-shutter priority,0,0,2
-build quality,0,0,4
-menu system,0,0,3
-Exposure compensation,0,0,1
-settings,0,0,26
-image,0,0,10
+auto,2,4,19
+iso,8,5,62
+screen,3,1,11
+body,3,0,14
+photos,11,4,17
+mode,5,3,29
+battery life,4,2,2
+features,10,2,15
+view,0,1,7
+spare battery,1,0,1
+function,1,0,3
+light conditions,0,1,1
+manual settings,1,0,1
+shutter priority,0,0,3
+build quality,3,1,1
+menu system,2,0,1
+settings,5,1,20
+image,2,1,10
 higher resolution,0,0,1
-Color,0,0,2
-Auto mode,0,0,2
-video capability,0,0,2
-LCD,0,0,6
-image quality,0,0,15
-prime lens,0,0,3
-Video,0,0,3
-Focus,0,0,1
-Guide Mode,0,0,1
-Video Recording,0,0,1
-Software,0,0,2
-sensor,0,0,12
-manual mode,0,0,1
-Shutter speed,0,0,1
+video capability,1,0,2
+image quality,8,2,7
+prime lens,1,0,3
+sdhc card,0,0,2
+sensor,4,2,6
+manual mode,0,0,2
 quick shots,0,0,1
-Battery life,0,0,2
-color,0,0,5
-external flash,0,0,2
-Video capability,0,0,1
-video,0,0,39
-lens,0,0,99
-button,0,0,12
-Auto,0,0,13
-USB cable,0,0,6
-quality image,0,0,1
-viewfinder,0,0,7
-Flash,0,0,3
-Body,0,0,1
-auto ISO,0,0,9
-memory card,0,0,8
-focus system,0,0,1
-SD card,0,0,3
-exposure compensation,0,0,2
-Manual Mode,0,0,1
+external flash,1,0,2
+color,4,0,3
+video,10,4,28
+lens,18,8,77
+lcd,1,1,4
+button,0,1,11
+quality image,1,0,0
+program mode,0,0,3
+viewfinder,1,1,5
+memory card,0,1,7
+focus system,1,0,0
+iso settings,0,0,1
+exposure compensation,0,1,2
+hd video,1,0,5
 light settings,0,0,1
-Mode,0,0,1
 video features,0,0,1
-movie mode,0,0,7
-zoom,0,0,10
-Program mode,0,0,3
-autofocus,0,0,8
-View,0,0,3
+movie mode,1,3,3
+zoom,3,0,7
+autofocus,1,0,7
 amateur photographer,0,0,2
-USB Cable,0,0,2
-AUTO FOCUS,0,0,1
-white balance,0,0,8
-money,0,0,24
+white balance,2,1,8
+money,2,4,18
 focus point,0,0,1
-ISO settings,0,0,1
-entry level,0,0,18
-Manual Focus,0,0,1
-auto mode,0,0,1
+entry level,6,0,13
+auto mode,1,1,7

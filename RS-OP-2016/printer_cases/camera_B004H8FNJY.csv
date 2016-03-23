@@ -1,75 +1,66 @@
 feature,pos,neg,neutral
-auto,0,0,3
-shutter speed,0,0,3
-movie,0,0,3
-software,0,0,8
-indoor pictures,0,0,1
-screen,0,0,6
-focus,0,0,3
-LCD screen,0,0,5
+auto,2,0,2
+shutter speed,0,1,2
+movie,1,1,1
+software,2,2,4
+iso,0,0,8
+action shots,1,0,0
+indoor pictures,0,1,0
+customer service,0,0,1
+screen,2,1,3
+focus,1,0,3
+lcd screen,2,2,1
 body,0,0,1
-resolution,0,0,1
-photos,0,0,15
+resolution,1,0,0
+photos,7,2,7
 battery pack,0,0,1
-mode,0,0,10
-battery life,0,0,1
-HD video,0,0,2
-features,0,0,10
-spare battery,0,0,2
-price,0,0,4
-Battery,0,0,2
-function,0,0,3
-Auto Mode,0,0,2
+quality pictures,0,0,1
+mode,4,1,5
+battery life,0,1,1
+features,2,0,9
+spare battery,1,0,1
+price,1,0,3
+function,1,0,2
 shutter priority,0,0,1
-PHOTOS,0,0,1
 case,0,0,3
-menu system,0,0,1
-image,0,0,6
-settings,0,0,3
-CUSTOMER SERVICE,0,0,1
-Quality pictures,0,0,1
-LCD,0,0,2
-Image quality,0,0,2
-image quality,0,0,10
-size,0,0,8
-exposure,0,0,5
-light,0,0,25
-Focus,0,0,1
+menu system,0,1,0
+image,4,1,1
+settings,0,1,2
+image quality,4,1,7
+hd movie,0,0,1
+size,4,0,4
+exposure,2,0,3
+light,10,3,12
 touch screen,0,0,2
-sensor,0,0,2
-shots,0,0,14
-light photos,0,0,3
+sensor,1,0,1
+shots,7,3,5
+light photos,0,1,2
 flash,0,0,1
-quick shots,0,0,1
-color,0,0,2
-Battery life,0,0,1
-HD movie,0,0,1
-video,0,0,18
-lens,0,0,5
-battery,0,0,7
-pictures,0,0,29
-Auto,0,0,1
-button,0,0,6
+quick shots,0,1,0
+color,1,1,0
+video,6,1,11
+lens,1,1,3
+battery,2,1,6
+lcd,1,0,1
+pictures,16,6,7
+button,1,1,4
 outdoor shots,0,0,1
-noise,0,0,8
-Shots,0,0,1
-memory card,0,0,3
-SD card,0,0,1
+noise,1,1,6
+memory card,1,0,2
 panorama mode,0,0,1
 exposure compensation,0,0,1
-ISO,0,0,8
+hd video,1,0,1
 shutter,0,0,1
-video quality,0,0,1
-zoom,0,0,9
+video quality,1,0,0
+zoom,3,1,5
 movie mode,0,0,1
 image stabilization,0,0,1
-menu,0,0,2
-FEATURES,0,0,1
+menu,1,0,1
 amateur photographer,0,0,1
-money,0,0,1
-DSLR,0,0,5
-Action shots,0,0,1
+money,1,0,0
+dslr,1,0,4
 quality video,0,0,1
-auto mode,0,0,3
+sd card,0,0,1
+auto mode,2,1,2
 optical zoom,0,0,1
-light pictures,0,0,2
+light pictures,2,0,0

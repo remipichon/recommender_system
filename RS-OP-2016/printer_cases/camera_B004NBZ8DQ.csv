@@ -1,53 +1,48 @@
 feature,pos,neg,neutral
 macro shots,0,0,1
+color,2,1,4
 movie,0,0,1
-VIDEO,0,0,1
-customer service,0,0,1
+lcd display,0,1,2
+customer service,0,1,0
 screen,0,0,2
-LCD screen,0,0,3
-body,0,0,2
-photos,0,0,15
+lcd screen,1,1,1
+video,1,2,9
+battery,0,0,10
+lcd,1,1,0
+lens,0,1,4
+body,1,0,1
+photos,6,3,9
+pictures,2,0,6
 battery life,0,0,1
-HD video,0,0,3
-mode,0,0,5
-features,0,0,2
-price,0,0,7
-Battery,0,0,1
-options,0,0,2
-case,0,0,3
-image,0,0,5
-SDHC card,0,0,2
-professional photographer,0,0,3
-Color,0,0,2
-image sensor,0,0,3
-video capability,0,0,1
-LCD,0,0,2
-size,0,0,2
-light,0,0,2
-shots,0,0,1
-video mode,0,0,3
-flash,0,0,4
-scene mode,0,0,1
-color,0,0,5
-video,0,0,11
-battery,0,0,9
-lens,0,0,5
-pictures,0,0,8
-Photos,0,0,3
-button,0,0,2
-noise,0,0,1
+mode,3,0,4
+button,1,0,1
+features,1,0,1
+price,3,0,4
+noise,0,1,0
+options,1,0,1
 macro mode,0,0,1
-LCD display,0,0,3
-ISO range,0,0,1
-Mode,0,0,2
-indoor photos,0,0,1
-video quality,0,0,1
-zoom,0,0,10
-menu,0,0,1
+case,0,0,3
+image,0,2,3
+hd video,2,0,1
+professional photographer,0,0,3
+image sensor,0,0,3
+indoor photos,1,0,0
+video quality,1,0,0
+zoom,3,0,7
+video capability,0,0,1
+menu,0,1,0
 battery compartment,0,0,1
-money,0,0,1
-DSLR,0,0,1
+money,1,0,0
+size,1,0,1
+light,1,1,0
+sdhc card,0,0,2
+iso range,1,0,0
+dslr,0,0,1
+shots,0,1,0
 manual control,0,0,1
-auto mode,0,0,2
-lens cover,0,0,3
+auto mode,2,0,0
+video mode,0,0,3
+lens cover,0,2,1
 optical zoom,0,0,1
+flash,2,0,2
+scene mode,0,0,1
