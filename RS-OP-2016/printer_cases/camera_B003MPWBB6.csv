@@ -1,116 +1,116 @@
 feature,pos,neg,neutral
-manual focus,4,1,0
-shutter speed,1,0,0
-movie,1,0,0
-software,2,3,3
+manual focus,0,0,5
+shutter speed,0,0,1
+movie,0,0,1
+software,0,0,8
 Electronic Viewfinder,0,0,1
-view finder,4,1,0
+view finder,0,0,5
 Menu system,0,0,1
-focus,10,6,7
-LCD screen,7,0,0
-resolution,3,1,0
+focus,0,0,23
+LCD screen,0,0,7
+resolution,0,0,4
 quality pictures,0,0,2
-price,1,2,0
-options,3,2,0
-dSLR,0,1,0
-neck strap,0,1,0
-pics,5,1,1
-case,2,0,1
-lenses,29,12,13
-zoom lens,1,1,3
-professional photographer,1,1,0
-AF,2,1,2
+price,0,0,3
+options,0,0,5
+dSLR,0,0,1
+neck strap,0,0,1
+pics,0,0,7
+case,0,0,3
+lenses,0,0,54
+zoom lens,0,0,5
+professional photographer,0,0,2
+AF,0,0,5
 Image quality,0,0,1
-priority mode,1,0,0
-exposure,4,3,2
-size,9,3,1
+priority mode,0,0,1
+exposure,0,0,9
+size,0,0,13
 quality photos,0,0,1
-light,10,1,2
+light,0,0,13
 Lens,0,0,1
-shutter lag,1,0,0
-shots,8,3,5
-video mode,0,1,0
-card,0,1,0
-Lenses,0,1,0
-flash,3,3,4
-light photos,2,0,0
-auto focus,0,5,0
-battery charger,0,1,1
-battery,1,3,2
-pictures,16,7,2
-price point,3,0,1
-firmware update,0,2,2
-noise,2,1,1
+shutter lag,0,0,1
+shots,0,0,16
+video mode,0,0,1
+card,0,0,1
+Lenses,0,0,1
+flash,0,0,10
+light photos,0,0,2
+auto focus,0,0,5
+battery charger,0,0,2
+battery,0,0,6
+pictures,0,0,25
+price point,0,0,4
+firmware update,0,0,4
+noise,0,0,4
 electronic viewfinder,0,0,1
-LCD display,2,0,2
+LCD display,0,0,4
 automatic mode,0,0,2
 optical viewfinder,0,0,1
-video recording,1,0,1
-wide angle,0,1,0
-ISO,8,1,2
-shutter,3,5,1
-video quality,1,0,0
-image stabilization,1,1,2
-menu,1,4,0
-Pics,0,1,0
-user interface,1,0,0
-DSLR,9,2,10
-dslr,2,1,0
-kit lens,0,2,3
+video recording,0,0,2
+wide angle,0,0,1
+ISO,0,0,11
+shutter,0,0,9
+video quality,0,0,1
+image stabilization,0,0,4
+menu,0,0,5
+Pics,0,0,1
+user interface,0,0,1
+DSLR,0,0,21
+dslr,0,0,3
+kit lens,0,0,5
 light weight,0,0,1
-manual control,2,1,0
-auto,2,2,1
-Customer Service,0,4,0
-iso,3,0,0
-customer service,1,1,0
-screen,2,4,3
-body,13,1,2
-photos,15,2,5
-LENSES,1,0,1
+manual control,0,0,3
+auto,0,0,5
+Customer Service,0,0,4
+iso,0,0,3
+customer service,0,0,2
+screen,0,0,9
+body,0,0,16
+photos,0,0,22
+LENSES,0,0,2
 Autofocus system,0,0,1
-mode,3,5,0
-battery life,0,1,1
-HD video,1,1,1
-features,4,2,0
-view,1,2,0
+mode,0,0,8
+battery life,0,0,2
+HD video,0,0,3
+features,0,0,6
+view,0,0,3
 Battery,0,0,1
-light conditions,1,0,0
-manual settings,0,1,0
-build quality,2,0,0
+light conditions,0,0,1
+manual settings,0,0,1
+build quality,0,0,2
 Image Stabilization,0,0,1
-menu system,3,3,1
-image,1,3,0
-settings,4,2,1
-Auto mode,1,0,0
-LCD,4,0,3
-image quality,3,1,2
-zoom Lens,1,0,0
-prime lens,1,0,0
+menu system,0,0,7
+image,0,0,4
+settings,0,0,7
+Auto mode,0,0,1
+LCD,0,0,7
+image quality,0,0,6
+zoom Lens,0,0,1
+prime lens,0,0,1
 Video,0,0,1
-Focus,1,0,1
-sensor,10,1,1
+Focus,0,0,2
+sensor,0,0,12
 pictures quality,0,0,1
 HD camcorder,0,0,1
-Battery life,1,1,0
-color,2,1,0
-external flash,1,0,0
-video,23,7,7
-lens,37,16,24
-button,4,0,2
-Auto,1,0,0
-Photos,1,0,0
+Battery life,0,0,2
+color,0,0,3
+external flash,0,0,1
+video,0,0,37
+lens,0,0,77
+button,0,0,6
+Auto,0,0,1
+Photos,0,0,1
 outdoor shots,0,0,1
-Manual focus,0,1,0
-Zoom,1,0,0
-viewfinder,2,3,1
-Flash,1,0,0
-Body,1,0,0
-memory card,1,0,0
-exposure compensation,1,0,0
-zoom,5,5,2
-autofocus,1,1,0
-amateur photographer,1,0,0
-white balance,1,1,0
-money,2,1,0
-telephoto lens,0,1,0
-auto mode,1,0,0
+Manual focus,0,0,1
+Zoom,0,0,1
+viewfinder,0,0,6
+Flash,0,0,1
+Body,0,0,1
+memory card,0,0,1
+exposure compensation,0,0,1
+zoom,0,0,12
+autofocus,0,0,2
+amateur photographer,0,0,1
+white balance,0,0,2
+money,0,0,3
+telephoto lens,0,0,1
+auto mode,0,0,1

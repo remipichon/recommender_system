@@ -1,67 +1,67 @@
 feature,pos,neg,neutral
 second battery,0,0,1
-auto,1,1,0
-action shots,4,0,1
+auto,0,0,2
+action shots,0,0,5
 VIDEO,0,0,1
 MODE,0,0,1
-focus,2,3,2
+focus,0,0,7
 screen,0,0,1
 LCD screen,0,0,1
-photos,4,1,2
-mode,4,1,1
-HD video,2,0,0
-battery life,1,0,0
-features,1,2,0
-Burst mode,1,0,0
+photos,0,0,7
+mode,0,0,6
+HD video,0,0,2
+battery life,0,0,1
+features,0,0,3
+Burst mode,0,0,1
 PICTURES,0,0,2
-Battery,1,1,0
-manual settings,1,0,0
-pics,5,1,1
-case,1,0,1
+Battery,0,0,2
+manual settings,0,0,1
+pics,0,0,7
+case,0,0,2
 PHOTOS,0,0,2
 shutter button,0,0,1
-settings,1,0,0
+settings,0,0,1
 image,0,0,1
 SDHC card,0,0,1
 Memory Card,0,0,1
 PRICE,0,0,2
-Auto mode,1,1,1
+Auto mode,0,0,3
 CASE,0,0,1
 AUTO,0,0,1
-exposure,2,1,0
-size,0,1,1
-light,3,0,2
-shots,4,1,5
-Scene Mode,2,0,0
-flash,4,0,3
-scene mode,2,0,0
-Battery life,1,0,0
+exposure,0,0,3
+size,0,0,2
+light,0,0,5
+shots,0,0,10
+Scene Mode,0,0,2
+flash,0,0,7
+scene mode,0,0,2
+Battery life,0,0,1
 video,0,0,1
-lens,2,0,3
-battery,10,5,9
+lens,0,0,5
+battery,0,0,24
 lcd,0,0,1
-pictures,14,4,2
+pictures,0,0,20
 Case,0,0,1
-button,1,0,0
-macro mode,1,0,0
-Zoom,0,1,0
+button,0,0,1
+macro mode,0,0,1
+Zoom,0,0,1
 viewfinder,0,0,1
 Flash,0,0,1
-memory card,1,0,0
+memory card,0,0,1
 BATTERY,0,0,1
-wide angle,1,0,1
-indoor photos,1,0,1
-zoom,9,1,4
+wide angle,0,0,2
+indoor photos,0,0,2
+zoom,0,0,14
 image stabilization,0,0,1
-indoor shots,0,1,0
+indoor shots,0,0,1
 menu,0,0,2
-angle lens,1,0,0
+angle lens,0,0,1
 Auto focus,0,0,1
-money,1,0,0
-DSLR,1,0,0
+money,0,0,1
+DSLR,0,0,1
 ZOOM,0,0,4
 LCD SCREEN,0,0,2
-Optical Zoom,0,1,0
-light pictures,0,1,0
+Optical Zoom,0,0,1
+light pictures,0,0,1
 optical zoom,0,0,1
-auto mode,1,0,0
+auto mode,0,0,1

@@ -1,8 +1,8 @@
 feature,pos,neg,neutral
-auto focus,1,0,0
-light,1,0,0
-shots,1,0,0
+auto focus,0,0,1
+light,0,0,1
+shots,0,0,1
 lens,0,0,1
 lcd,0,0,1
-pictures,3,0,1
+pictures,0,0,4
 flash,0,0,1

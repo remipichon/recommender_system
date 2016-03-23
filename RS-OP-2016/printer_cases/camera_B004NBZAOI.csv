@@ -1,48 +1,48 @@
 feature,pos,neg,neutral
-manual focus,1,1,0
-auto,1,0,0
-color,1,2,1
-Battery life,1,0,0
-Battery door,0,1,0
-screen,2,1,1
+manual focus,0,0,2
+auto,0,0,1
+color,0,0,4
+Battery life,0,0,1
+Battery door,0,0,1
+screen,0,0,4
 focus,0,0,1
-video,2,2,1
-Image,1,0,0
-battery,2,1,0
-lens,1,1,0
-photos,4,1,2
-resolution,1,0,0
-pictures,6,3,4
-quality pictures,1,0,0
+video,0,0,5
+Image,0,0,1
+battery,0,0,3
+lens,0,0,2
+photos,0,0,7
+resolution,0,0,1
+pictures,0,0,13
+quality pictures,0,0,1
 button,0,0,2
-mode,1,0,3
-Photos,1,0,0
-Auto,1,0,0
+mode,0,0,4
+Photos,0,0,1
+Auto,0,0,1
 battery life,0,0,1
-features,2,2,3
-view,1,0,0
-price,2,1,0
-Zoom,1,0,0
-viewfinder,0,1,0
-battery door,0,1,1
-pics,3,1,0
-build quality,0,1,0
-case,1,0,1
+features,0,0,7
+view,0,0,1
+price,0,0,3
+Zoom,0,0,1
+viewfinder,0,0,1
+battery door,0,0,2
+pics,0,0,4
+build quality,0,0,1
+case,0,0,2
 memory card,0,0,1
-Image stabilization,1,0,0
-settings,1,1,0
-image,0,1,0
-zoom,3,2,1
-price range,1,0,0
-LCD,1,0,0
-menu,1,0,0
+Image stabilization,0,0,1
+settings,0,0,2
+image,0,0,1
+zoom,0,0,6
+price range,0,0,1
+LCD,0,0,1
+menu,0,0,1
 white balance,0,0,1
-Wide Angle,1,0,0
-money,3,0,0
-size,0,1,2
-quality photos,1,0,0
-light,2,0,2
+Wide Angle,0,0,1
+money,0,0,3
+size,0,0,3
+quality photos,0,0,1
+light,0,0,4
 shots,0,0,1
 auto mode,0,0,1
-optical zoom,1,0,0
-flash,1,1,0
+optical zoom,0,0,1
+flash,0,0,2

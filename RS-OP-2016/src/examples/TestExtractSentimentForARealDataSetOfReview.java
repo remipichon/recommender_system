@@ -26,8 +26,8 @@ public class TestExtractSentimentForARealDataSetOfReview {
         List<Feature> features = reviewService.extractFeatures(reader.getReviews());
 
 
-        //TODO set everything to neutral, to test with huuuge data
-        //opinionService.validPattern(features);
+        //TODO set everything to neutral
+        opinionService.validPattern(features);
 
         opinionService.negationTerm(features);
 

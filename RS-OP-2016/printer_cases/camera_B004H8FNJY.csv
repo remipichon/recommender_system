@@ -1,75 +1,75 @@
 feature,pos,neg,neutral
-auto,3,0,0
-shutter speed,1,1,1
-movie,1,1,1
-software,5,2,1
-indoor pictures,0,1,0
-screen,3,1,2
-focus,0,1,2
-LCD screen,2,2,1
+auto,0,0,3
+shutter speed,0,0,3
+movie,0,0,3
+software,0,0,8
+indoor pictures,0,0,1
+screen,0,0,6
+focus,0,0,3
+LCD screen,0,0,5
 body,0,0,1
-resolution,1,0,0
-photos,10,2,3
+resolution,0,0,1
+photos,0,0,15
 battery pack,0,0,1
-mode,5,4,1
-battery life,0,1,0
-HD video,1,0,1
-features,8,2,0
-spare battery,2,0,0
-price,2,0,2
-Battery,1,1,0
-function,3,0,0
-Auto Mode,0,1,1
-shutter priority,1,0,0
-PHOTOS,0,1,0
-case,1,0,2
-menu system,0,1,0
-image,4,1,1
-settings,0,1,2
-CUSTOMER SERVICE,1,0,0
+mode,0,0,10
+battery life,0,0,1
+HD video,0,0,2
+features,0,0,10
+spare battery,0,0,2
+price,0,0,4
+Battery,0,0,2
+function,0,0,3
+Auto Mode,0,0,2
+shutter priority,0,0,1
+PHOTOS,0,0,1
+case,0,0,3
+menu system,0,0,1
+image,0,0,6
+settings,0,0,3
+CUSTOMER SERVICE,0,0,1
 Quality pictures,0,0,1
-LCD,2,0,0
+LCD,0,0,2
 Image quality,0,0,2
-image quality,4,3,3
-size,6,0,2
-exposure,2,2,1
-light,16,5,4
-Focus,1,0,0
+image quality,0,0,10
+size,0,0,8
+exposure,0,0,5
+light,0,0,25
+Focus,0,0,1
 touch screen,0,0,2
-sensor,2,0,0
-shots,9,4,1
-light photos,0,2,1
+sensor,0,0,2
+shots,0,0,14
+light photos,0,0,3
 flash,0,0,1
-quick shots,0,1,0
-color,1,1,0
+quick shots,0,0,1
+color,0,0,2
 Battery life,0,0,1
-HD movie,1,0,0
-video,9,3,6
-lens,3,1,1
-battery,1,1,5
-pictures,18,8,3
-Auto,1,0,0
-button,3,2,1
+HD movie,0,0,1
+video,0,0,18
+lens,0,0,5
+battery,0,0,7
+pictures,0,0,29
+Auto,0,0,1
+button,0,0,6
 outdoor shots,0,0,1
-noise,2,6,0
-Shots,0,1,0
-memory card,1,0,2
-SD card,0,1,0
+noise,0,0,8
+Shots,0,0,1
+memory card,0,0,3
+SD card,0,0,1
 panorama mode,0,0,1
-exposure compensation,1,0,0
-ISO,1,6,1
+exposure compensation,0,0,1
+ISO,0,0,8
 shutter,0,0,1
-video quality,1,0,0
-zoom,3,3,3
-movie mode,1,0,0
-image stabilization,0,1,0
-menu,1,1,0
-FEATURES,1,0,0
+video quality,0,0,1
+zoom,0,0,9
+movie mode,0,0,1
+image stabilization,0,0,1
+menu,0,0,2
+FEATURES,0,0,1
 amateur photographer,0,0,1
-money,1,0,0
-DSLR,4,1,0
-Action shots,1,0,0
+money,0,0,1
+DSLR,0,0,5
+Action shots,0,0,1
 quality video,0,0,1
-auto mode,3,0,0
-optical zoom,0,1,0
-light pictures,2,0,0
+auto mode,0,0,3
+optical zoom,0,0,1
+light pictures,0,0,2

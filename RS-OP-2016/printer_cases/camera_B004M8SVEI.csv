@@ -1,42 +1,42 @@
 feature,pos,neg,neutral
-color,1,0,1
-software,1,0,0
-view finder,0,1,0
-screen,0,3,4
-focus,2,1,0
-video,1,0,0
-battery,0,1,3
+color,0,0,2
+software,0,0,1
+view finder,0,0,1
+screen,0,0,7
+focus,0,0,3
+video,0,0,1
+battery,0,0,4
 body,0,0,1
-photos,7,3,2
-pictures,3,1,0
-HD video,1,0,0
-button,0,1,0
-features,2,1,0
-view,0,1,0
-card reader,1,0,0
-spare battery,1,0,0
-options,2,0,0
-viewfinder,1,0,0
-pics,1,0,0
-SD card,0,1,0
+photos,0,0,12
+pictures,0,0,4
+HD video,0,0,1
+button,0,0,1
+features,0,0,3
+view,0,0,1
+card reader,0,0,1
+spare battery,0,0,1
+options,0,0,2
+viewfinder,0,0,1
+pics,0,0,1
+SD card,0,0,1
 user manual,0,0,1
-image,0,2,0
-settings,1,0,0
+image,0,0,2
+settings,0,0,1
 lenses,0,0,1
-Light weight,1,0,0
-video quality,1,0,0
-zoom,2,0,1
-LCD,1,1,0
-white balance,1,0,0
-AUTO,1,0,0
-image quality,1,0,0
-quality photos,1,0,0
-money,2,0,0
-light,1,1,2
-Price,1,0,0
-touch screen,1,1,2
-wrist strap,1,0,0
-shutter lag,1,0,0
-optical zoom,2,0,0
-card,1,2,0
-flash,2,0,0
+Light weight,0,0,1
+video quality,0,0,1
+zoom,0,0,3
+LCD,0,0,2
+white balance,0,0,1
+AUTO,0,0,1
+image quality,0,0,1
+quality photos,0,0,1
+money,0,0,2
+light,0,0,4
+Price,0,0,1
+touch screen,0,0,4
+wrist strap,0,0,1
+shutter lag,0,0,1
+optical zoom,0,0,2
+card,0,0,3
+flash,0,0,2

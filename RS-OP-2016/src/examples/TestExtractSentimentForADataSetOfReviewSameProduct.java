@@ -28,7 +28,7 @@ public class TestExtractSentimentForADataSetOfReviewSameProduct {
         System.out.println("Features extracted "+features.size());
 
         //TODO set everything to neutral, to test with huuuge data
-        //opinionService.validPattern(features);
+        opinionService.validPattern(features);
 
         opinionService.negationTerm(features);
 

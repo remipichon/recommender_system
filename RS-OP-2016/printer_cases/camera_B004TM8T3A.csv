@@ -1,7 +1,7 @@
 feature,pos,neg,neutral
-view,1,0,0
+view,0,0,1
 Video,0,0,1
-price,1,0,0
-screen,1,0,0
-video,1,0,0
-photos,1,0,0
+price,0,0,1
+screen,0,0,1
+video,0,0,1
+photos,0,0,1

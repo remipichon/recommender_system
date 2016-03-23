@@ -1,103 +1,103 @@
 feature,pos,neg,neutral
-light situations,0,2,0
-manual focus,4,1,0
-shutter speed,4,0,3
-software,2,3,5
-view finder,2,2,1
-focus,8,3,5
-resolution,1,1,1
-price,5,2,9
-options,2,1,0
+light situations,0,0,2
+manual focus,0,0,5
+shutter speed,0,0,7
+software,0,0,10
+view finder,0,0,5
+focus,0,0,16
+resolution,0,0,3
+price,0,0,16
+options,0,0,3
 noise reduction,0,0,1
-focal length,1,1,0
-pics,3,1,1
-case,0,2,2
-shutter button,1,0,0
-lenses,2,1,1
-zoom lens,1,1,3
+focal length,0,0,2
+pics,0,0,5
+case,0,0,4
+shutter button,0,0,1
+lenses,0,0,4
+zoom lens,0,0,5
 professional photographer,0,0,1
-AF,0,2,0
+AF,0,0,2
 shoot mode,0,0,1
-Image quality,1,0,0
-size,3,2,1
-exposure,4,2,2
-light,11,9,4
-Shutter priority,1,0,0
-Lens,0,1,0
-shutter lag,1,1,0
-shots,14,7,7
-light shots,1,0,0
-card,0,5,2
-flash,16,5,6
+Image quality,0,0,1
+size,0,0,6
+exposure,0,0,8
+light,0,0,24
+Shutter priority,0,0,1
+Lens,0,0,1
+shutter lag,0,0,2
+shots,0,0,28
+light shots,0,0,1
+card,0,0,7
+flash,0,0,27
 Lenses,0,0,1
-Video Features,1,0,0
-battery,1,2,1
-pictures,15,2,5
-firmware update,3,1,2
-noise,2,2,2
-LCD display,2,1,1
-Menu,0,1,0
-optical viewfinder,0,1,0
-Optical viewfinder,0,1,0
-ISO,10,8,4
-shutter,4,1,3
+Video Features,0,0,1
+battery,0,0,4
+pictures,0,0,22
+firmware update,0,0,6
+noise,0,0,6
+LCD display,0,0,4
+Menu,0,0,1
+optical viewfinder,0,0,1
+Optical viewfinder,0,0,1
+ISO,0,0,22
+shutter,0,0,8
 price range,0,0,1
-night shots,1,1,0
-menu,4,1,2
-DSLR,22,5,3
-dslr,2,0,0
-lens cover,2,1,1
-articulating screen,1,0,0
-auto,3,0,4
-iso,1,0,0
-screen,5,1,2
-body,2,0,1
-photos,9,2,0
-mode,3,5,8
+night shots,0,0,2
+menu,0,0,7
+DSLR,0,0,30
+dslr,0,0,2
+lens cover,0,0,4
+articulating screen,0,0,1
+auto,0,0,7
+iso,0,0,1
+screen,0,0,8
+body,0,0,3
+photos,0,0,11
+mode,0,0,16
 HD video,0,0,1
-features,7,3,2
-view,1,1,1
-shutter release,0,1,0
-function,2,0,2
-Image Quality,1,0,0
-focus mode,1,0,0
+features,0,0,12
+view,0,0,3
+shutter release,0,0,1
+function,0,0,4
+Image Quality,0,0,1
+focus mode,0,0,1
 shutter priority,0,0,2
 build quality,0,0,1
-menu system,1,0,0
-settings,15,6,7
-image,7,1,2
+menu system,0,0,1
+settings,0,0,28
+image,0,0,10
 SDHC card,0,0,1
-LCD,4,0,1
-image quality,6,0,0
-Focus,0,1,0
-sensor,6,2,0
-manual mode,0,1,2
-external flash,2,0,1
-color,1,1,0
-video,7,2,4
-lens,17,9,7
-button,4,1,2
-Auto,2,0,1
-USB cable,1,0,1
-quality image,1,0,0
-Function,0,1,0
-zoom range,3,1,3
-Night shots,1,0,0
-Zoom,1,1,1
-control ring,1,0,0
-viewfinder,6,1,1
-auto ISO,1,0,0
-memory card,1,1,1
-SD card,0,2,1
-exposure compensation,1,0,0
-light settings,1,0,0
-Mode,1,0,0
-zoom,16,16,8
-movie mode,2,0,1
+LCD,0,0,5
+image quality,0,0,6
+Focus,0,0,1
+sensor,0,0,8
+manual mode,0,0,3
+external flash,0,0,3
+color,0,0,2
+video,0,0,13
+lens,0,0,33
+button,0,0,7
+Auto,0,0,3
+USB cable,0,0,2
+quality image,0,0,1
+Function,0,0,1
+zoom range,0,0,7
+Night shots,0,0,1
+Zoom,0,0,3
+control ring,0,0,1
+viewfinder,0,0,8
+auto ISO,0,0,1
+memory card,0,0,3
+SD card,0,0,3
+exposure compensation,0,0,1
+light settings,0,0,1
+Mode,0,0,1
+zoom,0,0,40
+movie mode,0,0,3
 Program mode,0,0,1
-autofocus,0,1,2
+autofocus,0,0,3
 amateur photographer,0,0,1
-white balance,3,1,0
-money,1,1,0
-entry level,0,1,0
-optical zoom,3,1,2
+white balance,0,0,4
+money,0,0,2
+entry level,0,0,1
+optical zoom,0,0,6

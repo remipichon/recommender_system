@@ -1,9 +1,9 @@
 feature,pos,neg,neutral
-white balance,1,0,0
-view,1,0,0
-LCD monitor,1,0,0
+white balance,0,0,1
+view,0,0,1
+LCD monitor,0,0,1
 customer service,0,0,1
 LCD screen,0,0,1
-pics,0,1,1
-pictures,2,0,0
+pics,0,0,2
+pictures,0,0,2
 flash,0,0,2

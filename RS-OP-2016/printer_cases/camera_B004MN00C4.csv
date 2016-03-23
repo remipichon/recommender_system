@@ -1,38 +1,38 @@
 feature,pos,neg,neutral
 shutter speed,0,0,2
-external flash,1,0,1
+external flash,0,0,2
 White Balance,0,0,4
-video,1,0,0
-lens,7,0,0
-body,0,1,0
-battery,1,0,1
-lcd,0,1,0
-photos,1,0,0
-pictures,2,0,1
-button,1,0,0
-mode,0,1,2
-features,4,0,0
-view,0,1,0
+video,0,0,1
+lens,0,0,7
+body,0,0,1
+battery,0,0,2
+lcd,0,0,1
+photos,0,0,1
+pictures,0,0,3
+button,0,0,1
+mode,0,0,3
+features,0,0,4
+view,0,0,1
 noise,0,0,1
-viewfinder,0,1,0
+viewfinder,0,0,1
 focal length,0,0,1
-case,1,0,0
-lenses,2,1,0
-zoom lens,2,0,0
-ISO,1,0,0
-AF,1,0,0
+case,0,0,1
+lenses,0,0,3
+zoom lens,0,0,2
+ISO,0,0,1
+AF,0,0,1
 Color,0,0,1
-Mode,0,1,0
+Mode,0,0,1
 zoom,0,0,2
 menu,0,0,1
-LCD,2,0,0
-autofocus,0,1,0
-image quality,2,0,0
-White balance,0,1,0
-Auto focus,0,1,0
-focus point,1,0,0
+LCD,0,0,2
+autofocus,0,0,1
+image quality,0,0,2
+White balance,0,0,1
+Auto focus,0,0,1
+focus point,0,0,1
 DSLR,0,0,1
-entry level,1,0,0
-sensor,3,1,0
-video mode,1,0,1
-auto mode,0,1,0
+entry level,0,0,1
+sensor,0,0,4
+video mode,0,0,2
+auto mode,0,0,1

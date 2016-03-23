@@ -1,104 +1,104 @@
 feature,pos,neg,neutral
 light situations,0,0,1
-AUTO mode,0,1,0
-Pictures,1,1,0
-shutter speed,1,0,0
-software,0,5,0
-view finder,0,1,0
-focus,9,14,9
+AUTO mode,0,0,1
+Pictures,0,0,2
+shutter speed,0,0,1
+software,0,0,5
+view finder,0,0,1
+focus,0,0,32
 LCD screen,0,0,1
-resolution,2,0,0
-price,5,1,1
-noise reduction,0,2,1
-pics,2,1,1
-case,1,2,2
-Settings,0,1,0
-shutter button,1,1,2
-zoom lens,2,0,0
-professional photographer,0,1,2
+resolution,0,0,2
+price,0,0,7
+noise reduction,0,0,3
+pics,0,0,4
+case,0,0,5
+Settings,0,0,1
+shutter button,0,0,4
+zoom lens,0,0,2
+professional photographer,0,0,3
 AF,0,0,1
-Image quality,1,0,0
+Image quality,0,0,1
 exposure,0,0,3
-size,6,0,2
-light,8,4,5
-wrist strap,1,0,0
-shutter lag,1,0,0
-shots,16,7,3
-light shots,2,0,1
-video mode,2,0,0
-card,1,1,0
-scene mode,1,1,0
-light photos,0,1,0
-flash,14,1,8
+size,0,0,8
+light,0,0,17
+wrist strap,0,0,1
+shutter lag,0,0,1
+shots,0,0,26
+light shots,0,0,3
+video mode,0,0,2
+card,0,0,2
+scene mode,0,0,2
+light photos,0,0,1
+flash,0,0,23
 Zoom Lens,0,0,1
-battery charger,0,1,1
-battery,2,6,5
-pictures,17,11,8
-price point,0,1,0
-noise,1,3,3
+battery charger,0,0,2
+battery,0,0,13
+pictures,0,0,36
+price point,0,0,1
+noise,0,0,7
 macro mode,0,0,1
-Angle lens,1,0,0
-burst mode,0,1,1
-video functions,1,0,0
-panorama mode,1,0,0
-wide angle,3,1,0
-video recording,1,0,0
-ISO,0,1,1
-shutter,0,5,2
-video quality,3,0,0
-image stabilization,2,0,1
-price range,1,0,0
-menu,2,3,0
-Wide Angle,1,0,0
-DSLR,4,1,2
+Angle lens,0,0,1
+burst mode,0,0,2
+video functions,0,0,1
+panorama mode,0,0,1
+wide angle,0,0,4
+video recording,0,0,1
+ISO,0,0,2
+shutter,0,0,7
+video quality,0,0,3
+image stabilization,0,0,3
+price range,0,0,1
+menu,0,0,5
+Wide Angle,0,0,1
+DSLR,0,0,7
 manual control,0,0,1
-second battery,1,0,0
-auto,1,3,1
-iso,1,1,0
-action shots,1,0,1
-customer service,0,3,0
-screen,4,0,2
-body,1,1,0
-photos,22,9,12
-mode,2,1,7
-HD video,1,0,1
-features,13,2,2
-shutter release,0,1,0
-view,1,0,0
-function,1,0,0
-Image Stabilization,0,1,0
-image,4,6,1
-settings,1,1,4
-Memory Card,1,0,0
-Auto mode,1,0,0
-LCD,1,2,0
-image quality,3,3,1
-AUTO,1,0,0
-Video,1,0,1
-Focus,1,0,0
-sensor,2,3,0
-color,4,2,2
-Battery life,1,0,0
-video,8,5,3
-lens,9,8,2
-lcd,1,0,0
-button,8,0,1
-Photos,2,0,0
-Auto,0,1,1
-quality image,0,1,0
-zoom range,3,0,0
-Zoom,0,2,1
-viewfinder,0,1,0
-Flash,0,1,1
+second battery,0,0,1
+auto,0,0,5
+iso,0,0,2
+action shots,0,0,2
+customer service,0,0,3
+screen,0,0,6
+body,0,0,2
+photos,0,0,43
+mode,0,0,10
+HD video,0,0,2
+features,0,0,17
+shutter release,0,0,1
+view,0,0,1
+function,0,0,1
+Image Stabilization,0,0,1
+image,0,0,11
+settings,0,0,6
+Memory Card,0,0,1
+Auto mode,0,0,1
+LCD,0,0,3
+image quality,0,0,7
+AUTO,0,0,1
+Video,0,0,2
+Focus,0,0,1
+sensor,0,0,5
+color,0,0,8
+Battery life,0,0,1
+video,0,0,16
+lens,0,0,19
+lcd,0,0,1
+button,0,0,9
+Photos,0,0,2
+Auto,0,0,2
+quality image,0,0,1
+zoom range,0,0,3
+Zoom,0,0,3
+viewfinder,0,0,1
+Flash,0,0,2
 Lens error,0,0,1
-memory card,1,1,0
-zoom,28,10,16
-autofocus,1,0,0
-lens error,0,1,0
+memory card,0,0,2
+zoom,0,0,54
+autofocus,0,0,1
+lens error,0,0,1
 white balance,0,0,2
-money,1,1,2
-ISO settings,0,1,0
+money,0,0,4
+ISO settings,0,0,1
 Optical Zoom,0,0,1
-auto mode,1,0,0
-Lens Error,2,1,2
-optical zoom,2,0,0
+auto mode,0,0,1
+Lens Error,0,0,5
+optical zoom,0,0,2

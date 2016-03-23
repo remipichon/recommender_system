@@ -1,96 +1,96 @@
 feature,pos,neg,neutral
-light situations,0,1,0
-manual focus,1,0,0
-auto,1,1,1
-iso,2,0,1
-VIDEO,0,1,0
-Shutter Release,1,0,0
-Size,1,0,0
-focus,4,1,2
-screen,2,2,2
-lcd screen,1,0,0
-body,11,4,7
-LCD screen,4,1,0
-photos,10,1,1
-resolution,1,1,0
-quality pictures,1,0,0
-video clips,1,1,0
-mode,3,0,0
-HD video,3,1,1
-battery life,1,0,0
-features,3,0,2
-view,1,0,2
-AUTOFOCUS,0,2,1
-price,1,0,6
-options,2,0,0
+light situations,0,0,1
+manual focus,0,0,1
+auto,0,0,3
+iso,0,0,3
+VIDEO,0,0,1
+Shutter Release,0,0,1
+Size,0,0,1
+focus,0,0,7
+screen,0,0,6
+lcd screen,0,0,1
+body,0,0,22
+LCD screen,0,0,5
+photos,0,0,12
+resolution,0,0,2
+quality pictures,0,0,1
+video clips,0,0,2
+mode,0,0,3
+HD video,0,0,5
+battery life,0,0,1
+features,0,0,5
+view,0,0,3
+AUTOFOCUS,0,0,3
+price,0,0,7
+options,0,0,2
 noise reduction,0,0,1
-manual settings,1,0,0
-focal length,1,0,0
-pics,2,0,0
-build quality,2,2,1
-image,1,0,2
-shutter button,1,2,2
+manual settings,0,0,1
+focal length,0,0,1
+pics,0,0,2
+build quality,0,0,5
+image,0,0,3
+shutter button,0,0,5
 settings,0,0,2
-lenses,6,4,4
-AF,1,4,1
+lenses,0,0,14
+AF,0,0,6
 screen protector,0,0,1
-Auto mode,1,0,0
-auto settings,1,0,0
-LCD,4,0,1
-image quality,2,0,2
-prime lens,1,0,0
-exposure,0,1,1
-size,4,0,0
-light,7,4,5
-Video,2,0,0
-Focus,0,1,0
-sensor,10,3,4
-BUILD QUALITY,1,0,0
-Lens,1,0,0
-shots,6,3,6
-card,2,1,4
-video mode,2,0,1
-flash,2,0,3
-color,3,2,1
-auto focus,0,1,0
-external flash,0,1,0
-FOCUS,1,0,0
-Zoom Lens,1,0,0
-video,22,7,8
-lens,18,11,7
-battery,2,0,2
-lcd,2,0,0
-pictures,12,3,2
-button,1,0,3
-Sensor Size,1,0,0
-program mode,0,1,1
-noise,5,2,3
-viewfinder,2,1,0
-automatic mode,0,1,0
-battery door,1,2,0
-LENS,1,0,0
+Auto mode,0,0,1
+auto settings,0,0,1
+LCD,0,0,5
+image quality,0,0,4
+prime lens,0,0,1
+exposure,0,0,2
+size,0,0,4
+light,0,0,16
+Video,0,0,2
+Focus,0,0,1
+sensor,0,0,17
+BUILD QUALITY,0,0,1
+Lens,0,0,1
+shots,0,0,15
+card,0,0,7
+video mode,0,0,3
+flash,0,0,5
+color,0,0,6
+auto focus,0,0,1
+external flash,0,0,1
+FOCUS,0,0,1
+Zoom Lens,0,0,1
+video,0,0,37
+lens,0,0,36
+battery,0,0,4
+lcd,0,0,2
+pictures,0,0,17
+button,0,0,4
+Sensor Size,0,0,1
+program mode,0,0,2
+noise,0,0,10
+viewfinder,0,0,3
+automatic mode,0,0,1
+battery door,0,0,3
+LENS,0,0,1
 memory card,0,0,1
-EXPOSURE,1,0,0
-SD card,3,0,2
+EXPOSURE,0,0,1
+SD card,0,0,5
 exposure compensation,0,0,1
-video recording,0,1,0
-ISO,4,6,1
-shutter,1,1,0
+video recording,0,0,1
+ISO,0,0,11
+shutter,0,0,2
 MEMORY CARD,0,0,1
-Mode,0,1,0
-Video quality,1,0,0
-zoom,2,0,0
-image stabilization,1,0,0
-price range,1,0,0
-autofocus,1,0,2
-menu,2,1,0
-View,1,0,0
+Mode,0,0,1
+Video quality,0,0,1
+zoom,0,0,2
+image stabilization,0,0,1
+price range,0,0,1
+autofocus,0,0,3
+menu,0,0,3
+View,0,0,1
 BATTERY LIFE,0,0,1
-amateur photographer,1,0,0
-white balance,1,0,2
-money,2,1,0
-DSLR,4,2,2
+amateur photographer,0,0,1
+white balance,0,0,3
+money,0,0,3
+DSLR,0,0,8
 entry level,0,0,1
-quality video,1,0,0
-kit lens,4,1,2
-manual control,0,1,0
+quality video,0,0,1
+kit lens,0,0,7
+manual control,0,0,1

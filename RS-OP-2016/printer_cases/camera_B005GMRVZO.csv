@@ -1,48 +1,48 @@
 feature,pos,neg,neutral
-auto,1,0,0
-shutter speed,2,1,0
-auto focus,1,1,0
-color,0,1,0
-software,1,1,1
+auto,0,0,1
+shutter speed,0,0,3
+auto focus,0,0,2
+color,0,0,1
+software,0,0,3
 customer service,0,0,1
-focus,0,1,1
-video,0,1,0
-battery,1,0,0
-photos,2,3,1
-resolution,1,2,0
-pictures,4,5,3
-price point,0,1,0
-quality pictures,1,0,0
-button,1,0,1
-mode,1,0,0
-battery life,0,1,0
-features,3,0,0
+focus,0,0,2
+video,0,0,1
+battery,0,0,1
+photos,0,0,6
+resolution,0,0,3
+pictures,0,0,12
+price point,0,0,1
+quality pictures,0,0,1
+button,0,0,2
+mode,0,0,1
+battery life,0,0,1
+features,0,0,3
 frame rate,0,0,1
-price,1,0,2
-noise,1,1,0
-options,1,0,0
-Zoom,0,1,0
-manual settings,1,1,0
-light conditions,1,0,0
-pics,0,1,0
-menu system,0,1,0
-case,1,0,0
-shutter button,1,0,0
-settings,0,1,0
-image,0,1,0
-ISO,3,2,1
-shutter,3,1,1
-zoom,2,2,0
-image stabilization,0,1,0
-menu,1,0,0
+price,0,0,3
+noise,0,0,2
+options,0,0,1
+Zoom,0,0,1
+manual settings,0,0,2
+light conditions,0,0,1
+pics,0,0,1
+menu system,0,0,1
+case,0,0,1
+shutter button,0,0,1
+settings,0,0,1
+image,0,0,1
+ISO,0,0,6
+shutter,0,0,5
+zoom,0,0,4
+image stabilization,0,0,1
+menu,0,0,1
 amateur photographer,0,0,1
-size,1,2,4
-exposure,3,0,0
-money,2,0,0
-light,5,4,0
-ISO settings,0,1,0
-sensor,0,2,0
-dslr,1,0,0
-shots,3,5,0
-video mode,1,0,0
-flash,2,1,1
+size,0,0,7
+exposure,0,0,3
+money,0,0,2
+light,0,0,9
+ISO settings,0,0,1
+sensor,0,0,2
+dslr,0,0,1
+shots,0,0,8
+video mode,0,0,1
+flash,0,0,4

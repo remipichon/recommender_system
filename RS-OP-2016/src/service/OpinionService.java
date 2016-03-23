@@ -22,7 +22,7 @@ public class OpinionService {
         parser = Parser.getInstance();
     }
 
-    public void validPattern(List<Feature> features) {
+    public void  validPattern(List<Feature> features) {
         Hashtable<String, Integer> posPatternOccurrence = new Hashtable<>();
 
         //pattern frequency
@@ -35,14 +35,20 @@ public class OpinionService {
             posPatternOccurrence.put(feature.getPosPattern(), posPatternOccurrence.get(feature.getPosPattern()) + 1);
         }
 
+
+        int validPatternCount = 0;
         for (Feature feature : features) {
             if (feature.getSentiment().equals(Sentiment.NEUTRAL)) continue; //no sentiment word were found
 
             if (posPatternOccurrence.get(feature.getPosPattern()) == 1) {
                 //non valid pattern
                 feature.setSentiment(Sentiment.NEUTRAL);
+            } else {
+                validPatternCount++;
             }
         }
+
+        System.out.println("Valid pattern count "+validPatternCount);
 
     }
 

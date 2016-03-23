@@ -1,10 +1,10 @@
 feature,pos,neg,neutral
-image,0,1,0
-ISO,0,1,1
-size,1,0,0
-light,1,0,0
-noise,0,1,0
-focus,0,1,0
-touch screen,0,1,0
-sensor,1,0,0
+image,0,0,1
+ISO,0,0,2
+size,0,0,1
+light,0,0,1
+noise,0,0,1
+focus,0,0,1
+touch screen,0,0,1
+sensor,0,0,1
 shots,0,0,1

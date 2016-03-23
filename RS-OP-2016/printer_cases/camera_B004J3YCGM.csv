@@ -1,129 +1,129 @@
 feature,pos,neg,neutral
-AUTO mode,1,0,0
-shutter speed,2,0,0
-software,3,0,2
-movie,2,2,0
-indoor pictures,1,0,0
+AUTO mode,0,0,1
+shutter speed,0,0,2
+software,0,0,5
+movie,0,0,4
+indoor pictures,0,0,1
 Size,0,0,1
-Shutter,0,1,0
-focus,5,3,1
-LCD screen,1,0,0
-Image,1,0,0
-resolution,1,1,1
-quality pictures,1,0,0
-price,5,0,4
-options,5,0,2
-noise reduction,1,1,0
-focal length,0,1,1
-pics,1,2,5
-case,3,5,3
-lenses,0,2,0
-zoom lens,1,0,0
-User Interface,0,1,0
+Shutter,0,0,1
+focus,0,0,9
+LCD screen,0,0,1
+Image,0,0,1
+resolution,0,0,3
+quality pictures,0,0,1
+price,0,0,9
+options,0,0,7
+noise reduction,0,0,2
+focal length,0,0,2
+pics,0,0,8
+case,0,0,11
+lenses,0,0,2
+zoom lens,0,0,1
+User Interface,0,0,1
 image sensor,0,0,2
-Exposure,1,0,0
-exposure,3,0,0
-size,10,4,6
-quality photos,1,0,0
-light,27,6,4
+Exposure,0,0,1
+exposure,0,0,3
+size,0,0,20
+quality photos,0,0,1
+light,0,0,37
 Shutter priority,0,0,1
 wrist strap,0,0,1
-shutter lag,1,0,0
-shots,18,9,5
-light capability,1,0,1
-card,1,0,1
-light shots,2,0,0
-flash,19,22,23
-scene mode,1,0,0
-light photos,3,0,0
-White Balance,1,0,0
+shutter lag,0,0,1
+shots,0,0,32
+light capability,0,0,2
+card,0,0,2
+light shots,0,0,2
+flash,0,0,64
+scene mode,0,0,1
+light photos,0,0,3
+White Balance,0,0,1
 battery charger,0,0,1
-battery,9,12,11
-pictures,29,15,4
-price point,0,1,0
+battery,0,0,32
+pictures,0,0,48
+price point,0,0,1
 Case,0,0,1
-noise,3,1,2
-macro mode,1,0,1
-optical viewfinder,3,0,0
+noise,0,0,6
+macro mode,0,0,2
+optical viewfinder,0,0,3
 panorama mode,0,0,1
-video recording,1,0,0
-wide angle,1,0,2
-ISO,7,2,4
-shutter,3,0,1
-Macro mode,1,0,0
-video quality,1,1,0
-night shots,0,1,0
-price range,1,0,0
-image stabilization,2,0,0
-menu,0,3,0
-usb cable,0,1,0
-Auto focus,1,0,0
-DSLR,3,3,4
-Recording button,1,0,0
-light weight,1,0,0
-manual control,1,0,0
-lens cover,3,4,0
-articulating screen,1,0,0
-macro shots,1,0,0
-second battery,0,2,0
-auto,5,2,1
-action shots,1,0,0
-customer service,1,0,0
-screen,8,3,4
-body,1,0,0
-photos,34,3,9
-HD video,3,1,2
-mode,12,0,7
-battery life,1,11,4
-features,20,4,10
-Battery,2,0,3
-function,1,4,0
-popup flash,2,1,0
-light conditions,2,0,1
-manual settings,3,0,0
-Auto Mode,1,0,0
-shutter priority,1,0,0
-build quality,1,1,0
-Image Stabilization,1,1,0
-menu system,0,1,0
-image,6,0,0
-settings,9,2,4
-higher resolution,1,0,0
-view screen,1,1,2
-Color,2,0,0
-LCD,2,1,0
-image quality,9,4,4
-AUTO,0,1,0
-Video,1,1,1
-Focus,0,1,0
-Video Recording,1,0,0
-sensor,2,1,2
-manual mode,1,0,0
-color,5,1,4
-Battery life,0,2,2
-Screen,1,0,0
-video,5,3,5
-lens,10,8,3
-Photos,1,0,0
-Auto,3,0,1
-button,4,2,3
-outdoor shots,2,1,0
-frame rate,1,0,0
-zoom range,3,0,0
-viewfinder,0,1,0
-Flash,2,2,0
-auto ISO,1,0,0
-memory card,1,1,0
-Image stabilization,2,0,0
+video recording,0,0,1
+wide angle,0,0,3
+ISO,0,0,13
+shutter,0,0,4
+Macro mode,0,0,1
+video quality,0,0,2
+night shots,0,0,1
+price range,0,0,1
+image stabilization,0,0,2
+menu,0,0,3
+usb cable,0,0,1
+Auto focus,0,0,1
+DSLR,0,0,10
+Recording button,0,0,1
+light weight,0,0,1
+manual control,0,0,1
+lens cover,0,0,7
+articulating screen,0,0,1
+macro shots,0,0,1
+second battery,0,0,2
+auto,0,0,8
+action shots,0,0,1
+customer service,0,0,1
+screen,0,0,15
+body,0,0,1
+photos,0,0,46
+HD video,0,0,6
+mode,0,0,19
+battery life,0,0,16
+features,0,0,34
+Battery,0,0,5
+function,0,0,5
+popup flash,0,0,3
+light conditions,0,0,3
+manual settings,0,0,3
+Auto Mode,0,0,1
+shutter priority,0,0,1
+build quality,0,0,2
+Image Stabilization,0,0,2
+menu system,0,0,1
+image,0,0,6
+settings,0,0,15
+higher resolution,0,0,1
+view screen,0,0,4
+Color,0,0,2
+LCD,0,0,3
+image quality,0,0,17
+AUTO,0,0,1
+Video,0,0,3
+Focus,0,0,1
+Video Recording,0,0,1
+sensor,0,0,5
+manual mode,0,0,1
+color,0,0,10
+Battery life,0,0,4
+Screen,0,0,1
+video,0,0,13
+lens,0,0,21
+Photos,0,0,1
+Auto,0,0,4
+button,0,0,9
+outdoor shots,0,0,3
+frame rate,0,0,1
+zoom range,0,0,3
+viewfinder,0,0,1
+Flash,0,0,4
+auto ISO,0,0,1
+memory card,0,0,2
+Image stabilization,0,0,2
 SD card,0,0,2
-exposure compensation,1,1,0
-zoom,26,6,14
-autofocus,0,2,0
-white balance,2,0,0
-Manual mode,1,0,1
-money,3,2,0
+exposure compensation,0,0,2
+zoom,0,0,46
+autofocus,0,0,2
+white balance,0,0,2
+Manual mode,0,0,2
+money,0,0,5
 ZOOM,0,0,1
-Action shots,1,0,0
+Action shots,0,0,1
 quality video,0,0,1
-optical zoom,3,0,1
-auto mode,5,0,0
+optical zoom,0,0,4
+auto mode,0,0,5

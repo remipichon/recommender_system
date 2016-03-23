@@ -1,37 +1,37 @@
 feature,pos,neg,neutral
-color,2,0,0
-screen,0,2,1
-focus,2,2,3
-video,2,0,2
-lens,0,1,1
-battery,2,0,1
-LCD screen,0,1,0
-photos,0,2,2
-pictures,8,6,3
-button,2,0,2
+color,0,0,2
+screen,0,0,3
+focus,0,0,7
+video,0,0,4
+lens,0,0,2
+battery,0,0,3
+LCD screen,0,0,1
+photos,0,0,4
+pictures,0,0,17
+button,0,0,4
 shutter release,0,0,1
-price,3,3,0
-options,1,0,0
-noise reduction,0,1,1
-viewfinder,0,2,0
-Flash,0,1,0
-pics,1,0,0
+price,0,0,6
+options,0,0,1
+noise reduction,0,0,2
+viewfinder,0,0,2
+Flash,0,0,1
+pics,0,0,1
 case,0,0,1
 memory card,0,0,1
 SD card,0,0,1
-exposure compensation,1,0,0
+exposure compensation,0,0,1
 view screen,0,0,1
-shutter,0,2,0
-zoom,2,0,0
-autofocus,0,1,2
-image quality,1,0,0
+shutter,0,0,2
+zoom,0,0,2
+autofocus,0,0,3
+image quality,0,0,1
 rechargeable battery,0,0,1
-money,2,1,1
+money,0,0,4
 size,0,0,2
-DSLR,0,2,0
-light,1,0,0
+DSLR,0,0,2
+light,0,0,1
 entry level,0,0,1
-shots,3,2,0
-card,1,0,0
-video mode,1,0,1
-flash,1,3,0
+shots,0,0,5
+card,0,0,1
+video mode,0,0,2
+flash,0,0,4

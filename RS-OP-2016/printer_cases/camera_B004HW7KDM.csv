@@ -1,14 +1,14 @@
 feature,pos,neg,neutral
-settings,1,0,0
-price range,1,1,0
-LCD screen,1,0,0
-battery,0,1,3
-photos,1,0,0
-pictures,2,1,0
-features,2,0,0
-light,1,0,0
+settings,0,0,1
+price range,0,0,2
+LCD screen,0,0,1
+battery,0,0,4
+photos,0,0,1
+pictures,0,0,3
+features,0,0,2
+light,0,0,1
 price,0,0,1
-automatic mode,0,1,0
-shots,1,1,0
-pics,1,0,1
-flash,1,2,0
+automatic mode,0,0,1
+shots,0,0,2
+pics,0,0,2
+flash,0,0,3

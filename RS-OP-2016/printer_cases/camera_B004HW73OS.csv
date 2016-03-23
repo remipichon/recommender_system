@@ -2,18 +2,18 @@ feature,pos,neg,neutral
 AUTO mode,0,0,1
 professional photographer,0,0,1
 indoor pictures,0,0,1
-focus,1,2,0
+focus,0,0,3
 night shots,0,0,1
-video,0,3,0
-lcd,1,0,0
-lens,1,0,0
-photos,4,2,0
-pictures,3,3,0
-video clips,1,0,0
-HD video,1,0,0
+video,0,0,3
+lcd,0,0,1
+lens,0,0,1
+photos,0,0,6
+pictures,0,0,6
+video clips,0,0,1
+HD video,0,0,1
 Auto,0,0,1
 mode,0,0,1
-battery life,0,1,0
+battery life,0,0,1
 money,0,0,1
-price,1,0,0
-video mode,0,1,0
+price,0,0,1
+video mode,0,0,1

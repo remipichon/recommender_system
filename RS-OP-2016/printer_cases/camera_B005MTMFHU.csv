@@ -1,79 +1,79 @@
 feature,pos,neg,neutral
-shutter speed,0,4,4
-automatic settings,1,0,0
-movie,3,0,0
-Viewfinder,0,1,0
-focus,1,1,1
-screen,0,1,0
+shutter speed,0,0,8
+automatic settings,0,0,1
+movie,0,0,3
+Viewfinder,0,0,1
+focus,0,0,3
+screen,0,0,1
 Image,0,0,1
-body,2,2,0
+body,0,0,4
 LCD screen,0,0,1
-photos,4,4,2
-resolution,0,2,0
-quality pictures,0,1,0
-HD video,2,0,0
-mode,5,1,3
-features,5,1,1
-view,1,0,1
-price,2,0,0
-function,1,0,0
-manual settings,1,1,0
-light conditions,0,1,0
-dSLR,1,0,0
-focal length,1,0,0
-pics,2,0,4
-case,2,0,0
-settings,2,0,2
-image,10,0,2
-SDHC card,0,1,0
-lenses,5,5,1
-zoom lens,0,2,0
+photos,0,0,10
+resolution,0,0,2
+quality pictures,0,0,1
+HD video,0,0,2
+mode,0,0,9
+features,0,0,7
+view,0,0,2
+price,0,0,2
+function,0,0,1
+manual settings,0,0,2
+light conditions,0,0,1
+dSLR,0,0,1
+focal length,0,0,1
+pics,0,0,6
+case,0,0,2
+settings,0,0,4
+image,0,0,12
+SDHC card,0,0,1
+lenses,0,0,11
+zoom lens,0,0,2
 lens hood,0,0,2
-LCD,1,3,0
-image quality,7,0,2
+LCD,0,0,4
+image quality,0,0,9
 AUTO,0,0,1
-HD Video,1,0,0
-size,2,2,1
-exposure,1,1,2
-quality photos,1,0,0
-light,13,3,0
-Video,2,0,1
-sensor,3,0,2
-shots,5,6,3
-light shots,1,0,0
-manual mode,0,1,0
-flash,1,2,1
-light photos,1,0,0
+HD Video,0,0,1
+size,0,0,5
+exposure,0,0,4
+quality photos,0,0,1
+light,0,0,16
+Video,0,0,3
+sensor,0,0,5
+shots,0,0,14
+light shots,0,0,1
+manual mode,0,0,1
+flash,0,0,4
+light photos,0,0,1
 HD camcorder,0,0,1
-color,4,0,1
-video,12,4,4
-lens,6,4,0
-battery,4,2,2
-pictures,15,3,3
-button,5,2,0
-Auto,1,0,0
+color,0,0,5
+video,0,0,20
+lens,0,0,10
+battery,0,0,8
+pictures,0,0,21
+button,0,0,7
+Auto,0,0,1
 USB cable,0,0,1
-zoom range,1,3,0
-noise,1,3,0
-Zoom,2,0,0
-Features,1,0,0
-burst mode,2,0,1
-Body,0,1,0
-memory card,1,0,0
-SD card,1,1,0
-wide angle,2,0,0
-video recording,0,1,0
-ISO,1,4,5
+zoom range,0,0,4
+noise,0,0,4
+Zoom,0,0,2
+Features,0,0,1
+burst mode,0,0,3
+Body,0,0,1
+memory card,0,0,1
+SD card,0,0,2
+wide angle,0,0,2
+video recording,0,0,1
+ISO,0,0,10
 Manual control,0,0,1
-shutter,0,1,0
-Video quality,1,0,0
-video quality,0,1,1
-zoom,22,9,9
-price range,0,1,0
+shutter,0,0,1
+Video quality,0,0,1
+video quality,0,0,2
+zoom,0,0,40
+price range,0,0,1
 night shots,0,0,2
-image stabilization,1,1,2
-menu,1,0,0
-money,0,1,0
-DSLR,3,3,1
-ZOOM,1,1,0
-optical zoom,3,0,0
+image stabilization,0,0,4
+menu,0,0,1
+money,0,0,1
+DSLR,0,0,7
+ZOOM,0,0,2
+optical zoom,0,0,3

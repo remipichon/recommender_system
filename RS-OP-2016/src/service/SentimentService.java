@@ -2,6 +2,7 @@ package service;
 
 
 import model.Feature;
+import model.Sentence;
 import model.Sentiment;
 import util.nlp.Parser;
 
@@ -14,6 +15,9 @@ import java.util.HashSet;
 import java.util.List;
 
 public class SentimentService {
+
+    //limit POS pattern to 20, after it's not relevant and take too much time
+    private static final int MAXSENTIMENTDISTANCE = 20;
 
     private static SentimentService instance;
 
@@ -68,9 +72,8 @@ public class SentimentService {
     }
 
 
-    public void findClosestSentiment(String sentence, List<Feature> features) {
-        String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
-
+    public void findClosestSentiment(Sentence sentence, List<Feature> features) {
+        String[] tokens = sentence.getTokens(); // get the sentence tokens (words)
 
         for (Feature feature : features) {
 
@@ -88,7 +91,7 @@ public class SentimentService {
 
 
             //search in each part for the first closest sentiment word
-            for (int i = 0; i < Math.max(before.length, after.length); i++) {
+            for (int i = 0; i < Math.min(Math.max(before.length, after.length), MAXSENTIMENTDISTANCE); i++) {
                 if (feature.getSentiment() != null) break; //we just found a sentiment
                 //search in before
                 if (i < before.length) {
@@ -128,11 +131,11 @@ public class SentimentService {
     }
 
 
-    public void extractPosPattern(String sentence, Feature feature) {
+    public void extractPosPattern(Sentence sentence, Feature feature) {
 
-        String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
-        String pos[] = parser.getPOSTags(tokens); // get the POS tag for each sentence token
-        String chunks[] = parser.getChunkTags(tokens, pos); // get the chunk tags for the sentence
+        String[] tokens = sentence.getTokens(); // get the sentence tokens (words)
+        String pos[] = sentence.getPos(); // get the POS tag for each sentence token
+       // String chunks[] = sentence.getChunks(); // get the chunk tags for the sentence
 
         int biGram = 0;
         if (feature.getName().split(" ").length == 2) //if feature is a biGram, we need to remove it from the 'after' sub array

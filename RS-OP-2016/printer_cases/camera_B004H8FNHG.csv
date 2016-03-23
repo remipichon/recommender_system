@@ -1,16 +1,16 @@
 feature,pos,neg,neutral
-image,1,0,1
-Memory Stick,1,0,0
+image,0,0,2
+Memory Stick,0,0,1
 focus,0,0,2
-movie mode,1,0,0
-zoom,1,0,0
+movie mode,0,0,1
+zoom,0,0,1
 video,0,0,1
-battery,1,0,1
-photos,1,1,0
-mode,0,1,0
+battery,0,0,2
+photos,0,0,2
+mode,0,0,1
 view,0,0,1
-DSLR,1,1,0
+DSLR,0,0,2
 function,0,0,1
-options,0,1,0
-shots,1,0,0
-auto mode,1,0,0
+options,0,0,1
+shots,0,0,1
+auto mode,0,0,1

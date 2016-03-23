@@ -1,12 +1,12 @@
 feature,pos,neg,neutral
-features,1,0,0
+features,0,0,1
 image,0,0,1
 view,0,0,1
 price,0,0,1
-zoom,0,1,1
+zoom,0,0,2
 video,0,0,1
-shots,0,1,0
-Image Stabilization,1,0,0
-memory card,0,1,0
-case,0,1,0
+shots,0,0,1
+Image Stabilization,0,0,1
+memory card,0,0,1
+case,0,0,1
 flash,0,0,1

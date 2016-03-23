@@ -1,48 +1,48 @@
 feature,pos,neg,neutral
-auto,1,0,0
-movie,1,2,0
-color,2,3,1
-HD movie,1,0,0
+auto,0,0,1
+movie,0,0,3
+color,0,0,6
+HD movie,0,0,1
 focus,0,0,3
-screen,0,1,0
-battery charger,0,1,0
-video,1,1,0
-lens,1,0,0
-battery,1,2,0
-photos,2,5,3
-resolution,0,2,1
-pictures,6,1,3
-price point,1,1,1
-USB cable,1,0,0
+screen,0,0,1
+battery charger,0,0,1
+video,0,0,2
+lens,0,0,1
+battery,0,0,3
+photos,0,0,10
+resolution,0,0,3
+pictures,0,0,10
+price point,0,0,3
+USB cable,0,0,1
 button,0,0,1
 HD video,0,0,2
-Wide angle,1,0,0
-features,2,1,3
-spare battery,1,0,0
-firmware update,0,1,0
+Wide angle,0,0,1
+features,0,0,6
+spare battery,0,0,1
+firmware update,0,0,1
 price,0,0,1
-Battery,0,2,0
-function,0,1,0
-noise,0,1,0
+Battery,0,0,2
+function,0,0,1
+noise,0,0,1
 options,0,0,1
-pics,2,2,1
-Image stabilization,1,0,0
-settings,1,0,1
-PRICE,0,1,0
-SIZE,1,0,0
-indoor photos,0,2,1
-video quality,1,0,0
-movie mode,1,1,0
-zoom,2,0,1
+pics,0,0,5
+Image stabilization,0,0,1
+settings,0,0,2
+PRICE,0,0,1
+SIZE,0,0,1
+indoor photos,0,0,3
+video quality,0,0,1
+movie mode,0,0,2
+zoom,0,0,3
 price range,0,0,1
-menu,0,1,0
-Touch screen,1,0,0
-white balance,1,0,0
-HD Video,1,0,0
-size,0,2,0
-underwater photos,1,1,0
-touch screen,1,3,1
-wrist strap,1,0,1
-shots,1,0,1
-lens cover,0,1,0
-scene mode,1,0,0
+menu,0,0,1
+Touch screen,0,0,1
+white balance,0,0,1
+HD Video,0,0,1
+size,0,0,2
+underwater photos,0,0,2
+touch screen,0,0,5
+wrist strap,0,0,2
+shots,0,0,2
+lens cover,0,0,1
+scene mode,0,0,1

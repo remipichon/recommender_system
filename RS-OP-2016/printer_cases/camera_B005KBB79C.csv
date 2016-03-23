@@ -1,128 +1,128 @@
 feature,pos,neg,neutral
-light situations,1,0,0
-manual focus,0,1,0
-shutter speed,6,2,3
-software,1,4,1
-movie,0,2,0
-view finder,3,0,1
-focus,11,6,5
+light situations,0,0,1
+manual focus,0,0,1
+shutter speed,0,0,11
+software,0,0,6
+movie,0,0,2
+view finder,0,0,4
+focus,0,0,22
 focus ring,0,0,1
 lcd screen,0,0,1
-LCD screen,1,1,0
-Image,1,0,0
-resolution,5,2,1
-price,9,1,6
-kit lenses,0,2,0
+LCD screen,0,0,2
+Image,0,0,1
+resolution,0,0,8
+price,0,0,16
+kit lenses,0,0,2
 Auto ISO,0,0,1
-options,1,1,0
-noise reduction,0,1,3
-focal length,1,1,0
-neck strap,0,1,0
-pics,1,3,1
-case,5,1,4
+options,0,0,2
+noise reduction,0,0,4
+focal length,0,0,2
+neck strap,0,0,1
+pics,0,0,5
+case,0,0,10
 Settings,0,0,1
-lenses,8,3,1
-zoom lens,7,1,1
-AF,10,3,1
-SIZE,1,0,0
+lenses,0,0,12
+zoom lens,0,0,9
+AF,0,0,14
+SIZE,0,0,1
 lens hood,0,0,1
-priority mode,1,0,0
-size,9,3,5
-exposure,6,0,2
-light,19,11,8
-Lens,2,2,1
-shots,5,2,3
-card,1,1,1
-sensor size,2,0,0
-light shots,0,1,0
-flash,6,7,4
-auto focus,1,0,0
-Zoom Lens,1,0,0
-battery,4,1,1
-pictures,8,3,4
-firmware update,0,1,2
-noise,10,1,3
-macro mode,3,1,0
-Menu,0,1,1
-lens cap,1,1,2
-optical viewfinder,2,3,3
+priority mode,0,0,1
+size,0,0,17
+exposure,0,0,8
+light,0,0,38
+Lens,0,0,5
+shots,0,0,10
+card,0,0,3
+sensor size,0,0,2
+light shots,0,0,1
+flash,0,0,17
+auto focus,0,0,1
+Zoom Lens,0,0,1
+battery,0,0,6
+pictures,0,0,15
+firmware update,0,0,3
+noise,0,0,14
+macro mode,0,0,4
+Menu,0,0,2
+lens cap,0,0,4
+optical viewfinder,0,0,8
 Build quality,0,0,1
-panorama mode,2,0,0
-video recording,1,3,1
-ISO,24,10,7
-shutter,5,3,2
-image stabilization,2,0,0
-night shots,2,0,0
-menu,6,4,2
+panorama mode,0,0,2
+video recording,0,0,5
+ISO,0,0,41
+shutter,0,0,10
+image stabilization,0,0,2
+night shots,0,0,2
+menu,0,0,12
 Pics,0,0,1
-DSLR,14,3,9
+DSLR,0,0,26
 dslr,0,0,1
-kit lens,2,0,0
-manual control,1,0,1
-auto,3,0,0
-iso,2,2,0
-Sensor size,1,0,0
-Noise,0,1,0
-customer service,1,0,0
+kit lens,0,0,2
+manual control,0,0,2
+auto,0,0,3
+iso,0,0,4
+Sensor size,0,0,1
+Noise,0,0,1
+customer service,0,0,1
 Viewfinder,0,0,2
-screen,3,4,4
-body,9,0,3
-Scene mode,1,0,0
-photos,8,1,1
-mode,12,4,7
-battery life,3,0,1
-HD video,1,0,0
-features,6,2,2
-view,5,1,0
-IMAGE QUALITY,0,1,0
-function,5,3,0
-Battery,1,0,0
-light conditions,0,1,0
-focus mode,0,1,0
-menu system,1,0,0
-build quality,4,0,0
-user manual,0,1,0
-settings,5,2,2
-image,9,5,8
-Auto mode,0,1,0
-LCD,1,4,3
-image quality,16,1,4
-prime lens,0,1,0
+screen,0,0,11
+body,0,0,12
+Scene mode,0,0,1
+photos,0,0,10
+mode,0,0,23
+battery life,0,0,4
+HD video,0,0,1
+features,0,0,10
+view,0,0,6
+IMAGE QUALITY,0,0,1
+function,0,0,8
+Battery,0,0,1
+light conditions,0,0,1
+focus mode,0,0,1
+menu system,0,0,1
+build quality,0,0,4
+user manual,0,0,1
+settings,0,0,9
+image,0,0,22
+Auto mode,0,0,1
+LCD,0,0,8
+image quality,0,0,21
+prime lens,0,0,1
 Video,0,0,1
-sensor,13,9,2
-BUILD QUALITY,1,0,0
+sensor,0,0,24
+BUILD QUALITY,0,0,1
 touch screen,0,0,1
-Autofocus,1,0,1
-Resolution,0,1,0
-Sensor,0,1,0
-color,5,2,2
-external flash,0,1,0
-LCD monitor,0,1,0
+Autofocus,0,0,2
+Resolution,0,0,1
+Sensor,0,0,1
+color,0,0,9
+external flash,0,0,1
+LCD monitor,0,0,1
 Lens Hood,0,0,1
-video,3,1,0
-lens,31,15,12
-AF point,1,0,0
-Auto,3,1,0
-button,6,3,3
-zoom range,1,1,0
-Manual focus,0,1,0
-control ring,1,1,0
-Zoom,1,0,0
-viewfinder,18,5,3
-Flash,0,1,0
-memory card,1,0,0
-SD card,0,1,2
-exposure compensation,2,0,0
+video,0,0,4
+lens,0,0,58
+AF point,0,0,1
+Auto,0,0,4
+button,0,0,12
+zoom range,0,0,2
+Manual focus,0,0,1
+control ring,0,0,2
+Zoom,0,0,1
+viewfinder,0,0,26
+Flash,0,0,1
+memory card,0,0,1
+SD card,0,0,3
+exposure compensation,0,0,2
 Panorama mode,0,0,1
 Mode,0,0,1
-zoom,16,5,3
-autofocus,1,1,0
-amateur photographer,1,0,0
-white balance,1,1,0
-money,3,2,2
-focus point,1,1,0
-telephoto lens,2,0,0
-entry level,0,1,4
-ISO settings,1,0,0
-auto mode,1,0,0
-optical zoom,1,0,0
+zoom,0,0,24
+autofocus,0,0,2
+amateur photographer,0,0,1
+white balance,0,0,2
+money,0,0,7
+focus point,0,0,2
+telephoto lens,0,0,2
+entry level,0,0,5
+ISO settings,0,0,1
+auto mode,0,0,1
+optical zoom,0,0,1

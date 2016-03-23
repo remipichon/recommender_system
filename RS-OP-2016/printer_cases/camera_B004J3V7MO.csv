@@ -1,45 +1,45 @@
 feature,pos,neg,neutral
-Pictures,1,0,0
-manual focus,1,0,0
-Options,1,0,0
-color,4,0,3
-view finder,0,1,1
-focus,1,2,0
+Pictures,0,0,1
+manual focus,0,0,1
+Options,0,0,1
+color,0,0,7
+view finder,0,0,2
+focus,0,0,3
 Shutter,0,0,1
 screen,0,0,1
-lcd screen,0,1,0
-lens,1,0,0
-battery,0,1,1
-photos,8,0,0
-pictures,3,2,2
-mode,1,1,0
-button,0,1,1
-HD video,0,1,0
-features,2,0,0
-program mode,0,1,0
-price,1,0,0
-options,2,0,1
-noise reduction,1,0,0
-manual settings,1,0,0
-focus mode,1,0,0
-burst mode,1,0,0
+lcd screen,0,0,1
+lens,0,0,1
+battery,0,0,2
+photos,0,0,8
+pictures,0,0,7
+mode,0,0,2
+button,0,0,2
+HD video,0,0,1
+features,0,0,2
+program mode,0,0,1
+price,0,0,1
+options,0,0,3
+noise reduction,0,0,1
+manual settings,0,0,1
+focus mode,0,0,1
+burst mode,0,0,1
 aspect ratio,0,0,1
 settings,0,0,2
-image,0,1,1
-zoom lens,0,1,0
-ISO,1,0,0
-video quality,1,0,0
-zoom,4,1,0
-movie mode,1,0,0
-LCD,0,1,1
-menu,0,1,0
-image quality,4,1,0
-size,1,0,0
-exposure,1,1,0
-DSLR,1,0,0
-light,1,0,1
-Lens,1,0,0
-manual control,1,0,0
-auto mode,1,2,1
-video mode,1,0,0
-flash,6,1,5
+image,0,0,2
+zoom lens,0,0,1
+ISO,0,0,1
+video quality,0,0,1
+zoom,0,0,5
+movie mode,0,0,1
+LCD,0,0,2
+menu,0,0,1
+image quality,0,0,5
+size,0,0,1
+exposure,0,0,2
+DSLR,0,0,1
+light,0,0,2
+Lens,0,0,1
+manual control,0,0,1
+auto mode,0,0,4
+video mode,0,0,1
+flash,0,0,12

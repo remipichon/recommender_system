@@ -1,16 +1,16 @@
 feature,pos,neg,neutral
-image,3,1,0
+image,0,0,4
 second battery,0,0,1
 quick shots,0,0,1
-software,0,1,0
-zoom,1,0,0
+software,0,0,1
+zoom,0,0,1
 video,0,0,1
-battery,4,0,4
-photos,2,0,0
-features,1,0,0
-size,2,0,0
-options,1,0,0
-shots,0,1,0
-card,0,2,0
-SD card,1,1,1
-flash,0,2,0
+battery,0,0,8
+photos,0,0,2
+features,0,0,1
+size,0,0,2
+options,0,0,1
+shots,0,0,1
+card,0,0,2
+SD card,0,0,3
+flash,0,0,2

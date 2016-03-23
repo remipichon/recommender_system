@@ -1,9 +1,6 @@
 package service;
 
-import model.Feature;
-import model.FeatureSummary;
-import model.Review;
-import model.Sentiment;
+import model.*;
 import util.nlp.Parser;
 
 import java.util.ArrayList;
@@ -39,7 +36,7 @@ public class ReviewService {
         int cpt = 0;
         for (Review review : reviews) {
             features.addAll(this.extractFeatures(review));
-            if(++cpt % 10 == 0 ) System.out.println("Review reads "+cpt+"/"+reviews.size());
+            if(++cpt % 100 == 0 ) System.out.println("Review reads "+cpt+"/"+reviews.size());
         }
 
         System.out.println("Features extracted "+features.size());
@@ -52,16 +49,25 @@ public class ReviewService {
 
         List<Feature> reviewFeatures = new ArrayList<>();
 
-
         String[] sentences = parser.getSentences(review.getReviewText().replaceAll("<br />", EOL)); // get the sentences
+
 
         for (String sentence : sentences) {
 
-            // First, extract features
-            List<Feature> features = featureService.extractBiGramAndFeature(review.getProductId(),sentence);
+            String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
+            String pos[] = parser.getPOSTags(tokens); // get the POS tag for each sentence token
+//            String chunks[] = parser.getChunkTags(tokens, pos); // get the chunk tags for the sentence ==> too long to compute
+//
+            Sentence sentenceModel = new Sentence();
+            sentenceModel.setTokens(tokens);
+            sentenceModel.setPos(pos);
+//            sentenceModel.setChunks(chunks);
 
-            //Then, find sentiment
-            sentimentService.findClosestSentiment(sentence,features);
+//            First, extract features
+            List<Feature> features = featureService.extractBiGramAndFeature(review.getProductId(),sentenceModel);
+
+//            Then, find sentiment
+            sentimentService.findClosestSentiment(sentenceModel,features);
 
             reviewFeatures.addAll(features);
         }

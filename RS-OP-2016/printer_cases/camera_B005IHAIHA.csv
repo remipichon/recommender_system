@@ -1,52 +1,52 @@
 feature,pos,neg,neutral
-manual focus,2,0,0
-movie,5,2,2
-focus,2,3,1
-screen,2,1,1
-LCD screen,0,1,1
-body,4,1,1
-photos,4,0,1
-mode,2,0,1
-HD video,1,0,0
-features,2,2,1
-view,1,0,0
-spare battery,1,0,0
-price,2,0,0
-pics,2,1,0
-build quality,1,0,0
-case,0,1,0
-image,1,0,0
-settings,0,2,0
-lenses,0,1,0
-LCD,3,1,0
-image quality,4,0,1
-size,6,1,0
-quality photos,1,1,0
+manual focus,0,0,2
+movie,0,0,9
+focus,0,0,6
+screen,0,0,4
+LCD screen,0,0,2
+body,0,0,6
+photos,0,0,5
+mode,0,0,3
+HD video,0,0,1
+features,0,0,5
+view,0,0,1
+spare battery,0,0,1
+price,0,0,2
+pics,0,0,3
+build quality,0,0,1
+case,0,0,1
+image,0,0,1
+settings,0,0,2
+lenses,0,0,1
+LCD,0,0,4
+image quality,0,0,5
+size,0,0,7
+quality photos,0,0,2
 exposure,0,0,1
-light,5,2,1
-Video,1,0,1
-Focus,0,1,0
-sensor,0,2,1
-shots,6,1,0
-flash,10,2,1
-color,0,1,0
-video,3,4,4
-lens,7,2,0
-battery,0,1,0
-pictures,4,1,0
-button,0,2,0
-editing software,1,0,0
-noise,7,5,2
-viewfinder,4,0,0
-SD card,1,0,2
-video recording,1,1,0
-ISO,2,0,2
-shutter,0,2,1
-zoom,0,1,0
-movie mode,0,1,0
+light,0,0,8
+Video,0,0,2
+Focus,0,0,1
+sensor,0,0,3
+shots,0,0,7
+flash,0,0,13
+color,0,0,1
+video,0,0,11
+lens,0,0,9
+battery,0,0,1
+pictures,0,0,5
+button,0,0,2
+editing software,0,0,1
+noise,0,0,14
+viewfinder,0,0,4
+SD card,0,0,3
+video recording,0,0,2
+ISO,0,0,4
+shutter,0,0,3
+zoom,0,0,1
+movie mode,0,0,1
 menu,0,0,5
-user interface,0,1,0
-money,0,1,0
-DSLR,7,0,3
-light weight,1,0,0
-auto mode,1,1,0
+user interface,0,0,1
+money,0,0,1
+DSLR,0,0,10
+light weight,0,0,1
+auto mode,0,0,2

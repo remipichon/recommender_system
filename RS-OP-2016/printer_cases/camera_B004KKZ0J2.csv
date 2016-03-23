@@ -1,37 +1,37 @@
 feature,pos,neg,neutral
-auto,1,0,0
-focus,0,1,2
-video,4,1,1
-lens,0,2,1
-battery,1,1,0
-photos,3,2,1
-pictures,7,3,2
-button,2,0,1
-mode,1,0,0
+auto,0,0,1
+focus,0,0,3
+video,0,0,6
+lens,0,0,3
+battery,0,0,2
+photos,0,0,6
+pictures,0,0,12
+button,0,0,3
+mode,0,0,1
 HD video,0,0,2
-features,1,0,1
+features,0,0,2
 zoom range,0,0,1
 price,0,0,1
 options,0,0,1
-burst mode,1,0,0
-case,1,0,1
-settings,1,0,1
-wide angle,1,0,1
+burst mode,0,0,1
+case,0,0,2
+settings,0,0,2
+wide angle,0,0,2
 ISO,0,0,1
-PRICE,0,1,0
+PRICE,0,0,1
 shutter,0,0,1
-SIZE,1,0,0
-indoor photos,0,2,1
-zoom,2,0,1
+SIZE,0,0,1
+indoor photos,0,0,3
+zoom,0,0,3
 price range,0,0,1
-video capability,1,0,0
-white balance,1,0,0
-image quality,1,0,0
-size,1,0,0
-light,0,1,0
-underwater photos,1,1,0
-touch screen,1,0,0
+video capability,0,0,1
+white balance,0,0,1
+image quality,0,0,1
+size,0,0,1
+light,0,0,1
+underwater photos,0,0,2
+touch screen,0,0,1
 wrist strap,0,0,1
-auto mode,1,0,0
-video mode,0,1,0
-flash,1,1,0
+auto mode,0,0,1
+video mode,0,0,1
+flash,0,0,2

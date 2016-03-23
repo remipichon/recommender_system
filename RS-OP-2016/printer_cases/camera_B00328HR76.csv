@@ -1,153 +1,153 @@
 feature,pos,neg,neutral
-Pictures,1,0,0
-light situations,1,0,0
-shutter speed,2,0,2
-software,10,8,3
-movie,5,2,4
-indoor pictures,3,2,0
-focus,2,0,1
-Shutter,1,0,1
+Pictures,0,0,1
+light situations,0,0,1
+shutter speed,0,0,4
+software,0,0,21
+movie,0,0,11
+indoor pictures,0,0,5
+focus,0,0,3
+Shutter,0,0,2
 Memory stick,0,0,1
 Focal Length,0,0,1
-Image,0,1,0
-LCD screen,1,0,0
-resolution,8,5,3
-video clips,0,1,0
-quality pictures,1,0,0
+Image,0,0,1
+LCD screen,0,0,1
+resolution,0,0,16
+video clips,0,0,1
+quality pictures,0,0,1
 card reader,0,0,1
-price,14,2,1
-options,5,2,2
-noise reduction,3,5,0
-pics,2,1,1
-case,0,1,3
-shutter button,0,1,0
+price,0,0,17
+options,0,0,9
+noise reduction,0,0,8
+pics,0,0,4
+case,0,0,4
+shutter button,0,0,1
 Burst Mode,0,0,1
-lenses,0,1,3
-professional photographer,2,0,0
+lenses,0,0,4
+professional photographer,0,0,2
 AF,0,0,4
-image sensor,2,0,0
-size,14,2,1
-exposure,3,2,3
-light,35,18,8
-Lens,1,0,1
-shots,25,8,9
-light capability,1,0,0
-card,5,3,2
-light shots,1,0,0
-video mode,5,1,1
-flash,18,7,3
-scene mode,1,0,0
-light photos,1,0,0
-auto focus,1,0,0
-Noise reduction,0,2,0
+image sensor,0,0,2
+size,0,0,17
+exposure,0,0,8
+light,0,0,61
+Lens,0,0,2
+shots,0,0,42
+light capability,0,0,1
+card,0,0,10
+light shots,0,0,1
+video mode,0,0,7
+flash,0,0,28
+scene mode,0,0,1
+light photos,0,0,1
+auto focus,0,0,1
+Noise reduction,0,0,2
 Macro Mode,0,0,1
-HD movie,1,0,0
-White Balance,0,1,1
-battery charger,0,1,1
-battery,4,5,5
-pictures,44,15,14
-price point,2,1,1
-Case,0,1,6
-editing software,0,1,0
-noise,6,7,2
-LCD display,1,1,1
+HD movie,0,0,1
+White Balance,0,0,2
+battery charger,0,0,2
+battery,0,0,14
+pictures,0,0,73
+price point,0,0,4
+Case,0,0,7
+editing software,0,0,1
+noise,0,0,15
+LCD display,0,0,3
 battery door,0,0,3
-burst mode,6,1,1
-Build quality,1,0,0
-panorama mode,2,0,1
-Movie,0,1,0
-video recording,3,0,1
-wide angle,4,2,1
-ISO,9,2,3
-HD Movie,1,0,0
-shutter,4,3,2
-video quality,4,1,0
-price range,1,1,0
-indoor shots,1,0,0
-image stabilization,2,0,1
-night shots,4,2,0
-menu,1,0,1
-Screen Protector,2,0,1
-angle lens,1,0,1
+burst mode,0,0,8
+Build quality,0,0,1
+panorama mode,0,0,3
+Movie,0,0,1
+video recording,0,0,4
+wide angle,0,0,7
+ISO,0,0,14
+HD Movie,0,0,1
+shutter,0,0,9
+video quality,0,0,5
+price range,0,0,2
+indoor shots,0,0,1
+image stabilization,0,0,3
+night shots,0,0,6
+menu,0,0,2
+Screen Protector,0,0,3
+angle lens,0,0,2
 White balance,0,0,1
-DSLR,8,5,8
-dslr,1,0,0
+DSLR,0,0,21
+dslr,0,0,1
 sd card,0,0,1
 manual control,0,0,2
-auto,6,1,1
-iso,2,1,0
-automatic settings,1,0,0
-action shots,3,0,0
-customer service,1,2,3
-screen,1,1,2
-body,3,0,3
-photos,24,22,9
-mode,34,12,12
-HD video,7,1,3
-battery life,2,2,2
-features,33,6,9
+auto,0,0,8
+iso,0,0,3
+automatic settings,0,0,1
+action shots,0,0,3
+customer service,0,0,6
+screen,0,0,4
+body,0,0,6
+photos,0,0,55
+mode,0,0,58
+HD video,0,0,11
+battery life,0,0,6
+features,0,0,48
 Wide angle,0,0,1
-view,6,0,1
-spare battery,2,0,0
-Light,1,0,0
-Battery,2,0,1
-function,8,2,1
-manual settings,2,0,0
-light conditions,2,0,0
-shutter priority,0,1,0
-menu system,2,0,0
+view,0,0,7
+spare battery,0,0,2
+Light,0,0,1
+Battery,0,0,3
+function,0,0,11
+manual settings,0,0,2
+light conditions,0,0,2
+shutter priority,0,0,1
+menu system,0,0,2
 Image Stabilization,0,0,1
-settings,14,7,4
-image,6,9,1
+settings,0,0,25
+image,0,0,16
 SDHC card,0,0,1
 Memory Stick,0,0,1
-Color,0,2,0
+Color,0,0,2
 LIGHT,0,0,1
-Auto mode,4,0,1
-video capability,1,0,0
+Auto mode,0,0,5
+video capability,0,0,1
 LCD,0,0,5
-image quality,10,7,1
-Price,1,0,0
-Video,2,2,3
-sensor,6,5,0
-Software,2,0,1
+image quality,0,0,18
+Price,0,0,1
+Video,0,0,7
+sensor,0,0,11
+Software,0,0,3
 touch screen,0,0,1
-manual mode,1,0,3
+manual mode,0,0,4
 Sensor,0,0,2
-Resolution,1,0,0
-Shutter speed,0,1,1
-HD camcorder,2,0,1
-color,9,5,3
-Battery life,1,0,0
-LCD Screen,1,0,0
-video,34,16,15
-lens,11,6,2
-lcd,1,0,0
-Auto,3,2,4
-button,6,4,2
-quality image,1,0,0
-outdoor shots,1,1,0
-zoom range,0,1,1
-Zoom,0,1,2
-Features,1,1,0
+Resolution,0,0,1
+Shutter speed,0,0,2
+HD camcorder,0,0,3
+color,0,0,17
+Battery life,0,0,1
+LCD Screen,0,0,1
+video,0,0,65
+lens,0,0,19
+lcd,0,0,1
+Auto,0,0,9
+button,0,0,12
+quality image,0,0,1
+outdoor shots,0,0,2
+zoom range,0,0,2
+Zoom,0,0,3
+Features,0,0,2
 viewfinder,0,0,1
-Flash,2,2,3
-memory card,4,1,3
-SD card,1,0,0
-Image stabilization,1,0,0
+Flash,0,0,7
+memory card,0,0,8
+SD card,0,0,1
+Image stabilization,0,0,1
 Manual Mode,0,0,1
-Panorama mode,1,0,0
-Mode,3,0,3
-Video quality,3,0,0
-indoor photos,1,0,0
-zoom,22,10,8
-movie mode,2,0,0
+Panorama mode,0,0,1
+Mode,0,0,6
+Video quality,0,0,3
+indoor photos,0,0,1
+zoom,0,0,40
+movie mode,0,0,2
 Program mode,0,0,1
-white balance,2,4,1
-money,6,1,3
+white balance,0,0,7
+money,0,0,10
 Optical Zoom,0,0,1
-Action shots,1,0,0
+Action shots,0,0,1
 quality video,0,0,1
-optical zoom,7,0,1
-auto mode,1,1,0
-light pictures,2,0,0
+optical zoom,0,0,8
+auto mode,0,0,2
+light pictures,0,0,2

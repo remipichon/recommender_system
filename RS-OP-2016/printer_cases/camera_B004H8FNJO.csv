@@ -1,41 +1,41 @@
 feature,pos,neg,neutral
-second battery,0,1,0
-movie,1,0,0
-HD movie,1,0,0
-screen,1,1,0
-focus,1,0,0
-video,1,0,2
-lens,1,0,2
-LCD screen,1,0,0
-battery,1,0,1
-battery pack,1,0,0
-resolution,2,0,0
-photos,2,1,0
-pictures,2,2,2
+second battery,0,0,1
+movie,0,0,1
+HD movie,0,0,1
+screen,0,0,2
+focus,0,0,1
+video,0,0,3
+lens,0,0,3
+LCD screen,0,0,1
+battery,0,0,2
+battery pack,0,0,1
+resolution,0,0,2
+photos,0,0,3
+pictures,0,0,6
 Case,0,0,1
-battery life,0,1,0
-mode,1,2,0
-features,2,1,0
-view,1,0,0
-price,2,1,0
+battery life,0,0,1
+mode,0,0,3
+features,0,0,3
+view,0,0,1
+price,0,0,3
 Battery,0,0,1
 Zoom,0,0,1
-light conditions,1,0,0
-case,1,1,2
-memory card,0,1,0
+light conditions,0,0,1
+case,0,0,4
+memory card,0,0,1
 aspect ratio,0,0,1
-settings,1,0,0
-Video quality,1,0,0
-underwater pictures,1,0,0
-video quality,1,0,0
-LCD,1,0,0
-user interface,0,1,0
-image quality,1,0,0
-money,0,1,0
+settings,0,0,1
+Video quality,0,0,1
+underwater pictures,0,0,1
+video quality,0,0,1
+LCD,0,0,1
+user interface,0,0,1
+image quality,0,0,1
+money,0,0,1
 DSLR,0,0,2
 Lens,0,0,1
-sensor,1,0,1
-shots,1,0,0
-optical zoom,1,0,0
+sensor,0,0,2
+shots,0,0,1
+optical zoom,0,0,1
 BATTERY life,0,0,1
-flash,0,1,0
+flash,0,0,1

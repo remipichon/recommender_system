@@ -1,69 +1,69 @@
 feature,pos,neg,neutral
-manual focus,1,0,0
+manual focus,0,0,1
 shutter speed,0,0,1
-screen,6,1,2
-focus,3,3,1
-Macro shots,1,0,0
-Image,1,0,0
+screen,0,0,9
+focus,0,0,7
+Macro shots,0,0,1
+Image,0,0,1
 body,0,0,1
-photos,0,1,1
-mode,2,1,1
-HD video,2,0,0
-battery life,0,1,0
-features,7,1,2
-view,1,0,0
-price,3,0,0
-function,0,1,0
-options,1,0,1
-manual settings,1,0,0
+photos,0,0,2
+mode,0,0,4
+HD video,0,0,2
+battery life,0,0,1
+features,0,0,10
+view,0,0,1
+price,0,0,3
+function,0,0,1
+options,0,0,2
+manual settings,0,0,1
 shutter priority,0,0,1
-pics,1,0,2
-settings,3,0,1
-image,1,0,0
-lenses,0,1,0
-Color,1,0,0
+pics,0,0,3
+settings,0,0,4
+image,0,0,1
+lenses,0,0,1
+Color,0,0,1
 Auto mode,0,0,2
-Touch screen,2,0,0
-image quality,1,0,0
-HD Video,0,1,0
-size,1,0,0
+Touch screen,0,0,2
+image quality,0,0,1
+HD Video,0,0,1
+size,0,0,1
 exposure,0,0,3
-light,5,1,2
-Focus,1,0,0
-Video,1,0,0
-touch screen,8,1,3
-sensor,2,0,0
-shots,3,0,4
-light shots,1,0,0
-card,0,2,0
-manual mode,1,0,0
-Shutter Priority,1,0,0
-flash,2,0,0
-color,0,1,0
-HD movie,1,0,0
-video,5,0,6
-lens,4,0,1
-battery,1,3,2
-pictures,6,4,5
-button,5,1,3
-program mode,1,0,0
-editing software,0,1,0
-noise,0,1,0
-viewfinder,1,1,0
+light,0,0,8
+Focus,0,0,1
+Video,0,0,1
+touch screen,0,0,12
+sensor,0,0,2
+shots,0,0,7
+light shots,0,0,1
+card,0,0,2
+manual mode,0,0,1
+Shutter Priority,0,0,1
+flash,0,0,2
+color,0,0,1
+HD movie,0,0,1
+video,0,0,11
+lens,0,0,5
+battery,0,0,6
+pictures,0,0,15
+button,0,0,9
+program mode,0,0,1
+editing software,0,0,1
+noise,0,0,1
+viewfinder,0,0,2
 Features,0,0,1
-battery door,3,0,0
-panorama mode,2,0,0
-card slot,0,1,0
-light settings,1,0,0
-shutter,0,1,0
-video quality,2,0,0
-zoom,1,1,2
-price range,0,1,0
-image stabilization,1,0,0
-menu,1,0,0
-angle lens,1,0,0
+battery door,0,0,3
+panorama mode,0,0,2
+card slot,0,0,1
+light settings,0,0,1
+shutter,0,0,1
+video quality,0,0,2
+zoom,0,0,4
+price range,0,0,1
+image stabilization,0,0,1
+menu,0,0,1
+angle lens,0,0,1
 video capture,0,0,1
-DSLR,0,1,1
-light weight,1,0,0
-auto mode,1,0,1
-lens cover,0,1,0
+DSLR,0,0,2
+light weight,0,0,1
+auto mode,0,0,2
+lens cover,0,0,1

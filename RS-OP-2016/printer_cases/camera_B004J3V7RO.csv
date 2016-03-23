@@ -1,28 +1,28 @@
 feature,pos,neg,neutral
-Battery life,1,0,0
-color,1,1,0
-focus,1,1,0
-screen,0,1,1
-video,2,0,1
-battery,1,1,0
-lens,1,2,0
+Battery life,0,0,1
+color,0,0,2
+focus,0,0,2
+screen,0,0,2
+video,0,0,3
+battery,0,0,2
+lens,0,0,3
 LCD screen,0,0,1
-photos,1,1,1
-pictures,1,5,2
+photos,0,0,3
+pictures,0,0,8
 video clips,0,0,1
-Case,1,0,0
-price,2,0,0
-noise,0,1,0
-Zoom,0,1,0
-Shots,0,1,0
-case,1,0,0
-memory card,0,1,1
+Case,0,0,1
+price,0,0,2
+noise,0,0,1
+Zoom,0,0,1
+Shots,0,0,1
+case,0,0,1
+memory card,0,0,2
 SDHC card,0,0,1
 Memory Card,0,0,1
-image quality,0,1,0
-money,1,0,0
-light,3,1,0
-Software,0,1,0
-shots,1,0,0
+image quality,0,0,1
+money,0,0,1
+light,0,0,4
+Software,0,0,1
+shots,0,0,1
 auto mode,0,0,1
-flash,2,0,1
+flash,0,0,3

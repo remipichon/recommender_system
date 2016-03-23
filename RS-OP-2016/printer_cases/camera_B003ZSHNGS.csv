@@ -1,184 +1,184 @@
 feature,pos,neg,neutral
-AUTO mode,1,1,0
-light situations,1,0,1
-manual focus,2,0,1
-shutter speed,10,2,5
-software,7,5,3
-movie,1,1,6
-indoor pictures,1,0,0
-Size,0,1,0
-view finder,1,1,1
-focus,19,9,10
-lower light,0,1,0
+AUTO mode,0,0,2
+light situations,0,0,2
+manual focus,0,0,3
+shutter speed,0,0,17
+software,0,0,15
+movie,0,0,8
+indoor pictures,0,0,1
+Size,0,0,1
+view finder,0,0,3
+focus,0,0,38
+lower light,0,0,1
 focus ring,0,0,1
-lcd screen,0,1,0
-LCD screen,6,1,1
-Image,2,0,2
-resolution,1,5,1
-video clips,2,0,1
-quality pictures,1,1,2
-price,9,6,11
-Auto ISO,0,1,0
-options,11,3,5
-noise reduction,2,0,0
-dSLR,2,1,3
-focal length,1,1,4
+lcd screen,0,0,1
+LCD screen,0,0,8
+Image,0,0,4
+resolution,0,0,7
+video clips,0,0,3
+quality pictures,0,0,4
+price,0,0,26
+Auto ISO,0,0,1
+options,0,0,19
+noise reduction,0,0,2
+dSLR,0,0,6
+focal length,0,0,6
 neck strap,0,0,2
-pics,9,3,4
-case,10,4,13
-shutter button,3,2,3
-lenses,3,5,6
-zoom lens,1,1,0
-professional photographer,2,0,1
-AF,4,2,2
-screen protector,1,0,2
-image sensor,0,1,0
-Exposure,2,0,0
+pics,0,0,16
+case,0,0,27
+shutter button,0,0,8
+lenses,0,0,14
+zoom lens,0,0,2
+professional photographer,0,0,3
+AF,0,0,8
+screen protector,0,0,3
+image sensor,0,0,1
+Exposure,0,0,2
 video shoot,0,0,1
-shoot mode,0,1,0
-Image quality,5,0,1
-priority mode,1,0,1
-HD Video,1,1,0
-exposure,17,3,15
-size,38,11,16
+shoot mode,0,0,1
+Image quality,0,0,6
+priority mode,0,0,2
+HD Video,0,0,2
+exposure,0,0,35
+size,0,0,65
 quality photos,0,0,1
-light,62,22,12
-wrist strap,2,1,1
-Lens,2,0,1
+light,0,0,96
+wrist strap,0,0,4
+Lens,0,0,3
 shutter lag,0,0,1
-shots,48,13,12
-light capability,4,0,0
-video mode,3,4,0
-light shots,5,0,0
-sensor size,4,0,0
-card,1,0,1
-flash,34,49,27
-scene mode,1,1,0
-Lenses,1,0,0
-light photos,2,0,1
-auto focus,1,0,2
-Wireless Flash,1,0,0
-Zoom Lens,2,0,0
-HD movie,2,0,0
+shots,0,0,73
+light capability,0,0,4
+video mode,0,0,7
+light shots,0,0,5
+sensor size,0,0,4
+card,0,0,2
+flash,0,0,110
+scene mode,0,0,2
+Lenses,0,0,1
+light photos,0,0,3
+auto focus,0,0,3
+Wireless Flash,0,0,1
+Zoom Lens,0,0,2
+HD movie,0,0,2
 battery charger,0,0,1
-battery,7,7,10
-pictures,52,16,17
-price point,3,0,1
-Case,2,0,0
+battery,0,0,24
+pictures,0,0,85
+price point,0,0,4
+Case,0,0,2
 firmware update,0,0,2
 Dslr,0,0,1
-noise,9,7,7
+noise,0,0,23
 macro mode,0,0,1
-LCD display,0,1,0
+LCD display,0,0,1
 Menu,0,0,1
-automatic mode,3,0,0
+automatic mode,0,0,3
 lens cap,0,0,2
-optical viewfinder,1,0,1
-Movie,1,0,1
-wide angle,9,0,1
-video recording,0,1,0
-ISO,26,19,8
-shutter,4,2,2
-Macro mode,1,0,0
-video quality,6,1,0
-image stabilization,2,0,0
-price range,1,2,0
-night shots,1,0,0
-menu,9,7,6
+optical viewfinder,0,0,2
+Movie,0,0,2
+wide angle,0,0,10
+video recording,0,0,1
+ISO,0,0,53
+shutter,0,0,8
+Macro mode,0,0,1
+video quality,0,0,7
+image stabilization,0,0,2
+price range,0,0,3
+night shots,0,0,1
+menu,0,0,22
 Pics,0,0,1
-Screen Protector,2,0,0
+Screen Protector,0,0,2
 angle lens,0,0,2
-HD Camcorder,1,0,0
-Wrist strap,0,1,0
-Wide Angle,2,0,2
-DSLR,35,15,12
-light weight,2,0,0
-manual control,7,1,3
-articulating screen,1,0,0
+HD Camcorder,0,0,1
+Wrist strap,0,0,1
+Wide Angle,0,0,4
+DSLR,0,0,62
+light weight,0,0,2
+manual control,0,0,11
+articulating screen,0,0,1
 second battery,0,0,1
-auto,6,6,4
-iso,3,0,0
-customer service,3,1,0
-screen,16,9,4
-body,5,4,7
-photos,40,15,11
+auto,0,0,16
+iso,0,0,3
+customer service,0,0,4
+screen,0,0,29
+body,0,0,16
+photos,0,0,66
 battery pack,0,0,1
-mode,26,7,22
-HD video,14,2,8
-battery life,4,4,2
-features,28,4,7
-Wide angle,0,1,0
-shutter release,0,1,0
-view,3,1,4
-spare battery,1,1,0
-IMAGE QUALITY,1,0,0
-Light,1,0,1
-function,6,5,3
-Battery,0,1,1
+mode,0,0,55
+HD video,0,0,24
+battery life,0,0,10
+features,0,0,39
+Wide angle,0,0,1
+shutter release,0,0,1
+view,0,0,8
+spare battery,0,0,2
+IMAGE QUALITY,0,0,1
+Light,0,0,2
+function,0,0,14
+Battery,0,0,2
 manual settings,0,0,1
-light conditions,3,2,2
+light conditions,0,0,7
 shutter priority,0,0,1
-build quality,4,1,2
-menu system,0,2,0
-Image Stabilization,1,0,0
-user manual,1,0,0
-settings,13,8,9
-image,16,2,3
-Memory Card,1,0,0
-Color,1,0,0
-LCD,5,5,3
-image quality,40,5,6
-AUTO,1,1,1
-Price,1,0,1
-Video,4,0,1
-Focus,0,1,1
-Indoor pictures,1,0,0
-sensor,26,10,16
-touch screen,0,1,1
-manual mode,5,3,2
-Autofocus,1,0,0
-Shutter speed,1,0,0
-HD camcorder,2,0,0
-external flash,1,0,1
-color,17,5,1
-Battery life,2,2,1
+build quality,0,0,7
+menu system,0,0,2
+Image Stabilization,0,0,1
+user manual,0,0,1
+settings,0,0,30
+image,0,0,21
+Memory Card,0,0,1
+Color,0,0,1
+LCD,0,0,13
+image quality,0,0,51
+AUTO,0,0,3
+Price,0,0,2
+Video,0,0,5
+Focus,0,0,2
+Indoor pictures,0,0,1
+sensor,0,0,52
+touch screen,0,0,2
+manual mode,0,0,10
+Autofocus,0,0,1
+Shutter speed,0,0,1
+HD camcorder,0,0,2
+external flash,0,0,2
+color,0,0,23
+Battery life,0,0,5
 Screen,0,0,1
-LCD Screen,2,0,0
-video,40,22,23
-lcd,2,2,0
-lens,57,25,17
-button,15,7,12
-Auto,3,2,2
-Photos,0,1,0
-Function,1,0,1
+LCD Screen,0,0,2
+video,0,0,85
+lcd,0,0,4
+lens,0,0,99
+button,0,0,34
+Auto,0,0,7
+Photos,0,0,1
+Function,0,0,2
 outdoor shots,0,0,1
-Control Ring,1,0,0
-frame rate,1,1,0
-zoom range,2,0,2
-control ring,12,2,4
-Zoom,2,1,2
-viewfinder,3,6,1
-Flash,1,1,0
+Control Ring,0,0,1
+frame rate,0,0,2
+zoom range,0,0,4
+control ring,0,0,18
+Zoom,0,0,5
+viewfinder,0,0,10
+Flash,0,0,2
 Body,0,0,1
-auto ISO,0,2,0
-memory card,0,1,3
+auto ISO,0,0,2
+memory card,0,0,4
 SD card,0,0,1
-exposure compensation,4,0,1
-Mode,1,0,0
-indoor photos,1,0,2
-zoom,13,17,23
-movie mode,6,2,1
-Program mode,1,0,0
-autofocus,0,4,3
-amateur photographer,1,1,0
-lens error,0,3,0
-white balance,5,1,7
-Manual mode,1,0,0
+exposure compensation,0,0,5
+Mode,0,0,1
+indoor photos,0,0,3
+zoom,0,0,53
+movie mode,0,0,9
+Program mode,0,0,1
+autofocus,0,0,7
+amateur photographer,0,0,2
+lens error,0,0,3
+white balance,0,0,13
+Manual mode,0,0,1
 Shutter lag,0,0,1
-video capture,1,0,0
-money,1,3,5
-ISO settings,1,0,1
-optical zoom,0,3,2
-auto mode,7,4,1
-light pictures,3,1,0
-Lens Error,0,1,2
+video capture,0,0,1
+money,0,0,9
+ISO settings,0,0,2
+optical zoom,0,0,5
+auto mode,0,0,12
+light pictures,0,0,4
+Lens Error,0,0,3

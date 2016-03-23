@@ -1,65 +1,65 @@
 feature,pos,neg,neutral
-light situations,0,1,0
-Pictures,1,1,0
+light situations,0,0,1
+Pictures,0,0,2
 second battery,0,0,1
-shutter speed,1,0,1
-MODE,0,1,0
-screen,2,0,0
-focus,1,0,0
-photos,13,1,6
-mode,2,0,1
+shutter speed,0,0,2
+MODE,0,0,1
+screen,0,0,2
+focus,0,0,1
+photos,0,0,20
+mode,0,0,3
 HD video,0,0,1
-battery life,1,0,0
-features,2,0,0
-options,2,0,0
-pics,0,1,0
+battery life,0,0,1
+features,0,0,2
+options,0,0,2
+pics,0,0,1
 case,0,0,1
-menu system,1,1,0
-user manual,0,1,0
-image,3,0,0
-settings,4,1,3
-higher resolution,1,0,0
-AF,1,0,0
+menu system,0,0,2
+user manual,0,0,1
+image,0,0,3
+settings,0,0,8
+higher resolution,0,0,1
+AF,0,0,1
 Auto mode,0,0,1
-Auto settings,1,0,0
-image quality,6,3,1
-size,0,1,1
-exposure,1,0,0
-light,2,0,0
-Video,0,1,1
-Software,1,0,0
-sensor,0,1,1
-shutter lag,1,0,0
-shots,4,1,0
-card,1,0,0
-flash,1,0,1
-light photos,1,0,0
-Battery life,1,1,1
-color,1,1,0
-video,5,0,3
-battery charger,1,2,1
-lens,2,1,0
-battery,1,2,2
-pictures,2,3,0
-button,5,2,3
-noise,1,0,1
-Features,0,1,1
-Build quality,1,0,0
-memory card,1,2,1
-exposure compensation,0,1,1
-wide angle,2,0,0
-ISO,2,0,1
-shutter,0,1,0
+Auto settings,0,0,1
+image quality,0,0,10
+size,0,0,2
+exposure,0,0,1
+light,0,0,2
+Video,0,0,2
+Software,0,0,1
+sensor,0,0,2
+shutter lag,0,0,1
+shots,0,0,5
+card,0,0,1
+flash,0,0,2
+light photos,0,0,1
+Battery life,0,0,3
+color,0,0,2
+video,0,0,8
+battery charger,0,0,4
+lens,0,0,3
+battery,0,0,5
+pictures,0,0,5
+button,0,0,10
+noise,0,0,2
+Features,0,0,2
+Build quality,0,0,1
+memory card,0,0,4
+exposure compensation,0,0,2
+wide angle,0,0,2
+ISO,0,0,3
+shutter,0,0,1
 Video quality,0,0,1
-video quality,1,0,0
-zoom,2,0,0
-menu,0,1,0
-autofocus,1,0,3
-angle lens,1,0,0
+video quality,0,0,1
+zoom,0,0,2
+menu,0,0,1
+autofocus,0,0,4
+angle lens,0,0,1
 white balance,0,0,1
-money,1,0,0
+money,0,0,1
 DSLR,0,0,1
-underwater photos,1,0,0
-MENU,1,0,0
-manual control,0,1,1
-optical zoom,1,0,0
+underwater photos,0,0,1
+MENU,0,0,1
+manual control,0,0,2
+optical zoom,0,0,1

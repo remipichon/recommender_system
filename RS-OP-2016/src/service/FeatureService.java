@@ -2,6 +2,7 @@ package service;
 
 
 import model.Feature;
+import model.Sentence;
 import util.nlp.Parser;
 
 import java.io.BufferedReader;
@@ -61,14 +62,16 @@ public class FeatureService {
     }
 
 
-    public List<Feature> extractBiGramAndFeature(String productId, String sentence) {
+    public List<Feature> extractBiGramAndFeature(String productId, Sentence sentence) {
         List<Feature> result = new ArrayList<>();
+
+        //TODO improvement : one loop ?
 
        // System.out.println("\nSENTENCE: " + sentence);
 
-        String[] tokens = parser.getSentenceTokens(sentence); // get the sentence tokens (words)
-        String pos[] = parser.getPOSTags(tokens); // get the POS tag for each sentence token
-        String chunks[] = parser.getChunkTags(tokens, pos); // get the chunk tags for the sentence
+        String[] tokens = sentence.getTokens(); // get the sentence tokens (words)
+//        String pos[] = sentence.getPos(); // get the POS tag for each sentence token
+//        String chunks[] = sentence.getChunks(); // get the chunk tags for the sentence
 
         boolean[] biGramfound = new boolean[tokens.length];
 
@@ -91,9 +94,9 @@ public class FeatureService {
 
                 //System.out.println("BIGRAM: " + tokens[i] + " " + tokens[i + 1]);
                 Feature feature = new Feature();
-                feature.setName(tokens[i] + " " + tokens[i + 1]);
+                feature.setName(tokens[i].toLowerCase() + " " + tokens[i + 1].toLowerCase());
                 feature.setFeaturePosition(i);
-                feature.setSentence(sentence);
+                feature.setSentence(sentence.getContent());
                 feature.setBiGramOffset(1);
                 feature.setProductId(productId);
 
@@ -108,9 +111,9 @@ public class FeatureService {
 
                 //System.out.println("FEATURE: " + tokens[i]);
                 Feature feature = new Feature();
-                feature.setName(tokens[i]);
+                feature.setName(tokens[i].toLowerCase());
                 feature.setFeaturePosition(i);
-                feature.setSentence(sentence);
+                feature.setSentence(sentence.getContent());
                 feature.setBiGramOffset(0);
                 feature.setProductId(productId);
 

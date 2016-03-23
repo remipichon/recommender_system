@@ -1,97 +1,97 @@
 feature,pos,neg,neutral
-manual focus,0,1,0
-auto,6,0,1
-shutter speed,2,3,0
-software,4,1,3
-movie,1,2,0
-action shots,0,2,0
+manual focus,0,0,1
+auto,0,0,7
+shutter speed,0,0,5
+software,0,0,8
+movie,0,0,3
+action shots,0,0,2
 view finder,0,0,1
-customer service,1,1,0
-focus,6,3,0
-screen,3,2,3
-body,2,1,1
-LCD screen,2,0,2
-resolution,1,0,0
-photos,10,3,2
-battery life,2,1,1
-HD video,2,1,0
-mode,8,1,6
-features,7,3,1
-spare battery,1,0,0
+customer service,0,0,2
+focus,0,0,9
+screen,0,0,8
+body,0,0,4
+LCD screen,0,0,4
+resolution,0,0,1
+photos,0,0,15
+battery life,0,0,4
+HD video,0,0,3
+mode,0,0,15
+features,0,0,11
+spare battery,0,0,1
 card reader,0,0,2
-price,8,3,0
-function,2,1,0
-Battery,0,1,0
-options,2,1,0
-neck strap,1,0,1
-pics,6,7,0
-case,1,2,2
-menu system,1,0,0
-settings,5,0,3
-shutter button,2,1,1
-image,2,1,2
+price,0,0,11
+function,0,0,3
+Battery,0,0,1
+options,0,0,3
+neck strap,0,0,2
+pics,0,0,13
+case,0,0,5
+menu system,0,0,1
+settings,0,0,8
+shutter button,0,0,4
+image,0,0,5
 lenses,0,0,2
-SDHC card,0,1,0
+SDHC card,0,0,1
 Memory Card,0,0,1
-view screen,1,0,0
-Auto mode,1,0,1
-underwater pictures,0,1,1
-LCD,2,1,1
-image quality,7,1,1
-size,1,2,0
-exposure,4,1,3
-light,4,4,0
-wrist strap,1,0,4
-sensor,1,2,0
-Lens,0,1,0
-shots,18,8,10
+view screen,0,0,1
+Auto mode,0,0,2
+underwater pictures,0,0,2
+LCD,0,0,4
+image quality,0,0,9
+size,0,0,3
+exposure,0,0,8
+light,0,0,8
+wrist strap,0,0,5
+sensor,0,0,3
+Lens,0,0,1
+shots,0,0,36
 card,0,0,3
-video mode,2,0,2
-flash,1,2,2
-scene mode,1,0,0
-color,11,2,0
-auto focus,2,1,0
-Battery life,0,1,0
-Underwater pictures,0,1,0
-video,8,5,5
-lens,14,14,10
-battery,9,10,8
-pictures,45,16,15
-button,3,1,4
-zoom range,0,2,0
-noise,1,1,3
-viewfinder,2,2,0
-LCD display,1,0,0
-Menu,1,0,0
-Flash,0,1,1
-lens cap,1,3,2
-Lens error,0,2,0
+video mode,0,0,4
+flash,0,0,5
+scene mode,0,0,1
+color,0,0,13
+auto focus,0,0,3
+Battery life,0,0,1
+Underwater pictures,0,0,1
+video,0,0,18
+lens,0,0,38
+battery,0,0,27
+pictures,0,0,76
+button,0,0,8
+zoom range,0,0,2
+noise,0,0,5
+viewfinder,0,0,4
+LCD display,0,0,1
+Menu,0,0,1
+Flash,0,0,2
+lens cap,0,0,6
+Lens error,0,0,2
 LENS,0,0,1
-memory card,1,2,1
-SD card,2,0,1
-Image stabilization,1,0,0
-Movie,1,0,1
-video recording,1,0,0
+memory card,0,0,4
+SD card,0,0,3
+Image stabilization,0,0,1
+Movie,0,0,2
+video recording,0,0,1
 Panorama mode,0,0,1
-ISO,3,2,1
-shutter,2,0,1
-Video quality,1,0,0
-video quality,1,1,0
-zoom,6,1,1
-Program mode,1,0,0
-image stabilization,2,1,0
-menu,3,0,1
-autofocus,1,0,0
-battery compartment,0,1,1
-Pics,1,0,0
-lens error,0,1,0
+ISO,0,0,6
+shutter,0,0,3
+Video quality,0,0,1
+video quality,0,0,2
+zoom,0,0,8
+Program mode,0,0,1
+image stabilization,0,0,3
+menu,0,0,4
+autofocus,0,0,1
+battery compartment,0,0,2
+Pics,0,0,1
+lens error,0,0,1
 amateur photographer,0,0,1
-white balance,1,0,4
-White balance,1,0,0
-money,2,1,3
-DSLR,4,0,1
-manual control,1,1,0
-optical zoom,4,1,0
-lens cover,3,1,0
-auto mode,5,2,1
-Lens Error,0,1,0
+white balance,0,0,5
+White balance,0,0,1
+money,0,0,6
+DSLR,0,0,5
+manual control,0,0,2
+optical zoom,0,0,5
+lens cover,0,0,4
+auto mode,0,0,8
+Lens Error,0,0,1
