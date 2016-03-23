@@ -19,7 +19,11 @@ public class FullDataSet {
         OutputService outputService = OutputService.getInstance();
 
         //String filename = "Digital Camera small real.txt"; // set the dataset filename
-        String filename = "Digital Camera.txt"; // set the dataset filename
+        //String distFolder  = "printer_test_cases";
+
+        String filename = "Digital Camera.txt";
+        String distFolder  = "printer_cases";
+
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 
 
@@ -33,7 +37,7 @@ public class FullDataSet {
 
         Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.computeOutputPerProduct(features);
 
-        outputService.generativeCSVFiles(computeOutputPerProduct);
+        outputService.generativeCSVFiles(distFolder,computeOutputPerProduct);
 
     }
 }

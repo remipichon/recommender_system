@@ -76,21 +76,21 @@ public class OutputService {
 
     }
 
-    public void generativeCSVFiles(Map<String, List<FeatureSummary>> computeOutputPerProduct) {
+    public void generativeCSVFiles(String folderName, Map<String, List<FeatureSummary>> computeOutputPerProduct) {
 
         for (Map.Entry<String, List<FeatureSummary>> product : computeOutputPerProduct.entrySet()) {
             String productId = product.getKey();
             List<FeatureSummary> featureSummaries = product.getValue();
-            generateCSVFile("camera",productId,featureSummaries);
+            generateCSVFile(folderName,"camera",productId,featureSummaries);
         }
 
         System.out.println("All CSV files generated");
     }
 
-    private void generateCSVFile(String category, String productId, List<FeatureSummary> featureSummaries) {
+    private void generateCSVFile(String folderName, String category, String productId, List<FeatureSummary> featureSummaries) {
         FileWriter writer = null;
         try {
-            writer = new FileWriter("printer_cases" + File.separator + category + "_" + productId+".csv");
+            writer = new FileWriter( folderName + File.separator + category + "_" + productId+".csv");
         } catch (IOException e) {
             e.printStackTrace();
         }
