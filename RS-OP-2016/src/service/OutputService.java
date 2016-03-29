@@ -109,7 +109,7 @@ public class OutputService {
         }
     }
 
-    public static Map<String, List<FeatureSummary>> restoreMapOutputsFromFile(String fileName) {
+    public Map<String, List<FeatureSummary>> restoreMapOutputsFromFile(String fileName) {
         Map<String, List<FeatureSummary>> outputs = null;
         FileInputStream fin = null;
         try {
@@ -136,7 +136,40 @@ public class OutputService {
         return outputs;
     }
 
-    public static void storeMapOutputsFromFile(Map<String, List<FeatureSummary>> outputs, String fileName) {
+    public Map<String, Integer> restoreReviewCountPerProductFromFile(String fileName) {
+        fileName = fileName + "_review_count_per_product";
+        Map<String, Integer> outputs = null;
+        FileInputStream fin = null;
+        try {
+            fin = new FileInputStream("dataset" + File.separator + fileName + "_outputs.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(fin);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            outputs = (Map<String, Integer>) ois.readObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("successfully restore " + fileName +" ouputs features datam from file");
+
+        return outputs;
+    }
+
+    public void storeMapOutputsFromFile(Map<String, List<FeatureSummary>> outputs, String fileName) {
+        storeObject(outputs, fileName);
+    }
+
+
+    public void storeObject(Object outputs, String fileName) {
         FileOutputStream fout = null;
         try {
             fout = new FileOutputStream("dataset" + File.separator + fileName + "_outputs.txt");

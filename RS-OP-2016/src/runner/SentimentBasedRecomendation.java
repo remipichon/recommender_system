@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class SentimentBasedRecomendation {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         OutputService outputService = OutputService.getInstance();
         SentimentService sentimentService = SentimentService.getInstance();
         RecommendationService recommendationService = RecommendationService.getInstance();
@@ -20,17 +20,18 @@ public class SentimentBasedRecomendation {
         recommendationService.setW(0.5);
         int topN = 10;
 
-
         String filename = "Digital Camera.txt";
 
         Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.restoreMapOutputsFromFile(filename);
+        Map<String, Integer> reviewCountPerProduct = outputService.restoreReviewCountPerProductFromFile(filename);
+
 
         List<Product> products = new ArrayList<>();
 
         for (Map.Entry<String, List<FeatureSummary>> entry : computeOutputPerProduct.entrySet()) {
             String productId = entry.getKey();
             List<FeatureSummary> featureSummaries = entry.getValue();
-            products.add(new Product(productId,featureSummaries));
+            products.add(new Product(productId, featureSummaries, reviewCountPerProduct.get(productId)));
         }
 
 
@@ -38,12 +39,17 @@ public class SentimentBasedRecomendation {
 
         recommendationService.setRecommendations(products, topN);
 
-        System.out.println("recommendations for  "+products.get(0));
-        System.out.println("--------");
-        for (Product product : products.get(0).getRecommendations()) {
-            System.out.println(product);
-            System.out.println("--");
-        }
+        System.out.println("recommendations for  " + products.get(0).getId() + " : "+products.get(0).getRecommendations());
+        System.out.println("recommendations for  " + products.get(1).getId() + " : "+products.get(1).getRecommendations());
+        System.out.println("recommendations for  " + products.get(2).getId() + " : "+products.get(2).getRecommendations());
+        System.out.println("recommendations for  " + products.get(3).getId() + " : "+products.get(3).getRecommendations());
+        System.out.println("recommendations for  " + products.get(4).getId() + " : "+products.get(4).getRecommendations());
+        System.out.println("recommendations for  " + products.get(5).getId() + " : "+products.get(5).getRecommendations());
+//        System.out.println("--------");
+//        for (Product product : products.get(0).getRecommendations()) {
+//            System.out.println(product.getId());
+//            System.out.println("--");
+//        }
 
     }
 }
