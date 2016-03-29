@@ -1,6 +1,8 @@
 package model;
 
-public class FeatureSummary {
+import java.io.Serializable;
+
+public class FeatureSummary implements Serializable{
     private String featureName;
     public Integer positiveCount;
     public Integer negativeCount;

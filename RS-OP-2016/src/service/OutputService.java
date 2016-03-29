@@ -2,10 +2,9 @@ package service;
 
 import model.Feature;
 import model.FeatureSummary;
+import util.reader.DatasetReader;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -105,6 +104,53 @@ public class OutputService {
 
             writer.flush();
             writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Map<String, List<FeatureSummary>> restoreMapOutputsFromFile(String fileName) {
+        Map<String, List<FeatureSummary>> outputs = null;
+        FileInputStream fin = null;
+        try {
+            fin = new FileInputStream("dataset" + File.separator + fileName + "_outputs.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(fin);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            outputs = (Map<String, List<FeatureSummary>>) ois.readObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("successfully restore " + fileName +" ouputs features datam from file");
+
+        return outputs;
+    }
+
+    public static void storeMapOutputsFromFile(Map<String, List<FeatureSummary>> outputs, String fileName) {
+        FileOutputStream fout = null;
+        try {
+            fout = new FileOutputStream("dataset" + File.separator + fileName + "_outputs.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ObjectOutputStream oos = null;
+        try {
+            oos = new ObjectOutputStream(fout);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            oos.writeObject(outputs);
         } catch (IOException e) {
             e.printStackTrace();
         }

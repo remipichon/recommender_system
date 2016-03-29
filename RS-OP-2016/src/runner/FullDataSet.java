@@ -40,5 +40,7 @@ public class FullDataSet {
 
         outputService.generativeCSVFiles(distFolder,computeOutputPerProduct);
 
+        outputService.storeMapOutputsFromFile(computeOutputPerProduct,filename);
+
     }
 }
