@@ -14,7 +14,6 @@ public class SentimentBasedRecomendation {
 
     public static void main(String[] args) {
         OutputService outputService = OutputService.getInstance();
-        SentimentService sentimentService = SentimentService.getInstance();
         RecommendationService recommendationService = RecommendationService.getInstance();
 
         recommendationService.setW(0.5);
@@ -31,13 +30,16 @@ public class SentimentBasedRecomendation {
         for (Map.Entry<String, List<FeatureSummary>> entry : computeOutputPerProduct.entrySet()) {
             String productId = entry.getKey();
             List<FeatureSummary> featureSummaries = entry.getValue();
-            products.add(new Product(productId, featureSummaries, reviewCountPerProduct.get(productId)));
+            products.add(new Product(productId, featureSummaries, reviewCountPerProduct.get(productId),0.0));
         }
 
 
         recommendationService.setSentimentAndPopularity(products);
 
         recommendationService.setRecommendations(products, topN);
+
+        outputService.storeObject(products, filename + "_product_sentiment_summary");
+
 
         System.out.println("recommendations for  " + products.get(0).getId() + " : "+products.get(0).getRecommendations());
         System.out.println("recommendations for  " + products.get(1).getId() + " : "+products.get(1).getRecommendations());

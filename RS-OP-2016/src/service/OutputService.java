@@ -2,6 +2,7 @@ package service;
 
 import model.Feature;
 import model.FeatureSummary;
+import model.Product;
 import util.reader.DatasetReader;
 
 import java.io.*;
@@ -137,8 +138,36 @@ public class OutputService {
     }
 
     public Map<String, Integer> restoreReviewCountPerProductFromFile(String fileName) {
-        fileName = fileName + "_review_count_per_product";
+        String name = fileName + "_review_count_per_product";
         Map<String, Integer> outputs = null;
+        FileInputStream fin = null;
+        try {
+            fin = new FileInputStream("dataset" + File.separator + name + "_outputs.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(fin);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            outputs = (Map<String, Integer>) ois.readObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("successfully restore " + fileName +" ouputs features datam from file");
+
+        return outputs;
+    }
+
+    public Map<String, Double> restoreMeanRatingPerProductFromFile(String fileName) {
+        fileName = fileName + "_mean_rating_per_product";
+        Map<String, Double> outputs = null;
         FileInputStream fin = null;
         try {
             fin = new FileInputStream("dataset" + File.separator + fileName + "_outputs.txt");
@@ -153,7 +182,35 @@ public class OutputService {
         }
 
         try {
-            outputs = (Map<String, Integer>) ois.readObject();
+            outputs = (Map<String, Double>) ois.readObject();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("successfully restore " + fileName +" ouputs features datam from file");
+
+        return outputs;
+    }
+
+    public List<Product> restoreProductFromFile(String fileName) {
+        fileName = fileName + "_product_sentiment_summary";
+        List<Product> outputs = null;
+        FileInputStream fin = null;
+        try {
+            fin = new FileInputStream("dataset" + File.separator + fileName + "_outputs.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(fin);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            outputs = (List<Product>) ois.readObject();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {

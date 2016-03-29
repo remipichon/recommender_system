@@ -34,17 +34,17 @@ public class RecommendationService {
         return (1 - w) * this.getSimilarity(query, candidate) + w * (this.getSentiment(query, candidate) + 1) / 2;
     }
 
-    public static double cosine(Product query, Product candidate) {
+    private static double cosine(Product query, Product candidate) {
         // F(Q) u F(C)
-        List<String> features = new ArrayList<>(query.getFeaturePolarities().keySet());
-        features.addAll(candidate.getFeaturePolarities().keySet());
+        List<String> features = new ArrayList<>(query.getFeaturePopularities().keySet());
+        features.addAll(candidate.getFeaturePopularities().keySet());
 
 
-        Map<String, Double> queryPop = query.getFeaturePolarities();
-        Map<String, Double> candidatePop = candidate.getFeaturePolarities();
+        Map<String, Double> queryPop = query.getFeaturePopularities();
+        Map<String, Double> candidatePop = candidate.getFeaturePopularities();
 
         double numerator = 0;
-        double denominator = 0;
+        double denominator;
         double denominatorCandidate = 0;
         double denominatorTarget = 0;
 
@@ -69,21 +69,15 @@ public class RecommendationService {
         return numerator / denominator;
     }
 
-    private Double getSimilarity(Product query, Product candidate) {
+    public Double getSimilarity(Product query, Product candidate) {
         // cosine apply to popularity
         return this.cosine(query, candidate);
     }
 
-    private Double getSentiment(Product product) {
-        Double sum = 0.0;
-        for (Double featureSentiment : product.getFeatureSentiments().values()) {
-            sum += featureSentiment;
-        }
-        return sum / product.getFeatureSentiments().values().size();
-    }
-
     private Double getSentiment(Product query, Product candidate) {
         //TODO sum getSenitment(p) for both
+
+        //B1
 
         //better(fi,Q,C) = ( sent(fi,Q) - sent(fi,C) )/ 2
         //sent(Q,C) = avg(better(all fi)
@@ -104,33 +98,28 @@ public class RecommendationService {
         return better / betterCount;
     }
 
-    private Double getPopularity(Product product) {
-        Double sum = 0.0;
-        for (Double featurePopularity : product.getFeaturePolarities().values()) {
-            sum += featurePopularity;
-        }
-        return sum / product.getFeaturePolarities().values().size();
-    }
 
     public void setSentimentAndPopularity(List<Product> products) {
         for (Product product : products) {
-            product.setFeaturePolarities(this.computeFeaturePopularities(product));
+            product.setFeaturePolarities(this.computeFeaturePolarities(product));
             product.setFeatureSentiments(this.computeFeatureSentiments(product));
-            product.setPopularity(this.getPopularity(product));
-            product.setSentiment(this.getSentiment(product));
         }
     }
 
     private Map<String, Double> computeFeatureSentiments(Product product) {
         Map<String, Double> result = new HashMap<>(); //<FeatureName, sentiment>
         for (FeatureSummary featureSummary : product.getFeatureSummaries()) {
-            Double sentiment = 1.0 * (featureSummary.positiveCount - featureSummary.negativeCount) / (featureSummary.positiveCount + featureSummary.negativeCount);
+            Double sentiment;
+            if (featureSummary.positiveCount + featureSummary.negativeCount == 0)
+                sentiment = 0.0;
+            else
+                sentiment = 1.0 * (featureSummary.positiveCount - featureSummary.negativeCount) / (featureSummary.positiveCount + featureSummary.negativeCount);
             result.put(featureSummary.getFeatureName(), sentiment);
         }
         return result;
     }
 
-    private Map<String, Double> computeFeaturePopularities(Product product) {
+    private Map<String, Double> computeFeaturePolarities(Product product) {
         Map<String, Double> result = new HashMap<>();
         for (FeatureSummary featureSummary : product.getFeatureSummaries()) {
 
@@ -154,7 +143,6 @@ public class RecommendationService {
                 //compute score and store it in the sorted list
                 Double score = this.getScore(query, candidate);
                 sortedRecommendations.add(new ScoredThingDsc(score, candidate)); // add the score for the current recommendation candidate case to the set
-
             }
 
             // sort the candidate recommendation cases by score (in descending order) and return as recommendations
@@ -163,7 +151,7 @@ public class RecommendationService {
             for (Iterator<ScoredThingDsc> it = sortedRecommendations.iterator(); it.hasNext(); ) {
                 ScoredThingDsc st = it.next();
                 recommendations.add((Product) st.thing);
-                if (recommendations.size() < 10) break;
+                if (recommendations.size() > 10) break;
             }
             query.setRecommendations(recommendations);
         }

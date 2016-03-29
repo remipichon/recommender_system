@@ -2,9 +2,11 @@ package runner;
 
 import model.Feature;
 import model.FeatureSummary;
+import model.Review;
 import service.*;
 import util.reader.DatasetReader;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -41,6 +43,15 @@ public class FullDataSet {
         outputService.generativeCSVFiles(distFolder,computeOutputPerProduct);
 
         outputService.storeMapOutputsFromFile(computeOutputPerProduct,filename);
+
+        //review count per product
+        Map<String, Integer> reviewCountPerProduct = new HashMap<>();
+        for (Review review : reader.getReviews()) {
+            if (!reviewCountPerProduct.containsKey(review.getProductId()))
+                reviewCountPerProduct.put(review.getProductId(), 0);
+            reviewCountPerProduct.put(review.getProductId(), reviewCountPerProduct.get(review.getProductId()) + 1);
+        }
+        outputService.storeObject(reviewCountPerProduct, filename + "_review_count_per_product");
 
     }
 }
