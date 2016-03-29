@@ -1,0 +1,14 @@
+feature,pos,neg,neutral
+settings,0,0,1
+lcd screen,1,0,0
+price range,0,1,1
+battery,0,0,4
+photos,1,0,0
+pictures,1,1,1
+features,1,0,1
+light,0,0,1
+price,0,0,1
+automatic mode,0,0,1
+shots,1,1,0
+pics,0,0,2
+flash,1,2,0

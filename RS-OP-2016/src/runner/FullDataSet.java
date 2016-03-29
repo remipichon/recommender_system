@@ -27,7 +27,7 @@ public class FullDataSet {
 //        String distFolder  = "printer_test_cases";
 
         String filename = "Digital Camera.txt";
-        String distFolder  = "digital_cases";
+        String distFolder  = "digital_camera_cases";
 
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 

@@ -1,0 +1,49 @@
+feature,pos,neg,neutral
+auto,0,0,1
+iso,1,0,2
+software,0,0,2
+view finder,0,0,1
+lcd display,1,1,0
+focus,2,1,5
+screen,0,2,4
+lower light,0,0,1
+lcd screen,1,0,2
+video,4,0,7
+battery,0,1,6
+lens,0,1,1
+lcd,0,2,2
+photos,6,0,10
+pictures,10,4,9
+mode,0,1,2
+button,0,1,1
+features,1,0,4
+view,0,1,0
+price,1,0,3
+function,0,0,1
+noise,0,0,1
+viewfinder,2,3,11
+light conditions,0,1,0
+pics,1,0,3
+optical viewfinder,2,0,2
+case,1,0,3
+user manual,0,0,1
+settings,2,0,3
+image,1,2,3
+lenses,0,0,1
+video recording,1,0,0
+hd video,0,0,2
+af,0,0,2
+zoom,0,1,2
+menu,0,0,1
+user interface,0,0,1
+image quality,2,1,0
+size,0,0,7
+quality photos,0,1,1
+money,1,0,0
+light,1,0,5
+sensor,0,0,1
+shots,2,0,1
+optical zoom,0,0,1
+auto mode,0,1,0
+card,0,0,1
+flash,0,1,1

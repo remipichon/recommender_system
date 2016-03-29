@@ -36,6 +36,8 @@ public class SentimentBasedRecomendation {
         recommendationService.setSentimentAndPopularity(products);
 
         recommendationService.setRecommendations(products, topN);
+        System.out.println("Recommendations done for every products");
+
 
         outputService.storeProductSentimentRecommendations(products, filename);
 

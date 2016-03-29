@@ -1,0 +1,42 @@
+feature,pos,neg,neutral
+manual focus,1,0,0
+color,2,0,5
+iso,1,0,0
+view finder,0,0,2
+focus,1,2,0
+screen,0,0,1
+lcd screen,0,1,0
+lens,2,0,0
+lcd,0,1,1
+battery,0,1,1
+photos,4,0,4
+pictures,4,2,2
+mode,1,1,0
+button,0,0,2
+features,2,0,0
+program mode,0,1,0
+price,0,0,1
+options,3,0,1
+noise reduction,1,0,0
+manual settings,1,0,0
+focus mode,1,0,0
+burst mode,1,0,0
+aspect ratio,0,0,1
+settings,0,0,2
+image,0,0,2
+zoom lens,0,0,1
+hd video,0,1,0
+shutter,0,0,1
+video quality,1,0,0
+zoom,3,1,1
+movie mode,1,0,0
+menu,0,1,0
+image quality,3,1,1
+size,1,0,0
+exposure,0,1,1
+light,1,0,1
+dslr,1,0,0
+manual control,1,0,0
+auto mode,1,2,1
+video mode,0,0,1
+flash,3,0,9

@@ -1,0 +1,48 @@
+feature,pos,neg,neutral
+macro shots,0,0,1
+color,2,1,4
+movie,0,0,1
+lcd display,0,1,2
+customer service,0,1,0
+screen,0,0,2
+lcd screen,1,1,1
+video,1,2,9
+battery,0,0,10
+lcd,1,1,0
+lens,0,1,4
+body,1,0,1
+photos,6,3,9
+pictures,2,0,6
+battery life,0,0,1
+mode,3,0,4
+button,1,0,1
+features,1,0,1
+price,3,0,4
+noise,0,1,0
+options,1,0,1
+macro mode,0,0,1
+case,0,0,3
+image,0,2,3
+hd video,2,0,1
+professional photographer,0,0,3
+image sensor,0,0,3
+indoor photos,1,0,0
+video quality,1,0,0
+zoom,3,0,7
+video capability,0,0,1
+menu,0,1,0
+battery compartment,0,0,1
+money,1,0,0
+size,1,0,1
+light,1,1,0
+sdhc card,0,0,2
+iso range,1,0,0
+dslr,0,0,1
+shots,0,1,0
+manual control,0,0,1
+auto mode,2,0,0
+video mode,0,0,3
+lens cover,0,2,1
+optical zoom,0,0,1
+flash,2,0,2
+scene mode,0,0,1

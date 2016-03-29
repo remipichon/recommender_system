@@ -1,0 +1,35 @@
+feature,pos,neg,neutral
+auto,1,0,0
+iso,0,0,1
+focus,0,1,2
+video,3,1,2
+lens,0,1,2
+battery,0,1,1
+photos,3,1,2
+pictures,6,1,5
+button,1,0,2
+mode,0,0,1
+features,1,0,1
+zoom range,0,0,1
+price,0,1,1
+options,0,0,1
+burst mode,1,0,0
+case,0,0,2
+settings,1,0,1
+wide angle,1,0,1
+hd video,0,0,2
+shutter,0,0,1
+indoor photos,0,2,1
+zoom,2,0,1
+price range,0,0,1
+video capability,1,0,0
+white balance,1,0,0
+image quality,1,0,0
+size,1,0,1
+light,0,1,0
+underwater photos,1,1,0
+touch screen,1,0,0
+wrist strap,0,0,1
+auto mode,1,0,0
+video mode,0,0,1
+flash,1,0,1

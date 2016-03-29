@@ -54,9 +54,9 @@ public class OpinionService {
         }
 
         System.out.println("Valid pattern count "+validPatternCount);
-        for (Map.Entry<String, Integer> stringIntegerEntry : posPatternOccurrence.entrySet()) {
-            System.out.println(stringIntegerEntry.getKey()+"\t"+stringIntegerEntry.getValue());
-        }
+//        for (Map.Entry<String, Integer> stringIntegerEntry : posPatternOccurrence.entrySet()) {
+//            System.out.println(stringIntegerEntry.getKey()+"\t"+stringIntegerEntry.getValue());
+//        }
 
     }
 

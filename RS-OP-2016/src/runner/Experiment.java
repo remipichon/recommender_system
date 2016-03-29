@@ -76,7 +76,7 @@ public class Experiment {
             }
 
             Double meanRatingLift = totalRatingLift / products.size();
-            Double meanQuerySimilarity = totalQuerySimilarity / products.size() - 0.8;
+            Double meanQuerySimilarity = totalQuerySimilarity / products.size();
             System.out.println(df.format(w) + "\t" + df.format(meanRatingLift) + "\t" + df.format(meanQuerySimilarity));
 
 

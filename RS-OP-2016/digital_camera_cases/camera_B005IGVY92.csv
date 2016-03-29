@@ -1,0 +1,58 @@
+feature,pos,neg,neutral
+light situations,0,1,0
+second battery,0,0,1
+shutter speed,1,0,1
+software,1,0,0
+iso,1,0,2
+screen,2,0,0
+focus,0,0,1
+photos,2,0,18
+mode,0,0,4
+battery life,0,0,4
+features,1,0,3
+options,1,0,1
+pics,0,1,0
+case,0,0,1
+build quality,1,0,0
+menu system,1,1,0
+user manual,0,0,1
+image,0,0,3
+settings,2,0,6
+higher resolution,1,0,0
+af,0,0,1
+auto settings,1,0,0
+image quality,5,1,4
+size,0,0,2
+exposure,1,0,0
+light,1,0,1
+sensor,0,0,2
+shutter lag,0,0,1
+shots,1,1,3
+card,0,0,1
+flash,0,0,2
+light photos,0,0,1
+color,1,1,0
+video,3,0,7
+battery charger,0,1,3
+lens,1,0,2
+battery,1,1,3
+pictures,1,1,5
+button,3,1,6
+noise,0,0,2
+memory card,0,0,4
+exposure compensation,0,0,2
+wide angle,0,0,2
+hd video,0,0,1
+shutter,0,1,0
+video quality,0,0,2
+zoom,1,0,1
+menu,0,1,1
+autofocus,1,0,3
+angle lens,0,0,1
+white balance,0,0,1
+money,1,0,0
+underwater photos,0,0,1
+dslr,0,0,1
+manual control,0,1,1
+optical zoom,0,0,1
+auto mode,0,0,1

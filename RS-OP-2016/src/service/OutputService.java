@@ -133,7 +133,7 @@ public class OutputService {
     public Map<String, List<FeatureSummary>> restoreFeatureSummariesPerProductFromFile(String fileName) {
         String name = fileName + FEATURE_SUMMARIES_PER_PRODUCT;
         Map<String, List<FeatureSummary>> outputs = null;
-        ObjectInputStream ois = getObjectInputStream(fileName);
+        ObjectInputStream ois = getObjectInputStream(name);
 
         try {
             outputs = (Map<String, List<FeatureSummary>>) ois.readObject();
@@ -142,7 +142,7 @@ public class OutputService {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("successfully restore " + fileName + "  from file");
+        System.out.println("successfully restore " + name + "  from file");
 
         return outputs;
     }
@@ -160,7 +160,7 @@ public class OutputService {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("successfully restore " + fileName + "  from file");
+        System.out.println("successfully restore " + name + "  from file");
 
         return outputs;
     }
@@ -220,6 +220,8 @@ public class OutputService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("successfully store " + fileName);
     }
 
     private ObjectInputStream getObjectInputStream(String fileName) {

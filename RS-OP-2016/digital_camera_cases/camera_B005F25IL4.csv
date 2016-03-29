@@ -1,0 +1,53 @@
+feature,pos,neg,neutral
+manual focus,1,0,2
+shutter speed,0,0,2
+movie,0,0,2
+iso,0,4,1
+software,0,0,3
+focus,1,0,3
+photos,2,1,0
+battery pack,1,0,2
+resolution,1,0,3
+mode,1,1,5
+features,0,0,1
+view,0,0,1
+spare battery,0,0,1
+price,0,0,2
+function,0,0,3
+options,1,0,2
+light conditions,0,1,0
+neck strap,0,0,1
+pics,0,1,1
+case,0,0,1
+image,1,0,3
+shutter button,0,0,2
+settings,0,0,1
+zoom lens,0,0,1
+af,0,0,1
+lens hood,0,0,1
+image quality,0,0,4
+quality photos,1,0,0
+light,0,0,1
+sensor,0,1,1
+shots,1,0,0
+manual mode,1,0,1
+flash,0,0,2
+scene mode,1,0,0
+color,1,0,1
+video,1,0,2
+battery,1,0,0
+lens,1,0,2
+lcd,0,0,1
+pictures,0,1,2
+button,0,0,3
+zoom range,0,0,1
+electronic viewfinder,0,0,1
+noise,0,0,1
+lens cap,0,0,1
+iso settings,0,0,1
+hd video,0,0,1
+wide angle,0,0,2
+indoor photos,0,0,1
+zoom,0,1,2
+menu,0,0,1
+dslr,1,0,5

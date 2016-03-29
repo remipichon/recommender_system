@@ -1,0 +1,9 @@
+feature,pos,neg,neutral
+mode,1,0,0
+color,0,0,1
+size,0,0,1
+light,0,0,2
+video,1,0,0
+battery,0,0,1
+quality pictures,1,0,0
+pictures,0,0,2

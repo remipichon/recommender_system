@@ -1,0 +1,36 @@
+feature,pos,neg,neutral
+color,0,0,2
+screen,0,2,1
+focus,0,0,7
+lcd screen,0,1,0
+video,2,0,2
+lens,0,0,2
+battery,1,0,2
+photos,0,0,4
+pictures,6,2,9
+button,1,0,3
+shutter release,0,0,1
+price,2,0,4
+options,0,0,1
+noise reduction,0,1,1
+viewfinder,0,1,1
+pics,1,0,0
+case,0,0,1
+memory card,0,0,1
+exposure compensation,0,0,1
+view screen,0,0,1
+shutter,0,2,0
+zoom,0,0,2
+autofocus,0,0,3
+image quality,1,0,0
+rechargeable battery,0,0,1
+money,1,1,2
+size,0,0,2
+light,1,0,0
+entry level,0,0,1
+dslr,0,2,0
+shots,2,0,3
+sd card,0,0,1
+card,0,0,1
+video mode,0,0,2
+flash,0,3,2

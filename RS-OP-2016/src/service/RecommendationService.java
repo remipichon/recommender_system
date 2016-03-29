@@ -155,5 +155,6 @@ public class RecommendationService {
             }
             query.setRecommendations(recommendations);
         }
+
     }
 }

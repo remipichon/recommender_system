@@ -1,0 +1,39 @@
+feature,pos,neg,neutral
+light situations,1,0,0
+auto,1,0,0
+action shots,0,1,0
+customer service,0,1,0
+focus,1,2,3
+screen,0,1,2
+lcd screen,0,1,0
+video,0,3,2
+battery,0,1,4
+lcd,1,0,0
+lens,0,0,2
+resolution,0,1,0
+photos,2,2,0
+pictures,7,4,6
+button,1,0,1
+mode,1,0,1
+battery life,0,0,1
+features,0,0,1
+price,2,0,1
+noise,0,1,0
+options,0,0,1
+pics,0,0,1
+memory card,1,0,2
+panorama mode,2,0,1
+settings,3,0,4
+shutter button,0,1,0
+shutter,0,2,0
+movie mode,1,0,1
+menu,0,0,1
+rechargeable battery,0,0,1
+money,0,1,0
+exposure,0,0,1
+size,1,0,1
+light,0,1,2
+shots,2,0,1
+memory stick,0,0,3
+card,0,1,1
+flash,0,0,1

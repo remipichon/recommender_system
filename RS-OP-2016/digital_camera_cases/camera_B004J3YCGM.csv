@@ -1,0 +1,103 @@
+feature,pos,neg,neutral
+shutter speed,1,0,1
+software,1,0,4
+movie,1,1,2
+indoor pictures,0,0,1
+focus,2,3,5
+lcd screen,1,0,0
+resolution,0,0,3
+quality pictures,1,0,0
+recording button,1,0,0
+price,3,0,6
+options,3,0,4
+noise reduction,0,1,1
+focal length,0,0,2
+pics,0,1,7
+case,2,1,9
+lenses,0,1,1
+zoom lens,0,0,1
+image sensor,0,0,2
+exposure,3,0,1
+size,4,1,16
+quality photos,1,0,0
+light,16,4,17
+wrist strap,0,0,1
+shutter lag,0,0,1
+shots,11,6,15
+light capability,0,0,2
+auto iso,0,0,1
+card,0,0,2
+light shots,2,0,0
+flash,8,10,50
+scene mode,0,0,1
+light photos,2,0,1
+auto focus,1,0,0
+battery charger,0,0,1
+battery,5,5,27
+pictures,15,8,25
+price point,0,0,1
+noise,1,1,4
+macro mode,1,0,2
+optical viewfinder,2,0,1
+panorama mode,0,0,1
+video recording,2,0,0
+wide angle,1,0,2
+shutter,2,0,3
+video quality,0,0,2
+image stabilization,3,1,2
+night shots,0,0,1
+price range,0,0,1
+menu,0,1,2
+usb cable,0,0,1
+user interface,0,1,0
+dslr,1,2,7
+light weight,0,0,1
+sd card,0,0,2
+manual control,0,0,1
+lens cover,2,4,1
+articulating screen,0,0,1
+macro shots,1,0,0
+second battery,0,0,2
+auto,3,3,7
+iso,4,0,9
+action shots,2,0,0
+customer service,1,0,0
+screen,2,1,13
+body,0,0,1
+photos,27,0,20
+mode,6,0,13
+battery life,1,11,8
+features,8,2,24
+function,0,1,4
+popup flash,1,1,1
+light conditions,1,0,2
+manual settings,1,0,2
+shutter priority,0,0,2
+build quality,1,1,0
+menu system,0,1,0
+image,6,0,1
+settings,3,0,12
+higher resolution,0,0,1
+view screen,0,1,3
+image quality,6,4,7
+sensor,1,1,3
+manual mode,1,0,2
+color,3,0,9
+video,5,4,7
+lens,6,3,12
+lcd,2,0,1
+button,1,2,6
+outdoor shots,1,1,1
+frame rate,0,0,1
+zoom range,1,0,2
+viewfinder,0,1,0
+memory card,0,0,2
+exposure compensation,0,0,2
+hd video,2,1,3
+zoom,13,4,30
+autofocus,0,0,2
+white balance,0,0,3
+money,3,1,1
+quality video,0,0,1
+optical zoom,2,0,2
+auto mode,5,0,2

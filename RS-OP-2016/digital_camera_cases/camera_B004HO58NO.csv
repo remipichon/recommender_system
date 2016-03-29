@@ -1,0 +1,71 @@
+feature,pos,neg,neutral
+manual focus,0,0,1
+auto,1,0,3
+shutter speed,1,0,1
+software,0,2,1
+iso,0,0,9
+automatic settings,0,1,1
+view finder,1,0,6
+customer service,0,0,1
+screen,0,1,0
+focus,0,2,1
+lcd screen,0,0,1
+body,0,0,3
+photos,10,2,13
+battery life,0,0,1
+mode,0,0,5
+features,2,0,11
+view,0,0,1
+price,4,0,8
+function,0,0,2
+options,2,0,1
+manual settings,2,0,0
+focal length,0,0,2
+pics,1,0,1
+shutter priority,0,0,1
+case,0,0,2
+settings,2,1,6
+image,1,0,0
+lenses,0,0,1
+auto settings,0,0,1
+image quality,1,1,0
+size,0,0,2
+quality photos,1,1,0
+exposure,0,0,1
+light,2,1,2
+shots,1,0,2
+manual mode,0,0,1
+card,0,0,5
+flash,4,0,7
+color,0,0,3
+video,0,0,1
+lens,1,1,4
+battery,0,0,2
+lcd,2,0,1
+pictures,12,1,11
+outdoor shots,1,0,0
+editing software,1,0,0
+electronic viewfinder,0,0,1
+noise,0,0,1
+viewfinder,1,0,4
+automatic mode,0,0,1
+lens cap,2,2,2
+battery door,0,1,1
+memory card,0,0,4
+card slot,0,0,2
+video recording,0,0,1
+wide angle,0,0,1
+shutter,1,0,1
+video quality,0,1,0
+zoom,4,1,9
+indoor shots,0,0,1
+image stabilization,0,0,1
+amateur photographer,1,0,0
+angle lens,0,0,1
+money,1,0,0
+quality video,0,0,1
+dslr,1,0,0
+sd card,0,0,2
+lens cover,1,1,0
+auto mode,1,0,1
+optical zoom,0,0,1
