@@ -22,7 +22,7 @@ public class Experiment {
 
         String filename = "Digital Camera.txt";
 
-        Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.restoreMapOutputsFromFile(filename);
+        Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.restoreFeatureSummariesPerProductFromFile(filename);
         Map<String, Integer> reviewCountPerProduct = outputService.restoreReviewCountPerProductFromFile(filename);
         Map<String, Double> meanRatingPerProduct = outputService.restoreMeanRatingPerProductFromFile(filename);
 

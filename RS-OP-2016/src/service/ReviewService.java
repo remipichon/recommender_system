@@ -3,10 +3,7 @@ package service;
 import model.*;
 import util.nlp.Parser;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ReviewService {
     private static ReviewService instance;
@@ -79,4 +76,40 @@ public class ReviewService {
     }
 
 
+    public void computeAndStorereviewCountAndMeanRatingPerProduct(ArrayList<Review> reviews, String filename) {
+
+        Map<String, Integer> reviewCountPerProduct = new HashMap<>();
+        Map<String, Double> totalRatingPerProduct = new HashMap<>();
+        for (Review review : reviews) {
+            //reviewCountPerProduct
+            if (!reviewCountPerProduct.containsKey(review.getProductId()))
+                reviewCountPerProduct.put(review.getProductId(), 0);
+            reviewCountPerProduct.put(review.getProductId(), reviewCountPerProduct.get(review.getProductId()) + 1);
+
+            //meanRatingPerProduct
+            if (!totalRatingPerProduct.containsKey(review.getProductId()))
+                totalRatingPerProduct.put(review.getProductId(), 0.0);
+            totalRatingPerProduct.put(review.getProductId(), totalRatingPerProduct.get(review.getProductId()) + review.getReviewRating());
+        }
+
+        Map<String, Double> meanRatingPerProduct = new HashMap<>();
+        for (Map.Entry<String, Double> stringDoubleEntry : totalRatingPerProduct.entrySet()) {
+            String productId = stringDoubleEntry.getKey();
+            Double totalRating = stringDoubleEntry.getValue();
+            meanRatingPerProduct.put(productId,totalRating / reviewCountPerProduct.get(productId));
+        }
+
+        OutputService outputService = OutputService.getInstance();
+
+        outputService.storeReviewCountPerProduct(reviewCountPerProduct, filename);
+        outputService.storeMeanRatingPerProduct(meanRatingPerProduct, filename);
+
+        reviewCountPerProduct = outputService.restoreReviewCountPerProductFromFile(filename);
+        meanRatingPerProduct = outputService.restoreMeanRatingPerProductFromFile(filename);
+
+        System.out.println("reviewCountPerProduct");
+        System.out.println(Arrays.asList(reviewCountPerProduct));
+        System.out.println("meanRatingPerProduct");
+        System.out.println(Arrays.asList(meanRatingPerProduct));
+    }
 }

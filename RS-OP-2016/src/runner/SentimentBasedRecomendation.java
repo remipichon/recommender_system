@@ -4,7 +4,6 @@ import model.FeatureSummary;
 import model.Product;
 import service.OutputService;
 import service.RecommendationService;
-import service.SentimentService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +20,7 @@ public class SentimentBasedRecomendation {
 
         String filename = "Digital Camera.txt";
 
-        Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.restoreMapOutputsFromFile(filename);
+        Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.restoreFeatureSummariesPerProductFromFile(filename);
         Map<String, Integer> reviewCountPerProduct = outputService.restoreReviewCountPerProductFromFile(filename);
 
 
@@ -38,20 +37,9 @@ public class SentimentBasedRecomendation {
 
         recommendationService.setRecommendations(products, topN);
 
-        outputService.storeObject(products, filename + "_product_sentiment_summary");
+        outputService.storeProductSentimentRecommendations(products, filename);
 
 
-        System.out.println("recommendations for  " + products.get(0).getId() + " : "+products.get(0).getRecommendations());
-        System.out.println("recommendations for  " + products.get(1).getId() + " : "+products.get(1).getRecommendations());
-        System.out.println("recommendations for  " + products.get(2).getId() + " : "+products.get(2).getRecommendations());
-        System.out.println("recommendations for  " + products.get(3).getId() + " : "+products.get(3).getRecommendations());
-        System.out.println("recommendations for  " + products.get(4).getId() + " : "+products.get(4).getRecommendations());
-        System.out.println("recommendations for  " + products.get(5).getId() + " : "+products.get(5).getRecommendations());
-//        System.out.println("--------");
-//        for (Product product : products.get(0).getRecommendations()) {
-//            System.out.println(product.getId());
-//            System.out.println("--");
-//        }
 
     }
 }

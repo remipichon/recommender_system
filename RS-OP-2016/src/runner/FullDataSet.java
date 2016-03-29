@@ -27,7 +27,7 @@ public class FullDataSet {
 //        String distFolder  = "printer_test_cases";
 
         String filename = "Digital Camera.txt";
-        String distFolder  = "printer_cases";
+        String distFolder  = "digital_cases";
 
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 
@@ -42,7 +42,7 @@ public class FullDataSet {
 
         outputService.generativeCSVFiles(distFolder,computeOutputPerProduct);
 
-        outputService.storeMapOutputsFromFile(computeOutputPerProduct,filename);
+        outputService.storeFeatureSummariesPerProduct(computeOutputPerProduct, filename);
 
         //review count per product
         Map<String, Integer> reviewCountPerProduct = new HashMap<>();
@@ -51,7 +51,11 @@ public class FullDataSet {
                 reviewCountPerProduct.put(review.getProductId(), 0);
             reviewCountPerProduct.put(review.getProductId(), reviewCountPerProduct.get(review.getProductId()) + 1);
         }
-        outputService.storeObject(reviewCountPerProduct, filename + "_review_count_per_product");
+
+        outputService.storeReviewCountPerProduct(reviewCountPerProduct, filename);
+
+        reviewService.computeAndStorereviewCountAndMeanRatingPerProduct(reader.getReviews(),filename);
+
 
     }
 }
