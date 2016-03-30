@@ -1,0 +1,6 @@
+feature,pos,neg,neutral
+instructions,0,0,2
+feature,1,0,0
+machine,1,0,3
+scan,0,0,1
+support,0,1,2

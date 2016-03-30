@@ -1,0 +1,30 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+software,1,0,5
+manual feed,0,0,1
+software install,1,0,0
+duplex,3,0,8
+office,0,0,3
+pictures,0,1,2
+mac,0,0,2
+mode,0,1,2
+sleep mode,0,0,1
+technical support,0,0,1
+paper,5,1,9
+toner,1,0,12
+price,1,0,1
+duplex feature,0,0,1
+pdf file,0,0,1
+text,1,0,2
+copy,0,0,4
+paper tray,0,0,1
+cost,0,1,3
+control panel,0,0,1
+toner cartridges,0,0,5
+money,2,0,3
+install,0,0,5
+machine,4,0,5
+setup,1,0,1
+support,0,0,2
+device,0,0,1
+option,2,0,0

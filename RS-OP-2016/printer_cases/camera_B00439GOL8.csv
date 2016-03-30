@@ -1,0 +1,24 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+image,0,0,1
+cost,0,0,1
+software,0,0,1
+manual feed,0,0,1
+duplex,1,1,7
+error message,0,0,1
+card stock,0,0,1
+lcd screen,0,0,3
+office,0,0,3
+price range,1,0,0
+mac,0,0,1
+customer support,0,0,1
+mode,0,0,3
+toner cartridges,0,1,1
+money,0,0,1
+feature,0,0,1
+paper,1,2,12
+price,0,0,1
+toner,0,0,23
+text,0,0,1
+copy,1,0,1
+support,0,0,1

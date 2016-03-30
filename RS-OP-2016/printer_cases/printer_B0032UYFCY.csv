@@ -1,0 +1,38 @@
+feature,pos,neg,neutral
+instructions,0,1,5
+software,1,2,1
+customer service,0,0,1
+scan,1,0,2
+office,1,0,0
+pictures,0,1,2
+mac,0,1,0
+mode,0,0,1
+sleep mode,0,0,3
+technical support,0,0,1
+capability,0,0,3
+paper,1,2,15
+feature,3,0,2
+firmware update,0,0,6
+price,1,1,4
+function,0,0,1
+install software,0,1,0
+scanner,0,0,1
+connection,3,2,9
+copy,1,0,1
+text,0,0,1
+wifi,3,4,23
+cost,3,0,3
+windows xp,0,0,1
+operating system,0,0,1
+price range,0,0,1
+wifi connection,3,1,5
+paper jam,0,0,2
+customer support,0,0,2
+money,1,0,5
+size,0,0,1
+install,0,1,4
+machine,1,1,2
+setup,1,1,6
+windows vista,0,0,1
+device,0,0,1
+support,0,1,6

@@ -1,0 +1,23 @@
+feature,pos,neg,neutral
+instructions,1,0,2
+wifi,0,1,1
+cost,0,0,1
+software,0,0,6
+part,1,0,1
+scan,0,0,1
+pictures,0,0,2
+customer support,0,0,1
+mac os,0,0,1
+paper feed,0,0,1
+feature,0,0,1
+paper,0,2,3
+money,0,0,5
+size,0,0,1
+install,0,0,3
+price,2,1,0
+machine,1,0,2
+setup,1,0,2
+text,0,0,1
+copy,0,0,1
+support,0,1,1
+device,0,0,1

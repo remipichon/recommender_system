@@ -1,0 +1,30 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,0,2
+software,1,0,4
+plain paper,0,0,1
+part,1,0,1
+size paper,0,0,2
+office,1,0,4
+mac,0,0,2
+mode,3,0,3
+paper feed,0,4,2
+paper,3,4,36
+feature,0,0,1
+price,1,0,0
+text,0,0,1
+copy,2,1,2
+image,0,0,9
+cost,1,0,0
+operating system,0,0,1
+price range,0,0,1
+size,0,0,6
+money,0,0,1
+install,0,0,1
+machine,1,0,2
+windows vista,0,0,3
+setup,0,0,2
+paper size,0,0,2
+support,2,0,2
+device,0,0,1
+option,0,0,3

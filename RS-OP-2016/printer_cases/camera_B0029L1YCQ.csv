@@ -1,0 +1,8 @@
+feature,pos,neg,neutral
+money,0,0,2
+paper,0,1,1
+software,1,0,2
+feature,0,0,1
+machine,0,0,1
+scan,0,0,1
+option,1,0,0

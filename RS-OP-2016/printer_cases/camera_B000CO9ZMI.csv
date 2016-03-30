@@ -1,0 +1,19 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+cost,0,0,1
+software,0,2,3
+part,1,0,2
+mac,2,0,1
+price point,1,0,0
+pictures,0,0,1
+mode,0,0,1
+paper,2,0,10
+size,1,0,1
+feature,1,0,0
+install,0,0,3
+price,2,0,2
+setup,2,0,0
+connection,0,0,2
+mac user,0,0,1
+text,0,0,5
+support,1,0,1

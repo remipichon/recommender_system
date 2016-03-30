@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+mode,0,0,1
+cost,0,0,1
+paper,0,1,2
+toner,0,0,4
+manual feed,0,1,1
+install software,0,0,1
+setup,0,0,1
+office,0,0,1
+text,1,0,0
+mac,0,0,1

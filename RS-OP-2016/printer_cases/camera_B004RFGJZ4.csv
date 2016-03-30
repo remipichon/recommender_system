@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+money,0,0,1
+software,0,0,1
+paper,0,0,2
+machine,1,0,2
+manual feed,1,0,0
+part,0,0,1
+scanner,1,0,0
+copy,1,0,0
+control panel,0,0,1

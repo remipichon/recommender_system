@@ -1,0 +1,8 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+software,0,0,2
+paper,0,0,2
+machine,0,0,1
+manual feed,0,2,0
+text,0,1,0
+support,1,0,1

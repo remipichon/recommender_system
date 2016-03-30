@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+image,0,0,1
+cost,0,0,1
+software,0,1,2
+part,0,1,0
+scan,0,0,4
+paper jam,1,0,1
+customer support,0,1,0
+money,0,3,0
+feature,0,0,1
+machine,2,0,1
+price,0,0,3
+function,1,0,1
+scanner,2,0,0
+touch screen,1,0,0
+text,0,1,0
+copy,0,0,1
+memory card,0,0,2

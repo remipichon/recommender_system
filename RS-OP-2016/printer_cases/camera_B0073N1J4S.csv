@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+paper tray,0,0,1
+paper,0,1,6
+firmware update,0,0,3
+part,0,0,1
+setup,0,0,2
+connection,0,0,1
+support,0,0,3
+pictures,0,0,1
+memory card,0,0,1

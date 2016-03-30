@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+paper tray,1,0,0
+tech support,1,1,1
+instructions,0,0,1
+cost,0,0,1
+software,2,0,0
+part,0,0,1
+customer service,0,0,1
+duplex,0,0,1
+office,1,0,1
+mac,0,1,2
+customer support,0,0,3
+paper feed,0,1,1
+paper,1,0,1
+size,1,0,1
+feature,0,0,1
+money,1,0,0
+firmware update,1,0,0
+toner,0,0,2
+machine,0,0,3
+setup,0,0,1
+support,1,0,1

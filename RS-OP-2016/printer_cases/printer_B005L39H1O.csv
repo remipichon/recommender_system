@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+software,0,0,4
+part,1,0,0
+scan,2,0,0
+office,1,0,0
+mode,0,1,0
+capability,0,0,1
+starter cartridges,0,0,3
+paper,1,0,5
+feature,0,1,0
+machine,1,0,1
+toner,0,1,2
+function,1,0,0
+copy,0,0,2
+text,0,0,1
+paper size,1,0,0

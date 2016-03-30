@@ -1,0 +1,34 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+instructions,0,0,1
+software,4,2,12
+paper feeder,0,1,0
+plain paper,1,0,1
+part,1,0,0
+scan,0,0,10
+office,1,0,3
+mac,2,0,2
+output tray,0,0,1
+capability,0,1,1
+paper,2,2,14
+feature,4,1,1
+price,0,1,3
+function,1,1,1
+scanner,2,0,1
+connection,0,0,1
+copy,1,0,3
+text,0,0,1
+paper tray,0,0,8
+cost,2,0,1
+windows xp,0,0,2
+card stock,0,0,1
+price range,0,0,1
+money,1,0,0
+size,0,0,4
+install,3,0,2
+machine,1,0,8
+setup,3,0,9
+scan function,0,1,0
+device,0,0,3
+support,0,0,4
+sd card,0,0,1

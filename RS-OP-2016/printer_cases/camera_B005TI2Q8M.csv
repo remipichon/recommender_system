@@ -1,0 +1,19 @@
+feature,pos,neg,neutral
+instructions,0,0,2
+software,0,0,2
+scan,0,0,1
+duplex,0,0,1
+pictures,1,0,2
+paper jam,0,0,1
+mac os,0,0,1
+paper feed,1,0,0
+feature,0,0,1
+paper,0,0,4
+firmware update,0,0,1
+install,0,0,1
+price,0,0,1
+machine,1,0,0
+scanner,0,0,3
+setup,0,1,2
+text,0,0,1
+device,0,0,1

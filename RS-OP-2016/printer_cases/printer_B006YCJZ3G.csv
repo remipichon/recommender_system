@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+size,1,0,0
+software,0,0,1
+setup,0,2,1
+connection,0,0,1
+support,0,0,1
+mac,1,2,2

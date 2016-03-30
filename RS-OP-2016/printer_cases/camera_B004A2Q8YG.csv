@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+instructions,0,1,0
+image,0,0,1
+wifi,0,1,0
+cost,0,0,1
+software,0,1,2
+part,0,0,1
+scan,0,1,2
+office,0,0,1
+price point,0,0,1
+sleep mode,0,0,1
+paper,0,0,3
+feature,0,0,1
+install,0,0,1
+price,1,0,2
+machine,1,0,2
+toner,0,1,1
+setup,1,0,2
+connection,1,1,0
+copy,0,0,2
+support,1,0,1
+option,0,0,1

@@ -1,0 +1,19 @@
+feature,pos,neg,neutral
+instructions,0,0,2
+starter toner,0,0,1
+manual feed,1,1,1
+duplex,1,2,1
+mac,0,0,2
+mode,1,0,0
+capability,0,0,1
+paper,0,1,6
+size,1,0,1
+feature,1,0,0
+money,0,1,0
+install,0,0,1
+toner,1,0,10
+price,1,0,1
+duplex feature,1,0,1
+paper size,0,0,1
+support,0,0,2
+option,0,1,1

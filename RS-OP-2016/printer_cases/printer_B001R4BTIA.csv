@@ -1,0 +1,35 @@
+feature,pos,neg,neutral
+tech support,1,0,4
+instructions,0,0,3
+software,0,3,10
+plain paper,0,0,1
+part,1,2,0
+customer service,0,0,1
+duplex,0,0,1
+size paper,0,0,1
+office,0,0,2
+mac,2,1,5
+pictures,5,0,6
+mode,1,0,1
+paper feed,0,1,0
+mac os,0,0,1
+paper,14,8,57
+feature,1,0,0
+price,2,0,6
+function,0,0,1
+scanner,0,1,2
+text,0,0,3
+copy,0,0,4
+image,0,0,3
+cost,0,0,8
+operating system,0,0,1
+regular paper,1,0,0
+size,5,0,5
+money,0,0,3
+install,2,0,2
+feed tray,0,0,1
+machine,0,0,2
+setup,3,0,0
+paper size,1,0,1
+support,0,1,1
+option,1,0,1

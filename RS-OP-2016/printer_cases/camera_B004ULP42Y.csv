@@ -1,0 +1,14 @@
+feature,pos,neg,neutral
+image,0,0,1
+software,0,0,1
+error message,0,0,1
+mac,0,0,2
+control panel,0,0,1
+paper,1,0,1
+money,1,0,0
+install,1,0,0
+machine,1,1,3
+toner,0,0,2
+scanner,0,0,4
+copy,0,0,3
+option,1,0,0

@@ -1,0 +1,24 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,0,2
+cost,0,0,1
+software,0,0,2
+paper feeder,0,1,0
+operating system,0,0,1
+mac,0,0,1
+paper jam,0,0,2
+multiple pages,0,1,0
+pictures,0,1,0
+mode,0,0,1
+paper,1,2,10
+feature,1,0,0
+size,0,0,1
+install,0,0,1
+price,1,0,4
+machine,0,0,3
+toner,0,0,1
+setup,0,0,2
+connection,0,0,1
+text,0,0,1
+device,0,0,1
+option,0,0,1

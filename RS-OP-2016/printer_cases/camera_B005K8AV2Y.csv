@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+tech support,0,0,4
+software,2,3,11
+scan,0,1,8
+office,0,0,4
+mode,0,0,4
+sleep mode,0,0,3
+paper,0,1,7
+feature,0,0,1
+firmware update,0,0,1
+price,0,0,2
+function,0,0,1
+scanner,0,0,5
+install software,0,0,1
+connection,0,0,2
+copy,1,0,1
+text,1,0,3
+wifi,1,0,0
+cost,0,0,1
+windows xp,0,0,1
+phone line,0,0,1
+price range,0,0,1
+control panel,0,0,4
+money,0,0,2
+install,0,0,8
+machine,1,1,4
+setup,0,0,1
+device,0,1,1

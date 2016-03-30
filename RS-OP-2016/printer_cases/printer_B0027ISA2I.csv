@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+software,0,0,2
+operating system,0,0,2
+plain paper,0,0,1
+part,0,0,2
+scan,0,0,1
+pictures,0,0,1
+power cord,0,0,1
+paper,1,0,2
+money,0,0,1
+feature,1,0,0
+price,2,0,1
+function,0,0,1
+setup,0,0,1
+copy,0,0,1
+text,1,0,2
+device,0,0,1

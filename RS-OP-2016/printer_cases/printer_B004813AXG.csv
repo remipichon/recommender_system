@@ -1,0 +1,19 @@
+feature,pos,neg,neutral
+paper tray,0,0,1
+image,1,0,0
+wifi,0,1,1
+cost,0,0,2
+software,0,0,1
+plain paper,0,0,1
+card stock,0,0,1
+office,2,0,1
+mode,0,0,4
+power cord,1,0,0
+paper,0,2,6
+feature,0,0,1
+size,0,0,2
+money,0,1,0
+install,1,0,0
+toner,0,0,1
+machine,2,0,2
+text,0,0,2

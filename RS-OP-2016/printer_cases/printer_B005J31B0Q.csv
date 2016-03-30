@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+tech support,0,0,3
+instructions,0,0,4
+test pages,0,0,2
+wifi,0,1,0
+software,0,1,6
+part,1,0,1
+scan,0,0,1
+mac,0,0,1
+mode,1,1,0
+mac os,0,0,2
+output tray,0,1,0
+paper,1,0,5
+money,0,2,0
+size,0,1,0
+install,0,2,11
+machine,0,0,1
+price,1,0,0
+setup,0,0,1
+connection,0,0,1
+text,1,0,0
+support,0,1,4

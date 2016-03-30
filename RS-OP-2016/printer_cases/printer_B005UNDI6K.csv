@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+cost,1,0,0
+software,1,0,0
+price,0,0,2
+machine,0,1,0
+scan,1,0,0
+scanner,0,0,1
+copy,1,0,0
+text,1,1,1
+price point,0,0,1

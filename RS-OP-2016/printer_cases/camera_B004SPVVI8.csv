@@ -1,0 +1,35 @@
+feature,pos,neg,neutral
+tech support,1,0,2
+instructions,0,0,2
+software,0,3,7
+customer service,1,0,1
+part,0,0,1
+scan,1,0,7
+office,0,0,2
+multiple pages,0,0,1
+pictures,0,0,2
+mode,0,0,1
+paper feed,1,0,0
+power cord,1,0,0
+capability,1,0,0
+paper,3,2,14
+feature,0,0,1
+firmware update,0,0,1
+price,0,1,3
+function,2,0,2
+connection,0,2,5
+copy,1,1,1
+wifi,0,0,3
+cost,0,0,3
+error message,0,0,1
+paper jam,0,0,1
+control panel,0,0,1
+customer support,0,0,1
+money,0,0,2
+size,0,0,1
+install,4,0,4
+machine,0,1,3
+setup,1,0,5
+device,0,0,1
+latest drivers,0,0,1
+option,0,0,1

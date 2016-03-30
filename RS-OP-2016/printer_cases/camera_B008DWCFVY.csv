@@ -1,0 +1,8 @@
+feature,pos,neg,neutral
+instructions,1,0,1
+paper,0,0,1
+plain paper,0,0,1
+price,0,0,1
+copy,0,0,1
+office,1,0,1
+option,1,0,0

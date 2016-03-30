@@ -1,0 +1,25 @@
+feature,pos,neg,neutral
+tech support,1,0,2
+paper tray,0,0,3
+image,0,0,5
+instructions,1,0,0
+wifi,1,0,0
+cost,1,0,1
+software,0,0,3
+plain paper,0,0,1
+part,0,0,1
+customer service,0,0,1
+manual feed,0,0,1
+initial setup,0,0,1
+office,0,0,1
+mac,1,1,2
+technical support,0,0,1
+feature,1,0,1
+firmware update,1,0,1
+install,0,0,3
+snow leopard,1,0,0
+machine,0,3,0
+toner,0,0,2
+device,0,0,3
+support,0,0,2
+option,0,0,1

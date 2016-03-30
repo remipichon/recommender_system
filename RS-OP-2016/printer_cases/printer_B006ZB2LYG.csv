@@ -1,0 +1,13 @@
+feature,pos,neg,neutral
+toner cartridges,0,0,1
+paper tray,0,0,1
+paper,0,0,1
+machine,1,0,1
+scanner,0,0,1
+scan,0,0,2
+error message,0,1,0
+office,0,1,1
+scan software,1,0,0
+support,0,1,0
+mac,1,0,1
+pictures,0,0,1

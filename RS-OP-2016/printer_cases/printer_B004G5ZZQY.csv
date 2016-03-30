@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+software,2,0,2
+plain paper,1,0,0
+scan,1,0,6
+duplex,1,0,0
+error message,0,0,1
+office,0,0,2
+mode,0,0,1
+paper feed,0,1,0
+capability,0,0,2
+feature,1,0,1
+paper,0,0,4
+size,0,0,2
+machine,0,0,3
+scanner,1,0,4

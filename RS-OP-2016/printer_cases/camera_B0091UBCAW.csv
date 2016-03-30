@@ -1,0 +1,4 @@
+feature,pos,neg,neutral
+paper feed,0,0,1
+wifi,0,0,1
+scanner,0,0,1

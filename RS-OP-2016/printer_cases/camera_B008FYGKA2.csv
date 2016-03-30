@@ -1,0 +1,4 @@
+feature,pos,neg,neutral
+wifi,0,1,0
+software,1,0,2
+support,0,0,1

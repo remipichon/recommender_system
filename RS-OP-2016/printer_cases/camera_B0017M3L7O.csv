@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+software,0,0,1
+machine,0,0,2
+office,0,0,1
+copy,0,0,1
+support,0,1,1
+option,0,0,1

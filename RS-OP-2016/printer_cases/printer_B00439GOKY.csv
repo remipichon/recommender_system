@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,1,0,2
+part,0,0,1
+customer service,0,0,2
+duplex,1,0,2
+office,1,0,1
+mac,1,0,6
+pictures,0,1,1
+mode,0,0,1
+output tray,0,0,1
+paper,1,0,8
+feature,1,0,0
+price,0,0,3
+toner,2,4,15
+function,0,0,1
+text,0,1,1
+wifi,0,1,4
+cost,0,0,9
+card stock,0,0,1
+price range,0,0,1
+toner cartridges,0,0,5
+size,0,0,2
+install,0,0,3
+machine,1,0,6
+setup,3,0,5
+support,0,0,3
+option,1,0,0

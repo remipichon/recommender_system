@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+instructions,0,2,0
+image,0,0,1
+wifi,0,1,1
+cost,0,0,4
+software,1,0,2
+customer service,1,1,4
+part,0,0,1
+pictures,0,0,2
+customer support,0,0,1
+paper feed,0,0,1
+paper,0,0,8
+money,0,0,3
+install,0,0,1
+firmware update,0,0,1
+feed tray,0,0,1
+price,1,0,1
+machine,0,0,2
+setup,1,0,0
+touch screen,0,0,2
+support,0,0,2
+option,1,0,1

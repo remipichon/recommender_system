@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+wifi,1,0,2
+software,0,2,1
+starter toner,0,0,1
+office,1,0,2
+price point,0,0,1
+toner cartridges,0,0,1
+starter cartridges,0,0,2
+technical support,0,0,2
+feature,0,0,1
+install,0,1,1
+machine,0,0,1
+toner,0,0,2
+install software,0,0,1
+support,1,0,3

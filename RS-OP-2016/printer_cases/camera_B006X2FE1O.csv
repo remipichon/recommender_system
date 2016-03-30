@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+capability,0,0,2
+cost,1,0,0
+paper,0,0,1
+software,0,0,1
+feature,0,0,1
+install,0,0,4
+duplex,0,0,4
+pictures,0,0,1
+control panel,0,0,1

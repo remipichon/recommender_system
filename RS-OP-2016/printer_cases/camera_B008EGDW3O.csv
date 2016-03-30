@@ -1,0 +1,19 @@
+feature,pos,neg,neutral
+image,0,0,1
+instructions,0,0,1
+cost,0,0,2
+software,1,2,5
+scan,0,0,1
+error message,0,1,0
+mac,0,0,1
+paper jam,0,1,0
+capability,0,0,1
+paper,1,0,3
+install,0,0,2
+feed tray,0,0,2
+machine,0,1,0
+scanner,0,0,3
+setup,1,1,2
+copy,1,0,2
+scan software,1,0,0
+support,0,0,1

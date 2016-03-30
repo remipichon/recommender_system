@@ -1,0 +1,30 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+software,0,1,1
+plain paper,0,0,1
+part,0,0,1
+customer service,0,0,1
+office,1,0,5
+pictures,0,0,2
+mac,2,1,0
+power cord,0,0,1
+sleep mode,0,0,1
+paper,2,2,10
+feature,1,0,0
+price,3,1,7
+toner,3,0,14
+text,1,1,2
+copy,0,0,1
+image,0,1,0
+cost,1,0,3
+regular paper,0,0,1
+starter toner,0,0,3
+paper jam,0,0,2
+toner cartridges,0,0,5
+money,2,1,0
+size,0,0,2
+install,1,0,1
+machine,1,0,1
+setup,2,0,0
+windows vista,0,0,1
+support,0,0,1

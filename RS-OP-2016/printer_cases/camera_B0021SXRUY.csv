@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+technical support,0,0,1
+feature,1,0,0
+paper,0,0,1
+machine,1,0,1
+scanner,0,2,3
+scan,1,0,1
+setup,1,0,0
+office,0,0,1
+copy,1,0,0
+support,0,0,2

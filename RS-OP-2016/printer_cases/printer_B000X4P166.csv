@@ -1,0 +1,26 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+software,0,3,1
+part,0,0,3
+scan,0,1,11
+duplex,0,0,1
+office,0,0,6
+paper,0,0,1
+feature,1,0,0
+toner,0,1,0
+price,0,0,2
+function,0,0,3
+scanner,0,0,2
+copy,1,0,1
+scan software,0,1,0
+paper tray,0,0,1
+cost,0,0,1
+phone line,0,0,1
+size,0,0,1
+money,1,0,0
+install,1,0,4
+machine,6,2,18
+setup,1,0,1
+device,0,1,4
+support,1,0,1
+option,0,0,1

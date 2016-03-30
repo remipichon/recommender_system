@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+money,1,0,1
+firmware update,0,0,2
+toner,0,1,2
+machine,1,1,2
+replace toner,0,1,0
+customer service,0,1,2
+scanner,1,2,0
+scan,1,0,1

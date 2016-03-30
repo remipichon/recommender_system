@@ -1,0 +1,29 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,0,1
+software,2,0,6
+part,1,0,0
+office,0,0,1
+pictures,0,0,3
+mode,1,0,7
+output tray,0,1,1
+mac os,0,1,0
+paper,2,3,18
+price,0,0,5
+connection,0,0,1
+copy,0,0,1
+text,2,0,7
+paper tray,0,0,1
+image,0,0,1
+wifi,0,0,1
+cost,0,1,2
+operating system,0,0,1
+card stock,0,0,1
+error message,0,0,1
+size,0,0,2
+money,1,1,5
+install,0,0,5
+machine,0,0,1
+setup,0,0,2
+support,0,0,1
+option,0,0,5

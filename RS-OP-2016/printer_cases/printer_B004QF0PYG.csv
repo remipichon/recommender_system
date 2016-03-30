@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+instructions,1,0,0
+wifi,0,0,1
+cost,1,0,0
+software,1,1,0
+customer service,0,0,1
+scan,0,1,0
+lcd screen,0,0,1
+pictures,1,0,1
+mode,1,0,2
+capability,0,0,1
+paper,0,0,5
+feature,0,1,2
+price,1,1,2
+machine,2,0,3
+scanner,0,1,6
+text,0,0,1
+memory card,1,0,0

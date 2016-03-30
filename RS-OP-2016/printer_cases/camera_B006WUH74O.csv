@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+paper tray,0,0,1
+cost,0,0,2
+customer service,0,0,1
+scan,0,0,1
+mac,0,0,1
+control panel,0,0,1
+paper,0,0,1
+feature,2,0,0
+install,0,0,1
+scanner,1,0,0
+setup,0,0,2
+connection,0,0,1
+support,0,0,2
+option,0,0,2

@@ -1,0 +1,14 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+cost,0,0,1
+error message,0,0,1
+paper jam,0,0,1
+mac,0,0,1
+starter cartridges,0,0,2
+paper,0,0,1
+money,0,1,1
+install,0,0,3
+price,0,0,1
+setup,3,0,0
+support,0,2,0
+option,1,0,0

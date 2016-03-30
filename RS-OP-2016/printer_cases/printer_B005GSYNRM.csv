@@ -1,0 +1,34 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,1,1,1
+software,0,3,5
+customer service,0,0,2
+scan,0,1,11
+lcd screen,0,0,1
+office,0,0,2
+pictures,0,0,2
+multiple pages,0,0,1
+mac,1,0,2
+mac os,0,0,2
+paper,3,2,12
+feature,1,0,0
+price,1,0,4
+scanner,0,4,5
+connection,1,0,0
+text,0,0,1
+scan software,0,0,2
+paper tray,0,0,1
+image,1,0,3
+wifi,1,1,3
+cost,0,0,5
+operating system,0,0,1
+customer support,0,0,2
+control panel,0,0,1
+size,0,1,3
+money,1,1,2
+install,0,1,2
+setup,1,0,6
+windows vista,0,1,0
+sd card,0,0,1
+support,0,0,5
+option,2,0,1

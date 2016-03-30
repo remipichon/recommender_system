@@ -1,0 +1,32 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+instructions,0,1,0
+software,0,0,1
+paper feeder,0,0,1
+customer service,0,0,1
+manual feed,0,0,1
+duplex,0,0,3
+office,0,1,3
+mac,1,0,2
+multiple pages,0,0,1
+mode,0,1,1
+output tray,0,0,2
+paper,3,1,13
+price,2,1,5
+toner,3,5,32
+text,1,0,1
+paper tray,0,0,4
+cost,0,0,5
+starter toner,0,0,1
+paper jam,0,1,2
+control panel,0,0,2
+toner cartridges,0,0,2
+size,1,0,2
+money,0,1,7
+install,1,0,1
+machine,0,1,0
+setup,0,0,2
+paper size,0,0,1
+support,0,0,3
+device,1,0,2
+option,0,1,0

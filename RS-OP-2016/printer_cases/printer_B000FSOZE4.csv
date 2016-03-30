@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+paper feed,0,1,1
+cost,0,0,1
+money,0,0,1
+paper,1,0,0
+size,0,0,1
+install,0,0,1
+machine,0,0,1
+part,0,0,2
+text,0,0,1
+copy,1,0,0

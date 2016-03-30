@@ -1,0 +1,29 @@
+feature,pos,neg,neutral
+instructions,0,0,2
+software,0,0,2
+manual feed,0,0,1
+customer service,0,0,1
+scan,1,1,6
+duplex,0,0,2
+office,0,0,3
+mode,0,0,2
+sleep mode,0,0,1
+paper,0,0,6
+price,5,0,1
+function,0,0,1
+scanner,3,0,5
+text,0,0,1
+copy,0,0,2
+memory card,0,0,1
+image,0,0,1
+cost,1,0,1
+error message,0,1,0
+initial setup,1,0,0
+paper jam,0,0,4
+control panel,0,0,1
+toner cartridges,0,0,2
+money,0,1,0
+machine,8,0,15
+scan function,0,0,1
+setup,1,1,1
+option,0,1,1

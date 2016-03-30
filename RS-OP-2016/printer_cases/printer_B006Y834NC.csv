@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+paper tray,1,0,2
+tech support,0,0,1
+software,1,0,0
+manual feed,0,1,1
+scan,0,0,1
+duplex,0,0,5
+office,0,0,1
+mode,0,0,1
+technical support,0,0,2
+paper,1,0,13
+feature,0,0,1
+size,0,0,1
+price,1,0,0
+setup,0,0,1
+paper size,0,0,2
+support,0,0,3
+option,0,0,2

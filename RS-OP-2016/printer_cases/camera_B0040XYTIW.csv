@@ -1,0 +1,26 @@
+feature,pos,neg,neutral
+instructions,0,1,3
+software,1,0,3
+part,1,0,1
+scan,0,1,7
+office,0,0,3
+mac,0,0,1
+pictures,0,0,1
+mac os,0,0,1
+power cord,0,0,1
+feature,0,0,1
+paper,0,0,7
+price,1,0,2
+function,0,0,1
+scanner,0,0,1
+connection,0,0,1
+copy,0,0,5
+cost,0,0,1
+windows xp,0,0,1
+initial setup,0,0,1
+money,0,0,1
+install,0,0,5
+machine,0,0,1
+setup,1,0,4
+support,0,0,5
+option,0,0,2

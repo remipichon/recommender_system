@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+software,1,2,7
+scan,1,0,5
+duplex,1,0,2
+office,0,0,1
+toner cartridges,0,0,2
+sleep mode,0,0,3
+feature,0,0,1
+install,0,1,1
+replace toner,0,0,1
+toner,0,0,9
+machine,1,0,1
+price,1,0,1
+scanner,1,0,5
+setup,0,0,1

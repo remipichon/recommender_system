@@ -1,0 +1,8 @@
+feature,pos,neg,neutral
+output tray,0,0,1
+instructions,0,0,1
+software,0,0,1
+paper,0,0,1
+price,0,0,1
+text,0,0,1
+office,0,0,1

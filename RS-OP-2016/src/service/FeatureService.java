@@ -24,14 +24,10 @@ public class FeatureService {
 
     private HashSet<String> features;
     private Map<String, HashSet<String>> biGramMap;
-    private Parser parser;
 
     private FeatureService() {
         features = new HashSet<>();
         biGramMap = new HashMap<String, HashSet<String>>();
-        parser = Parser.getInstance();
-
-        readBiGramAndFeature("Digital Camera Features.txt");
     }
 
 
@@ -124,7 +120,6 @@ public class FeatureService {
 
         return result;
     }
-
 
 }
 

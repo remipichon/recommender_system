@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+cost,1,0,0
+scan,0,0,1
+office,0,0,2
+customer support,0,0,2
+sleep mode,0,0,1
+feature,0,0,1
+money,0,1,0
+install,1,0,0
+toner,2,0,3
+price,0,0,3
+scanner,1,0,1
+setup,1,0,1
+connection,0,0,2
+support,0,0,3

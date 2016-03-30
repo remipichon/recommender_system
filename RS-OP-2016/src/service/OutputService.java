@@ -74,12 +74,12 @@ public class OutputService {
 
     }
 
-    public void generativeCSVFiles(String folderName, Map<String, List<FeatureSummary>> computeOutputPerProduct) {
+    public void generativeCSVFiles(String folderName, String prefixFileName, Map<String, List<FeatureSummary>> computeOutputPerProduct) {
 
         for (Map.Entry<String, List<FeatureSummary>> product : computeOutputPerProduct.entrySet()) {
             String productId = product.getKey();
             List<FeatureSummary> featureSummaries = product.getValue();
-            generateCSVFile(folderName, "camera", productId, featureSummaries);
+            generateCSVFile(folderName, prefixFileName, productId, featureSummaries);
         }
 
         System.out.println("All CSV files generated");
@@ -117,9 +117,6 @@ public class OutputService {
         this.storeObject(reviewCountPerProduct, filename + REVIEW_COUNT_PER_PRODUCT);
     }
 
-    public void storeProductSentimentRecommendations(List<Product> products, String filename) {
-        this.storeObject(products, filename + PRODUCT_SENTIMENT_RECOMMENDATION);
-    }
 
     public void storeMeanRatingPerProduct(Map<String, Double> meanRatingPerProduct, String filename) {
         this.storeObject(meanRatingPerProduct, filename + MEAN_RATING_PER_PRODUCT);
@@ -180,25 +177,6 @@ public class OutputService {
 
         return outputs;
     }
-
-    public List<Product> restoreProductFromFile(String fileName) {
-        fileName = fileName + PRODUCT_SENTIMENT_RECOMMENDATION;
-        List<Product> outputs = null;
-        ObjectInputStream ois = getObjectInputStream(fileName);
-
-        try {
-            outputs = (List<Product>) ois.readObject();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        System.out.println("successfully restore " + fileName + "  from file");
-
-        return outputs;
-    }
-
-
 
 
     public void storeObject(Object outputs, String fileName) {

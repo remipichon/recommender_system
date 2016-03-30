@@ -1,0 +1,12 @@
+feature,pos,neg,neutral
+mode,0,0,1
+paper tray,0,0,1
+technical support,0,0,1
+money,0,0,1
+paper,0,0,5
+feature,1,0,0
+size,0,0,1
+error message,0,0,1
+setup,0,0,1
+office,2,0,0
+support,0,0,1

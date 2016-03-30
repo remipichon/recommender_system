@@ -1,0 +1,37 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,1,4
+software,1,2,14
+manual feed,0,0,6
+duplex,4,0,7
+office,1,0,6
+mac,2,0,3
+price point,0,0,1
+mode,2,0,9
+sleep mode,0,0,3
+mac os,0,0,1
+paper feed,0,1,1
+capability,0,0,2
+paper,0,4,26
+feature,2,0,2
+toner,2,6,22
+price,2,0,3
+function,1,0,6
+connection,0,0,4
+text,1,0,1
+copy,0,0,1
+paper tray,1,0,2
+wifi,0,0,4
+cost,0,0,7
+regular paper,0,0,1
+paper jam,0,0,1
+toner cartridges,0,0,1
+size,0,0,1
+money,2,1,5
+install,3,1,9
+machine,4,1,9
+setup,4,1,18
+device,0,0,6
+support,2,0,3
+latest drivers,0,0,1
+option,1,0,4

@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+cost,1,0,0
+install,1,0,1
+setup,0,0,4
+support,0,0,1
+option,0,0,1

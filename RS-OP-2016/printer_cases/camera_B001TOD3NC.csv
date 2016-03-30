@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+cost,1,0,0
+software,1,0,0
+feature,1,0,1
+machine,0,0,3
+toner,0,0,1
+function,0,0,1
+part,0,0,1
+scanner,0,1,1
+office,2,0,1

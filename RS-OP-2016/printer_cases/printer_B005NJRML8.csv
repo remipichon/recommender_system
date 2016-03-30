@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+paper tray,0,0,2
+cost,1,0,0
+software,0,1,1
+feature,1,0,0
+money,1,1,1
+price,2,0,1
+toner,0,0,1
+function,0,0,1
+setup,1,2,2
+connection,0,1,0

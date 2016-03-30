@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+mode,0,0,2
+image,0,1,0
+software,0,1,0
+paper,1,0,3
+price,1,1,2
+machine,1,0,1
+part,0,0,1
+customer service,0,0,1
+office,0,0,1
+mac,0,0,1

@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+image,0,0,1
+cost,0,0,1
+software,1,0,2
+part,0,1,0
+scan,1,0,0
+price range,0,0,1
+sleep mode,0,0,1
+paper,0,0,3
+install,0,0,2
+machine,0,1,0
+function,0,0,1
+scanner,0,1,1
+setup,0,0,1

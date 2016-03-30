@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+paper tray,0,0,1
+cost,0,0,1
+paper,0,0,2
+machine,0,0,1
+scanner,0,0,1
+mac user,0,0,1
+office,0,0,1
+copy,0,0,2
+support,0,0,2
+mac,1,1,6

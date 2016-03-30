@@ -1,0 +1,19 @@
+feature,pos,neg,neutral
+tech support,1,1,0
+image,2,2,9
+instructions,0,1,1
+cost,0,1,1
+pictures,3,0,7
+customer support,0,0,1
+paper,1,0,17
+feature,1,0,0
+size,3,0,4
+money,1,2,2
+machine,0,0,1
+price,0,0,2
+windows vista,0,0,1
+setup,1,0,0
+connection,0,0,3
+support,0,0,7
+device,1,1,4
+option,0,0,2

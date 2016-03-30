@@ -1,0 +1,9 @@
+feature,pos,neg,neutral
+cost,0,0,2
+feature,1,0,0
+paper,1,1,1
+install,0,0,1
+machine,2,1,2
+price,2,0,0
+toner,0,0,1
+office,1,0,3

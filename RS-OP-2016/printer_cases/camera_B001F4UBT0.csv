@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+instructions,1,0,0
+software,0,0,1
+duplex,0,2,3
+office,0,0,1
+price range,0,1,0
+mac,1,0,0
+toner cartridges,0,0,1
+output tray,0,2,2
+feature,1,0,0
+money,0,0,1
+paper,1,1,1
+price,1,0,1
+machine,0,1,0
+text,0,0,2
+support,0,0,2

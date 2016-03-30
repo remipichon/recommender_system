@@ -1,0 +1,39 @@
+feature,pos,neg,neutral
+tech support,0,1,0
+software,3,3,12
+part,1,0,2
+customer service,0,1,0
+scan,1,0,4
+office,2,0,14
+mac,2,2,5
+price point,1,0,1
+mode,0,0,2
+mac os,0,0,1
+sleep mode,1,0,0
+capability,0,0,1
+technical support,0,0,1
+paper,1,1,7
+feature,0,0,2
+toner,0,0,14
+replace toner,0,0,2
+scanner,2,0,2
+connection,0,0,2
+text,1,0,3
+copy,0,0,4
+paper tray,0,0,2
+image,0,0,3
+cost,1,0,11
+windows xp,0,0,1
+regular paper,1,1,5
+card stock,0,0,1
+phone line,0,0,1
+control panel,0,1,1
+toner cartridges,1,0,4
+money,0,1,1
+size,0,0,1
+install,0,0,3
+machine,2,3,11
+snow leopard,0,0,2
+setup,0,0,1
+support,0,1,4
+option,0,0,2

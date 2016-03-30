@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+software,0,0,1
+plain paper,0,0,1
+part,0,0,2
+customer service,0,0,2
+office,0,0,1
+price point,1,0,0
+mac,0,0,1
+pictures,0,0,1
+mode,1,0,0
+power cord,0,0,1
+mac os,1,0,0
+capability,0,0,1
+paper,2,0,21
+feature,1,0,0
+price,0,0,1
+function,0,0,1
+wifi,1,0,1
+cost,3,2,14
+control panel,0,0,1
+customer support,0,1,0
+money,0,0,2
+install,1,0,2
+machine,1,0,0
+setup,0,1,2
+windows vista,0,0,1
+support,2,0,2

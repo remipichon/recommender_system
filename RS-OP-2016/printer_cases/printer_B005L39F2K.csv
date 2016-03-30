@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+toner cartridges,0,0,1
+size,0,0,1
+money,0,0,1
+machine,1,0,1
+toner,0,0,2
+mac,1,0,0

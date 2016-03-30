@@ -1,0 +1,21 @@
+feature,pos,neg,neutral
+instructions,2,1,1
+image,1,0,0
+wifi,1,0,0
+software,2,2,10
+customer service,0,0,1
+scan,0,0,3
+pictures,1,0,0
+control panel,0,0,1
+paper feed,0,0,1
+feature,1,0,0
+money,0,0,1
+paper,1,0,4
+size,0,0,1
+install,0,0,1
+price,0,0,2
+machine,3,0,2
+scanner,1,0,2
+setup,0,1,3
+copy,0,0,1
+support,0,0,1

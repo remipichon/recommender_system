@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+tech support,0,1,2
+software,1,0,2
+part,1,0,4
+customer service,1,1,0
+scan,1,2,6
+multiple pages,0,0,2
+mode,0,0,1
+sleep mode,0,0,1
+technical support,0,0,2
+paper,2,0,8
+feature,2,0,1
+price,1,0,1
+function,1,0,1
+scanner,3,2,1
+connection,0,0,2
+copy,1,0,3
+paper tray,0,0,1
+image,0,0,2
+cost,0,0,4
+error message,0,0,1
+money,0,0,1
+install,1,0,2
+machine,0,2,4
+setup,1,0,4
+support,1,0,4
+device,0,1,0
+option,2,0,0

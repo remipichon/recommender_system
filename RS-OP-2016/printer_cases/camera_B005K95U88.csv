@@ -1,0 +1,37 @@
+feature,pos,neg,neutral
+instructions,0,0,5
+software,0,1,14
+part,0,1,0
+customer service,0,0,1
+scan,5,1,9
+duplex,1,0,0
+pictures,0,1,0
+mac,1,3,1
+multiple pages,0,0,1
+mode,2,0,3
+paper feed,0,0,1
+capability,0,0,2
+paper,3,3,10
+feature,0,0,3
+firmware update,0,0,3
+price,1,0,10
+function,0,0,3
+scanner,0,0,3
+connection,0,0,1
+copy,0,0,5
+text,0,0,1
+paper tray,1,2,2
+image,0,0,2
+wifi,0,1,3
+cost,0,0,1
+error message,0,0,2
+phone line,0,0,1
+customer support,0,0,2
+size,0,0,2
+money,0,3,2
+install,0,1,6
+machine,6,2,17
+setup,3,0,16
+device,0,1,3
+support,0,1,8
+option,0,0,1

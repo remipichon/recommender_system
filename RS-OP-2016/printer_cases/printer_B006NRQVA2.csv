@@ -1,0 +1,9 @@
+feature,pos,neg,neutral
+wifi,0,0,1
+paper,1,0,1
+machine,0,0,1
+scan,0,0,2
+install software,0,0,1
+copy,0,0,1
+mac,0,0,1
+paper jam,0,0,1

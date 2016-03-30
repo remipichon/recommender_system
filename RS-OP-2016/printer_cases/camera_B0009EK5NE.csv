@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+tech support,0,0,3
+cost,0,0,2
+software,0,1,1
+windows xp,0,0,1
+regular paper,1,0,0
+duplex,0,1,2
+office,0,0,4
+pictures,0,0,4
+power cord,0,0,1
+paper,2,2,5
+size,1,0,0
+money,0,0,2
+feature,1,0,0
+install,0,0,5
+price,0,0,2
+scanner,0,0,1
+setup,1,0,0
+text,2,1,3
+support,0,1,2
+device,0,0,2
+option,0,0,1

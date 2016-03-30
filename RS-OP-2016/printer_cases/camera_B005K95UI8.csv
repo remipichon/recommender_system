@@ -1,0 +1,38 @@
+feature,pos,neg,neutral
+tech support,1,0,3
+instructions,0,1,1
+software,1,1,7
+part,1,0,0
+customer service,0,1,0
+scan,0,0,3
+office,0,0,3
+mac,1,0,5
+pictures,0,0,1
+mode,1,0,0
+scan feature,1,0,0
+output tray,0,0,1
+paper,1,1,9
+feature,1,0,2
+price,3,0,3
+toner,1,0,1
+function,0,0,3
+scanner,1,2,3
+connection,0,2,6
+copy,0,0,2
+paper tray,0,0,2
+wifi,0,0,2
+cost,1,0,1
+operating system,0,0,1
+error message,2,1,0
+paper jam,1,1,0
+customer support,0,1,1
+toner cartridges,1,0,1
+size,0,1,0
+money,0,1,1
+install,1,0,4
+machine,3,3,5
+feed tray,1,0,0
+setup,2,2,4
+touch screen,1,0,0
+device,1,0,1
+support,2,1,4

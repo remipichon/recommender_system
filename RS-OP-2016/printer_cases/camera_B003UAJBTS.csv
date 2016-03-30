@@ -1,0 +1,38 @@
+feature,pos,neg,neutral
+tech support,0,0,3
+instructions,1,0,1
+software,2,1,7
+customer service,0,1,2
+scan,2,0,13
+size paper,0,0,1
+office,0,0,4
+mac,0,0,3
+pictures,2,0,2
+mode,2,0,0
+mac os,1,0,1
+paper feed,0,1,0
+capability,1,0,2
+paper,2,6,22
+feature,0,0,1
+price,1,0,6
+function,0,0,1
+scanner,0,0,4
+connection,0,0,2
+copy,2,2,9
+text,0,0,1
+paper tray,0,3,1
+image,0,0,1
+cost,2,0,5
+windows xp,0,0,2
+error message,0,1,0
+customer support,0,0,1
+size,1,0,5
+money,0,1,0
+install,0,1,5
+machine,1,1,10
+windows vista,0,0,1
+setup,0,0,3
+scan function,0,0,1
+support,0,0,1
+device,0,2,1
+option,1,0,4

@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+office,1,0,0
+mac,0,0,1
+mode,1,0,0
+paper,0,0,1
+feature,0,0,1
+money,1,0,0
+price,1,0,0
+toner,2,0,4
+scanner,0,0,1
+setup,0,1,1
+connection,0,0,1
+text,0,0,1
+device,0,0,2
+support,0,0,1

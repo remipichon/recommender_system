@@ -1,0 +1,26 @@
+feature,pos,neg,neutral
+tech support,2,1,3
+instructions,1,0,2
+software,2,5,4
+scan,0,1,3
+duplex,1,0,0
+office,0,0,1
+mac,0,0,4
+capability,0,0,1
+feature,0,0,2
+paper,1,1,6
+price,2,0,0
+scanner,1,1,4
+connection,2,0,3
+copy,0,0,1
+paper tray,0,0,1
+wifi,1,0,0
+cost,1,1,5
+money,0,1,1
+install,0,1,0
+snow leopard,0,0,2
+machine,1,0,0
+setup,0,1,5
+device,0,0,1
+support,0,0,1
+latest drivers,0,1,0

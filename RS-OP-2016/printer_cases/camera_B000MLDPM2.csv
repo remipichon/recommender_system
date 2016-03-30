@@ -1,0 +1,24 @@
+feature,pos,neg,neutral
+tech support,0,1,2
+instructions,0,1,1
+cost,1,1,10
+paper feeder,0,1,0
+software,0,0,3
+plain paper,0,0,1
+customer service,1,0,1
+part,0,0,1
+office,1,0,1
+pictures,0,0,3
+mac,0,0,1
+mode,0,0,4
+paper feed,1,1,1
+mac os,0,0,1
+paper,3,5,29
+size,0,0,2
+money,0,1,6
+install,0,1,2
+price,4,2,4
+machine,0,0,2
+text,0,0,3
+device,0,0,1
+support,0,0,2

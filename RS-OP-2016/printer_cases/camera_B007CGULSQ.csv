@@ -1,0 +1,24 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,0,3
+cost,0,0,4
+software,4,0,8
+part,0,0,1
+scan,1,0,5
+duplex,1,0,0
+error message,0,0,1
+office,0,1,1
+mac,0,0,7
+pictures,0,0,3
+mode,0,1,0
+scan feature,0,0,2
+capability,0,0,2
+feature,2,0,5
+paper,0,0,9
+firmware update,1,0,0
+machine,1,0,5
+scanner,0,0,2
+setup,1,2,2
+connection,1,0,1
+copy,0,0,1
+support,0,0,1

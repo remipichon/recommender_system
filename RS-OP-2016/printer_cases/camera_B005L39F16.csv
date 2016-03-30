@@ -1,0 +1,8 @@
+feature,pos,neg,neutral
+mode,0,0,2
+toner,0,2,0
+machine,0,0,1
+scan,0,0,1
+duplex,0,0,1
+office,0,0,1
+copy,0,0,1

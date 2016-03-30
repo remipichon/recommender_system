@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+cost,0,0,1
+software,0,0,1
+office,1,0,1
+mode,1,0,0
+output tray,0,0,1
+money,1,1,0
+paper,2,2,4
+size,0,0,1
+feed tray,0,0,1
+price,0,0,1
+machine,0,1,0
+scanner,0,0,3
+text,0,0,2

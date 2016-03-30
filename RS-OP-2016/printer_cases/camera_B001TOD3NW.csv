@@ -1,0 +1,12 @@
+feature,pos,neg,neutral
+mode,1,0,0
+tech support,1,0,1
+paper tray,0,0,1
+instructions,0,0,1
+paper,0,0,1
+machine,2,1,2
+toner,0,1,0
+customer service,1,0,0
+scanner,1,0,0
+scan,0,0,2
+setup,0,0,1

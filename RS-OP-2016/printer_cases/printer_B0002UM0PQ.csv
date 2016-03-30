@@ -1,0 +1,27 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+software,1,0,6
+manual feed,0,1,4
+duplex,0,3,3
+office,0,0,1
+mac,1,0,1
+mode,0,0,2
+power cord,0,0,1
+mac os,0,2,1
+paper,1,1,12
+feature,2,0,0
+toner,1,0,6
+price,2,1,2
+function,0,0,1
+text,0,0,1
+paper tray,0,0,1
+cost,0,0,10
+regular paper,0,0,1
+toner cartridges,1,0,0
+starter cartridges,0,0,1
+money,0,0,3
+size,1,0,2
+install,1,2,2
+machine,2,0,1
+support,0,0,5
+option,1,1,2

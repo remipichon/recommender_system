@@ -1,0 +1,4 @@
+feature,pos,neg,neutral
+money,0,0,1
+scanner,0,1,0
+option,0,0,1

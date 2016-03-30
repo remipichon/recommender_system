@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+software,0,0,1
+customer service,1,0,0
+part,1,0,0
+scan,0,0,2
+size paper,1,0,0
+office,0,0,1
+mac,0,0,5
+sleep mode,0,0,1
+capability,0,0,1
+paper,0,0,3
+feature,1,0,0
+price,0,0,2
+toner,2,1,12
+replace toner,0,0,3
+scanner,0,0,2
+legal size,0,0,1
+paper tray,1,0,0
+wifi,0,1,0
+cost,0,0,2
+error message,0,0,1
+price range,0,0,1
+customer support,0,0,1
+toner cartridges,0,0,1
+money,0,0,1
+install,0,0,1
+machine,1,0,4
+support,0,0,2

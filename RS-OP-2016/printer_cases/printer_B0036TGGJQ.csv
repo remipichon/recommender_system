@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+wifi,0,0,1
+software,0,3,5
+part,0,0,1
+scan,1,1,5
+office,1,0,2
+price point,0,0,2
+mac,0,0,1
+money,1,0,2
+size,0,0,2
+paper,0,2,2
+feature,0,0,1
+install,0,0,2
+price,2,0,4
+machine,0,2,1
+toner,1,2,6
+function,0,1,0
+scanner,0,1,0
+setup,2,0,0
+copy,0,0,2
+device,0,0,1

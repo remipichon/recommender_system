@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+toner cartridges,0,0,1
+software,1,0,2
+install,0,0,3
+toner,0,0,3
+customer service,1,0,0
+text,1,1,1
+office,0,0,1
+support,1,0,0
+mac,0,1,2

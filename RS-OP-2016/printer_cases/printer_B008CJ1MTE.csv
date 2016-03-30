@@ -1,0 +1,4 @@
+feature,pos,neg,neutral
+image,1,0,0
+price,0,0,1
+device,0,0,3

@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+instructions,1,0,0
+software,0,0,2
+windows xp,0,0,1
+part,0,0,1
+error message,0,1,0
+office,0,0,1
+mac,0,0,1
+pictures,0,1,0
+capability,0,0,2
+paper,0,1,1
+money,0,0,1
+size,0,0,2
+install,1,0,0
+scanner,0,0,1
+memory card,1,0,0

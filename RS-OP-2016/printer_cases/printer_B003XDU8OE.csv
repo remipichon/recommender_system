@@ -1,0 +1,32 @@
+feature,pos,neg,neutral
+instructions,0,0,4
+software,0,1,6
+customer service,0,1,4
+scan,1,0,1
+office,0,0,3
+pictures,3,1,8
+mac,1,0,1
+output tray,0,0,1
+capability,0,0,2
+paper,4,7,36
+feature,2,0,0
+price,1,0,4
+function,0,0,2
+scanner,1,0,4
+copy,1,0,3
+text,1,2,2
+paper tray,3,1,3
+wifi,1,0,0
+cost,0,0,4
+regular paper,0,0,1
+error message,0,0,1
+card stock,0,0,1
+paper jam,1,0,2
+money,0,2,0
+size,0,0,3
+install,0,1,4
+machine,0,1,5
+setup,5,0,4
+touch screen,1,0,1
+device,1,0,1
+support,0,0,5

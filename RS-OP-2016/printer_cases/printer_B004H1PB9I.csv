@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+mode,0,0,1
+paper tray,0,0,1
+mac os,0,0,1
+test pages,1,0,0
+operating system,0,0,1
+price,1,0,1
+toner,0,0,2
+setup,0,0,1
+support,2,0,4
+mac,0,0,3

@@ -35,7 +35,7 @@ public class OneReview {
 
         Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.computeOutputPerProduct(features);
 
-        outputService.generativeCSVFiles(distFolder,computeOutputPerProduct);
+        outputService.generativeCSVFiles(distFolder,"test_one_review",computeOutputPerProduct);
 
 
         Parser parser = Parser.getInstance();

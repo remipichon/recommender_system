@@ -1,0 +1,20 @@
+feature,pos,neg,neutral
+instructions,1,1,5
+software,1,0,3
+regular paper,0,0,2
+scan,0,0,1
+error message,0,0,4
+lcd screen,0,0,2
+office,1,0,1
+pictures,1,0,3
+mac,0,1,0
+power cord,0,0,1
+mac os,0,0,1
+paper feed,0,0,1
+capability,0,1,0
+paper,2,1,11
+size,1,1,0
+money,0,0,1
+install,0,0,2
+price,0,1,2
+text,1,0,0

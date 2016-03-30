@@ -1,5 +1,6 @@
 package service;
 
+import model.BetterType;
 import model.FeatureSummary;
 import model.Product;
 import util.ScoredThingDsc;
@@ -24,6 +25,11 @@ public class RecommendationService {
 
 
     private Double w;
+    private BetterType betterType;
+
+    public void setBetterType(BetterType betterType) {
+        this.betterType = betterType;
+    }
 
     public void setW(Double w) {
         this.w = w;
@@ -75,12 +81,16 @@ public class RecommendationService {
     }
 
     private Double getSentiment(Product query, Product candidate) {
-        //TODO sum getSenitment(p) for both
+        switch (betterType) {
+            case B1:
+                return getB1Sentiment(query, candidate);
+            case B2:
+                return getB2Sentiment(query, candidate);
+        }
+        return null;
+    }
 
-        //B1
-
-        //better(fi,Q,C) = ( sent(fi,Q) - sent(fi,C) )/ 2
-        //sent(Q,C) = avg(better(all fi)
+    private Double getB1Sentiment(Product query, Product candidate) {
         Double better = new Double(0);
         Integer betterCount = 0;
 
@@ -88,14 +98,37 @@ public class RecommendationService {
             String featureName = stringDoubleEntry.getKey();
             Double querySentiment = stringDoubleEntry.getValue();
 
-            if (!candidate.getFeatureSentiments().containsKey(featureName)) continue;
+            if (!candidate.getFeatureSentiments().containsKey(featureName))
+                continue; //here the  product's features intersection is made
 
             Double candidateSentiment = candidate.getFeatureSentiments().get(featureName);
 
             better += (1.0 * (querySentiment - candidateSentiment) / 2);
-            betterCount++;
+            betterCount++;  //here we get only the product features intersection size
         }
         return better / betterCount;
+    }
+
+    private Double getB2Sentiment(Product query, Product candidate) {
+        Double better = new Double(0);
+
+        Set<String> unionFeatures = new HashSet<>(query.getFeatureSentiments().keySet());
+        unionFeatures.addAll(candidate.getFeatureSentiments().keySet());
+
+        Double querySentiment;
+        Double candidateSentiment;
+
+        for (String feature : unionFeatures) {
+            querySentiment = query.getFeatureSentiments().get(feature);
+            candidateSentiment = candidate.getFeatureSentiments().get(feature);
+            if (querySentiment == null) querySentiment = 0.0;
+            if (candidateSentiment == null) candidateSentiment = 0.0;
+
+            better += (1.0 * (querySentiment - candidateSentiment) / 2);
+
+        }
+
+        return better / unionFeatures.size();
     }
 
 

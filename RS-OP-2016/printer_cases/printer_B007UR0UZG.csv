@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+mode,1,0,0
+capability,1,0,1
+paper,0,0,2
+feature,0,0,1
+plain paper,1,0,1
+memory card,0,0,1

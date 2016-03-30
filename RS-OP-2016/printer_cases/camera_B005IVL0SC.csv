@@ -1,0 +1,32 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+software,1,2,7
+part,2,1,1
+scan,2,0,8
+mac,0,0,1
+mode,0,0,1
+capability,0,0,6
+paper,1,0,6
+feature,5,0,1
+price,0,1,1
+toner,0,0,1
+function,1,0,2
+scanner,2,2,11
+connection,1,0,0
+copy,0,0,2
+text,0,0,1
+paper tray,1,1,1
+image,0,0,3
+wifi,0,0,1
+cost,0,0,2
+card stock,0,1,1
+initial setup,0,0,1
+phone line,0,0,1
+customer support,0,0,2
+money,0,1,4
+install,1,0,3
+machine,1,1,3
+setup,1,1,4
+device,0,0,1
+support,0,0,3
+option,0,0,1

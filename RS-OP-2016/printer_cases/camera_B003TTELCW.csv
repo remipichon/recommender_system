@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+instructions,0,1,0
+cost,2,0,2
+operating system,0,0,1
+starter toner,0,0,1
+duplex,1,0,0
+office,0,0,1
+mac,1,0,0
+toner cartridges,0,0,2
+mode,0,0,1
+feature,0,0,1
+paper,0,1,1
+machine,0,0,2
+toner,0,2,3
+pdf file,0,0,1
+text,1,0,0
+device,1,0,0
+option,0,0,1

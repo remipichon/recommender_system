@@ -1,0 +1,17 @@
+feature,pos,neg,neutral
+windows xp,0,0,1
+operating system,0,1,0
+part,0,1,0
+error message,0,0,1
+office,0,0,2
+toner cartridges,0,0,1
+money,0,0,1
+paper,0,0,1
+toner,0,0,1
+price,0,0,1
+machine,0,0,1
+function,0,0,1
+windows vista,0,0,1
+connection,0,0,2
+text,1,0,1
+support,0,0,3

@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+software,1,1,0
+part,0,0,2
+office,0,0,1
+mac,2,0,2
+mode,0,0,1
+toner cartridges,0,0,1
+power cord,0,0,1
+paper,0,0,1
+price,0,0,1
+machine,1,1,2
+setup,0,0,1
+connection,0,0,1
+support,0,0,1
+option,0,0,1

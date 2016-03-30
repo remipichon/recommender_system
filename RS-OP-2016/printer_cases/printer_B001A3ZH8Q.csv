@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+toner cartridges,0,0,1
+mode,3,0,0
+cost,0,0,1
+install,0,0,1
+operating system,0,0,1
+machine,0,0,1
+office,0,0,2
+support,0,0,1
+mac,2,1,2

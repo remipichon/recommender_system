@@ -1,0 +1,4 @@
+feature,pos,neg,neutral
+toner cartridges,0,0,1
+toner,0,0,1
+customer service,0,1,0

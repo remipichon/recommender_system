@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+paper tray,1,0,0
+cost,0,0,1
+paper,1,0,2
+software,0,1,0
+machine,1,1,4
+customer service,0,2,0
+function,0,0,1
+setup,0,0,1
+office,0,1,1

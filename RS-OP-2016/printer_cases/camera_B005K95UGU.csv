@@ -1,0 +1,20 @@
+feature,pos,neg,neutral
+paper tray,0,1,0
+wifi,0,0,1
+cost,2,0,0
+software,1,0,3
+operating system,0,0,1
+part,0,0,1
+customer service,0,1,2
+price range,0,0,1
+paper jam,0,1,1
+price point,0,0,1
+paper,1,2,10
+feature,2,0,1
+money,0,0,1
+firmware update,0,0,1
+price,0,0,5
+function,0,0,2
+scanner,1,0,1
+setup,0,0,1
+copy,1,0,0

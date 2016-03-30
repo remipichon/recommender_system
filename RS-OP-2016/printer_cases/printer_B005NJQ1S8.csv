@@ -1,0 +1,12 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,1,0
+software,0,0,4
+paper,1,0,1
+install,0,0,1
+function,0,0,1
+setup,0,0,1
+touch screen,0,0,1
+phone line,0,1,0
+mac,0,0,1
+customer support,1,0,0

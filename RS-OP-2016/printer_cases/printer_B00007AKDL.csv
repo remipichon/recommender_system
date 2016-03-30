@@ -1,0 +1,32 @@
+feature,pos,neg,neutral
+tech support,0,1,2
+instructions,0,0,1
+software,0,1,6
+plain paper,0,0,1
+part,1,0,1
+customer service,1,0,0
+scan,0,1,4
+office,0,1,5
+pictures,0,0,2
+paper,1,1,9
+feature,1,0,1
+price,1,0,1
+function,1,1,0
+scanner,1,0,2
+connection,0,0,1
+copy,1,0,2
+legal size,0,0,1
+paper tray,0,0,1
+cost,0,0,6
+regular paper,0,0,1
+error message,0,0,1
+wifi connection,0,0,1
+paper jam,0,0,3
+customer support,0,0,1
+size,0,0,1
+money,0,0,1
+install,2,0,2
+machine,1,1,5
+setup,3,0,1
+support,2,0,5
+option,0,0,1

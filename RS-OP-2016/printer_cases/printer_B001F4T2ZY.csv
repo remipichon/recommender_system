@@ -1,0 +1,18 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+cost,0,0,1
+plain paper,0,0,1
+regular paper,1,0,0
+manual feed,0,0,3
+part,0,0,3
+error message,0,1,0
+mode,0,0,2
+toner cartridges,0,0,1
+sleep mode,0,0,1
+paper,1,0,3
+feature,0,0,1
+install,0,0,1
+price,1,0,1
+toner,0,1,8
+text,0,0,3
+option,0,0,1

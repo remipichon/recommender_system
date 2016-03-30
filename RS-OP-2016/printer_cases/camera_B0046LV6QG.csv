@@ -1,0 +1,27 @@
+feature,pos,neg,neutral
+test pages,0,0,1
+software,0,0,1
+duplex,0,0,1
+office,1,0,1
+mac,0,0,1
+pictures,0,0,4
+price point,0,0,1
+mode,0,0,7
+mac os,0,0,1
+paper feed,0,1,0
+paper,4,3,13
+feature,0,0,1
+toner,4,7,21
+price,0,0,1
+function,0,0,2
+text,0,0,2
+image,1,2,4
+cost,1,0,2
+price range,0,0,1
+toner cartridges,0,0,6
+size,0,0,2
+money,0,0,1
+machine,1,2,4
+feed tray,0,1,0
+setup,0,0,1
+option,0,0,3

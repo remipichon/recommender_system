@@ -41,7 +41,7 @@ public class OneProduct {
         outputService.computeFeatureCountForPopularity(computeOutputPerProduct,wrapper.featuresPerReview);
 
 
-        outputService.generativeCSVFiles("printer_one_product_test_cases",computeOutputPerProduct);
+        outputService.generativeCSVFiles("printer_one_product_test_cases","camera",computeOutputPerProduct);
 
 
     }

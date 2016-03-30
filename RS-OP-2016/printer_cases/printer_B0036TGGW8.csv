@@ -1,0 +1,20 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+cost,1,0,2
+software,0,2,4
+starter toner,1,0,2
+duplex,1,1,5
+lcd screen,0,0,1
+office,0,0,3
+mac,2,1,2
+technical support,1,1,2
+paper,1,1,2
+money,0,0,2
+install,0,0,2
+toner,0,1,3
+price,0,0,1
+machine,2,0,0
+scanner,0,0,2
+setup,1,0,2
+support,0,1,9
+device,0,0,2

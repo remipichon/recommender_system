@@ -1,0 +1,43 @@
+feature,pos,neg,neutral
+tech support,1,0,10
+instructions,1,1,4
+paper feeder,0,0,1
+software,3,5,11
+part,1,0,1
+scan,1,2,21
+duplex,3,2,13
+office,3,1,8
+pictures,0,0,4
+mac,1,0,7
+multiple pages,0,0,2
+mode,0,0,2
+paper feed,2,0,0
+capability,0,0,2
+feature,5,0,2
+paper,4,6,30
+price,1,1,1
+function,1,0,5
+scanner,6,1,7
+duplex feature,0,0,1
+connection,0,0,6
+copy,0,1,8
+text,2,0,3
+memory card,0,0,1
+paper tray,1,0,3
+image,0,0,2
+wifi,2,1,1
+cost,0,1,10
+operating system,0,0,1
+error message,0,0,3
+money,1,2,2
+size,0,0,3
+install,0,0,7
+machine,2,1,12
+feed tray,0,0,1
+setup,4,4,10
+scan function,0,1,1
+touch screen,0,0,1
+support,0,0,6
+sd card,1,0,0
+device,0,0,2
+option,1,1,1

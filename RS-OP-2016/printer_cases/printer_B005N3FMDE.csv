@@ -1,0 +1,45 @@
+feature,pos,neg,neutral
+tech support,1,0,1
+instructions,0,0,5
+test pages,0,0,1
+software,3,4,14
+part,0,1,0
+scan,1,0,9
+software install,0,0,1
+duplex,0,0,2
+office,1,1,3
+pictures,1,0,8
+mac,1,0,5
+price point,1,0,0
+mode,0,0,2
+sleep mode,0,0,2
+power cord,0,0,3
+capability,1,0,1
+technical support,0,1,0
+feature,5,0,4
+paper,3,2,13
+price,2,0,2
+function,1,0,1
+scanner,1,1,2
+pdf file,0,0,1
+connection,0,1,0
+text,0,0,2
+copy,2,0,1
+paper tray,1,0,0
+image,0,0,1
+wifi,0,0,2
+cost,1,3,7
+error message,0,0,4
+card stock,0,0,1
+phone line,0,0,1
+control panel,1,0,0
+customer support,0,0,2
+money,1,1,1
+size,0,0,2
+install,0,0,1
+machine,0,1,19
+setup,3,1,10
+touch screen,0,1,1
+support,0,0,6
+device,0,0,6
+option,0,0,7

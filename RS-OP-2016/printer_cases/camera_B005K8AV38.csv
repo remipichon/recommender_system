@@ -1,0 +1,16 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+wifi,0,0,1
+cost,0,0,1
+software,0,0,1
+scan,0,0,1
+toner cartridges,0,0,1
+paper,1,0,3
+feature,1,0,2
+size,0,0,1
+money,0,0,1
+install,0,0,1
+scanner,0,0,1
+setup,0,0,1
+touch screen,1,0,0
+copy,0,0,1

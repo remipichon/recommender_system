@@ -1,0 +1,6 @@
+feature,pos,neg,neutral
+paper,0,0,2
+manual feed,0,0,3
+scanner,0,0,1
+multiple pages,0,0,1
+option,0,0,1

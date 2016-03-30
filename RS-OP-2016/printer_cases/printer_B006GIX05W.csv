@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+cost,0,0,1
+money,1,1,2
+paper,0,0,2
+install,0,0,1
+price,0,0,1
+copy,0,1,0

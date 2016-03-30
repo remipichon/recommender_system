@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+cost,0,0,2
+money,0,0,2
+software,0,0,1
+install,0,0,1
+machine,1,2,4
+price,1,0,0
+scan,0,0,1
+duplex,0,0,1
+setup,0,0,1
+mac,0,0,1

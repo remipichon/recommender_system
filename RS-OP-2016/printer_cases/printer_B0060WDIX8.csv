@@ -1,0 +1,15 @@
+feature,pos,neg,neutral
+paper tray,0,0,1
+instructions,0,0,1
+wifi,0,0,1
+cost,0,0,1
+mac,1,0,0
+toner cartridges,0,0,1
+sleep mode,0,0,2
+paper,0,1,0
+feature,1,0,0
+install,0,0,1
+toner,1,0,2
+price,0,0,1
+scanner,0,0,1
+setup,1,0,0

@@ -1,0 +1,31 @@
+feature,pos,neg,neutral
+tech support,0,0,1
+instructions,0,0,5
+software,3,1,6
+customer service,0,1,1
+part,1,0,0
+scan,1,0,2
+lcd screen,0,0,1
+mac,0,0,2
+multiple pages,0,0,1
+pictures,3,0,2
+mode,0,0,3
+paper feed,0,2,0
+paper,0,2,9
+feature,0,0,1
+price,2,0,0
+scanner,0,0,1
+connection,0,1,6
+memory card,0,0,1
+wifi,0,1,1
+cost,0,0,3
+windows xp,0,0,1
+wifi connection,0,0,1
+paper jam,0,0,1
+control panel,0,0,1
+customer support,0,0,1
+money,1,0,5
+size,0,0,1
+install,1,0,2
+setup,2,0,0
+device,0,0,1

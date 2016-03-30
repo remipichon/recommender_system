@@ -1,0 +1,28 @@
+feature,pos,neg,neutral
+software,0,0,4
+part,0,0,2
+customer service,0,0,1
+software install,0,0,1
+scan,0,0,3
+duplex,0,0,1
+size paper,0,0,1
+office,2,1,4
+pictures,0,1,0
+mac,0,2,9
+mode,3,1,1
+capability,0,0,1
+paper,2,0,13
+feature,2,0,0
+price,1,1,1
+toner,1,0,1
+copy,2,0,2
+text,1,1,1
+paper tray,0,0,1
+cost,0,0,1
+customer support,2,0,0
+size,0,0,3
+install,1,0,1
+machine,2,0,10
+setup,1,0,1
+device,0,0,1
+support,0,0,1

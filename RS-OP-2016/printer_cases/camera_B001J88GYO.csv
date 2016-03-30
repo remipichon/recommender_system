@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+toner cartridges,0,0,1
+paper tray,1,0,0
+size,1,0,0
+machine,0,0,2
+replace toner,0,0,1
+office,1,0,0

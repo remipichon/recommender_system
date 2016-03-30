@@ -1,0 +1,26 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+instructions,0,0,1
+software,0,0,4
+part,0,0,1
+scan,0,0,4
+office,1,0,3
+mac,0,0,7
+mac os,2,0,1
+output tray,0,0,1
+capability,0,0,1
+paper,2,0,8
+feature,1,1,1
+toner,1,1,14
+price,1,0,1
+function,0,1,2
+scanner,1,2,7
+copy,0,0,2
+cost,0,0,1
+control panel,1,0,0
+toner cartridges,1,0,1
+size,0,0,1
+snow leopard,0,0,1
+machine,0,0,3
+scan function,0,0,1
+option,0,0,6

@@ -1,0 +1,11 @@
+feature,pos,neg,neutral
+wifi,1,0,0
+money,1,0,0
+scanner,0,0,1
+lcd screen,1,0,0
+size paper,0,0,1
+office,0,0,1
+text,1,0,1
+support,0,0,1
+legal size,0,0,1
+pictures,1,0,2

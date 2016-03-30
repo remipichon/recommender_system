@@ -1,0 +1,14 @@
+feature,pos,neg,neutral
+paper feeder,0,0,1
+office,0,0,1
+paper jam,0,0,1
+capability,0,0,1
+size,1,0,0
+paper,0,2,0
+money,0,0,2
+install,0,0,1
+price,0,0,1
+setup,0,0,1
+connection,0,0,1
+device,0,1,0
+option,3,0,0

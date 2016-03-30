@@ -1,0 +1,32 @@
+feature,pos,neg,neutral
+software,1,1,4
+customer service,1,2,3
+scan,0,0,9
+duplex,0,0,4
+office,0,0,6
+mac,1,0,4
+multiple pages,0,0,1
+mode,0,1,0
+mac os,0,0,1
+paper,0,0,1
+firmware update,0,0,1
+toner,0,1,4
+price,1,0,1
+function,0,0,1
+scanner,1,1,1
+connection,0,0,1
+copy,0,0,6
+legal size,0,0,2
+paper tray,0,0,1
+cost,2,1,0
+customer support,0,0,2
+money,0,0,4
+size,0,0,1
+install,0,0,1
+machine,3,2,5
+snow leopard,0,0,1
+setup,1,1,4
+windows vista,0,0,1
+scan function,1,0,0
+support,0,0,5
+device,0,1,1

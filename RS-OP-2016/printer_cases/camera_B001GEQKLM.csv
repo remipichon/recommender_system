@@ -1,0 +1,20 @@
+feature,pos,neg,neutral
+paper tray,0,0,2
+tech support,0,0,2
+instructions,0,1,1
+cost,2,0,2
+software,0,0,1
+part,0,0,1
+scan,1,0,3
+office,0,0,1
+control panel,1,0,1
+technical support,0,0,1
+paper,2,0,1
+feature,2,1,1
+firmware update,1,0,0
+toner,0,0,1
+machine,1,0,6
+scanner,0,0,2
+setup,0,0,2
+pdf file,0,0,1
+support,0,0,4

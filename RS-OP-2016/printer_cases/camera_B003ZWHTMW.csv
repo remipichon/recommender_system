@@ -1,0 +1,22 @@
+feature,pos,neg,neutral
+paper tray,0,0,2
+image,0,0,1
+cost,0,0,1
+software,3,1,5
+customer service,0,0,2
+scan,0,1,5
+duplex,1,0,0
+office,1,0,6
+mac,0,0,6
+multiple pages,0,0,1
+feature,0,0,3
+paper,0,0,3
+install,0,0,1
+price,1,0,0
+toner,0,0,1
+machine,3,0,8
+snow leopard,0,0,1
+scanner,1,0,4
+text,2,0,1
+copy,1,0,2
+support,0,0,1

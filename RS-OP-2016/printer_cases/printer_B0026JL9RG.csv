@@ -1,0 +1,13 @@
+feature,pos,neg,neutral
+cost,0,0,1
+size,1,0,0
+software,0,0,3
+toner,1,1,1
+price,0,0,1
+machine,1,0,1
+manual feed,0,0,1
+scan,0,0,2
+duplex,0,0,6
+office,0,0,2
+copy,1,0,5
+mac,0,0,1

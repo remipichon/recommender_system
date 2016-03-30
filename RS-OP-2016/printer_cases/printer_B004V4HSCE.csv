@@ -1,0 +1,4 @@
+feature,pos,neg,neutral
+power cord,0,0,1
+paper,0,0,1
+toner,0,0,2

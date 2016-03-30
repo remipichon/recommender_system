@@ -1,0 +1,9 @@
+feature,pos,neg,neutral
+paper,1,1,8
+money,1,0,0
+size,0,0,1
+part,1,0,0
+lcd screen,0,0,1
+connection,0,1,0
+office,0,0,2
+pictures,0,0,1

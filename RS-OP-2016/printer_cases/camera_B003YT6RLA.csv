@@ -1,0 +1,20 @@
+feature,pos,neg,neutral
+tech support,0,0,2
+paper tray,0,0,2
+instructions,0,0,1
+software,0,1,2
+customer service,1,0,0
+scan,2,0,2
+initial setup,0,0,1
+office,0,0,3
+paper jam,0,0,1
+customer support,0,0,1
+paper feed,0,1,0
+paper,0,2,9
+size,0,0,1
+feature,1,1,0
+install,1,1,0
+price,1,1,0
+function,0,1,1
+copy,1,1,2
+support,0,1,0

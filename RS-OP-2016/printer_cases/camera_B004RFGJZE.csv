@@ -1,0 +1,21 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+wifi,0,0,1
+customer service,0,0,1
+scan,0,0,1
+office,0,0,4
+mac,0,3,1
+customer support,0,0,1
+money,0,0,2
+size,0,1,0
+paper,0,0,1
+toner,1,1,9
+machine,4,0,6
+price,1,0,0
+scanner,1,1,0
+connection,0,0,1
+mac user,0,0,1
+support,0,0,1
+device,0,1,0
+latest drivers,0,0,1
+option,0,0,1

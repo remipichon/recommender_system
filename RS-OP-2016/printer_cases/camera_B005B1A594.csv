@@ -1,0 +1,17 @@
+feature,pos,neg,neutral
+software,0,0,1
+scan,0,0,2
+office,1,0,0
+pictures,0,0,1
+control panel,1,0,1
+sleep mode,0,0,1
+capability,0,1,1
+paper,1,0,0
+install,0,0,1
+machine,1,0,4
+toner,0,0,2
+scanner,0,0,1
+setup,2,1,3
+text,0,0,1
+support,1,0,3
+option,0,0,1

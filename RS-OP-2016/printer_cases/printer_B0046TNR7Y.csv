@@ -1,0 +1,9 @@
+feature,pos,neg,neutral
+toner cartridges,1,0,0
+capability,0,0,1
+paper,1,0,1
+install,0,0,1
+toner,1,0,3
+price,0,0,1
+customer service,0,0,1
+duplex,1,0,0

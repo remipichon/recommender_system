@@ -1,0 +1,7 @@
+feature,pos,neg,neutral
+image,1,0,0
+machine,2,0,0
+price,1,0,0
+scanner,1,0,0
+office,1,0,0
+support,1,0,1

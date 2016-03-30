@@ -1,0 +1,21 @@
+feature,pos,neg,neutral
+paper tray,0,0,3
+instructions,0,0,1
+cost,1,0,0
+customer service,1,0,0
+scan,0,1,0
+error message,0,1,0
+mac,0,0,4
+capability,0,0,2
+feature,2,0,1
+size,0,0,1
+paper,0,0,2
+money,0,0,1
+install,0,0,1
+snow leopard,0,0,1
+machine,0,3,6
+price,1,0,1
+connection,0,2,1
+mac user,0,0,1
+text,0,0,1
+support,1,0,4

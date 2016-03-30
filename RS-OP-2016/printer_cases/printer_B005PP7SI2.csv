@@ -1,0 +1,10 @@
+feature,pos,neg,neutral
+paper tray,1,2,0
+wifi,0,0,3
+paper,1,1,2
+software,0,0,2
+price,2,0,1
+setup,0,0,2
+office,0,0,2
+support,0,0,2
+control panel,0,0,1

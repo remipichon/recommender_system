@@ -1,0 +1,30 @@
+feature,pos,neg,neutral
+instructions,0,0,1
+software,0,0,3
+scan,0,0,4
+lcd screen,0,0,1
+pictures,1,0,2
+mac,0,0,1
+paper feed,0,0,1
+scan feature,0,0,1
+capability,1,0,1
+paper,0,1,5
+feature,0,1,1
+firmware update,0,0,1
+price,0,0,1
+function,0,0,1
+scanner,0,0,2
+connection,0,0,1
+text,2,0,7
+copy,0,0,1
+paper tray,0,0,1
+image,1,0,0
+wifi,0,0,4
+cost,0,0,1
+regular paper,0,0,1
+error message,0,1,1
+size,0,0,3
+money,1,0,3
+install,1,0,1
+setup,1,2,2
+support,0,0,3

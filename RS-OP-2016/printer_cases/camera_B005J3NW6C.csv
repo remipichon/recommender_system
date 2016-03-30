@@ -1,0 +1,8 @@
+feature,pos,neg,neutral
+mode,0,0,1
+sleep mode,0,0,2
+test pages,1,0,0
+software,0,1,0
+install,0,0,1
+connection,0,0,1
+text,1,0,0
