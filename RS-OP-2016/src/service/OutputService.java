@@ -57,6 +57,7 @@ public class OutputService {
                     featureSummary.neutralCount++;
                     break;
             }
+
         }
 
 

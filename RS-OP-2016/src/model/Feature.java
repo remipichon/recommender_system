@@ -2,6 +2,9 @@ package model;
 
 import model.Sentiment;
 
+/**
+ * Feature depends on a product
+ */
 public class Feature {
     private String posPattern;  //POS sequence between feature and wmin sentiment word
     private String name;        //feature name

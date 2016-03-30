@@ -36,7 +36,7 @@ public class RecommendationService {
 
     private static double cosine(Product query, Product candidate) {
         // F(Q) u F(C)
-        List<String> features = new ArrayList<>(query.getFeaturePopularities().keySet());
+        Set<String> features = new HashSet<>(query.getFeaturePopularities().keySet());
         features.addAll(candidate.getFeaturePopularities().keySet());
 
 
@@ -101,7 +101,7 @@ public class RecommendationService {
 
     public void setSentimentAndPopularity(List<Product> products) {
         for (Product product : products) {
-            product.setFeaturePolarities(this.computeFeaturePolarities(product));
+            product.setFeaturePolarities(this.computeFeaturePopularities(product));
             product.setFeatureSentiments(this.computeFeatureSentiments(product));
         }
     }
@@ -119,7 +119,7 @@ public class RecommendationService {
         return result;
     }
 
-    private Map<String, Double> computeFeaturePolarities(Product product) {
+    private Map<String, Double> computeFeaturePopularities(Product product) {
         Map<String, Double> result = new HashMap<>();
         for (FeatureSummary featureSummary : product.getFeatureSummaries()) {
 

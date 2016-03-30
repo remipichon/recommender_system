@@ -7,12 +7,14 @@ public class FeatureSummary implements Serializable{
     public Integer positiveCount;
     public Integer negativeCount;
     public Integer neutralCount;
+    public Integer atLeastOncePerReviewCount;
 
     public FeatureSummary(String name) {
         featureName = name;
         positiveCount = 0;
         negativeCount = 0;
         neutralCount = 0;
+        atLeastOncePerReviewCount = 0;
     }
 
     public String getFeatureName() {
