@@ -2,6 +2,7 @@ package runner;
 
 import model.Feature;
 import model.FeatureSummary;
+import model.Wrapper;
 import service.*;
 import util.reader.DatasetReader;
 
@@ -22,10 +23,13 @@ public class OneProduct {
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 
 
-        List<Feature> features = reviewService.extractFeatures(reader.getReviews());
+        Wrapper wrapper = reviewService.extractFeatures(reader.getReviews());
+        List<Feature> features = wrapper.features;
 
 
-        System.out.println("Features extracted "+features.size());
+
+
+        System.out.println("Features extracted " + features.size());
 
         opinionService.validPattern(features);
 
@@ -33,6 +37,9 @@ public class OneProduct {
 
 
         Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.computeOutputPerProduct(features);
+
+        outputService.computeFeatureCountForPopularity(computeOutputPerProduct,wrapper.featuresPerReview);
+
 
         outputService.generativeCSVFiles("printer_one_product_test_cases",computeOutputPerProduct);
 

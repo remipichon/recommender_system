@@ -3,12 +3,10 @@ package service;
 import model.Feature;
 import model.FeatureSummary;
 import model.Product;
+import model.Review;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class OutputService {
     public static final String REVIEW_COUNT_PER_PRODUCT = "_review_count_per_product";
@@ -242,4 +240,29 @@ public class OutputService {
     }
 
 
+    public void computeFeatureCountForPopularity(Map<String, List<FeatureSummary>> computeOutputPerProduct, Map<Review, List<Feature>> featuresPerReview) {
+        Set<String> featureAlreadyCountForAReview;
+        for (List<Feature> featureList : featuresPerReview.values()) { //each review
+            featureAlreadyCountForAReview = new HashSet<>(); //reset the flag
+
+            for (Feature feature : featureList) { //each feature for this review
+                if(featureAlreadyCountForAReview.contains(feature.getName())) { //if feature already count for this review, we skip it
+                    continue;
+                }
+
+                //else, we need to find the corresponding feature summary and update the atLeastOncePerReviewCount
+                List<FeatureSummary> featureSummaries = computeOutputPerProduct.get(feature.getProductId()); //get the feature for this product
+                for (FeatureSummary featureSummary : featureSummaries) {
+                    if(featureSummary.getFeatureName().equals(feature.getName())){ //we find the right feature summary
+                        featureSummary.atLeastOncePerReviewCount++;
+                        break;
+                    }
+
+                }
+
+                featureAlreadyCountForAReview.add(feature.getName());
+            }
+        }
+
+    }
 }

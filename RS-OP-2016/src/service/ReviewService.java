@@ -1,6 +1,7 @@
 package service;
 
 import model.*;
+import sun.text.resources.cldr.et.FormatData_et;
 import util.nlp.Parser;
 
 import java.util.*;
@@ -26,19 +27,24 @@ public class ReviewService {
         sentimentService = SentimentService.getInstance();
     }
 
-    public List<Feature> extractFeatures(List<Review> reviews){
+    public Wrapper extractFeatures(List<Review> reviews){
         List<Feature> features = new ArrayList<>();
+        Map<Review,List<Feature>> featuresPerReview = new HashMap<>();
 
 
         int cpt = 0;
         for (Review review : reviews) {
-            features.addAll(this.extractFeatures(review));
+            List<Feature> f = this.extractFeatures(review);
+            features.addAll(f);
+            featuresPerReview.put(review,f);
             if(++cpt % 100 == 0 ) System.out.println("Review reads "+cpt+"/"+reviews.size());
         }
 
         System.out.println("Features extracted "+features.size());
+        
 
-        return features;
+
+        return new Wrapper(features,featuresPerReview);
     }
 
 

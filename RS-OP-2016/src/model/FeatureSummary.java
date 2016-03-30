@@ -23,6 +23,6 @@ public class FeatureSummary implements Serializable{
 
     @Override
     public String toString() {
-        return String.format("%-20s", featureName) + "|" + String.format("%-8s", positiveCount) + "|" + String.format("%-8s", negativeCount) + "|" + String.format("%-8s", neutralCount);
+        return String.format("%-20s", featureName) + "|" + String.format("%-8s", positiveCount) + "|" + String.format("%-8s", negativeCount) + "|" + String.format("%-8s", neutralCount + "| => "+atLeastOncePerReviewCount);
     }
 }

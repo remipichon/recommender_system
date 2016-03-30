@@ -3,6 +3,7 @@ package runner;
 import model.Feature;
 import model.FeatureSummary;
 import model.Review;
+import model.Wrapper;
 import service.*;
 import util.reader.DatasetReader;
 
@@ -32,13 +33,15 @@ public class FullDataSet {
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 
 
-        List<Feature> features = reviewService.extractFeatures(reader.getReviews());
+        Wrapper wrapper = reviewService.extractFeatures(reader.getReviews());
+        List<Feature> features = wrapper.features;
 
         opinionService.validPattern(features);
 
         opinionService.negationTerm(features);
 
         Map<String, List<FeatureSummary>> computeOutputPerProduct = outputService.computeOutputPerProduct(features);
+        outputService.computeFeatureCountForPopularity(computeOutputPerProduct,wrapper.featuresPerReview);
 
         outputService.generativeCSVFiles(distFolder,computeOutputPerProduct);
 

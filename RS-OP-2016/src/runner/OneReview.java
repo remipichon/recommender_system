@@ -2,6 +2,7 @@ package runner;
 
 import model.Feature;
 import model.FeatureSummary;
+import model.Wrapper;
 import service.*;
 import util.nlp.Parser;
 import util.reader.DatasetReader;
@@ -26,9 +27,7 @@ public class OneReview {
 
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 
-
-        List<Feature> features = reviewService.extractFeatures(reader.getReviews());
-
+        List<Feature> features = reviewService.extractFeatures(reader.getReviews()).features;
 
         opinionService.validPattern(features);
 

@@ -123,7 +123,8 @@ public class RecommendationService {
         Map<String, Double> result = new HashMap<>();
         for (FeatureSummary featureSummary : product.getFeatureSummaries()) {
 
-            Integer sumSentiment = featureSummary.positiveCount + featureSummary.negativeCount + featureSummary.neutralCount;
+//            Integer sumSentiment = featureSummary.positiveCount + featureSummary.negativeCount + featureSummary.neutralCount;
+            Integer sumSentiment = featureSummary.atLeastOncePerReviewCount;
             Integer numberReviews = product.getReviewCount();
 
             Double popularity = 1.0 * sumSentiment / numberReviews;
