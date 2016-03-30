@@ -19,7 +19,6 @@ public class Experiment {
     public static void main(String[] args) {
 
 //        String filename = "Digital Camera.txt";
-
         String filename = "Printer.txt";
 
 
