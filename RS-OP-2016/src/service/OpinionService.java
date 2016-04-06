@@ -36,7 +36,7 @@ public class OpinionService {
             posPatternOccurrence.put(feature.getPosPattern(), posPatternOccurrence.get(feature.getPosPattern()) + 1);
         }
 
-
+        //set NEUTRAL to non valid pattern
         for (Feature feature : features) {
             if (feature.getSentiment().equals(Sentiment.NEUTRAL)) continue; //no sentiment word were found
 
@@ -46,6 +46,7 @@ public class OpinionService {
             }
         }
 
+        //control outputs
         int validPatternCount = 0;
         for (Integer integer : posPatternOccurrence.values()) {
             if(integer >= VALIDPATTERNTHRESHOLD){
@@ -54,9 +55,9 @@ public class OpinionService {
         }
 
         System.out.println("Valid pattern count "+validPatternCount);
-//        for (Map.Entry<String, Integer> stringIntegerEntry : posPatternOccurrence.entrySet()) {
-//            System.out.println(stringIntegerEntry.getKey()+"\t"+stringIntegerEntry.getValue());
-//        }
+        for (Map.Entry<String, Integer> stringIntegerEntry : posPatternOccurrence.entrySet()) {
+            System.out.println(stringIntegerEntry.getKey()+"\t"+stringIntegerEntry.getValue());
+        }
 
     }
 

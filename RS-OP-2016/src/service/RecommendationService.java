@@ -185,7 +185,7 @@ public class RecommendationService {
             for (Iterator<ScoredThingDsc> it = sortedRecommendations.iterator(); it.hasNext(); ) {
                 ScoredThingDsc st = it.next();
                 recommendations.add((Product) st.thing);
-                if (recommendations.size() > 10) break;
+                if (recommendations.size() > topN) break;
             }
             query.setRecommendations(recommendations);
         }

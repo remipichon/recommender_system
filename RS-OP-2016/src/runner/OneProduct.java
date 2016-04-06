@@ -19,6 +19,9 @@ public class OneProduct {
         OpinionService opinionService = OpinionService.getInstance();
         OutputService outputService = OutputService.getInstance();
 
+        String featureSetFilename = "Digital Camera Features.txt";
+        featureService.readBiGramAndFeature(featureSetFilename);
+
         String filename = "Digital Camera small.txt"; // set the dataset filename
         DatasetReader reader = new DatasetReader(filename); // create an instance of the DatasetReader class
 

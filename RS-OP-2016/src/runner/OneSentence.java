@@ -18,6 +18,10 @@ public class OneSentence {
 
         Parser parser = Parser.getInstance();
 
+        String featureSetFilename = "Digital Camera Features.txt";
+        featureService.readBiGramAndFeature(featureSetFilename);
+
+
 
         // First, extract features
         String sentence = "The macro mode is a rare high-quality but the macro shots are poor and outstanding is the lens.";
@@ -34,11 +38,18 @@ public class OneSentence {
         List<Feature> features = featureService.extractBiGramAndFeature("ONE", sentenceModel);
 
 
+        System.out.println("SENTENCE " + sentence);
+
+        System.out.println("feature extraction");
+        for (Feature feature : features) {
+            System.out.println(feature.getName() + " at position " + feature.getFeaturePosition());
+        }
+
+
         //Then, find sentiment
         sentimentService.findClosestSentiment(sentenceModel,features);
 
-
-        System.out.println("SENTENCE " + sentence);
+        System.out.println("sentiment and pos pattern");
         for (Feature feature : features) {
             System.out.println(feature);
         }

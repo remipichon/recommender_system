@@ -18,7 +18,8 @@ public class OneFullReviewWithNegationTerm {
         SentimentService sentimentService = SentimentService.getInstance();
         OpinionService opinionService = OpinionService.getInstance();
 
-
+        String featureSetFilename = "Digital Camera Features.txt";
+        featureService.readBiGramAndFeature(featureSetFilename);
 
         Review review = new Review();
         review.setReviewText("It doesn't provides amazing pictures quality and is perfect for amateur photographers. " +

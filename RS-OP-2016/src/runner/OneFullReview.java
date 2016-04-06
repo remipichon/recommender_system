@@ -16,6 +16,9 @@ public class OneFullReview {
         FeatureService featureService = FeatureService.getInstance();
         SentimentService sentimentService = SentimentService.getInstance();
 
+        String featureSetFilename = "Digital Camera Features.txt";
+        featureService.readBiGramAndFeature(featureSetFilename);
+
 
         Review review = new Review();
         review.setReviewText("It provides amazing pictures quality and is perfect for amateur photographers. " +
